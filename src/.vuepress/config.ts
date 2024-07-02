@@ -3,7 +3,6 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  shouldPrefetch: undefined,
   base: "/ByteLighting/",
 
   locales: {
@@ -22,5 +21,5 @@ export default defineUserConfig({
   theme,
 
   // Enable it with pwa
-  // shouldPrefetch: false,
+  shouldPrefetch: false,
 });
