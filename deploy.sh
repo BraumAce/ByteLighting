@@ -14,8 +14,8 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-#git push -f git@github.com:BraumAce/ByteLighting.git main:gh-pages
-git push -f git@gitee.com:BraumAce/ByteLighting.git main:gh-pages
+# git push -f git@github.com:BraumAce/ByteLighting.git main:gh-pages
+# git push -f git@gitee.com:BraumAce/ByteLighting.git main:main
 git push -f git@47.96.125.148:/home/www/website/byte-lighting-blog.git main:main
 
 cd -
