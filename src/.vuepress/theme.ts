@@ -98,6 +98,14 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+    searchPro: {
+      // 索引全部内容
+      indexContent: true,
+
+      // 热更新
+      hotReload: true,
+    },
+
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
