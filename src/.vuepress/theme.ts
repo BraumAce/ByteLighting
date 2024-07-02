@@ -101,7 +101,6 @@ export default hopeTheme({
     searchPro: {
       // 索引全部内容
       indexContent: true,
-
       // 热更新
       hotReload: true,
     },
@@ -113,6 +112,14 @@ export default hopeTheme({
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
+
+    comment: {
+      provider: 'Giscus',
+      repo: "BraumAce/ByteLighting",
+      repoId: "R_kgDOMP-taA",
+      category: "Announcements",
+      categoryId: "DIC_kwDOMP-taM4CghxQ",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
