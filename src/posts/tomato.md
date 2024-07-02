@@ -1,15 +1,17 @@
 ---
+cover: /assets/images/cover2.jpg
 icon: pen-to-square
-date: 2022-01-07
+date: 2022-01-12
 category:
-  - 香蕉
+  - 蔬菜
 tag:
-  - 黄
-  - 弯曲的
-  - 长
+  - 红
+  - 圆
+star: true
+sticky: true
 ---
 
-# 香蕉 3
+# 番茄
 
 ## 标题 2
 
