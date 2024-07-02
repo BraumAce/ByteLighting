@@ -5,6 +5,8 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://blog.braumace.cn",
+  darkmode: "switch",
+  fullscreen: true,
 
   author: {
     name: "BraumAce",
