@@ -98,6 +98,7 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+    // 搜索框
     searchPro: {
       // 索引全部内容
       indexContent: true,
@@ -105,14 +106,7 @@ export default hopeTheme({
       hotReload: true,
     },
 
-    // Install @waline/client before enabling it
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
-
+    // 评论功能
     comment: {
       provider: 'Giscus',
       repo: "BraumAce/ByteLighting",
@@ -197,7 +191,7 @@ export default hopeTheme({
       // sandpack: true,
     },
 
-
+    // PWA支持
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
