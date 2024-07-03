@@ -1,27 +1,34 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://blog.braumace.cn",
   darkmode: "switch",
-  fullscreen: true,
+  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   author: {
     name: "BraumAce",
     url: "https://blog.braumace.cn/article",
   },
 
+  // 图标库
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
   repo: "BraumAce/ByteLighting",
-
   docsDir: "src",
 
+  navbar,
+  sidebar,
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
+  displayFooter: false,
+
+  pageInfo: ["Author", "Category", "Tag", "Original", "Word", "ReadingTime"],
+
   blog: {
+    description: "一个后端开发者",
+    sidebarDisplay: "mobile",
+    intro: "/intro.html",
     medias: {
       Email: "mailto:1693717911@qq.com",
       Gitee: "https://gitee.com/BraumAce",
@@ -35,67 +42,20 @@ export default hopeTheme({
     },
   },
 
-  locales: {
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      blog: {
-        // avatar: "./public/BraumAce.png",
-        description: "一个后端开发者",
-        intro: "/zh/intro.html",
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
-
-    /**
-     * English locale config
-     */
-    "/en/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
+  // page meta
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
   },
 
+  // 加密文章
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/en/demo/encrypt.html": ["1234"],
     },
   },
 
   // enable it to preview all changes in time
-  // hotReload: true,
+  hotReload: true,
 
   plugins: {
     blog: true,
@@ -104,8 +64,6 @@ export default hopeTheme({
     searchPro: {
       // 索引全部内容
       indexContent: true,
-      // 热更新
-      hotReload: true,
     },
 
     // 评论功能

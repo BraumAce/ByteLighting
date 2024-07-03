@@ -1,6 +1,9 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export const zhSidebar = sidebar({
+export default sidebar({
+  // 应该把更精准的路径放前面
+
+  // 必须放在最后面
   "/": [
     "",
     {
