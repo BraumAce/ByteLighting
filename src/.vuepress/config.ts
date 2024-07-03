@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/ByteLighting/",
 
   lang: "zh-CN",
-  title: "字节流光",
+  title: "ByteLighting",
   description: "记录日常学习和技术钻研",
 
   head: [
@@ -57,4 +57,5 @@ export default defineUserConfig({
 
   // Enable it with pwa
   shouldPrefetch: false,
+
 });

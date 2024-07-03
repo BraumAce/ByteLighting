@@ -4,7 +4,6 @@ import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://blog.braumace.cn",
-  darkmode: "switch",
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   author: {
@@ -15,20 +14,26 @@ export default hopeTheme({
   // 图标库
   iconAssets: "fontawesome-with-brands",
 
-  repo: "BraumAce/ByteLighting",
+  repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
 
+  // navbarLayout: {
+  //   start: ["Brand"],
+  //   center: ["Links"],
+  //   end: ["Repo", "Outlook", "Search"],
+  // },
   navbar,
   sidebar,
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
-  displayFooter: false,
+  displayFooter: true,
 
   pageInfo: ["Author", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
+    avatar: "BraumAce.jpg",
     description: "一个后端开发者",
     sidebarDisplay: "mobile",
-    intro: "/intro.html",
+    //intro: "/intro.html",
     medias: {
       Email: "mailto:1693717911@qq.com",
       Gitee: "https://gitee.com/BraumAce",
