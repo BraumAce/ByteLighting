@@ -1,6 +1,9 @@
+import { getDirname, path } from "vuepress/utils";
 import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/ByteLighting/",
@@ -58,4 +61,15 @@ export default defineUserConfig({
   // Enable it with pwa
   shouldPrefetch: false,
 
+  // 组件
+  alias: {
+    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
+      __dirname,
+      "./components/BlogHero.vue",
+    ),
+  },
+
+  plugins: [
+
+  ],
 });
