@@ -4,7 +4,7 @@ import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://blog.braumace.cn",
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "logo.png",
 
   author: {
     name: "BraumAce",
@@ -13,6 +13,7 @@ export default hopeTheme({
 
   // 图标库
   iconAssets: "fontawesome-with-brands",
+  //"https://at.alicdn.com/t/c/font_4608718_0h7mu9283s7c.css"
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -172,18 +173,6 @@ export default hopeTheme({
       },
       manifest: {
         icons: [
-          {
-            src: "/assets/icon/chrome-mask-512.png",
-            sizes: "512x512",
-            purpose: "maskable",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-mask-192.png",
-            sizes: "192x192",
-            purpose: "maskable",
-            type: "image/png",
-          },
           {
             src: "/assets/icon/chrome-512.png",
             sizes: "512x512",

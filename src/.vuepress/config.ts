@@ -13,9 +13,10 @@ export default defineUserConfig({
   description: "记录日常学习和技术钻研",
 
   head: [
+    ["meta", { rel: "icon", href: "/favicon.ico" }],
     // meta
     ["meta", { name: "robots", content: "all" }],
-    ["meta", { name: "author", content: "Guide" }],
+    ["meta", { name: "author", content: "BraumAce" }],
     [
       "meta",
       {
@@ -29,16 +30,14 @@ export default defineUserConfig({
       "meta",
       {
         name: "keywords",
-        content:
-            "Java基础, 多线程, JVM, 虚拟机, 数据库, MySQL, Spring, Redis, MyBatis, 系统设计, 分布式, RPC, 高可用, 高并发",
+        content: "Java基础, 多线程, JVM, 虚拟机, 数据库, MySQL, Spring, Redis, MyBatis, 系统设计, 分布式, RPC, 高可用, 高并发",
       },
     ],
     [
       "meta",
       {
         name: "description",
-        content:
-            "记录日常学习和技术钻研",
+        content: "记录日常学习和技术钻研",
       },
     ],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -69,7 +68,9 @@ export default defineUserConfig({
     ),
   },
 
-  plugins: [
-
-  ],
+  markdown: {
+    headers: {
+      level: [2, 3, 4, 5, 6],
+    },
+  },
 });
