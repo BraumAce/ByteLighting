@@ -2,9 +2,9 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 字节流光
+title: 主页
+heroImage: 
+heroText: ByteLighting
 heroFullScreen: true
 tagline: 记录日常学习和技术钻研
 projects:
@@ -33,10 +33,10 @@ projects:
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
+  - icon: logo.svg
     name: 自定义项目
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
-footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | 主题：<a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>
+footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | Theme：<a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>
 ---
