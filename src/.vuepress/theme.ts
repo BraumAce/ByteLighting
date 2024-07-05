@@ -50,6 +50,7 @@ export default hopeTheme({
 
   // page meta
   metaLocales: {
+    lastUpdated: "上次更新",
     editLink: "在 GitHub 上编辑此页",
   },
 
