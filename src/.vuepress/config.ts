@@ -13,10 +13,11 @@ export default defineUserConfig({
   description: "记录日常学习和技术钻研",
 
   head: [
-    ["meta", { rel: "icon", href: "/favicon.ico" }],
+    [ "meta", { rel: "icon", href: "/favicon.ico" }],
     // meta
-    ["meta", { name: "robots", content: "all" }],
-    ["meta", { name: "author", content: "BraumAce" }],
+    [ "meta", { name: "theme-color", content: "#2980b9" }],
+    [ "meta", { name: "robots", content: "all" }],
+    [ "meta", { name: "author", content: "BraumAce" }],
     [
       "meta",
       {
@@ -24,23 +25,21 @@ export default defineUserConfig({
         content: "no-cache, no-store, must-revalidate",
       },
     ],
-    ["meta", { "http-equiv": "Pragma", content: "no-cache" }],
-    ["meta", { "http-equiv": "Expires", content: "0" }],
+    [ "meta", { "http-equiv": "Pragma", content: "no-cache" }],
+    [ "meta", { "http-equiv": "Expires", content: "0" }],
     [
-      "meta",
-      {
+      "meta", {
         name: "keywords",
         content: "Java基础, 多线程, JVM, 虚拟机, 数据库, MySQL, Spring, Redis, MyBatis, 系统设计, 分布式, RPC, 高可用, 高并发",
       },
     ],
     [
-      "meta",
-      {
+      "meta", {
         name: "description",
         content: "记录日常学习和技术钻研",
       },
     ],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [ "meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     // 添加百度统计
     [
       "script",
