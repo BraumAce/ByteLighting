@@ -86,6 +86,11 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
+    copyright: {
+      global: true,
+      canonical: "https://blog.braumace.cn/",
+    },
+
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
@@ -187,9 +192,9 @@ export default hopeTheme({
         ],
         shortcuts: [
           {
-            name: "Demo",
-            short_name: "Demo",
-            url: "/demo/",
+            name: "ByteLighting",
+            short_name: "Byte",
+            url: "/",
             icons: [
               {
                 src: "/assets/icon/guide-maskable.png",

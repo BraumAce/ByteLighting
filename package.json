@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",
     "@vuepress/plugin-comment": "^2.0.0-rc.37",
+    "@vuepress/plugin-copyright": "^2.0.0-rc.37",
     "@vuepress/plugin-pwa": "^2.0.0-rc.37",
     "@vuepress/utils": "^2.0.0-rc.14",
     "vue": "^3.4.27",
