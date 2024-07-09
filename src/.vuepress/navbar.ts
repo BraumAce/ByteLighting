@@ -2,13 +2,14 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   { text: "主页", icon: "home", link: "/" },
-  { text: "资源汇总", icon: "", link: "" },
-  { text: "程序人生", icon: "", link: "",},
-  { text: "算法笔记", icon: "", link: "" },
-  { text: "开源项目", icon: "fa-brands fa-github", link: "" },
+  { text: "资源汇总", icon: "", link: "/information/" },
+  { text: "程序人生", icon: "", link: "/program/",},
+  { text: "算法笔记", icon: "", link: "/algorithm/" },
+  { text: "开源项目", icon: "fa-brands fa-github", link: "/open-source-project/" },
   {
     text: "技术小结",
     icon: "",
+    prefix: "/technology/",
     children: [
       { text: "开发框架", icon: "", link: "" },
       { text: "中间件", icon: "", link: "" },
