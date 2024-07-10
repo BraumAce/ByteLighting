@@ -124,16 +124,9 @@ export default hopeTheme({
       tasklist: true,
       vPre: true,
 
-      // install chart.js before enabling it
-      // chart: true,
-
-      // insert component easily
-
-      // install echarts before enabling it
-      // echarts: true,
-
-      // install flowchart.ts before enabling it
-      // flowchart: true,
+      chart: true,
+      echarts: true,
+      flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
