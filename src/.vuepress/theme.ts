@@ -18,13 +18,14 @@ export default hopeTheme({
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
 
-  // navbarLayout: {
-  //   start: ["Brand"],
-  //   center: ["Links"],
-  //   end: ["Repo", "Outlook", "Search"],
-  // },
+  navbarLayout: {
+    start: ["Brand"],
+    center: [],
+    end: ["Search", "Links", "Repo", "Outlook"],
+  },
   navbar,
   sidebar,
+  sidebarSorter: "order",
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: true,
 
