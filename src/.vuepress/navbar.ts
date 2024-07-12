@@ -14,6 +14,7 @@ export default navbar([
       { text: "开发框架", icon: "", link: "" },
       { text: "中间件", icon: "", link: "" },
       { text: "架构设计", icon: "", link: "" },
+      { text: "设计", icon: "", link: "" },
     ],
   },
   {
