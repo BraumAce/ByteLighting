@@ -4,3 +4,22 @@ body {
     font-size: 16px;
   }
 }
+
+.none {
+  width: 0;
+  height: 0;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  display: none;
+}
+
+// 让内容在更宽的屏幕上可以有更宽的显示区域，嗯，宽屏补丁。
+:root {
+  --content-width: 830px;
+}
+@media screen and (min-width: 1770px) {
+  :root {
+    --content-width: calc(100vw - 15rem - 6rem - var(--sidebar-width) - 20rem);
+  }
+}
