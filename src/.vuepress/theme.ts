@@ -28,8 +28,7 @@ export default hopeTheme({
   sidebarSorter: "order",
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: true,
-
-  pageInfo: ["Author", "Category", "Tag", "Original", "Word", "ReadingTime"],
+  pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
     avatar: "BraumAce.jpg",
@@ -72,6 +71,26 @@ export default hopeTheme({
     searchPro: {
       // 索引全部内容
       indexContent: true,
+      autoSuggestions: true,
+      // 为分类和标签添加索引
+      customFields: [
+        {
+          getter(page: any) {
+            return page.frontmatter.category;
+          },
+          formatter: {
+            '/': '分类：$content',
+          },
+        },
+        {
+          getter(page: any) {
+            return page.frontmatter.tag;
+          },
+          formatter: {
+            '/': '标签：$content',
+          },
+        },
+      ],
     },
 
     // 评论功能
@@ -84,7 +103,7 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "BiliBili", "PDF"],
     },
 
     copyright: {
