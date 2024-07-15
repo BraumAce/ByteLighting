@@ -1,20 +1,24 @@
 import { defineClientConfig } from "vuepress/client";
+import { defineAsyncComponent, onMounted } from 'vue';
 import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
 import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
+
 import "vuepress-theme-hope/presets/shinning-feature-panel.scss";
 import "vuepress-theme-hope/presets/left-blog-info.scss";    // 左侧信息面板
 import "vuepress-theme-hope/presets/round-blogger-avatar.scss";    // 圆形头像
 import "vuepress-theme-hope/presets/bounce-icon.scss";    // 图标悬停跳动
-import BlogBeautify from "./components/BlogBeautify.vue";
-import TopNavBeautify from "./components/TopNavBeautify.vue";
-import NavMusic from "./components/NavMusic.vue";
-import MyIcon from "./components/MyIcon.vue";
+
+const BlogBeautify = defineAsyncComponent(() => import('./components/BlogBeautify.vue'));
+const MyIcon = defineAsyncComponent(() => import('./components/MyIcon.vue'));
+const NavMusic = defineAsyncComponent(() => import('./components/NavMusic.vue'));
+const TopNavBeautify = defineAsyncComponent(() => import('./components/TopNavBeautify.vue'));
 
 export default defineClientConfig({
   enhance( { app } ) {
     app.component('MyIcon', MyIcon);
   },
   setup() {
+    onMounted(() => {});
     setupRunningTimeFooter(
       new Date("2024-06-30"),
       {
@@ -26,6 +30,7 @@ export default defineClientConfig({
       type: "homepage",
     })
   },
+  // 添加新布局
   layouts: {},
   rootComponents: [
     BlogBeautify,
