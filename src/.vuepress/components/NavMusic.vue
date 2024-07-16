@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import 'aplayer/dist/APlayer.min.css';
-import MyIcon from './MyIcon.vue';
 import { useRouter } from 'vue-router';
 import { ref, onMounted, nextTick } from 'vue';
+import 'aplayer/dist/APlayer.min.css';
+import MyIcon from './MyIcon.vue';
 import axios from 'axios';
 
 let APlayer: any;
