@@ -9,34 +9,24 @@ heroFullScreen: true
 tagline: 记录日常学习和技术钻研
 projects:
   - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
-
-  - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: 项目文档
+    desc: 所有项目的说明文档
+    link: https://docs.braumace.cn
 
   - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
+    name: 书籍收藏
+    desc: 一个很不错的书单
     link: https://你的书籍链接
 
   - icon: article
-    name: 文章名称
-    desc: 文章详细描述
+    name: 文章阅读
+    desc: 标记了 x 篇技术文章
     link: https://你的文章链接
 
-  - icon: friend
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
-
-  - icon: logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
+  - icon: link
+    name: 随机链接
+    desc: 我也不知道会到哪儿去
+    link: https://链接地址
 
 footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | Theme：<a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>
 ---
