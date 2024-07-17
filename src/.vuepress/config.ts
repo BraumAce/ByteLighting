@@ -14,7 +14,6 @@ export default defineUserConfig({
   description: "记录日常学习和技术钻研",
 
   head: [
-    [ "meta", { rel: "icon", href: "/favicon.ico" }],
     // meta
     [ "meta", { name: "theme-color", content: "#2980b9" }],
     [ "meta", { name: "robots", content: "all" }],

@@ -5,6 +5,7 @@ import sidebar from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://blog.braumace.cn",
   logo: "logo.png",
+  favicon: "/favicon.ico",
 
   author: {
     name: "BraumAce",
@@ -13,7 +14,6 @@ export default hopeTheme({
 
   // 图标库
   iconAssets: "fontawesome-with-brands",
-  //"https://at.alicdn.com/t/c/font_4608718_0h7mu9283s7c.css"
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -28,6 +28,7 @@ export default hopeTheme({
   sidebarSorter: "order",
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: true,
+
   pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
@@ -143,6 +144,7 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
+      hint: true,
 
       chart: true,
       echarts: true,
