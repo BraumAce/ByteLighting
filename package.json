@@ -20,8 +20,9 @@
     "chart.js": "^4.4.3",
     "echarts": "^5.5.1",
     "flowchart.ts": "^3.0.0",
+    "katex": "^0.16.11",
     "store": "^2.0.12",
-    "vue": "^3.4.31",
+    "vue": "^3.4.32",
     "vuepress": "2.0.0-rc.14",
     "vuepress-plugin-search-pro": "2.0.0-rc.51",
     "vuepress-theme-hope": "2.0.0-rc.51"
