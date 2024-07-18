@@ -13,9 +13,11 @@
   .search-pro-key-hints {
     display: none;
   }
-  border-radius: 100%;
-  background-color: transparent;
-  border-color: transparent;
+  & {
+    border-radius: 100%;
+    background-color: transparent;
+    border-color: transparent;
+  }
   &:hover {
     color: var(--theme-color);
     //background-color: #cfcfcf;
