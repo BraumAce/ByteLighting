@@ -232,12 +232,12 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   background-color: var(--theme-color);
+  height: 1.6rem;
+  width: 1.6rem;
   .icon {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.7);
   }
-  height: 1.6rem;
-  width: 1.6rem;
   .btnImg {
     background-image: url('/assets/images/playBtn.webp');
     background-position: center;
