@@ -7,7 +7,7 @@ tag:
 - MinIO
 ---
 
-# 安装与部署
+# MinIO 安装与部署
 
 ::: info 官方仓库
 
@@ -27,13 +27,13 @@ GItee镜像：[https://gitee.com/mirrors/minio](https://gitee.com/mirrors/minio)
 wget https://dl.minio.org.cn/server/minio/release/linux-amd64/minio
 ```
 
-1. 赋予可执行权限：
+2. 赋予可执行权限：
 
 ```shell
 chmod +x minio
 ```
 
-1. 前台启动：
+3. 前台启动：
 
 ```shell
 MINIO_ROOT_USER=admin MINIO_ROOT_PASSWORD=password ./minio server /mnt/data --console-address ":9001"
@@ -52,7 +52,7 @@ MINIO_ROOT_USER=admin MINIO_ROOT_PASSWORD=password ./minio server /mnt/data --co
 >
 > `--console-address ":9001"`：指定 MinIO 控制台的监听地址和端口
 
-1. 后台启动：
+4. 后台启动：
 
 ```shell
 # 最简单的，只需要在最后面加上 & 即可，但关闭会话服务会停止
