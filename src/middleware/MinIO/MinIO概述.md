@@ -7,7 +7,7 @@ tag:
 - MinIO
 ---
 
-# 概述
+# MinIO 概述
 
 ::: info 官网链接
 
@@ -39,6 +39,7 @@ MinIO 是一个高性能的分布式**对象存储**系统，基于 Apache Licen
 
 - **文档全面：**
 MinIO 作为一款基于 Golang 语言开发的一款高性能的分布式式存储方案的开源项目，有十分完善的官方文档。
+
 ::: info MinIO 文档
 中文文档地址：[https://www.minio.org.cn/docs/minio/](https://www.minio.org.cn/docs/minio/)
 :::
@@ -60,6 +61,7 @@ MinIO 号称是目前速度最快的对象存储服务器。在标准硬件上�
 
 - **支持全面：**
 目前 MinIO 支持市面主流的开发语言并且可以通过 SDK 快速集成快速集成使用。
+
 ::: info 常用语言的 SDK
 GO SDK：[https://github.com/minio/minio-go](https://github.com/minio/minio-go)
 
