@@ -28,5 +28,5 @@ projects:
     desc: 我也不知道会到哪儿去
     link: https://链接地址
 
-footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | Theme：<a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>
+footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | Theme：<a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a>
 ---
