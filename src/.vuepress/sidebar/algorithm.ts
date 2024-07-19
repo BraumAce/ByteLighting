@@ -2,9 +2,15 @@ import { arraySidebar } from "vuepress-theme-hope";
 
 export const algorithm = arraySidebar([
   {
-    text: "ACM笔记",
+    text: "模板",
     icon: "book",
-    prefix: "ACM/",
+    prefix: "template/",
+    children: "structure",
+  },
+  {
+    text: "笔记",
+    icon: "book",
+    prefix: "note/",
     children: "structure",
   },
   {
