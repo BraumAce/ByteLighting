@@ -14,6 +14,7 @@ export default hopeTheme({
 
   // 图标库
   iconAssets: "fontawesome-with-brands",
+//   iconAssets: "//at.alicdn.com/t/c/font_4608718_rm2b26p3xt.css",
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -27,7 +28,7 @@ export default hopeTheme({
   sidebar,
   sidebarSorter: "order",
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
-  displayFooter: true,
+  displayFooter: false,
 
   pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
@@ -62,11 +63,23 @@ export default hopeTheme({
     },
   },
 
-  // enable it to preview all changes in time
   hotReload: true,
 
+  blogLocales: {
+    reprint: "转载",                  
+  },
+
   plugins: {
-    blog: true,
+    blog: {
+        type: [
+          {
+            key: "reprint",
+            filter: (page) => page.frontmatter.reprint,
+            sorter: (pageA, pageB) =>
+              compareDate(pageA.frontmatter.date - pageB.frontmatter.date),
+          },
+        ],
+      },
 
     // 搜索框
     searchPro: {
@@ -150,14 +163,10 @@ export default hopeTheme({
       echarts: true,
       flowchart: true,
 
+      katex: true,
+
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
-
-      // install katex before enabling it
-      // katex: true,
-
-      // install mathjax-full before enabling it
-      // mathjax: true,
 
       // install mermaid before enabling it
       // mermaid: true,

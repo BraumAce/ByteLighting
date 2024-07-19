@@ -2,10 +2,9 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   { text: "主页", icon: "home", link: "/" },
-  { text: "资源汇总", icon: "fa-solid fa-bookmark", link: "/information/" },
-  { text: "程序人生", icon: "fa-solid fa-book-open", link: "/program/",},
+  { text: "程序人生", icon: "fa-solid fa-book-open", link: "/program/" },
   { text: "算法笔记", icon: "book", link: "/algorithm/" },
-  { text: "开源项目", icon: "fa-brands fa-github", link: "/open-source-project/" },
+  { text: "开源项目", icon: "fa-solid fa-github", link: "/open-source-project/" },
   {
     text: "技术小结",
     icon: "fa-solid fa-list",
