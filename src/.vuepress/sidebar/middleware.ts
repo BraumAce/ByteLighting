@@ -8,6 +8,12 @@ export const middleware = arraySidebar([
     children: "structure",
   },
   {
+    text: "消息队列",
+    icon: "book",
+    prefix: "MQ/",
+    children: "structure",
+  },
+  {
     text: "MinIO",
     icon: "book",
     prefix: "MinIO/",
