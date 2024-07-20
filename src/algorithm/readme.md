@@ -17,17 +17,17 @@ comment: false
 
 ### 模板
 
-1. [基础算法](https://blog.braumace.cn/ByteLighting/algorithm/template/基础算法.html)
+1. [基础算法](./template/基础算法.md)
 
-2. [数据结构](https://blog.braumace.cn/ByteLighting/algorithm/template/数据结构.html)
+2. [数据结构](./template/数据结构.md)
 
-3. [搜索与图论](https://blog.braumace.cn/ByteLighting/algorithm/template/搜索与图论.html)
+3. [搜索与图论](./template/搜索与图论.md)
 
-4. [数学知识](https://blog.braumace.cn/ByteLighting/algorithm/template/数学知识.html)
+4. [数学知识](./template/数学知识.md)
 
-5. [动态规划](https://blog.braumace.cn/ByteLighting/algorithm/template/动态规划.html)
+5. [动态规划](./template/动态规划.md)
 
-6. [贪心](https://blog.braumace.cn/ByteLighting/algorithm/template/贪心.html)
+6. [贪心](./template/贪心.md)
 
 
 ### 笔记
