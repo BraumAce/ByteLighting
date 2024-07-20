@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",
-    "@vuepress/plugin-comment": "2.0.0-rc.38",
-    "@vuepress/plugin-copyright": "2.0.0-rc.38",
-    "@vuepress/plugin-pwa": "2.0.0-rc.38",
+    "@vuepress/plugin-comment": "2.0.0-rc.39",
+    "@vuepress/plugin-copyright": "2.0.0-rc.39",
+    "@vuepress/plugin-pwa": "2.0.0-rc.39",
     "aplayer": "^1.10.1",
     "axios": "^1.7.2",
     "chart.js": "^4.4.3",
@@ -22,9 +22,9 @@
     "flowchart.ts": "^3.0.0",
     "katex": "^0.16.11",
     "store": "^2.0.12",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vuepress": "2.0.0-rc.14",
-    "vuepress-plugin-search-pro": "2.0.0-rc.51",
-    "vuepress-theme-hope": "2.0.0-rc.51"
+    "vuepress-plugin-search-pro": "2.0.0-rc.52",
+    "vuepress-theme-hope": "2.0.0-rc.52"
   }
 }

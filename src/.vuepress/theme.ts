@@ -30,13 +30,16 @@ export default hopeTheme({
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: false,
 
+  // 关闭路径导航
+  breadcrumb: false,
+
   pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
     avatar: "BraumAce.jpg",
     description: "一个后端开发者",
     sidebarDisplay: "mobile",
-    //intro: "/intro.html",
+    intro: "/intro.html",
     medias: {
       Email: "mailto:1693717911@qq.com",
       Gitee: "https://gitee.com/BraumAce",
