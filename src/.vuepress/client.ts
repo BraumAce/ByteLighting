@@ -4,7 +4,7 @@ import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunnin
 import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
 
 import "vuepress-theme-hope/presets/shinning-feature-panel.scss";
-import "vuepress-theme-hope/presets/left-blog-info.scss";    // 左侧信息面板
+// import "vuepress-theme-hope/presets/left-blog-info.scss";    // 左侧信息面板
 import "vuepress-theme-hope/presets/round-blogger-avatar.scss";    // 圆形头像
 import "vuepress-theme-hope/presets/bounce-icon.scss";    // 图标悬停跳动
 

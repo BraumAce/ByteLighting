@@ -3,19 +3,19 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const middleware = arraySidebar([
   {
     text: "Redis",
-    icon: "book",
+    icon: "redis",
     prefix: "Redis/",
     children: "structure",
   },
   {
-    text: "消息队列",
-    icon: "book",
+    text: "RabbitMQ",
+    icon: "rabbitmq",
     prefix: "MQ/",
     children: "structure",
   },
   {
     text: "MinIO",
-    icon: "book",
+    icon: "minio",
     prefix: "MinIO/",
     children: "structure",
   },

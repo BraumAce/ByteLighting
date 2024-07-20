@@ -14,12 +14,159 @@ body {
   display: none;
 }
 
-// 让内容在更宽的屏幕上可以有更宽的显示区域，嗯，宽屏补丁。
-:root {
-  --content-width: 830px;
+@font-face {
+    font-family: "iconfont";
+    /* Project id 4608718 */
+    src: url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.woff2?t=1721464405115') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.woff?t=1721464405115') format('woff'),
+        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.ttf?t=1721464405115') format('truetype'),
+        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.svg?t=1721464405115#iconfont') format('svg');
 }
-@media screen and (min-width: 1770px) {
-  :root {
-    --content-width: calc(100vw - 15rem - 6rem - var(--sidebar-width) - 20rem);
-  }
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minio:before {
+    content: "\e670";
+}
+
+.icon-tizi:before {
+    content: "\e600";
+}
+
+.icon-github:before {
+    content: "\e885";
+}
+
+.icon-text:before {
+    content: "\e791";
+}
+
+.icon-wechat:before {
+    content: "\e868";
+}
+
+.icon-label:before {
+    content: "\ea51";
+}
+
+.icon-books:before {
+    content: "\e63d";
+}
+
+.icon-database:before {
+    content: "\ef91";
+}
+
+.icon-server:before {
+    content: "\f0ac";
+}
+
+.icon-mysql:before {
+    content: "\ec6d";
+}
+
+.icon-about:before {
+    content: "\e687";
+}
+
+.icon-template:before {
+    content: "\e8ee";
+}
+
+.icon-robot:before {
+    content: "\e644";
+}
+
+.icon-history:before {
+    content: "\e6f4";
+}
+
+.icon-note:before {
+    content: "\e636";
+}
+
+.icon-java:before {
+    content: "\e614";
+}
+
+.icon-coffee:before {
+    content: "\e826";
+}
+
+.icon-users:before {
+    content: "\ea83";
+}
+
+.icon-vue:before {
+    content: "\e69a";
+}
+
+.icon-leetcode:before {
+    content: "\ebf2";
+}
+
+.icon-rabbitmq:before {
+    content: "\ec75";
+}
+
+.icon-redis:before {
+    content: "\ec7c";
+}
+
+.icon-middleware:before {
+    content: "\ebee";
+}
+
+.icon-spring-boot:before {
+    content: "\e601";
+}
+
+.icon-offer:before {
+    content: "\ead1";
+}
+
+.icon-framework:before {
+    content: "\e60c";
+}
+
+.icon-rpc:before {
+    content: "\e6ea";
+}
+
+.icon-alibaba:before {
+    content: "\e602";
+}
+
+.icon-bookshelf:before {
+    content: "\e9cd";
+}
+
+.icon-spring:before {
+    content: "\e603";
+}
+
+.icon-house:before {
+    content: "\e8ae";
+}
+
+.icon-book:before {
+    content: "\e604";
+}
+
+.icon-user:before {
+    content: "\e605";
+}
+
+.icon-spring-cloud:before {
+    content: "\e606";
+}
+
+.icon-nacos:before {
+    content: "\e61b";
 }

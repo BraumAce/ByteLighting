@@ -1,24 +1,24 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  { text: "主页", icon: "home", link: "/" },
-  { text: "程序人生", icon: "fa-solid fa-book-open", link: "/program/" },
+  { text: "主页", icon: "house", link: "/" },
+  { text: "程序人生", icon: "coffee", link: "/program/" },
   { text: "算法笔记", icon: "book", link: "/algorithm/" },
-  { text: "开源项目", icon: "fa-solid fa-github", link: "/open-source-project/" },
+  { text: "开源项目", icon: "github", link: "/open-source-project/" },
   {
     text: "技术小结",
-    icon: "fa-solid fa-list",
+    icon: "books",
     children: [
-      { text: "开发框架", icon: "fa-solid fa-server", link: "/dev-framework/" },
-      { text: "中间件", icon: "fa-solid fa-database", link: "/middleware/" },
-      { text: "架构设计", icon: "fa-solid fa-network-wired", link: "/architecture/" },
+      { text: "开发框架", icon: "server", link: "/dev-framework/" },
+      { text: "中间件", icon: "middleware", link: "/middleware/" },
+      { text: "架构设计", icon: "framework", link: "/architecture/" },
     ],
   },
   {
     text: "关于本站",
-    icon: "circle-info",
+    icon: "about",
     children: [
-      { text: "关于作者", icon: "circle-info", link: "/intro.html"},
+      { text: "关于作者", icon: "about", link: "/intro.html"},
       { text: "更新历史", icon: "history", link: "/timeline/"},
     ],
   },

@@ -1,5 +1,5 @@
 ---
-icon: book
+icon: coffee
 date: 2024-07-04
 sticky: true
 star: true

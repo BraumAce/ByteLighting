@@ -1,5 +1,5 @@
 ---
-icon: book
+icon: framework
 date: 2024-07-08
 sticky: 1
 star: true
