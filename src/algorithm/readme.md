@@ -1,7 +1,6 @@
 ---
 icon: book
 date: 2024-07-01
-sticky: 4
 star: true
 article: true
 comment: false

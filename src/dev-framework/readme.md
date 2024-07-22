@@ -1,7 +1,6 @@
 ---
 icon: server
 date: 2024-07-06
-sticky: 3
 star: true
 article: true
 comment: false

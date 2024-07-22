@@ -1,7 +1,6 @@
 ---
 icon: github
 date: 2024-07-05
-sticky: 5
 star: true
 article: true
 comment: false

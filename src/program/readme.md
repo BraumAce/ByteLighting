@@ -1,7 +1,6 @@
 ---
 icon: coffee
 date: 2024-07-04
-sticky: true
 star: true
 article: true
 comment: false

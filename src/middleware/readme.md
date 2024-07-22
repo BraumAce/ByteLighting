@@ -1,13 +1,14 @@
 ---
 icon: middleware
 date: 2024-07-07
-sticky: 2
 star: true
 article: true
 comment: false
 ---
 
 # 中间件
+
+学习 Web 中间件、数据库中间件、消息中间件等。
 
 <!-- more -->
 
