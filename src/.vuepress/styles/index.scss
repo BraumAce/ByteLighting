@@ -17,10 +17,10 @@ body {
 @font-face {
     font-family: "iconfont";
     /* Project id 4608718 */
-    src: url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.woff2?t=1721464405115') format('woff2'),
-        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.woff?t=1721464405115') format('woff'),
-        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.ttf?t=1721464405115') format('truetype'),
-        url('//at.alicdn.com/t/c/font_4608718_zvip3b3txc.svg?t=1721464405115#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.woff2?t=1721705506271') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.woff?t=1721705506271') format('woff'),
+        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.ttf?t=1721705506271') format('truetype'),
+        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.svg?t=1721705506271#iconfont') format('svg');
 }
 
 .iconfont {
@@ -29,6 +29,46 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-os:before {
+    content: "\e637";
+}
+
+.icon-linux:before {
+    content: "\eccc";
+}
+
+.icon-code:before {
+    content: "\e669";
+}
+
+.icon-MQ:before {
+    content: "\e684";
+}
+
+.icon-network:before {
+    content: "\e74f";
+}
+
+.icon-git:before {
+    content: "\e72a";
+}
+
+.icon-docker:before {
+    content: "\ebf8";
+}
+
+.icon-operating-system:before {
+    content: "\e607";
+}
+
+.icon-c:before {
+    content: "\e75f";
+}
+
+.icon-computer:before {
+    content: "\e84f";
 }
 
 .icon-minio:before {

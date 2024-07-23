@@ -14,7 +14,7 @@ export default hopeTheme({
 
   // 图标库
 //   iconAssets: "fontawesome-with-brands",
-   iconAssets: "//at.alicdn.com/t/c/font_4608718_zvip3b3txc.css",
+   iconAssets: "//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.css",
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
