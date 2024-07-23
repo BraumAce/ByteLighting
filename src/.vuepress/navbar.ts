@@ -9,9 +9,9 @@ export default navbar([
     text: "技术小结",
     icon: "books",
     children: [
-      { text: "开发框架", icon: "server", link: "/dev-framework/" },
-      { text: "中间件", icon: "middleware", link: "/middleware/" },
-      { text: "架构设计", icon: "framework", link: "/architecture/" },
+      { text: "计算机", icon: "computer", link: "/computer/" },
+      { text: "常用框架", icon: "framework", link: "/framework/" },
+      { text: "架构设计", icon: "server", link: "/architecture/" },
     ],
   },
   {
