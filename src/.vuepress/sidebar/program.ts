@@ -19,4 +19,10 @@ export const program = arraySidebar([
     prefix: "tool-build/",
     children: "structure",
   },
+  {
+    text: "杂项",
+    icon: "edit",
+    prefix: "sundry/",
+    children: "structure",
+  },
 ]);

@@ -17,10 +17,10 @@ body {
 @font-face {
     font-family: "iconfont";
     /* Project id 4608718 */
-    src: url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.woff2?t=1721705506271') format('woff2'),
-        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.woff?t=1721705506271') format('woff'),
-        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.ttf?t=1721705506271') format('truetype'),
-        url('//at.alicdn.com/t/c/font_4608718_pa3ns5wuy8b.svg?t=1721705506271#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.woff2?t=1721812337434') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.woff?t=1721812337434') format('woff'),
+        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.ttf?t=1721812337434') format('truetype'),
+        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.svg?t=1721812337434#iconfont') format('svg');
 }
 
 .iconfont {
@@ -29,6 +29,10 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+    content: "\e8d4";
 }
 
 .icon-os:before {
