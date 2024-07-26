@@ -50,27 +50,6 @@ export const computer = arraySidebar([
     ],
   },
   {
-    text: "中间件",
-    icon: "middleware",
-    prefix: "middleware/",
-    children: [
-        {
-            text: "MinIO",
-            icon: "minio",
-            prefix: "MinIO/",
-            collapsible: true,
-            children: "structure",
-        },
-        {
-            text: "MQ",
-            icon: "MQ",
-            prefix: "MQ/",
-            collapsible: true,
-            children: "structure",
-        },
-    ],
-  },
-  {
     text: "操作系统",
     icon: "operating-system",
     prefix: "operating-system/",
@@ -86,6 +65,34 @@ export const computer = arraySidebar([
             text: "Linux",
             icon: "linux",
             prefix: "linux/",
+            collapsible: true,
+            children: "structure",
+        },
+    ],
+  },
+  {
+    text: "设计模式",
+    icon: "design-mode",
+    prefix: "design-mode/",
+    collapsible: true,
+    children: "structure",
+  },
+  {
+    text: "中间件",
+    icon: "middleware",
+    prefix: "middleware/",
+    children: [
+        {
+            text: "MinIO",
+            icon: "minio",
+            prefix: "MinIO/",
+            collapsible: true,
+            children: "structure",
+        },
+        {
+            text: "MQ",
+            icon: "MQ",
+            prefix: "MQ/",
             collapsible: true,
             children: "structure",
         },
