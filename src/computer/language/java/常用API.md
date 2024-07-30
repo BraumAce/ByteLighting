@@ -34,7 +34,7 @@ equals(arr1, arr2);    // 如果两个数组长度相同，并且相同索引对
 
 String 类用来表示那些创建后就不会再改变的字符串，而 StringBuilder 类用来表示内容可变的字符串，并提供了修改字符串的方法。
 
-表面上拼接字符串时，String 类使用 str1 + str2 这种形式拼接字符串，实际上是 JVM 帮助创建 StringBuilder 对象来拼接，StringBuilder 类却要调用一个append()方法来拼接，但其实 StringBuilder类的效率更高。
+表面上拼接字符串时，String 类使用 str1 + str2 这种形式拼接字符串，实际上是 JVM 帮助创建 StringBuilder 对象来拼接，StringBuilder 类却要调用一个 `append()` 方法来拼接，但其实 StringBuilder 类的效率更高。
 
 ### String
 
@@ -141,8 +141,8 @@ toString();    // 返回一个与构建起或缓冲器内容相同的字符串 -
 
 两个实现类：ArrayList、LinkedList
 
-- ArrayList 底层是通过数组（动态扩容的数组）实现的，查询快
-- LinkedList 底层是通过双向链表实现的，插入和删除快
+- **ArrayList** 底层是通过数组（动态扩容的数组）实现的，查询快
+- **LinkedList** 底层是通过双向链表实现的，插入和删除快
 
 ```java
 // E 表示泛型
@@ -167,19 +167,19 @@ remove(int index);    // 删除位于index的元素，并返回删除元素e ---
 size();    // 返回动态数组所存元素个数/链表长度 --- O(1)
 
 subList(int satrt, int end)    // 相当于返回原数组的一个片段，但不要对其进行改动，改动会影响原数组 --- O(1)
-// List<Integer> list, 对原来的list和返回的list做的“非结构性修改”(non-structural changes)，
-//都会影响到彼此对方. 如果你在调用了sublist返回了子list之后，如果修改了原list的大小，那么之前产生的子list将会失效，变得不可使用
+// List<Integer> list, 对原来的list和返回的list做的 "非结构性修改"
+// 都会影响到彼此对方. 如果你在调用了sublist返回了子list之后，如果修改了原list的大小，那么之前产生的子list将会失效，变得不可使用
 
 trimToSize();    // 将数组列表的存储容量削减到其当前大小
 ```
 
 ### Set 集合
 
-Set是一种没有重复元素的集合，三个实现类：HashSet，LinkedHashSet，TreeSet。
+Set 是一种没有重复元素的集合，三个实现类：HashSet，LinkedHashSet，TreeSet。
 
-- HashSet 元素乱序
-- LinkedHashSet 保证元素添加顺序
-- TreeSet 元素按自然顺序排序
+- **HashSet** 元素乱序
+- **LinkedHashSet** 保证元素添加顺序
+- **TreeSet** 元素按自然顺序排序
 
 ```java
 Set<E> set = new HashSet<>();       // 实例化
@@ -201,8 +201,8 @@ first()、last();    // 返回有序集合中第一个元素，最后一个元�
 
 两个实现类：HashMap，TreeMap
 
-- HashMap 键值对乱序
-- TreeMap 键值对以 “键” 排序。
+- **HashMap** 键值对乱序
+- **TreeMap** 键值对以 “键” 排序
 
 TreeSet 中的元素和 TreeMap 中键如果是基本数据类型（的包装类型）或者是字符串，那么就按照数值大小以及字典序排序即可，但是如果是自定义的实体类对象，就需要自己自定义排序方式。自定义排序时，需要用到 Comparable 接口或者是 Comparator 接口。
 
@@ -266,7 +266,7 @@ java 中 Stack 继承了 Vector 类，仅仅实现栈的操作。
 
 建议使用 Deque 用作堆栈而不是 Stack 类，因为 Stack 的方法是同步的，同步的过程会消耗时间。
 
-Deque 的实现类有 ArrayDeque 和 LinkedList，但最好使用 ArrayDeque 类在 Java 中实现堆栈数据结构。
+Deque 的实现类有 `ArrayDeque` 和 `LinkedList`，但最好使用 `ArrayDeque` 类在 Java 中实现堆栈数据结构。
 
 ```java
 Stack<E> stack = new Stack<>();    // Stack类
@@ -287,7 +287,7 @@ size()    // 返回栈中元素个数 --- O(1)
 
 ### Queue 队列
 
-Queue 为接口，实现类是 LinkedList（既实现 List 接口，又实现 Queue 接口） ，特性是先进先出。
+Queue 为接口，实现类是 `LinkedList`（既实现 List 接口，又实现 Queue 接口） ，特性是先进先出。
 
 ```java
 Queue<E> q = new LinkedList<>(); //实例化
@@ -419,9 +419,25 @@ indexOfSubList(List<E> list1, List<E> list2);    // 返回list1中第一个等�
 lastIndexOfSubList(List<E> list1, List<E> list2);    // 返回list1中最后一个等于list2的子列表的索引
 ```
 
+### javafx.util.Pair<K, V>
+
+Java 8 的 package.json 中新增了一个 `Pair<K,V>` 类，表示键值对，类似于 C++ 中的 `pair` 二元组，实现对 first 和 second 的操作。
+
+```java
+getKey();    // 返回该pair的key值
+
+getValue();    // 返回该pair的value值
+
+hashCode();    // 生成该pair的哈希值
+
+equals(E e);    // 判断该pair是否和对象元素e相等
+
+toString();    // 返回该pair的字符串表示
+```
+
 ## 基本类型的最大值和最小值
 
-数字类型包装类都支持两个常量：MAX_VALUE，MIN_VALUE，分别保存了对应基本类型的最大值与最小值。
+数字类型包装类都支持两个常量：**MAX_VALUE**，**MIN_VALUE**，分别保存了对应基本类型的最大值与最小值。
 
 ```java
 fmax = Float.MAX_VALUE;
