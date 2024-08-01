@@ -28,7 +28,7 @@ export default hopeTheme({
   sidebar,
   sidebarSorter: "order",
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
-  displayFooter: false,
+  displayFooter: true,
 
   // 关闭路径导航
   breadcrumb: false,
@@ -74,15 +74,15 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-        type: [
-          {
-            key: "reprint",
-            filter: (page) => page.frontmatter.reprint,
-            sorter: (pageA, pageB) =>
-              compareDate(pageA.frontmatter.date - pageB.frontmatter.date),
-          },
-        ],
-      },
+      type: [
+        {
+          key: "reprint",
+          filter: (page) => page.frontmatter.reprint,
+          sorter: (pageA, pageB) =>
+            compareDate(new Date(pageA.frontmatter.date), new Date(pageB.frontmatter.date)),
+        },
+      ],
+    },
 
     // 搜索框
     searchPro: {
@@ -236,3 +236,8 @@ export default hopeTheme({
     },
   },
 }, { custom: true, });
+
+function compareDate(dateA, dateB) {
+    // 比较两个日期对象的时间戳
+    return dateB - dateA;
+}
