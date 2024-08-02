@@ -18,6 +18,7 @@ export default navbar([
     text: "关于本站",
     icon: "about",
     children: [
+      { text: "全部文章", icon: "books", link: "/article/"},
       { text: "关于作者", icon: "about", link: "/intro.html"},
       { text: "更新历史", icon: "history", link: "/timeline/"},
     ],

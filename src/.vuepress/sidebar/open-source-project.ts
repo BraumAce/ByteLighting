@@ -4,19 +4,19 @@ export const openSourceProject = arraySidebar([
   {
     text: "用户中心",
     icon: "user",
-    prefix: "",
+    prefix: "user-center/",
     children: "structure",
   },
   {
     text: "用户匹配系统",
     icon: "users",
-    prefix: "",
+    prefix: "user-match/",
     children: "structure",
   },
   {
     text: "RPC框架",
     icon: "rpc",
-    prefix: "",
+    prefix: "rpc/",
     children: "structure",
   },
   {
