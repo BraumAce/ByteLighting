@@ -19,13 +19,13 @@ export default defineClientConfig({
   },
   setup() {
     onMounted(() => {});
-    setupRunningTimeFooter(
-      new Date("2024-06-30"),
-      {
-        "/": "已运行 :day 天 :hour 小时 :minute 分钟",
-      },
-      true,
-    );
+    // setupRunningTimeFooter(
+    //   new Date("2024-06-30"),
+    //   {
+    //     "/": "已运行 :day 天 :hour 小时 :minute 分钟",
+    //   },
+    //   true,
+    // );
     setupTransparentNavbar({
       type: "homepage",
     })
