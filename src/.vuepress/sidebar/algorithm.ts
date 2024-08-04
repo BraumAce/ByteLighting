@@ -23,6 +23,14 @@ export const algorithm = arraySidebar([
     text: "LeetCode",
     icon: "leetcode",
     prefix: "leetcode/",
-    children: "structure",
+    children: [
+        {
+            text: "热题 100",
+            prefix: "hot100/",
+            collapsible: true,
+            children: "structure",
+        },
+        "另一棵树的子树",
+    ],
   },
 ]);
