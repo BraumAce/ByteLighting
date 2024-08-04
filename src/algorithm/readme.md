@@ -12,27 +12,27 @@ comment: false
 
 <!-- more -->
 
-## 目录
+## 模板
 
-### 模板
-
-1. [基础算法](./template/基础算法.md)
-
-2. [数据结构](./template/数据结构.md)
-
-3. [搜索与图论](./template/搜索与图论.md)
-
-4. [数学知识](./template/数学知识.md)
-
-5. [动态规划](./template/动态规划.md)
-
-6. [贪心](./template/贪心.md)
+- [基础算法](./template/基础算法)
+- [数据结构](./template/数据结构)
+- [搜索与图论](./template/搜索与图论)
+- [数学知识](./template/数学知识)
+- [动态规划](./template/动态规划)
+- [贪心](./template/贪心)
 
 
-### 笔记
+## 笔记
 
-### 剑指 offer
+- [并查集](./note/并查集)
+- [递归相关题型](./note/递归相关题型)
+- [前缀和相关题型](./note/前缀和相关题型)
+- [搜索](./note/搜索)
+- [一些经验和技巧](./note/一些经验和技巧)
 
-### LeetCode
+## 剑指 offer
 
+## LeetCode
+
+- [热题 100](./leetcode/hot100/)
 
