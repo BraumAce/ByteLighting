@@ -22,13 +22,13 @@ export const openSourceProject = arraySidebar([
   {
     text: "聊天室",
     icon: "wechat",
-    prefix: "",
+    prefix: "chat-room/",
     children: "structure",
   },
   {
     text: "AI智能答题",
     icon: "robot",
-    prefix: "",
+    prefix: "ai-answer/",
     children: "structure",
   },
 ]);
