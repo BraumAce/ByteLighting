@@ -313,14 +313,14 @@ size()    // 返回队中元素个数 --- O(1)
 
 ### Deque 双端队列
 
-Dueue 接口实际上扩展自 Queue，Queue 中的方法在 Deque 中也可以使用，但不建议这么做。
+Deque 接口实际上扩展自 Queue，Queue 中的方法在 Deque 中也可以使用，但不建议这么做。
 
 ```java
-Dueue<E> q = new LinkedList<>(); //实例化
+Deque<E> q = new LinkedList<>(); //实例化
 
-offFirst(E e);   // 将元素添加到队首 --- O(1)
+offerFirst(E e);   // 将元素添加到队首 --- O(1)
 
-offLast(E e);    // 将元素添加到队尾 --- O(1)
+offerLast(E e);    // 将元素添加到队尾 --- O(1)
 
 pollFirst();    // 获取队首元素并删除 --- O(1)
 
