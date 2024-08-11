@@ -22,3 +22,6 @@ reprint: true
 > [搭建 VuePress 博客，你可能会用到的一些插件](https://segmentfault.com/a/1190000041409173#)
 >
 > [博客搭建系列 - 冴羽](https://segmentfault.com/a/1190000041627148)
+
+
+[Markdown 数学符号大全](https://blog.csdn.net/oYinHeZhiGuang/article/details/119943358)
