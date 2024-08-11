@@ -24,7 +24,7 @@ tag:
 
 也就是说，本题可被转化为求中序遍历的第 `k` 个节点。
 
-![转化为求中序遍历的第k个节点](https://cloud.braumace.cn/f/BXFB/1690460306-SMjxpo-Picture1.png)
+![转化为求中序遍历的第k个节点](https://cloud.braumace.cn/f/ORiW/1690460306-SMjxpo-Picture1.png)
 
 使用 `ans` 记录并更新遍历到的节点，当 `k = 0` 时，返回即可。
 
