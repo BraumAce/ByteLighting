@@ -1,11 +1,9 @@
 ---
 date: 2024-07-17
 category:
-- 教程
+- 工具搭建
 tag:
-- Blog
-comment: false
-reprint: true
+- 教程
 ---
 
 # 插件
