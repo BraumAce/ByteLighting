@@ -1,7 +1,7 @@
 # ByteLighting
 
 <p align="center">
-	<img src="./doc/ByteLighting.png" alt="" style="zoom:50%;" align="center" />
+	<img src="./doc/ByteLighting.png" alt="" style="zoom:50%; width:200px; height:auto;" align="center" />
 </p>
 <p align="center">
     <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-green">
