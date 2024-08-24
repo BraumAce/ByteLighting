@@ -90,7 +90,7 @@ ByteLighting -- BraumAce's Blog，基于 VuePress 构建的以 Markdown 为中�
 
 ## 勘误及提问
 
-如果有疑问或者发现错误，可以在相应的 Issues 进行提问或勘误，也可以在 [ByteLighting](https://blog.braumace.cn)网站对应的文章底部留言。
+如果有疑问或者发现错误，可以在相应的 Issues 进行提问或勘误，也可以在 [ByteLighting](https://blog.braumace.cn) 网站对应的文章底部留言。
 
 如果喜欢或者有所启发，欢迎 Star 😁。
 
