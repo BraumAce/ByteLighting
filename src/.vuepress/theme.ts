@@ -37,6 +37,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
 
   blog: {
+    articlePerPage: 20,
     avatar: "BraumAce.jpg",
     description: "一个后端开发者",
     sidebarDisplay: "mobile",
