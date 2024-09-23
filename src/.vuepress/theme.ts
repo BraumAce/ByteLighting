@@ -48,8 +48,8 @@ export default hopeTheme({
       GitHub: "https://github.com/BraumAce",
       // Gitlab: "https://example.com",
       // Lark: "https://www.feishu.cn/invitation/page/add_contact/?token=e16lc6b4-120b-4742-b51f-ca731b693bfa&amp;unique_id=UBZmuOUVhQ7tEjVABCoQtQ==",
-      QQ: "tencent://message/?uin=1693717911&Site=&Menu=yes",
-      Wechat: "weixin://dl/business/?t=Pithy-SeeYou",
+      QQ: "QQ.jpg",
+      Wechat: "WX.jpg",
       Zhihu: "https://www.zhihu.com/people/18779889803",
       BiliBili: "https://space.bilibili.com/351506386",
     },
@@ -123,6 +123,11 @@ export default hopeTheme({
 
     components: {
       components: ["Badge", "VPCard", "BiliBili", "PDF"],
+      componentOptions: {
+        share: {
+            services: ["email", "qq", "qrcode", "qzone", "facebook", "telegram", "twitter", "weibo", "wordpress"],
+        },
+      },
     },
 
     copyright: {
