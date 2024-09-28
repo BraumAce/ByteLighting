@@ -1,26 +1,26 @@
 // place your custom styles here
 body {
-  @media (min-width: 1440px) {
-    font-size: 16px;
-  }
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
 }
 
 .none {
-  width: 0;
-  height: 0;
-  user-select: none;
-  pointer-events: none;
-  overflow: hidden;
-  display: none;
+    width: 0;
+    height: 0;
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+    display: none;
 }
 
 @font-face {
-    font-family: "iconfont";
-    /* Project id 4608718 */
-    src: url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.woff2?t=1721812337434') format('woff2'),
-        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.woff?t=1721812337434') format('woff'),
-        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.ttf?t=1721812337434') format('truetype'),
-        url('//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.svg?t=1721812337434#iconfont') format('svg');
+    font-family: "iconfont"; /* Project id 4608718 */
+    src:
+        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.woff2?t=1727531615766") format("woff2"),
+        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.woff?t=1727531615766") format("woff"),
+        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.ttf?t=1727531615766") format("truetype"),
+        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.svg?t=1727531615766#iconfont") format("svg");
 }
 
 .iconfont {
@@ -29,6 +29,10 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-design-mode:before {
+    content: "\e674";
 }
 
 .icon-edit:before {
