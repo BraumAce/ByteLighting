@@ -27,7 +27,7 @@ export const framework = arraySidebar([
   },
   {
     text: "RuoYi",
-    icon: "",
+    icon: "ruoyi",
     prefix: "ruoyi/",
     children: "structure",
   },

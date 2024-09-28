@@ -26,6 +26,7 @@ export const computer = arraySidebar([
     text: "计算机网络",
     icon: "network",
     prefix: "network/",
+    collapsible: true,
     children: "structure",
   },
   {
