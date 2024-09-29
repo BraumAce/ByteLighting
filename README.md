@@ -4,15 +4,15 @@
 	<img src="./doc/ByteLighting.png" alt="" style="zoom:50%; width:200px; height:auto;" align="center" />
 </p>
 <p align="center">
-    <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-green">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Vue-3.4.35-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress-2.0.0--rc.14-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress--Theme--Hope-2.0.0--rc.52-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress--Plugin--Search--Pro-2.0.0--rc.52-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/%40VuePress-2.0.0--rc.39-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Aplayer-1.10.1-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Axios-1.7.3-%232980b9">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Katex-0.16.11-%232980b9">
+    <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-%2397c900">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Vue-3.4.35-%2333a06f">
+    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress-2.0.0--rc.14-%233eaf7c">
+    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress--Theme--Hope-2.0.0--rc.52-%25232980b9">
+    <img alt="Static Badge" src="https://img.shields.io/badge/VuePress--Plugin--Search--Pro-2.0.0--rc.52-%25232980b9">
+    <img alt="Static Badge" src="https://img.shields.io/badge/%40VuePress-2.0.0--rc.39-orange">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Aplayer-1.10.1-pink">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Axios-1.7.3-8A2BE2">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Katex-0.16.11-%23329894">
 </p>
 
 **在线地址：https://blog.braumace.cn**
@@ -71,7 +71,7 @@ ByteLighting -- BraumAce's Blog，基于 VuePress 构建的以 Markdown 为中�
 - [Spring]
 - [SpringBoot]
 - [SPringCloud](https://blog.braumace.cn/ByteLighting/framework/spring-cloud/)
-- [RuoYi]
+- [RuoYi](https://blog.braumace.cn/ByteLighting/framework/ruoyi/)
 
 ## 架构设计
 
