@@ -17,10 +17,10 @@ body {
 @font-face {
     font-family: "iconfont"; /* Project id 4608718 */
     src:
-        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.woff2?t=1727531615766") format("woff2"),
-        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.woff?t=1727531615766") format("woff"),
-        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.ttf?t=1727531615766") format("truetype"),
-        url("//at.alicdn.com/t/c/font_4608718_1r7okav0zh4.svg?t=1727531615766#iconfont") format("svg");
+        url("//at.alicdn.com/t/c/font_4608718_hryo75nub3d.woff2?t=1727595160449") format("woff2"),
+        url("//at.alicdn.com/t/c/font_4608718_hryo75nub3d.woff?t=1727595160449") format("woff"),
+        url("//at.alicdn.com/t/c/font_4608718_hryo75nub3d.ttf?t=1727595160449") format("truetype"),
+        url("//at.alicdn.com/t/c/font_4608718_hryo75nub3d.svg?t=1727595160449#iconfont") format("svg");
 }
 
 .iconfont {
@@ -29,6 +29,10 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ruoyi:before {
+    content: "\e645";
 }
 
 .icon-design-mode:before {
