@@ -8,6 +8,8 @@ tag:
 
 # RBAC 权限控制
 
+<!-- more -->
+
 ## 1. SpringSecurity 介绍
 
 Spring Security 是一个功能强大的 Java 安全框架，提供了全面的安全认证和授权的支持。
