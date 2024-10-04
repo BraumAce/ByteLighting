@@ -34,7 +34,7 @@ export default defineClientConfig({
   layouts: {},
   rootComponents: [
     BlogBeautify,
-    TopNavBeautify,
     NavMusic,
+    TopNavBeautify,
   ],
 });

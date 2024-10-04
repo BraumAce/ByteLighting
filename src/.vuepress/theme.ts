@@ -13,8 +13,7 @@ export default hopeTheme({
   },
 
   // 图标库
-//   iconAssets: "fontawesome-with-brands",
-   iconAssets: "//at.alicdn.com/t/c/font_4608718_rak4bm2mgkp.css",
+  iconAssets: "//at.alicdn.com/t/c/font_4608718_hryo75nub3d.css",
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -31,7 +30,7 @@ export default hopeTheme({
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
   displayFooter: true,
 
-  // 关闭路径导航
+  // 路径导航
   breadcrumb: false,
 
   pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word", "ReadingTime"],
@@ -39,7 +38,7 @@ export default hopeTheme({
   blog: {
     articlePerPage: 20,
     avatar: "BraumAce.jpg",
-    description: "一个后端开发者",
+    description: "学而不思则罔 思而不学则殆",
     sidebarDisplay: "mobile",
     intro: "/intro.html",
     medias: {
@@ -121,8 +120,9 @@ export default hopeTheme({
       categoryId: "DIC_kwDOMP-taM4CghxQ",
     },
 
+    // 组件配置
     components: {
-      components: ["Badge", "VPCard", "BiliBili", "PDF"],
+      components: ["Badge", "VPCard", "Share", "SiteInfo", "FontIcon", "PDF", "BiliBili"],
       componentOptions: {
         share: {
             services: ["email", "qq", "qrcode", "qzone", "facebook", "telegram", "twitter", "weibo", "wordpress"],
@@ -130,21 +130,50 @@ export default hopeTheme({
       },
     },
 
+    // 版权信息
     copyright: {
       global: true,
       canonical: "https://blog.braumace.cn/",
     },
 
-    // These features are enabled for demo, only preserve features you need here
+    // 添加 GFM 警告和提示容器
+    markdownHint: {
+      // 启用提示容器，默认启用
+      hint: true,
+      // 启用 GFM 警告
+      alert: true,
+    },
+
+    markdownMath: {
+        type: 'katex',
+        copy: true,
+        mhchem: true,
+    },
+
+    markdownImage: {
+      figure: true,
+      lazyload: true,
+      mark: true,
+      size: true,
+      obsidianSize: true,
+    },
+
+    // 选项卡
+    markdownTab: {
+      tabs: true,
+      codeTabs: true,
+    },
+
+    // 幻灯片
+    revealjs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+    },
+
     mdEnhance: {
       align: true,
       attrs: true,
-      codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
       mark: true,
       plantuml: true,
@@ -162,39 +191,20 @@ export default hopeTheme({
           },
         },
       ],
+      gfm: true,
       sub: true,
       sup: true,
-      tabs: true,
       tasklist: true,
       vPre: true,
-      hint: true,
 
       chart: true,
       echarts: true,
       flowchart: true,
-
-      katex: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // install mermaid before enabling it
       // mermaid: true,
 
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // install @vue/repl before enabling it
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
+      playground: {
+        presets: ["ts", "vue"],
+      },
     },
 
     // PWA支持
