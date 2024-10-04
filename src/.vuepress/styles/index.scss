@@ -14,6 +14,23 @@ body {
     display: none;
 }
 
+// 隐藏首页的内容区域
+.mo7-blog-home {
+    .theme-hope-content {
+        display: none;
+    }
+}
+
+// 宽屏补丁
+:root {
+    --content-width: 830px;
+}
+@media screen and (min-width: 1770px) {
+    :root {
+        --content-width: calc(100vw - 15rem - 6rem - var(--sidebar-width) - 20rem);
+    }
+}
+
 @font-face {
     font-family: "iconfont"; /* Project id 4608718 */
     src:
