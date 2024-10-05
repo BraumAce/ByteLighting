@@ -1,5 +1,4 @@
 ---
-date: 2024-06-02
 order: 1
 category: 
 - MySQL
