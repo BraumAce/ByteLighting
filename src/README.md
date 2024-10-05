@@ -30,3 +30,5 @@ projects:
 
 footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | 本站支持：<a href="https://cloud.braumace.cn" target="_blank">ByteCloud</a> | Theme：<a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a>
 ---
+
+<Share colorful style="margin-left: -100%;" />
