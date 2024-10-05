@@ -52,7 +52,7 @@ const NewPlayer = () => {
   }
 
   const Win: any = window;
-  // 如果不存在盒子 则 终止
+  // 如果不存在盒子 则终止
   const playElm = document.getElementById('GlobalAPlayer');
 
   if (!playElm) {
@@ -115,7 +115,7 @@ function AddBtnSpin() {
 const LoadMusicList = (callback) => {
   axios({
     method: 'get',
-    url: '//file.mo7.cc/music/list.json',
+    url: 'https://cloud.braumace.cn/f/xVxTl/list.json',
     params: {},
   }).then((response) => {
     var listData = response.data;
@@ -178,24 +178,22 @@ onMounted(() => {
   user-select: none;
   position: fixed;
   width: 280px;
-  height: 392px;
-  top: 34%;
-  right: 8%;
-  margin-right: -105px;
-  margin-top: -165px;
-  border-radius: 10px;
-  overflow: hidden;
+  height: auto;
+  top: 4.5rem;
+  right: 1%;
+  border-radius: 8px;
+  overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
   rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
   transition: 0.3s;
   transform: scale(1);
   opacity: 1;
+
   &.hide {
     top: 0;
-    right: 0;
+    right: -110px;
     opacity: 0;
-    transform: scale(0);
+    transform:  scale(0);
     visibility: hidden;
   }
 
@@ -205,16 +203,16 @@ onMounted(() => {
 
   .close {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 5px;
+    top: 10px;
     user-select: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     z-index: 11;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 100px;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,10 +232,12 @@ onMounted(() => {
   background-color: var(--theme-color);
   height: 1.6rem;
   width: 1.6rem;
+
   .icon {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.7);
   }
+
   .btnImg {
     background-image: url('/assets/images/playBtn.webp');
     background-position: center;
