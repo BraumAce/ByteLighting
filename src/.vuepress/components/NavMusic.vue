@@ -73,13 +73,18 @@ const NewPlayer = () => {
 
   Win.GlobalAPlayer = new APlayer({
     container: document.getElementById('GlobalAPlayer'),
+    fixed: false,
+    mini: false,
+    autoplay: false,
+    loop: 'all',
+    order: "list",
+    preload: 'auto',
+    mutex: true,
+    volume: 1,
     audio: GlobalMusicList,
     lrcType: 3,
-    listFolded: false,
-    listMaxHeight: '324px',
-    mini: false,
-    fixed: false,
-    volume: 1,
+    listFolded: true,
+    listMaxHeight: '328px',
     storageName: 'GlobalAPlayer',
   });
 
@@ -103,19 +108,10 @@ function AddBtnSpin() {
   }
 }
 
-// function StopMusic() {
-//   const Win: any = window;
-//   let toPath = window.location.pathname;
-
-//   if (toPath.includes('/music/') && Win.GlobalAPlayer) {
-//     Win.GlobalAPlayer.pause();
-//   }
-// }
-
 const LoadMusicList = (callback) => {
   axios({
     method: 'get',
-    url: 'https://cloud.braumace.cn/f/xVxTl/list.json',
+    url: 'https://cloud.braumace.cn/f/xVxTl/musicList.json',
     params: {},
   }).then((response) => {
     var listData = response.data;
