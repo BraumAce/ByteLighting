@@ -28,6 +28,8 @@ export default defineClientConfig({
     // );
     setupTransparentNavbar({
       type: "homepage",
+      light: 'white',
+      dark: 'black',
     })
   },
   // 添加新布局
