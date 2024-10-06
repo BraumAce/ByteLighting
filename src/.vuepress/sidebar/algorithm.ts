@@ -31,6 +31,7 @@ export const algorithm = arraySidebar([
             children: "structure",
         },
         "另一棵树的子树",
+        "牛客模考题",
     ],
   },
 ]);
