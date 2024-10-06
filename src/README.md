@@ -2,11 +2,11 @@
 home: true
 layout: BlogHome
 icon: home
-title: 主页
+title: 
 heroImage: 
 heroText: ByteLighting
 heroFullScreen: true
-tagline: 记录日常学习和技术钻研
+tagline: 弱小和无知不是生存的障碍，傲慢才是
 projects:
   - icon: project
     name: 项目文档
@@ -30,5 +30,3 @@ projects:
 
 footer: <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a> | 本站支持：<a href="https://cloud.braumace.cn" target="_blank">ByteCloud</a> | Theme：<a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a>
 ---
-
-<Share colorful style="margin-left: -100%;" />
