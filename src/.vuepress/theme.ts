@@ -70,7 +70,7 @@ export default hopeTheme({
   hotReload: true,
 
   blogLocales: {
-    reprint: "转载",                  
+    reprint: "转载",
   },
 
   plugins: {
