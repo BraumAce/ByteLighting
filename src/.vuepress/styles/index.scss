@@ -33,11 +33,10 @@ body {
 
 @font-face {
     font-family: "iconfont"; /* Project id 4608718 */
-    src:
-        url("//at.alicdn.com/t/c/font_4608718_hotbmq64ti.woff2?t=1728107790386") format("woff2"),
-        url("//at.alicdn.com/t/c/font_4608718_hotbmq64ti.woff?t=1728107790386") format("woff"),
-        url("//at.alicdn.com/t/c/font_4608718_hotbmq64ti.ttf?t=1728107790386") format("truetype"),
-        url("//at.alicdn.com/t/c/font_4608718_hotbmq64ti.svg?t=1728107790386#iconfont") format("svg");
+    src: url('//at.alicdn.com/t/c/font_4608718_kzks5b042xm.woff2?t=1731575531346') format('woff2'),
+         url('//at.alicdn.com/t/c/font_4608718_kzks5b042xm.woff?t=1731575531346') format('woff'),
+         url('//at.alicdn.com/t/c/font_4608718_kzks5b042xm.ttf?t=1731575531346') format('truetype'),
+         url('//at.alicdn.com/t/c/font_4608718_kzks5b042xm.svg?t=1731575531346#iconfont') format('svg');
 }
 
 .iconfont {
@@ -46,6 +45,10 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mianshi:before {
+    content: "\e608";
 }
 
 .icon-guanbi:before {
