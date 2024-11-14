@@ -5,12 +5,14 @@ export const openSourceProject = arraySidebar([
     text: "用户中心",
     icon: "user",
     prefix: "user-center/",
+    collapsible: true,
     children: "structure",
   },
   {
     text: "用户匹配系统",
     icon: "users",
     prefix: "user-match/",
+    collapsible: true,
     children: "structure",
   },
   {
@@ -29,6 +31,13 @@ export const openSourceProject = arraySidebar([
     text: "AI智能答题",
     icon: "robot",
     prefix: "ai-answer/",
+    children: "structure",
+  },
+  {
+    text: "面试吧刷题平台",
+    icon: "mianshi",
+    prefix: "mianshiba/",
+    collapsible: true,
     children: "structure",
   },
 ]);
