@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   { text: "程序人生", icon: "coffee", link: "/program/" },
   { text: "算法笔记", icon: "book", link: "/algorithm/" },
-  { text: "开源项目", icon: "github", link: "/open-source-project/" },
+  { text: "开源项目", icon: "github", link: "/open-project/" },
   {
     text: "技术小结",
     icon: "books",
