@@ -1,6 +1,6 @@
 import { arraySidebar } from "vuepress-theme-hope";
 
-export const openSourceProject = arraySidebar([
+export const openProject = arraySidebar([
   {
     text: "用户中心",
     icon: "user",
