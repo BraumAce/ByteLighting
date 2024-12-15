@@ -13,7 +13,7 @@ export default hopeTheme({
   },
 
   // 图标库
-  iconAssets: "//at.alicdn.com/t/c/font_4608718_hryo75nub3d.css",
+  iconAssets: "//at.alicdn.com/t/c/font_4608718_gmu39lcgcnc.css",
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
