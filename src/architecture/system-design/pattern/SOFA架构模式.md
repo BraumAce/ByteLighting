@@ -195,3 +195,8 @@ util 层则提供了基础的公用的工具服务，包括公共常量，枚举
 
 :::
 
+*参考文档：*
+
+1. [蚂蚁金服研发框架总览 | SOFABoot 框架剖析](https://www.sofastack.tech/blog/sofa-boot-overview/)
+2. [SOFA 应用架构详解](https://blog.csdn.net/GitChat/article/details/80809684)
+3. [中台技术标准](https://blog.csdn.net/qq_34376868/article/details/123089173)
