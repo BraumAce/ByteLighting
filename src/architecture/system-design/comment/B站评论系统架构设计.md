@@ -1,7 +1,7 @@
 ---
 date: 2024-08-02
 category: 
-- 架构设计
+- 系统设计
 tag: 
 - 评论系统
 reprint: true
