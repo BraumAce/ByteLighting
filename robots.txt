@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://blog.braumace.cn/ByteLighting/sitemap.xml
+Sitemap: https://blog.braumace.cn/sitemap.xml
