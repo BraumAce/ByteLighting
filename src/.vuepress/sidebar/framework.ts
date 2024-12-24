@@ -2,21 +2,17 @@ import { arraySidebar } from "vuepress-theme-hope";
 
 export const framework = arraySidebar([
   {
-    text: "Spring",
-    icon: "spring",
-    prefix: "spring/",
-    children: "structure",
-  },
-  {
     text: "SpringBoot",
     icon: "spring-boot",
     prefix: "spring-boot/",
+    collapsible: true,
     children: "structure",
   },
   {
     text: "SpringCloud",
     icon: "spring-cloud",
     prefix: "spring-cloud/",
+    collapsible: true,
     children: "structure",
   },
   {
