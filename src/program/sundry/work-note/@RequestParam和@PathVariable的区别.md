@@ -13,6 +13,8 @@ comment: false
 - 前者是获取**请求**里边携带的参数；
 - 后者是获取**请求路径**里边的变量参数。
 
+<!-- more -->
+
 例如：`127.0.0.1/user/{userId}?userName=zhangshan`，`userId` 是路径上的变量，`userName` 才是请求参数信息。
 
 ## @RequestParam 注解
