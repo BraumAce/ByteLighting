@@ -74,6 +74,19 @@ export default hopeTheme({
   },
 
   plugins: {
+
+    // RSS
+    feed: {
+        hostname: "https://blog.braumace.cn",
+        atom: true,
+        rss: true,
+        image: "/logo.png",
+        icon: "/favicon.ico",
+        count: 1000,
+        devServer: true,
+        devHostname: "http://localhost:8080",
+    },
+
     blog: {
       type: [
         {
