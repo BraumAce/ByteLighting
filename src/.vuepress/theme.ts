@@ -27,7 +27,7 @@ export default hopeTheme({
   sidebar,
   sidebarSorter: "order",
   headerDepth: 3,
-  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-2</a>',
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-4</a>',
   displayFooter: true,
 
   // 路径导航
@@ -74,6 +74,22 @@ export default hopeTheme({
   },
 
   plugins: {
+
+    // 公告
+    notice: [
+      {
+        path: "/",
+        title: "站点地址迁移",
+        content: "自6月5日起，本站点地址将迁移至 https://blog.bytelighting.cn，请及时保存和更新您的书签内容。",
+        actions: [
+          {
+            text: "访问新站点",
+            link: "https://blog.bytelighting.cn",
+            type: "primary",
+          },
+        ],
+      },
+    ],
 
     // RSS
     feed: {
