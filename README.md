@@ -15,7 +15,7 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/Katex-0.16.11-%23329894">
 </p>
 
-**在线地址：https://blog.braumace.cn**
+**在线地址：https://blog.bytelighting.cn**
 
 ## 博客介绍
 
@@ -35,34 +35,34 @@ ByteLighting -- BraumAce's Blog，基于 VuePress 构建的以 Markdown 为中�
 
 ## 程序人生
 
-- [电子书](https://blog.braumace.cn/ByteLighting/program/book/%E7%94%B5%E5%AD%90%E4%B9%A6.html)
-- [文章](https://blog.braumace.cn/ByteLighting/program/article/%E9%98%85%E8%AF%BB%E5%8E%86%E5%8F%B2.html)
+- [电子书](https://blog.bytelighting.cn/ByteLighting/program/book/%E7%94%B5%E5%AD%90%E4%B9%A6.html)
+- [文章](https://blog.bytelighting.cn/ByteLighting/program/article/%E9%98%85%E8%AF%BB%E5%8E%86%E5%8F%B2.html)
 - 工具搭建
-  - [科学上网与本地代理](https://blog.braumace.cn/ByteLighting/program/tool-build/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B8%8E%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%90%86.html)
-  - [自建网盘兼图床](https://blog.braumace.cn/ByteLighting/program/tool-build/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E5%85%BC%E5%9B%BE%E5%BA%8A.html)
-- [工作记录](https://blog.braumace.cn/ByteLighting/program/sundry/work-note/)
+  - [科学上网与本地代理](https://blog.bytelighting.cn/ByteLighting/program/tool-build/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B8%8E%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%90%86.html)
+  - [自建网盘兼图床](https://blog.bytelighting.cn/ByteLighting/program/tool-build/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E5%85%BC%E5%9B%BE%E5%BA%8A.html)
+- [工作记录](https://blog.bytelighting.cn/ByteLighting/program/sundry/work-note/)
 
 ## 算法笔记
 
-- [模版](https://blog.braumace.cn/ByteLighting/algorithm/template/)
-- [笔记](https://blog.braumace.cn/ByteLighting/algorithm/note/)
-- [剑指Offer](https://blog.braumace.cn/ByteLighting/algorithm/for-offer/)
-- [LeetCode](https://blog.braumace.cn/ByteLighting/algorithm/leetcode/)
+- [模版](https://blog.bytelighting.cn/ByteLighting/algorithm/template/)
+- [笔记](https://blog.bytelighting.cn/ByteLighting/algorithm/note/)
+- [剑指Offer](https://blog.bytelighting.cn/ByteLighting/algorithm/for-offer/)
+- [LeetCode](https://blog.bytelighting.cn/ByteLighting/algorithm/leetcode/)
 
 ## 开源项目
 
-- [用户中心](https://blog.braumace.cn/ByteLighting/open-source-project/user-center/)
-- [用户匹配系统](https://blog.braumace.cn/ByteLighting/open-source-project/user-match/)
+- [用户中心](https://blog.bytelighting.cn/ByteLighting/open-source-project/user-center/)
+- [用户匹配系统](https://blog.bytelighting.cn/ByteLighting/open-source-project/user-match/)
 - [手写RPC框架]
 
 ## 计算机
 
-- [Java](https://blog.braumace.cn/ByteLighting/computer/language/java/)
+- [Java](https://blog.bytelighting.cn/ByteLighting/computer/language/java/)
 - [计算机网络]
-- [数据库](https://blog.braumace.cn/ByteLighting/computer/database/)
-- [操作系统](https://blog.braumace.cn/ByteLighting/computer/operating-system/)
+- [数据库](https://blog.bytelighting.cn/ByteLighting/computer/database/)
+- [操作系统](https://blog.bytelighting.cn/ByteLighting/computer/operating-system/)
 - [设计模式]
-- [中间件](https://blog.braumace.cn/ByteLighting/computer/middleware/)
+- [中间件](https://blog.bytelighting.cn/ByteLighting/computer/middleware/)
 - [Git]
 - [Docker]
 
@@ -70,27 +70,27 @@ ByteLighting -- BraumAce's Blog，基于 VuePress 构建的以 Markdown 为中�
 
 - [Spring]
 - [SpringBoot]
-- [SPringCloud](https://blog.braumace.cn/ByteLighting/framework/spring-cloud/)
-- [RuoYi](https://blog.braumace.cn/ByteLighting/framework/ruoyi/)
+- [SPringCloud](https://blog.bytelighting.cn/ByteLighting/framework/spring-cloud/)
+- [RuoYi](https://blog.bytelighting.cn/ByteLighting/framework/ruoyi/)
 
 ## 架构设计
 
-- [系统设计](https://blog.braumace.cn/ByteLighting/architecture/system-design/)
+- [系统设计](https://blog.bytelighting.cn/ByteLighting/architecture/system-design/)
 - [Spring Cloud Alibaba]
 
 ## 关于本站
 
-- [全部文章](https://blog.braumace.cn/ByteLighting/article/)
-- [更新历史](https://blog.braumace.cn/ByteLighting/timeline/)
-- [关于作者](https://blog.braumace.cn/ByteLighting/intro.html)
+- [全部文章](https://blog.bytelighting.cn/ByteLighting/article/)
+- [更新历史](https://blog.bytelighting.cn/ByteLighting/timeline/)
+- [关于作者](https://blog.bytelighting.cn/ByteLighting/intro.html)
 
 **本站支持：**
 - Theme：[VuePress-Theme-Hope](https://theme-hope.vuejs.press/)
-- 云存储：[ByteCloud](https://cloud.braumace.cn/)
+- 云存储：[ByteCloud](https://cloud.bytelighting.cn/)
 
 ## 勘误及提问
 
-如果有疑问或者发现错误，可以在相应的 Issues 进行提问或勘误，也可以在 [ByteLighting](https://blog.braumace.cn) 网站对应的文章底部留言。
+如果有疑问或者发现错误，可以在相应的 Issues 进行提问或勘误，也可以在 [ByteLighting](https://blog.bytelighting.cn) 网站对应的文章底部留言。
 
 如果喜欢或者有所启发，欢迎 Star 😁。
 
