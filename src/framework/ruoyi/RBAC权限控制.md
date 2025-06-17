@@ -219,7 +219,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 
 具体的执行的流程如下图：
 
-![用户登录流程](https://cloud.braumace.cn/f/8Rnf3/1.1%20%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B.png)  
+![用户登录流程](https://cloud.bytelighting.cn/f/8Rnf3/1.1%20%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B.png)  
 
 ## 4. 获取用户角色和权限
 
@@ -246,7 +246,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 
 具体的执行的流程如下图：
 
-![用户授权流程](https://cloud.braumace.cn/f/KPxi9/1.2%20%E7%94%A8%E6%88%B7%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B.png) 
+![用户授权流程](https://cloud.bytelighting.cn/f/KPxi9/1.2%20%E7%94%A8%E6%88%B7%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B.png) 
 
 ### 4.3 页面权限
 
@@ -299,7 +299,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 
 具体的执行的流程如下图：
 
-![](https://cloud.braumace.cn/f/jYrsO/1.3%20%E8%8E%B7%E5%8F%96%E5%8A%A8%E6%80%81%E8%8F%9C%E5%8D%95.png) 
+![](https://cloud.bytelighting.cn/f/jYrsO/1.3%20%E8%8E%B7%E5%8F%96%E5%8A%A8%E6%80%81%E8%8F%9C%E5%8D%95.png) 
 
 ### 5.3 路由菜单加载
 
@@ -341,7 +341,7 @@ public TableDataInfo list(Order order)
 
 权限控制流程：
 
-![](https://cloud.braumace.cn/f/RrWhg/1.4%20%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B.png)
+![](https://cloud.bytelighting.cn/f/RrWhg/1.4%20%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B.png)
 
 ### 6.2 权限方法
 
@@ -448,7 +448,7 @@ public List<SysXxxx> list(SysXxxx xxxx)
 
 1、ruoyi 系统的数据权限设计主要通过用户、角色、部门表建立关系，实现对数据的访问控制：
 
-![](https://cloud.braumace.cn/f/35Dcr/1.5%20%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90%E8%AE%BE%E8%AE%A1.png)  
+![](https://cloud.bytelighting.cn/f/35Dcr/1.5%20%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90%E8%AE%BE%E8%AE%A1.png)  
 
 2、在需要数据权限控制方法上添加 `@DataScope` 注解，其中 `d` 和 `u` 用来表示表的别名。
 
@@ -534,7 +534,7 @@ and u.dept_id in (
 - com.ruoyi.framework.aspectj.DataScopeAspect：切面类
 	- 通过实现 AOP 编程，对目标方法进行拦截（标注 DataScope 注解的方法），实现了构建数据范围 SQL 过滤条件
 
-![](https://cloud.braumace.cn/f/7JWH9/1.6%20%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90%E5%AE%9E%E7%8E%B0.png) 
+![](https://cloud.bytelighting.cn/f/7JWH9/1.6%20%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90%E5%AE%9E%E7%8E%B0.png) 
 
 ::: warning 提示
 

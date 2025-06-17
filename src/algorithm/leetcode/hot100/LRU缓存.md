@@ -35,11 +35,11 @@ tag:
 
 哈希表查找快，但是数据无固定顺序；链表有顺序之分，插入删除快，但是查找慢，所以结合二者的长处，可以形成一种新的数据结构：哈希链表 `LinkedHashMap`：
 
-![](https://cloud.braumace.cn/f/VvyhN/LinkedHashMap.png)
+![](https://cloud.bytelighting.cn/f/VvyhN/LinkedHashMap.png)
 
 至于 `put` 和 `get` 的具体逻辑，可以画出这样一个流程图：
 
-![](https://cloud.braumace.cn/f/mjDT1/LRU_put.png)
+![](https://cloud.bytelighting.cn/f/mjDT1/LRU_put.png)
 
 根据上述逻辑写代码即可。
 

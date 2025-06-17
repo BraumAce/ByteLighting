@@ -41,15 +41,15 @@ mysql -u用户名 -p密码 [-h数据库服务器的IP地址 -P端口号]
 
 1、SQL 语句可以单行或多行书写，以分号结尾。
 
-![](https://cloud.braumace.cn/f/2nsZ/mysql-0.1.png)
+![](https://cloud.bytelighting.cn/f/2nsZ/mysql-0.1.png)
 
 2、SQL 语句可以使用空格/缩进来增强语句的可读性。
 
-![](https://cloud.braumace.cn/f/DxCX/mysql-0.2.png)
+![](https://cloud.bytelighting.cn/f/DxCX/mysql-0.2.png)
 
 3、MySQL 数据库的 SQL 语句不区分大小写。
 
-![](https://cloud.braumace.cn/f/LwIl/mysql-0.3.png)
+![](https://cloud.bytelighting.cn/f/LwIl/mysql-0.3.png)
 
 4、注释：
 
@@ -135,7 +135,7 @@ use 数据库名 ;
 
 我们要操作某一个数据库下的表时，就需要通过该指令，切换到对应的数据库下，否则不能操作。
 
-![](https://cloud.braumace.cn/f/WWi7/mysql-0.4.png)
+![](https://cloud.bytelighting.cn/f/WWi7/mysql-0.4.png)
 
 :::
 
@@ -159,7 +159,7 @@ drop database if exists itcast; -- itcast数据库存在时删除
 
 命令执行效果如下： 
 
-![](https://cloud.braumace.cn/f/lgFD/mysql-0.5.png)
+![](https://cloud.bytelighting.cn/f/lgFD/mysql-0.5.png)
 
 ::: tip 说明
 
@@ -711,7 +711,7 @@ add constraint  外键名称  foreign key(外键字段名) references 主表(主
 
 ::: info 一对一的应用场景：用户表(基本信息+身份信息)
 
-![](https://cloud.braumace.cn/f/EWHY/mysql-0.6.png)
+![](https://cloud.bytelighting.cn/f/EWHY/mysql-0.6.png)
 
 - 基本信息：用户的ID、姓名、性别、手机号、学历
 - 身份信息：民族、生日、身份证号、身份证签发机关，身份证的有效期(开始时间、结束时间)
@@ -724,7 +724,7 @@ add constraint  外键名称  foreign key(外键字段名) references 主表(主
 
 其实一对一我们可以看成一种特殊的一对多。一对多我们是怎么设计表关系的？是不是在多的一方添加外键。同样我们也可以通过外键来体现一对一之间的关系，我们只需要在任意一方来添加一个外键就可以了。
 
-![](https://cloud.braumace.cn/f/NEuv/mysql-0.7.png)
+![](https://cloud.bytelighting.cn/f/NEuv/mysql-0.7.png)
 
 > 一对一 ：在任意一方加入外键，关联另外一方的主键，并且设置外键为唯一的 (`UNIQUE`)
 
@@ -738,7 +738,7 @@ add constraint  外键名称  foreign key(外键字段名) references 主表(主
 
 - 实现关系：建立第三张中间表，中间表至少包含两个外键，分别关联两方主键
 
-![](https://cloud.braumace.cn/f/Xoc0/mysql-0.8.png)
+![](https://cloud.bytelighting.cn/f/Xoc0/mysql-0.8.png)
 
 ## 6. 多表查询
 
@@ -764,11 +764,11 @@ select * from  tb_emp , tb_dept;
 
 **笛卡尔积**：笛卡尔乘积是指在数学中，两个集合（$A$ 集合和 $B$ 集合）的所有组合情况。
 
-![](https://cloud.braumace.cn/f/vrhE/mysql-0.10.png)
+![](https://cloud.bytelighting.cn/f/vrhE/mysql-0.10.png)
 
 在多表查询时，需要消除无效的笛卡尔积，只保留表关联部分的数据。
 
-![](https://cloud.braumace.cn/f/xYTl/mysql-0.9.png)
+![](https://cloud.bytelighting.cn/f/xYTl/mysql-0.9.png)
 
 在查询时给多表查询加上连接查询的条件：
 
@@ -784,7 +784,7 @@ select * from tb_emp , tb_dept where tb_emp.dept_id = tb_dept.id ;
 
 	- 内连接：相当于查询 $A$、$B$ 交集部分数据
 
-	![](https://cloud.braumace.cn/f/AKUE/mysql-0.11.png) 
+	![](https://cloud.bytelighting.cn/f/AKUE/mysql-0.11.png) 
 
 2. 外连接
 
@@ -999,15 +999,15 @@ MySQL 数据库支持的索引结构有很多，如：Hash 索引、B+Tree 索�
 
 二叉查找树：左边的子节点比父节点小，右边的子节点比父节点大
 
-![二叉查找树](https://cloud.braumace.cn/f/yzt1/mysql-0.12.png)
+![二叉查找树](https://cloud.bytelighting.cn/f/yzt1/mysql-0.12.png)
 
 当我们向二叉查找树保存数据时，是按照从大到小（或从小到大）的顺序保存的，此时就会形成一个单向链表，搜索性能会打折扣。
 
-![退化的二叉查找树](https://cloud.braumace.cn/f/9Rfr/mysql-0.13.png)
+![退化的二叉查找树](https://cloud.bytelighting.cn/f/9Rfr/mysql-0.13.png)
 
 可以选择平衡二叉树或者是红黑树来解决上述问题。（红黑树也是一棵平衡的二叉树）
 
-![平衡二叉树](https://cloud.braumace.cn/f/wGSk/mysql-0.14.png)
+![平衡二叉树](https://cloud.bytelighting.cn/f/wGSk/mysql-0.14.png)
 
 但是在 Mysql 数据库中并没有使用二叉搜索数或二叉平衡数或红黑树来作为索引的结构。
 
@@ -1031,7 +1031,7 @@ MySQL 数据库支持的索引结构有很多，如：Hash 索引、B+Tree 索�
 
 `B+Tree`（多路平衡搜索树）结构中如何避免这个问题：
 
-![](https://cloud.braumace.cn/f/1Es1/mysql-0.15.png)
+![](https://cloud.bytelighting.cn/f/1Es1/mysql-0.15.png)
 
 `B+Tree` 结构：
 

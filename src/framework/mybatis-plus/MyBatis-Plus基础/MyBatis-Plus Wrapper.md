@@ -27,7 +27,7 @@ MyBatis-Plus 提供了一套强大的条件构造器（Wrapper），用于构建
 
 Wrapper 作为一个抽象类，其继承关系如下：
 
-![](https://cloud.braumace.cn/f/NmBhv/1_1.Wrapper.png)
+![](https://cloud.bytelighting.cn/f/NmBhv/1_1.Wrapper.png)
 
 ::: tip
 

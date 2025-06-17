@@ -57,7 +57,7 @@ SOFABoot 在 Spring Boot 基础上，提供了以下能力：
 
 SOFABoot 模块化开发属于第二种模块化形式 —— 基于 Spring 上下文隔离的模块化。每个模块有独立的 Spring 上下文，通过上下文的隔离，让不同模块之间的 Bean 的引用无法直接进行，达到模块在运行时的隔离。这样既保证了不引入过多的复杂性，也避免了没有任何隔离措施的模块边界保障。如下图所示：
 
-![](https://cloud.braumace.cn/f/l8OfD/1_1.SOFA%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91.png)
+![](https://cloud.bytelighting.cn/f/l8OfD/1_1.SOFA%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91.png)
 
 > 关于 SOFABoot 模块化产生的背景，可参考文章《[蚂蚁金服的业务系统模块化之模块化隔离方案](https://www.sofastack.tech/blog/sofastack-modular-isolation/)》。
 
@@ -86,7 +86,7 @@ SOFA 分层基于模块化形式，解决了模块化开发下各模块相互影
 
 **SOFA 分层对应的模块依赖如下图所示：**
 
-![](https://cloud.braumace.cn/f/EmNTY/1_2.SOFA%E5%88%86%E5%B1%82%E6%A8%A1%E5%9D%97%E4%BE%9D%E8%B5%96.png)
+![](https://cloud.bytelighting.cn/f/EmNTY/1_2.SOFA%E5%88%86%E5%B1%82%E6%A8%A1%E5%9D%97%E4%BE%9D%E8%B5%96.png)
 
 ### 4.1 test 层（测试层）
 

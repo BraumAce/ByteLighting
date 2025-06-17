@@ -51,7 +51,7 @@ reprint: true
 
 ### 3.1 架构设计 - 概览
 
-![](https://cloud.braumace.cn/f/rNOUE/0802_1.png)
+![](https://cloud.bytelighting.cn/f/rNOUE/0802_1.png)
 
 ### 3.2 架构设计 - reply-interface
 
@@ -61,7 +61,7 @@ reply-interface 是评论系统的接入层，主要服务于两种调用者：�
 
 面向服务端场景，设计的API需要体现清晰的系统边界，最小可用原则对外提供数据，同时做好安全校验和流量控制。
 
-![](https://cloud.braumace.cn/f/O9XiW/0802_2.png)
+![](https://cloud.bytelighting.cn/f/O9XiW/0802_2.png)
 
 对评论业务来说，业务数据模型是最为复杂的。B站评论系统历史悠久，承载的功能模块相当之多，其中最核心的是发布类接口以及列表类接口，一写一读，数据字段多、依赖服务多、调用关系复杂，特别是一些依赖的变更，容易造成整个系统的腐化。
 
@@ -79,13 +79,13 @@ reply-interface 是评论系统的接入层，主要服务于两种调用者：�
 
 此类查询需求，ES 几乎是不二选择。但是由于业务数据量较大，需要为多个不同的查询场景建立多种索引分片，且数据更新实时性不高。因此，我们基于 ES 做了一层封装，提供统一化的数据检索能力，并结合在线数据库刷新部分实时性要求较高的字段。
 
-![](https://cloud.braumace.cn/f/5PRU5/0802_3.png)
+![](https://cloud.bytelighting.cn/f/5PRU5/0802_3.png)
 
 ### 3.4 架构设计 - reply-service
 
 评论基础服务层，专注于评论功能的原子化实现，例如查询评论列表、删除评论等。一般来说，这一层是较少做业务逻辑变更的，但是需要提供极高的可用性与性能吞吐。因此，reply-service 集成了多级缓存、布隆过滤器、热点探测等性能优化手段。
 
-![](https://cloud.braumace.cn/f/GkrfV/0802_4.png)
+![](https://cloud.bytelighting.cn/f/GkrfV/0802_4.png)
 
 ### 3.5 架构设计 - reply-job
 
@@ -95,7 +95,7 @@ reply-interface 是评论系统的接入层，主要服务于两种调用者：�
 
 为什么基础功能的原子化实现需要架构的补充呢？最典型的案例就是缓存的更新。一般采用 Cache Aside 模式，先读缓存，再读DB；缓存的重建，就是读请求未命中缓存穿透到DB，从DB读取到内容之后反写缓存。这一套流程对外提供了一个原子化的数据读取功能。但由于部分缓存数据项的重建代价较高，比如评论列表（由于列表是分页的，重建时会启用预加载），如果短时间内多个服务节点的大量请求缓存未命中，容易造成DB抖动。解决方案是利用消息队列，实现「单个评论列表，只重建一次缓存」。归纳而言，所谓架构上的补充，即是「用单线程解决分布式无状态服务的共性问题」。另一方面，reply-job 还作为数据库 binlog 的消费者，执行缓存的更新操作。
 
-![](https://cloud.braumace.cn/f/8eVH3/0802_5.png)
+![](https://cloud.bytelighting.cn/f/8eVH3/0802_5.png)
 
 2\. 与 reply-interface 协同，为一些长耗时/高吞吐的调用做异步化/削峰处理。
 
@@ -123,7 +123,7 @@ reply-interface 是评论系统的接入层，主要服务于两种调用者：�
 
 评论回复的树形关系，如下图所示：
 
-![](https://cloud.braumace.cn/f/K92c9/0802_6.png)
+![](https://cloud.bytelighting.cn/f/K92c9/0802_6.png)
 
 以评论列表的访问为例，我们的查询SQL可能是（已简化）：
 
@@ -186,7 +186,7 @@ SELECT * FROM reply_index,reply_content WHERE rpid in (?,?,...)
 
 2020年的**腾讯的辣椒酱不香了<sup>[1]</sup>**，引发一场评论区的狂欢。由于上文所述各类「评论区维度的串行」，当时评论发布的吞吐较低，面对如此大的流量出现了严重延迟。
 
-![](https://cloud.braumace.cn/f/j30uO/0802_7.png)
+![](https://cloud.bytelighting.cn/f/j30uO/0802_7.png)
 
 痛定思痛，我们剖析瓶颈并做了如下优化：
 
@@ -196,7 +196,7 @@ SELECT * FROM reply_index,reply_content WHERE rpid in (?,?,...)
 
 改造后，系统的并发处理能力有了极大提升，同时支持配置并行度/聚合粒度，在吞吐方面具备更大的弹性，热点评论区发评论的TPS提升了10倍以上。
 
-![](https://cloud.braumace.cn/f/RvLHg/0802_8.png)
+![](https://cloud.bytelighting.cn/f/RvLHg/0802_8.png)
 
 除了写热点，评论的读热点也有一些典型的特征：
 
@@ -210,7 +210,7 @@ SELECT * FROM reply_index,reply_content WHERE rpid in (?,?,...)
 
 因此，我们利用 **《直播场景下 高并发的热点处理实践》<sup>[5]</sup>** 一文所使用的SDK，在读取评论区基础信息阶段探测热点，并将热点标识传递至BFF层；BFF层实现了页面请求级的热点本地缓存，感知到热点后即读取本地缓存，然后再加载个性化信息。
 
-![](https://cloud.braumace.cn/f/3xrFr/0802_9.png)
+![](https://cloud.bytelighting.cn/f/3xrFr/0802_9.png)
 
 热点探测的实现基于单机的滑动窗口+LFU，那么如何定义、计算相应的热点条件阈值呢？
 
@@ -292,7 +292,7 @@ SELECT * FROM reply_index,reply_content WHERE rpid in (?,?,...)
 
 2\. 按照正负样本加权平均的，即**Reddit：威尔逊排序<sup>[6]</sup>**，到这个阶段，数据库已经无法实现这样复杂的 ORDER BY，热评开始几乎完全依赖 sorted set 这样的数据结构，预先计算好排序分数并写入。于是在架构设计上，新增了 feed-service 和 feed-job 来支撑热评列表的读写。
 
-![](https://cloud.braumace.cn/f/753H9/0802_10.png)
+![](https://cloud.bytelighting.cn/f/753H9/0802_10.png)
 
 3\. 按照点赞率排序，需要实现点赞率的近实时计算。点赞率=点赞数/曝光数，曝光的数据来源是客户端上报的展现日志，量级非常大，可以说是一个写多读少的场景：只有重算排序的时候才会读取曝光数。
 
@@ -306,7 +306,7 @@ SELECT * FROM reply_index,reply_content WHERE rpid in (?,?,...)
 
 这一阶段，我们仍然在持续优化，在工程落地层面尽可能还原理想的排序算法设计，保障用户的热评浏览体验。目前形成的系统架构总体如下图所示：
 
-![](https://cloud.braumace.cn/f/e15c5/0802_11.png)
+![](https://cloud.bytelighting.cn/f/e15c5/0802_11.png)
 
 图示的「评论策略层」，负责建立一套热评调控体系化能力，通过召回机制来实现想要的“balance“。即先通过策略工程，召回一批应该沉底的不良评论或者应该进前排的优秀评论，然后在排序分计算阶段根据召回结果实现这样的效果。
 
