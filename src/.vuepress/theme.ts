@@ -3,13 +3,13 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://blog.braumace.cn",
+  hostname: "https://blog.bytelighting.cn",
   logo: "logo.png",
   favicon: "/favicon.ico",
 
   author: {
     name: "BraumAce",
-    url: "https://blog.braumace.cn/article",
+    url: "https://blog.bytelighting.cn/article",
   },
 
   // 图标库
@@ -76,24 +76,24 @@ export default hopeTheme({
   plugins: {
 
     // 公告
-    notice: [
-      {
-        path: "/",
-        title: "站点地址迁移",
-        content: "自6月5日起，本站点地址将迁移至 https://blog.bytelighting.cn，请及时保存和更新您的书签内容。",
-        actions: [
-          {
-            text: "访问新站点",
-            link: "https://blog.bytelighting.cn",
-            type: "primary",
-          },
-        ],
-      },
-    ],
+    // notice: [
+    //   {
+    //     path: "/",
+    //     title: "站点地址迁移",
+    //     content: "自6月5日起，本站点地址将迁移至 https://blog.bytelighting.cn，请及时保存和更新您的书签内容。",
+    //     actions: [
+    //       {
+    //         text: "访问新站点",
+    //         link: "https://blog.bytelighting.cn",
+    //         type: "primary",
+    //       },
+    //     ],
+    //   },
+    // ],
 
     // RSS
     feed: {
-        hostname: "https://blog.braumace.cn",
+        hostname: "https://blog.bytelighting.cn",
         atom: true,
         rss: true,
         image: "/logo.png",
@@ -162,7 +162,7 @@ export default hopeTheme({
     // 版权信息
     copyright: {
       global: true,
-      canonical: "https://blog.braumace.cn/",
+      canonical: "https://blog.bytelighting.cn/",
     },
 
     // 添加 GFM 警告和提示容器
