@@ -111,7 +111,7 @@ function AddBtnSpin() {
 const LoadMusicList = (callback) => {
   axios({
     method: 'get',
-    url: 'https://cloud.braumace.cn/f/xVxTl/musicList.json',
+    url: 'https://cloud.bytelighting.cn/f/xVxTl/musicList.json',
     params: {},
   }).then((response) => {
     var listData = response.data;
