@@ -20,6 +20,27 @@ export const computer = arraySidebar([
             collapsible: true,
             children: "structure",
         },
+        {
+            text: "Python",
+            icon: "python",
+            prefix: "python/",
+            collapsible: true,
+            children: "structure",
+        },
+    ],
+  },
+  {
+    text: "大模型",
+    icon: "gpt",
+    prefix: "llm/",
+    children: [
+        {
+            text: "大模型应用",
+            icon: "application",
+            prefix: "application/",
+            collapsible: true,
+            children: "structure",
+        },
     ],
   },
   {

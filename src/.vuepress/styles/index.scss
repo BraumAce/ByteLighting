@@ -34,10 +34,10 @@ body {
 @font-face {
     font-family: "iconfont"; /* Project id 4608718 */
     src:
-        url("//at.alicdn.com/t/c/font_4608718_2mvcrfqj6n2.woff2?t=1735054197928") format("woff2"),
-        url("//at.alicdn.com/t/c/font_4608718_2mvcrfqj6n2.woff?t=1735054197928") format("woff"),
-        url("//at.alicdn.com/t/c/font_4608718_2mvcrfqj6n2.ttf?t=1735054197928") format("truetype"),
-        url("//at.alicdn.com/t/c/font_4608718_2mvcrfqj6n2.svg?t=1735054197928#iconfont") format("svg");
+        url("//at.alicdn.com/t/c/font_4608718_9091csyj7i.woff2?t=1758475462592") format("woff2"),
+        url("//at.alicdn.com/t/c/font_4608718_9091csyj7i.woff?t=1758475462592") format("woff"),
+        url("//at.alicdn.com/t/c/font_4608718_9091csyj7i.ttf?t=1758475462592") format("truetype"),
+        url("//at.alicdn.com/t/c/font_4608718_9091csyj7i.svg?t=1758475462592#iconfont") format("svg");
 }
 
 .iconfont {
@@ -46,6 +46,30 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-python:before {
+    content: "\e70f";
+}
+
+.icon-application:before {
+    content: "\e89e";
+}
+
+.icon-gpt:before {
+    content: "\e6a6";
+}
+
+.icon-AI:before {
+    content: "\e60b";
+}
+
+.icon-gpt-guide:before {
+    content: "\e6df";
+}
+
+.icon-qwen:before {
+    content: "\e761";
 }
 
 .icon-mongo:before {

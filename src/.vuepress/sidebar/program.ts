@@ -2,15 +2,21 @@ import { arraySidebar } from "vuepress-theme-hope";
 
 export const program = arraySidebar([
   {
-    text: "书籍",
-    icon: "bookshelf",
-    prefix: "book/",
+    text: "AI",
+    icon: "AI",
+    prefix: "ai/",
     children: "structure",
   },
   {
     text: "文章",
     icon: "text",
     prefix: "article/",
+    children: "structure",
+  },
+  {
+    text: "书籍",
+    icon: "bookshelf",
+    prefix: "book/",
     children: "structure",
   },
   {

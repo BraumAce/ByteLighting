@@ -9,9 +9,9 @@ import { computer } from "./computer.js";
 export default sidebar({
   // 应该把更精准的路径放前面
   "/program/": program,
-  "/algorithm/": algorithm,
-  "/open-project/": openProject,
   "/computer/": computer,
+  "/open-project/": openProject,
   "/framework/": framework,
   "/architecture/": architecture,
+  "/algorithm/": algorithm,
 });
