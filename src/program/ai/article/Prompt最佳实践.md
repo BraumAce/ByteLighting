@@ -1,9 +1,9 @@
 ---
 category: 
-- 杂项
+- AI
 tag: 
 - 工作笔记
-- AI
+- Prompt
 comment: true
 ---
 
