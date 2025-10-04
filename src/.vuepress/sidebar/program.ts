@@ -20,10 +20,8 @@ export const program = arraySidebar([
     prefix: "read/",
     children: [
         {
-            text: "阅读历史",
-            prefix: "阅读历史.md",
-            collapsible: true,
-            children: "structure",
+            text: "阅读记录",
+            link: "阅读记录.md",
         },
         {
             text: "2025 期",
@@ -55,13 +53,6 @@ export const program = arraySidebar([
     text: "杂项",
     icon: "edit",
     prefix: "sundry/",
-    children: [
-        {
-            text: "随笔",
-            prefix: "work-note/",
-            collapsible: true,
-            children: "structure",
-        },
-    ],
+    children: "structure",
   },
 ]);
