@@ -5,13 +5,39 @@ export const program = arraySidebar([
     text: "AI",
     icon: "AI",
     prefix: "ai/",
-    children: "structure",
+    children: [
+        {
+            text: "文章",
+            prefix: "article/",
+            collapsible: true,
+            children: "structure",
+        },
+    ],
   },
   {
-    text: "文章",
+    text: "阅读",
     icon: "text",
-    prefix: "article/",
-    children: "structure",
+    prefix: "read/",
+    children: [
+        {
+            text: "阅读历史",
+            prefix: "阅读历史.md",
+            collapsible: true,
+            children: "structure",
+        },
+        {
+            text: "2025 期",
+            prefix: "2025/",
+            collapsible: true,
+            children: "structure",
+        },
+        {
+            text: "2024 期",
+            prefix: "2024/",
+            collapsible: true,
+            children: "structure",
+        },
+    ],
   },
   {
     text: "书籍",
@@ -29,6 +55,13 @@ export const program = arraySidebar([
     text: "杂项",
     icon: "edit",
     prefix: "sundry/",
-    children: "structure",
+    children: [
+        {
+            text: "随笔",
+            prefix: "work-note/",
+            collapsible: true,
+            children: "structure",
+        },
+    ],
   },
 ]);
