@@ -2,7 +2,6 @@
 category: 
 - AI
 tag: 
-- 工作笔记
 - Prompt
 comment: true
 ---

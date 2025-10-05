@@ -10,6 +10,7 @@ export const program = arraySidebar([
             text: "文章",
             prefix: "article/",
             collapsible: true,
+            expanded: true,
             children: "structure",
         },
     ],
