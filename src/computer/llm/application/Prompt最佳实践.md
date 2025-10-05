@@ -1,6 +1,6 @@
 ---
 category: 
-- AI
+- LLM 应用
 tag: 
 - Prompt
 comment: true
