@@ -13,6 +13,13 @@ export const program = arraySidebar([
             expanded: true,
             children: "structure",
         },
+        {
+            text: "工具",
+            prefix: "tool/",
+            collapsible: true,
+            expanded: true,
+            children: "structure",
+        },
     ],
   },
   {
