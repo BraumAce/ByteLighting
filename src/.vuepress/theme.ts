@@ -13,7 +13,7 @@ export default hopeTheme({
   },
 
   // 图标库
-  iconAssets: "//at.alicdn.com/t/c/font_4608718_9091csyj7i.css",
+  iconAssets: "//at.alicdn.com/t/c/font_4608718_q9hih6ec37.css",
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -93,7 +93,6 @@ export default hopeTheme({
 
     // RSS
     feed: {
-        hostname: "https://blog.bytelighting.cn",
         atom: true,
         rss: true,
         image: "/logo.png",
