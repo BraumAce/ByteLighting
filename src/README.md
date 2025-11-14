@@ -21,7 +21,7 @@ projects:
   - icon: article
     name: 文章阅读
     desc: 标记了 x 篇技术文章
-    link: http://blog.bytelighting.cn/ByteLighting/program/article/
+    link: https://blog.bytelighting.cn/program/read/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95.html
 
   - icon: link
     name: 随机链接
