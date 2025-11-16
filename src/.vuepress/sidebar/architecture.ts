@@ -37,6 +37,19 @@ export const architecture = arraySidebar([
     ],
   },
   {
+    text: "软考-系统架构设计师",
+    icon: "grade",
+    prefix: "ruankao-system-architect/",
+    children: [
+        {
+            "text": "软件工程",
+            "prefix": "software-engineering/",
+            "collapsible": true,
+            "children": "structure"
+        }
+    ],
+  },
+  {
     text: "Spring Cloud Alibaba",
     icon: "alibaba",
     prefix: "spring-cloud-alibaba/",
