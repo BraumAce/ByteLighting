@@ -71,11 +71,13 @@ ByteLighting -- BraumAce's Blog，基于 VuePress 构建的以 Markdown 为中�
 - [Spring]
 - [SpringBoot]
 - [SPringCloud](https://blog.bytelighting.cn/ByteLighting/framework/spring-cloud/)
+- [MyBatis](https://blog.bytelighting.cn/framework/mybatis/)
 - [RuoYi](https://blog.bytelighting.cn/ByteLighting/framework/ruoyi/)
 
 ## 架构设计
 
 - [系统设计](https://blog.bytelighting.cn/ByteLighting/architecture/system-design/)
+- [软考-系统架构设计师](https://blog.bytelighting.cn/architecture/ruankao-system-architect/software-engineering/)
 - [Spring Cloud Alibaba]
 
 ## 关于本站
