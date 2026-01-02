@@ -46,7 +46,13 @@ export const architecture = arraySidebar([
             "prefix": "software-engineering/",
             "collapsible": true,
             "children": "structure"
-        }
+        },
+        {
+            "text": "系统分析与设计",
+            "prefix": "system-analysis-design/",
+            "collapsible": true,
+            "children": "structure"
+        },
     ],
   },
   {
