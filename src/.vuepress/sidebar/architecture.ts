@@ -53,6 +53,12 @@ export const architecture = arraySidebar([
             "collapsible": true,
             "children": "structure"
         },
+        {
+            "text": "系统架构设计",
+            "prefix": "system-architect-design/",
+            "collapsible": true,
+            "children": "structure"
+        },
     ],
   },
   {
