@@ -30,7 +30,8 @@ export const program = arraySidebar([
         {
             text: "阅读记录",
             link: "阅读记录.md",
-        },{
+        },
+        {
             text: "2026 期",
             prefix: "2026/",
             collapsible: true,
