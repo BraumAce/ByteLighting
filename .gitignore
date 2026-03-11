@@ -1,6 +1,7 @@
 .idea/
 .vscode/
 node_modules/
+src/.obsidian/
 src/.vuepress/.cache/
 src/.vuepress/.temp/
 src/.vuepress/dist/
