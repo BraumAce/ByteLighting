@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DECur_0Z.js";import{O as t,ft as n,g as r,u as i}from"./runtime-core.esm-bundler-lD3M2gAb.js";var a=[`spin`],o=r({__name:`MyIcon`,props:{name:String,spin:Boolean},setup(e){let r=e;return(e,o)=>(t(),i(`span`,{class:n([`iconfont icon`,`icon-${r.name}`]),spin:r.spin},null,10,a))}}),s=e({default:()=>c}),c=o;export{s as n,c as t};

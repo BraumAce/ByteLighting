@@ -1,0 +1,1 @@
+import{O as e,u as t}from"./runtime-core.esm-bundler-lD3M2gAb.js";import{t as n}from"./plugin-vue_export-helper-Bp2bHCmd.js";var r={},i={class:`none`};function a(n,r){return e(),t(`div`,i,`主题美化`)}var o=n(r,[[`render`,a]]);export{o as default};
