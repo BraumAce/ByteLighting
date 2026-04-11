@@ -1,5 +1,6 @@
 import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { llmsPlugin } from "@vuepress/plugin-llms";
 import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
@@ -57,6 +58,12 @@ export default defineUserConfig({
   bundler: viteBundler(),
 
   theme,
+
+  plugins: [
+    llmsPlugin({
+      domain: "https://blog.bytelighting.cn",
+    }),
+  ],
 
   // Enable it with pwa
   shouldPrefetch: false,
