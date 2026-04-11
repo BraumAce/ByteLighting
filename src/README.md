@@ -1,8 +1,8 @@
 ---
 home: true
-layout: BlogHome
+layout: Blog
 icon: home
-title: 
+title: "ByteLighting"
 heroImage: 
 heroText: ByteLighting
 heroFullScreen: true

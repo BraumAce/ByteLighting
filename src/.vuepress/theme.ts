@@ -12,8 +12,7 @@ export default hopeTheme({
     url: "https://blog.bytelighting.cn/article",
   },
 
-  // 图标库
-  iconAssets: "//at.alicdn.com/t/c/font_4608718_q9hih6ec37.css",
+  // 图标库（已迁移到 plugins.icon.assets）
 
   repo: "https://github.com/BraumAce/ByteLighting",
   docsDir: "src",
@@ -26,7 +25,6 @@ export default hopeTheme({
   navbar,
   sidebar,
   sidebarSorter: "order",
-  headerDepth: 3,
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023016031号-4</a>',
   displayFooter: true,
 
@@ -39,7 +37,6 @@ export default hopeTheme({
     articlePerPage: 20,
     avatar: "BraumAce.jpg",
     description: "学而不思则罔 思而不学则殆",
-    sidebarDisplay: "mobile",
     intro: "/intro.html",
     medias: {
       Email: "mailto:1693717911@qq.com",
@@ -54,11 +51,7 @@ export default hopeTheme({
     },
   },
 
-  // page meta
-  metaLocales: {
-    lastUpdated: "上次更新",
-    editLink: "在 GitHub 上编辑此页",
-  },
+  // page meta（lastUpdated/editLink 已由 @vuepress/plugin-git 自动处理，中文 locale 默认生效）
 
   // 加密文章
   encrypt: {
@@ -73,52 +66,104 @@ export default hopeTheme({
     reprint: "转载",
   },
 
+  // Markdown 增强（从 plugins.mdEnhance / plugins.markdownXxx 迁移而来）
+  markdown: {
+    align: true,
+    attrs: true,
+    component: true,
+    demo: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    gfm: true,
+    sub: true,
+    sup: true,
+    tasklist: true,
+    vPre: true,
+
+    chartjs: true,
+    echarts: true,
+    flowchart: true,
+
+    playground: {
+      presets: ["ts", "vue"],
+    },
+
+    // 从 plugins.markdownHint 迁移
+    hint: true,
+    alert: true,
+
+    // 从 plugins.markdownMath 迁移
+    math: {
+      type: 'katex',
+      copy: true,
+      mhchem: true,
+    },
+
+    // 从 plugins.markdownTab 迁移
+    tabs: true,
+    codeTabs: true,
+
+    // 从 plugins.revealjs 迁移
+    revealjs: {
+      plugins: ["highlight", "math", "search", "notes", "zoom"],
+    },
+
+    // 从 plugins.markdownImage 迁移
+    figure: true,
+    imgLazyload: true,
+    imgMark: true,
+    imgSize: true,
+    obsidianImgSize: true,
+  },
+
   plugins: {
 
-    // 公告
-    // notice: [
-    //   {
-    //     path: "/",
-    //     title: "站点地址迁移",
-    //     content: "自6月5日起，本站点地址将迁移至 https://blog.bytelighting.cn，请及时保存和更新您的书签内容。",
-    //     actions: [
-    //       {
-    //         text: "访问新站点",
-    //         link: "https://blog.bytelighting.cn",
-    //         type: "primary",
-    //       },
-    //     ],
-    //   },
-    // ],
+    // 图标（从顶层 iconAssets 迁移）
+    icon: {
+      assets: "//at.alicdn.com/t/c/font_4608718_q9hih6ec37.css",
+    },
 
     // RSS
     feed: {
-        atom: true,
-        rss: true,
-        image: "/logo.png",
-        icon: "/favicon.ico",
-        count: 1000,
-        devServer: true,
-        devHostname: "http://localhost:8080",
+      atom: true,
+      rss: true,
+      image: "/logo.png",
+      icon: "/favicon.ico",
+      count: 1000,
+      devServer: true,
+      devHostname: "http://localhost:8080",
     },
 
     blog: {
       type: [
         {
           key: "reprint",
-          filter: (page) => page.frontmatter.reprint,
+          filter: (page) => !!page.frontmatter.reprint,
           sorter: (pageA, pageB) =>
             compareDate(new Date(pageA.frontmatter.date), new Date(pageB.frontmatter.date)),
         },
       ],
     },
 
-    // 搜索框
-    searchPro: {
-      // 索引全部内容
+    // 搜索框（从 search/searchPro 迁移到 slimsearch）
+    slimsearch: {
       indexContent: true,
-      autoSuggestions: true,
-      // 为分类和标签添加索引
+      suggestion: true,
       customFields: [
         {
           getter(page: any) {
@@ -148,12 +193,12 @@ export default hopeTheme({
       categoryId: "DIC_kwDOMP-taM4CghxQ",
     },
 
-    // 组件配置
+    // 组件配置（移除已废弃的 FontIcon）
     components: {
-      components: ["Badge", "VPCard", "Share", "SiteInfo", "FontIcon", "PDF", "BiliBili"],
+      components: ["Badge", "VPCard", "Share", "SiteInfo", "PDF", "BiliBili"],
       componentOptions: {
         share: {
-            services: ["email", "qq", "qrcode", "qzone", "facebook", "telegram", "twitter", "weibo", "wordpress"],
+          services: ["email", "qq", "qrcode", "qzone", "facebook", "telegram", "twitter", "weibo", "wordpress"],
         },
       },
     },
@@ -164,78 +209,7 @@ export default hopeTheme({
       canonical: "https://blog.bytelighting.cn/",
     },
 
-    // 添加 GFM 警告和提示容器
-    markdownHint: {
-      // 启用提示容器，默认启用
-      hint: true,
-      // 启用 GFM 警告
-      alert: true,
-    },
-
-    markdownMath: {
-        type: 'katex',
-        copy: true,
-        mhchem: true,
-    },
-
-    markdownImage: {
-      figure: true,
-      lazyload: true,
-      mark: true,
-      size: true,
-      obsidianSize: true,
-    },
-
-    // 选项卡
-    markdownTab: {
-      tabs: true,
-      codeTabs: true,
-    },
-
-    // 幻灯片
-    revealjs: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-    },
-
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      component: true,
-      demo: true,
-      include: true,
-      mark: true,
-      plantuml: true,
-      spoiler: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      gfm: true,
-      sub: true,
-      sup: true,
-      tasklist: true,
-      vPre: true,
-
-      chart: true,
-      echarts: true,
-      flowchart: true,
-      // mermaid: true,
-
-      playground: {
-        presets: ["ts", "vue"],
-      },
-    },
-
-    // PWA支持
+    // PWA 支持
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
@@ -244,10 +218,6 @@ export default hopeTheme({
       apple: {
         icon: "/assets/icon/apple-icon-152.png",
         statusBarColor: "black",
-      },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
       },
       manifest: {
         icons: [
@@ -282,7 +252,6 @@ export default hopeTheme({
   },
 }, { custom: true, });
 
-function compareDate(dateA, dateB) {
-    // 比较两个日期对象的时间戳
-    return dateB - dateA;
+function compareDate(dateA: Date, dateB: Date): number {
+    return dateB.getTime() - dateA.getTime();
 }

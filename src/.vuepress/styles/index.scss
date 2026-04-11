@@ -14,6 +14,14 @@ body {
     display: none;
 }
 
+// 隐藏搜索按钮的文字和快捷键提示，只保留搜索图标
+.slimsearch-button {
+    .slimsearch-placeholder,
+    .slimsearch-key-hints {
+        display: none;
+    }
+}
+
 // 隐藏首页的内容区域
 .byte-blog-home {
     .theme-hope-content {

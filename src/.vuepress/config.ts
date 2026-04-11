@@ -30,7 +30,7 @@ export default defineUserConfig({
     [
       "meta", {
         name: "keywords",
-        content: "Java基础, 多线程, JVM, 虚拟机, 数据库, MySQL, Spring, Redis, MyBatis, 系统设计, 分布式, RPC, 高可用, 高并发",
+        content: "Java, 多线程, JVM, 虚拟机, 数据库, MySQL, Spring, Redis, MyBatis, 系统设计, 分布式, RPC, 高可用, 高并发",
       },
     ],
     [
@@ -63,9 +63,13 @@ export default defineUserConfig({
 
   // 组件
   alias: {
-    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
+    "@theme-hope/components/blog/BlogHero": path.resolve(
       __dirname,
       "./components/BlogHero.vue",
+    ),
+    "@BlogHeroOriginal": path.resolve(
+      __dirname,
+      "../../node_modules/vuepress-theme-hope/dist/client/components/blog/BlogHero.js",
     ),
   },
 
