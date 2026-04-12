@@ -1,0 +1,180 @@
+# wiki.index.yaml - LLM 维护的全局知识索引
+version: 1
+last_updated: 2026-04-12
+
+domains:
+  ai:
+    title: AI
+    description: 大模型应用、Prompt 工程、Agent 等
+    children:
+      llm:
+        title: 大模型应用
+        pages:
+          - path: domains/ai/llm/prompt-best-practices.md
+            title: Prompt 最佳实践
+            tags: [Prompt, LLM, 最佳实践]
+            related: [domains/ai/llm/context-engineering.md, domains/ai/llm/agent-skills.md]
+          - path: domains/ai/llm/context-engineering.md
+            title: 上下文工程
+            tags: [上下文工程, LLM]
+            related: [domains/ai/llm/prompt-best-practices.md, domains/ai/llm/agent-skills.md]
+          - path: domains/ai/llm/agent-skills.md
+            title: Agent Skills
+            tags: [Agent, Skills, LLM]
+            related: [domains/ai/llm/debugging-agent-prompt.md, domains/ai/llm/agent-skill-design-philosophy.md]
+          - path: domains/ai/llm/debugging-agent-prompt.md
+            title: 调试 Agent 的 Prompt
+            tags: [Agent, Prompt, 调试]
+            related: [domains/ai/llm/agent-skills.md, domains/ai/llm/prompt-best-practices.md]
+          - path: domains/ai/llm/agent-skill-design-philosophy.md
+            title: Agent Skill 设计哲学
+            tags: [Agent, Skill, 设计哲学]
+            related: [domains/ai/llm/agent-skills.md, domains/ai/llm/debugging-agent-prompt.md]
+
+  backend:
+    title: 后端
+    description: Java、Spring、数据库、中间件、架构设计等
+    children:
+      java:
+        title: Java
+        children:
+          concurrency:
+            title: 并发编程
+            pages:
+              - path: domains/backend/java/concurrency/jmm-happens-before.md
+                title: Java 内存模型及 happens-before
+                tags: [JMM, happens-before, 并发]
+                related: [domains/backend/java/concurrency/synchronized.md, domains/backend/java/concurrency/volatile.md]
+              - path: domains/backend/java/concurrency/synchronized.md
+                title: 彻底理解 synchronized
+                tags: [synchronized, 锁, 并发]
+                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/backend/java/concurrency/aqs-deep-dive.md]
+              - path: domains/backend/java/concurrency/volatile.md
+                title: 彻底理解 volatile
+                tags: [volatile, 可见性, 并发]
+                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/backend/java/concurrency/synchronized.md]
+              - path: domains/backend/java/concurrency/aqs-deep-dive.md
+                title: 深入理解 AQS
+                tags: [AQS, Lock, 同步器]
+                related: [domains/backend/java/concurrency/synchronized.md, domains/backend/java/concurrency/thread-pool-executor.md]
+              - path: domains/backend/java/concurrency/threadlocal.md
+                title: 并发容器之 ThreadLocal
+                tags: [ThreadLocal, 线程安全]
+                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/blog/sundry/java-local-cache.md]
+              - path: domains/backend/java/concurrency/thread-pool-executor.md
+                title: 线程池 ThreadPoolExecutor 实现原理
+                tags: [线程池, ThreadPoolExecutor]
+                related: [domains/backend/java/concurrency/aqs-deep-dive.md, domains/backend/java/concurrency/threadlocal.md]
+      spring:
+        title: Spring
+        pages:
+          - path: domains/backend/spring/springboot-web-intro.md
+            title: Spring Boot Web 入门
+            tags: [Spring Boot, Web]
+            related: [domains/backend/spring/springboot-auth.md, domains/backend/spring/spring-ioc-deep-dive.md]
+          - path: domains/backend/spring/springboot-auth.md
+            title: Spring Boot 登录认证
+            tags: [Spring Boot, 认证, 登录]
+            related: [domains/backend/spring/springboot-web-intro.md]
+          - path: domains/backend/spring/spring-ioc-deep-dive.md
+            title: 深入理解 IoC
+            tags: [Spring, IoC, 依赖注入]
+            related: [domains/backend/spring/springboot-web-intro.md, domains/backend/spring/eureka-source-startup.md]
+          - path: domains/backend/spring/eureka-source-startup.md
+            title: Eureka 源码 - 启动过程
+            tags: [Eureka, Spring Cloud, 源码]
+            related: [domains/backend/spring/spring-ioc-deep-dive.md]
+      databases:
+        title: 数据库
+        pages:
+          - path: domains/backend/databases/mysql-fundamentals.md
+            title: MySQL 基础
+            tags: [MySQL, 数据库]
+            related: [domains/backend/databases/mongodb-intro.md]
+          - path: domains/backend/databases/mongodb-intro.md
+            title: MongoDB 入门
+            tags: [MongoDB, NoSQL]
+            related: [domains/backend/databases/mysql-fundamentals.md]
+      middleware:
+        title: 中间件
+        pages:
+          - path: domains/backend/middleware/minio-overview.md
+            title: MinIO 概述
+            tags: [MinIO, 对象存储]
+            related: [domains/backend/middleware/springboot-minio-integration.md]
+          - path: domains/backend/middleware/springboot-minio-integration.md
+            title: SpringBoot 整合 MinIO
+            tags: [MinIO, Spring Boot]
+            related: [domains/backend/middleware/minio-overview.md, domains/backend/spring/springboot-web-intro.md]
+      architecture:
+        title: 架构设计
+        pages:
+          - path: domains/backend/architecture/bilibili-comment-system.md
+            title: B站评论系统架构设计
+            tags: [系统设计, 评论系统, 架构]
+            related: [domains/backend/architecture/sofa-architecture-pattern.md, domains/backend/architecture/software-architecture-styles.md]
+          - path: domains/backend/architecture/sofa-architecture-pattern.md
+            title: SOFA 架构模式
+            tags: [SOFA, 架构模式]
+            related: [domains/backend/architecture/bilibili-comment-system.md, domains/backend/architecture/software-architecture-styles.md]
+          - path: domains/backend/architecture/software-architecture-styles.md
+            title: 软件架构风格
+            tags: [架构风格, 软件工程]
+            related: [domains/backend/architecture/sofa-architecture-pattern.md, domains/backend/architecture/bilibili-comment-system.md]
+
+  algorithms:
+    title: 算法
+    description: 数据结构与算法、LeetCode、面试算法
+    children:
+      templates:
+        title: 算法模板
+        pages:
+          - path: domains/algorithms/templates/basic-algorithms.md
+            title: 基础算法
+            tags: [排序, 二分, 高精度, 前缀和, 差分]
+            related: [domains/algorithms/templates/data-structures.md, domains/algorithms/templates/search-and-graph.md]
+          - path: domains/algorithms/templates/data-structures.md
+            title: 数据结构
+            tags: [链表, 栈, 队列, 哈希, 堆, 并查集]
+            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/notes/union-find.md]
+          - path: domains/algorithms/templates/dynamic-programming.md
+            title: 动态规划
+            tags: [DP, 背包, 状态机]
+            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/templates/search-and-graph.md]
+          - path: domains/algorithms/templates/search-and-graph.md
+            title: 搜索与图论
+            tags: [DFS, BFS, 最短路, 最小生成树]
+            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/templates/dynamic-programming.md]
+      notes:
+        title: 算法笔记
+        pages:
+          - path: domains/algorithms/notes/union-find.md
+            title: 并查集
+            tags: [并查集, 数据结构]
+            related: [domains/algorithms/templates/data-structures.md]
+
+  cs-fundamentals:
+    title: 计算机
+    description: 操作系统、设计模式、大数据
+    children: {}
+
+  blog:
+    title: 程序人生
+    description: 读书笔记、工具研究、杂谈
+    children:
+      tools:
+        title: 工具研究
+        pages:
+          - path: domains/blog/tools/claude-code-context-management.md
+            title: Claude Code 上下文管理
+            tags: [Claude Code, 上下文]
+            related: [domains/ai/llm/context-engineering.md]
+      sundry:
+        title: 杂谈
+        pages:
+          - path: domains/blog/sundry/java-local-cache.md
+            title: Java 实现本地缓存的几种方式
+            tags: [Java, 缓存, Guava, Caffeine]
+            related: [domains/backend/java/concurrency/threadlocal.md]
+
+synthesis: []

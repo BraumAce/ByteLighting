@@ -16,12 +16,12 @@ projects:
   - icon: book
     name: 书籍收藏
     desc: 一个很不错的书单
-    link: https://blog.bytelighting.cn/ByteLighting/program/book/%E7%94%B5%E5%AD%90%E4%B9%A6.html
+    link: /domains/blog/books/
 
   - icon: article
-    name: 文章阅读
-    desc: 标记了 x 篇技术文章
-    link: https://blog.bytelighting.cn/program/read/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95.html
+    name: 知识库
+    desc: 结构化知识体系
+    link: /domains/
 
   - icon: link
     name: 随机链接

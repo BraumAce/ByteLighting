@@ -1,0 +1,821 @@
+---
+category: 
+  - 常用框架
+tag: 
+  - Spring
+
+# Wiki 扩展字段
+domain: backend/spring
+related:
+  - backend/spring/springboot-web-intro
+  - backend/spring/spring-ioc-deep-dive
+  - backend/spring/eureka-source-startup
+source: raw/legacy/framework/spring-boot/3. 登录认证.md
+status: published
+last_reviewed: 2026-04-12
+---
+
+# 登录认证
+
+登录服务端的核心逻辑就是：接收前端请求传递的用户名和密码，然后再根据用户名和密码查询用户信息。若用户信息存在，则说明用户输入的用户名和密码正确；若查询到的用户不存在，则说明用户输入的用户名和密码错误。
+
+<!-- more -->
+
+## 1. 登录校验
+
+所谓登录校验，指的是我们在服务器端接收到浏览器发送过来的请求之后，首先我们要对请求进行校验。先要校验一下用户登录了没有，如果用户已经登录了，则直接执行对应的业务操作即可；如果用户没有登录，此时就不允许他执行相关的业务操作，直接给前端响应一个错误的结果，最终跳转到登录页面，要求他登录成功之后，再来访问对应的数据。
+
+::: info 什么是无状态的协议？
+
+HTTP 协议是无状态协议。
+
+所谓无状态，指的是每一次请求都是独立的，下一次请求并不会携带上一次请求的数据。
+
+浏览器与服务器之间进行交互基于 HTTP 协议实现，也就意味着现在我们通过浏览器来访问了登陆这个接口，实现了登陆的操作，接下来我们在执行其他业务操作时，两次请求之间是独立的，服务器并不知道用户到底有没有登陆。
+
+::: 
+
+具体的登录校验的实现思路可以分为两部分：
+
+1. **会话跟踪技术**：在用户登录成功后，需要将用户登录成功的信息存起来，记录用户已经登录成功的标记。
+
+2. **统一拦截技术**：在浏览器发起请求时，需要在服务端进行统一拦截，拦截后进行登录校验。
+
+::: tip 统一拦截技术
+
+**统一拦截技术**：可以拦截浏览器发送过来的所有请求，通过拦截到的请求来获取之前所存入的登录标记，在获取到登录标记且标记为登录成功，就说明用户已经登录了。如果已经登录，就直接放行。
+
+:::
+
+### 1.1 会话技术
+
+#### 1.1.1 介绍
+
+- **会话**：指的是浏览器与服务器之间的一次连接，称为一次会话。
+
+> 在用户打开浏览器第一次访问服务器的时候，这个会话就建立了，直到有任何一方断开连接，此时会话结束。
+>
+> 在一次会话当中，可以包含多次请求和响应。
+>
+> 比如：打开了浏览器来访问 web 服务器上的资源（浏览器不能关闭、服务器不能断开）
+
+::: tip 会话和浏览器关联
+
+比如：此时有三个浏览器客户端和服务器建立了连接，就有三个会话。
+
+同一个浏览器在未关闭之前请求了多次服务器，这多次请求都属于同一个会话。当关闭某一个浏览器，这个浏览器的会话就结束了。而如果直接把服务器关闭，则所有的会话就都结束了。
+
+:::
+
+- **会话跟踪**：一种维护浏览器状态的方法，服务器需要识别多次请求是否来自于同一浏览器，以便在同一次会话的多次请求间共享数据。
+
+使用会话跟踪技术可以同一个会话中，多个请求之间进行共享数据。
+
+会话跟踪技术有两种：
+
+1. Cookie（客户端会话跟踪技术）
+	- 数据存储在客户端浏览器当中
+
+2. Session（服务端会话跟踪技术）
+	- 数据存储在储在服务端
+
+#### 1.1.2 会话跟踪方案
+
+##### **Cookie**
+
+cookie 是**客户端**会话跟踪技术，存储在客户端浏览器。
+
+比如第一次请求了登录接口，登录接口执行完成之后，在服务器端设置一个 cookie，在 cookie 当中可以存储用户相关的一些数据信息。
+
+服务器端在给客户端在响应数据的时候，会**自动**地将 cookie 响应给浏览器，浏览器接收到响应回来的 cookie 之后，会**自动**地将 cookie 的值存储在浏览器本地。接下来在后续的每一次请求当中，都会将浏览器本地所存储的 cookie **自动**地携带到服务端。
+
+接下来在服务端就可以获取到 cookie 的值。然后去判断一下这个 cookie 的值是否存在，如果不存在这个cookie，就说明客户端之前是没有访问登录接口的；如果存在 cookie 的值，就说明客户端之前已经登录完成了。这样就可以基于 cookie 在同一次会话的不同请求之间来共享数据。
+
+::: tip 自动化进行的原因
+
+cookie 是 HTTP 协议当中所支持的技术，而各大浏览器厂商都支持了这一标准。在 HTTP 协议中提供了一个响应头和请求头：
+
+- 响应头 `Set-Cookie`：设置 Cookie 数据。
+
+- 请求头 `Cookie`：携带 Cookie 数据的。
+
+:::
+
+**测试代码：**
+
+```java
+@Slf4j
+@RestController
+public class SessionController {
+
+    // 设置Cookie
+    @GetMapping("/c1")
+    public Result cookie1(HttpServletResponse response){
+        response.addCookie(new Cookie("login_username","itheima"));
+        return Result.success();
+    }
+	
+    // 获取Cookie
+    @GetMapping("/c2")
+    public Result cookie2(HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if(cookie.getName().equals("login_username")){
+                System.out.println("login_username: "+cookie.getValue());
+            }
+        }
+        return Result.success();
+    }
+}
+```
+
+**优缺点：**
+
+- 优点：HTTP 协议中支持的技术（像 Set-Cookie 响应头的解析以及 Cookie 请求头数据的携带，都由浏览器自动进行，无需手动操作）
+
+- 缺点：
+	- 移动端 APP（Android、IOS）中无法使用 Cookie
+	- 不安全，用户可以自己禁用 Cookie
+	- Cookie 不能跨域
+
+::: info 跨域介绍
+
+现在的项目大部分是前后端分离，前后端最终分开部署。在浏览器上浏览时，在页面上发起请求到服务端，而前后端地址不同，不能够直接访问，此时就存在跨域操作（Cookie 无法跨域）。
+
+区分跨域的维度：
+
+- 协议
+- IP / 协议
+- 端口
+
+只要上述的三个维度有任何一个维度不同，那就是跨域操作。
+
+:::
+
+##### **Session**
+
+Session 是服务器端会话跟踪技术，存储在服务器端。底层其实就是基于 Cookie 来实现的。
+
+基于 Session 进行会话跟踪的流程：
+
+- 获取 Session
+
+	![](https://cloud.bytelighting.cn/f/Z5yHy/%E8%8E%B7%E5%8F%96Session.png) 
+
+	浏览器在第一次请求服务器的时候，会在服务器中获取会话对象Session。如果是第一次请求 Session，会话对象是不存在的，此时服务器会自动创建 Session。每个 Session 都有一个ID（上图中 Session 后面括号中的 $1$，就表示 ID），称为 SessionID。
+
+- 响应 Cookie（JSESSIONID）
+
+	![](https://cloud.bytelighting.cn/f/rvVuE/%E5%93%8D%E5%BA%94Cookie.png) 
+
+	接着，服务器端在给浏览器响应数据时，会将 SessionID 通过 Cookie 响应给浏览器。通过在响应头当中增加了一个 `Set-Cookie` 响应头，这个响应头对应的值就是 Cookie，即固定的 JSESSIONID，代表 SessionID。浏览器会自动识别这个响应头，然后自动将 Cookie 存储在浏览器本地。
+
+- 查找 Session
+
+	![](https://cloud.bytelighting.cn/f/OXjHW/%E6%9F%A5%E6%89%BESession.png) 
+
+	然后，在后续的每一次请求中，都会将 Cookie 的数据获取出来，并且携带到服务端。接下来服务器通过 JSESSIONID 这个 Cookie 的值，也就是 SessionID，找到当前请求对应的会话对象 Session。
+
+**测试代码：**
+
+```java
+@Slf4j
+@RestController
+public class SessionController {
+
+    @GetMapping("/s1")
+    public Result session1(HttpSession session){
+        log.info("HttpSession-s1: {}", session.hashCode());
+        session.setAttribute("loginUser", "tom");
+        return Result.success();
+    }
+
+    @GetMapping("/s2")
+    public Result session2(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        log.info("HttpSession-s2: {}", session.hashCode());
+        Object loginUser = session.getAttribute("loginUser");
+        log.info("loginUser: {}", loginUser);
+        return Result.success(loginUser);
+    }
+}
+```
+
+请求完成之后，在响应头中，会有一个 Set-Cookie 的响应头，里面响应回来了一个 Cookie，即 JSESSIONID，这个就是服务端会话对象的 SessionID。
+
+接下来，在后续的每次请求时，都会将 Cookie 的值，携带到服务端，服务端接收到 Cookie 之后，会自动的根据 JSESSIONID 的值，找到对应的会话对象 Session。
+
+两次请求，获取到的 Session 会话对象的 hashcode 一样，同时，多次请求时 Session 会话对象中存储的值也是一样的，就说明是同一个会话对象。这样，我们就可以通过 Session会话对象，在同一个会话的多次请求之间来进行数据共享了。
+
+**优缺点：**
+
+- 优点：Session 存储在服务端，安全。
+
+- 缺点：
+	- 服务器集群环境下无法直接使用 Session
+	- 移动端 APP（Android、IOS）中无法使用 Cookie
+	- 用户可以自己禁用 Cookie
+	- Cookie 不能跨域
+
+::: info 服务器集群环境为何无法使用 Session？
+
+首先，现在企业开发的项目，一般都不会只部署在一台服务器上，因为一台服务器会存在一个很大的问题，即 **单点故障** —— 一旦这台服务器挂了，整个应用就会无法访问。
+
+假设一个项目部署了 $3$ 份，而用户在访问的时候，会先访问一台前置的服务器，叫做 **负载均衡服务器**，它的作用就是将前端发起的请求均匀的分发给后面的这三台服务器。
+
+此时假如通过 session 来进行会话跟踪，可能就会存在这样一个问题：
+
+- 用户打开浏览器要进行登录操作，发起登录请求，请求到达负载均衡服务器，将这个请求转给了第一台 Tomcat 服务器。
+
+- Tomcat 服务器接收到请求之后，要获取到 Session，再给浏览器响应数据，最终在给浏览器响应数据的时候，就会携带一个 cookie 的名字，就是 JSESSIONID，下一次再请求的时候，又会将 Cookie 携带到服务端。
+
+- 此时假如又发送一个请求，这次请求到达负载均衡服务器之后，将请求转给了第二台 Tomcat 服务器，此时请求就要到第二台 Tomcat 服务器当中，根据 JSESSIONID 也就是 SessionID 值，要找对应的 Session。
+
+- 但此时在第二台服务器当中没有这个 ID 的 Session。就会导致，向同一个浏览器发起了 $2$ 次请求，结果获取到的不是同一个会话对象。这就是 Session 会话跟踪方案的缺点，在服务器集群环境下无法直接使用 Session。
+
+:::
+
+##### **令牌技术**
+
+令牌其实就是一个用户身份的标识，本质上是一个字符串。
+
+如果通过令牌技术来跟踪会话，就可以在浏览器发起请求。在请求登录接口的时候，如果登录成功，生成一个令牌，令牌就是用户的合法身份凭证。接下来在响应数据的时候，就可以直接将令牌响应给前端。
+
+接下来在前端程序当中接收到令牌之后，需要将这个令牌存储起来。这个存储可以存储在 cookie 当中，也可以存储在其他的存储空间（如 localStorage）当中。
+
+接下来，在后续的每一次请求当中，都需要将令牌携带到服务端。携带到服务端之后，接下来就需要来校验令牌的有效性。如果令牌是有效的，就说明用户已经执行了登录操作，如果令牌是无效的，就说明用户之前并未执行登录操作。
+
+此时，如果是在同一次会话的多次请求之间想共享数据，将共享的数据存储在令牌当中就可以了。
+
+**优缺点：**
+
+- 优点：
+	- 支持 PC 端、移动端
+	- 解决集群环境下的认证问题
+	- 减轻服务器的存储压力（无需在服务器端存储）
+
+- 缺点：需要自己实现（包括令牌的生成、令牌的传递、令牌的校验）
+
+### 1.2 JWT令牌
+
+#### 1.2.1 介绍
+
+JWT 全称：JSON Web Token（官网：[https://jwt.io/](https://jwt.io/)）
+
+- 定义了一种**简洁**的、**自包含**的格式，用于在通信双方以 json 数据格式安全的传输信息。由于数字签名的存在，这些信息是可靠的。
+
+> 简洁：是指 jwt 就是一个简单的字符串。可以在请求参数或者是请求头当中直接传递。
+> 
+> 自包含：指的是 jwt 令牌，看似是一个随机的字符串，但是可以根据自身的需求在 jwt 令牌中存储自定义的数据内容。如：可以直接在 jwt 令牌中存储用户的相关信息。
+> 
+> 简单来讲，jwt 就是将原始的 json 数据格式进行了安全的封装，这样就可以直接基于 jwt 在通信双方安全的进行信息传输了。
+
+JWT 的组成：（JWT 令牌由三个部分组成，三个部分之间使用英文的点来分割）
+
+- 第一部分：**Header**（头），记录令牌类型、签名算法等。
+  - 例如：`{"alg":"HS256","type":"JWT"}`
+
+- 第二部分：**Payload**（有效载荷），携带一些自定义信息、默认信息等。
+  - 例如：`{"id":"1","username":"Tom"}`
+
+- 第三部分：**Signature**（签名），防止 Token 被篡改、确保安全性。将header、payload，并加入指定秘钥，通过指定签名算法计算而来。
+
+    > 签名的目的就是为了防 jwt 令牌被篡改，而正是因为 jwt 令牌最后一个部分数字签名的存在，所以整个 jwt 令牌是非常安全可靠的。一旦 jwt 令牌当中任何一个部分、任何一个字符被篡改了，整个令牌在校验的时候都会失败，所以它是非常安全可靠的。
+
+![](https://cloud.bytelighting.cn/f/5JPu5/jwt%E4%BB%A4%E7%89%8C%E6%A0%B7%E4%BE%8B.png)
+
+::: info JWT 如何将原始的 JSON 格式数据，转变为字符串的？
+
+其实在生成 JWT 令牌时，会对 JSON 格式的数据进行一次 base64 编码。
+
+::: tip Base64 编码方式
+
+**Base64** 是一种基于 $64$ 个可打印的字符来表示二进制数据的编码方式。既能编码，也能解码。所使用的 $64$ 个字符分别是 A 到 Z、a 到 z、0 - 9，一个加号（+），一个斜杠（/），加起来就是 $64$ 个字符。
+
+任何数据经过 base64 编码之后，最终就会通过这 $64$ 个字符来表示。当然还有一个符号，那就是等号，它是一个补位的符号。
+
+:::
+
+JWT 令牌最典型的应用场景就是登录认证：
+
+1. 在浏览器发起请求来执行登录操作，此时会访问登录的接口，如果登录成功，生成一个 jwt 令牌，将生成的 jwt 令牌返回给前端。
+
+2. 前端拿到 jwt 令牌之后，会将 jwt 令牌存储起来。在后续的每一次请求中都会将 jwt 令牌携带到服务端。
+
+3. 服务端统一拦截请求之后，先来判断一下这次请求有没有把令牌带过来，如果没有带过来，直接拒绝访问，如果带过来了，还要校验一下令牌是否是有效。如果有效，就直接放行进行请求的处理。
+
+整个流程当中涉及到两步操作：
+
+1. 在登录成功之后，要生成令牌。
+
+2. 每一次请求当中，要接收令牌并对令牌进行校验。
+
+#### 1.2.2 生成和校验
+
+要想使用 JWT 令牌，需要先引入 JWT 的依赖：
+
+```xml
+<!-- JWT依赖-->
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt</artifactId>
+    <version>0.9.1</version>
+</dependency>
+```
+
+生成 JWT 的代码实现：
+
+```java
+@Test
+public void genJwt(){
+    Map<String,Object> claims = new HashMap<>();
+    claims.put("id",1);
+    claims.put("username","Tom");
+    
+    String jwt = Jwts.builder()
+        .setClaims(claims)    // 自定义内容(载荷)          
+        .signWith(SignatureAlgorithm.HS256, "itheima")    // 签名算法        
+        .setExpiration(new Date(System.currentTimeMillis() + 24*3600*1000))    // 有效期设置为24h，单位是ms
+        .compact();
+    
+    System.out.println(jwt);
+}
+```
+
+生成的 jwt 令牌：
+
+```
+eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjcyNzI5NzMwfQ.fHi0Ub8npbyt71UqLXDdLyipptLgxBUg_mSuGJtXtBk
+```
+
+校验 JWT 令牌（解析生成的令牌）：
+
+```java
+@Test
+public void parseJwt(){
+    Claims claims = Jwts.parser()
+        .setSigningKey("itheima")    //指定签名密钥（必须保证和生成令牌时使用相同的签名密钥）
+	    .parseClaimsJws("eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjcyNzI5NzMwfQ.fHi0Ub8npbyt71UqLXDdLyipptLgxBUg_mSuGJtXtBk")
+        .getBody();
+
+    System.out.println(claims);
+}
+```
+
+运行结果：
+
+```
+{id=1, exp=1672729730}
+```
+
+> 令牌解析后，可以看到 id 和过期时间，如果在解析的过程当中没有报错，就说明解析成功了。
+
+::: tip
+
+- JWT 校验时使用的签名秘钥，必须和生成 JWT 令牌时使用的秘钥是配套的。
+
+- 如果 JWT 令牌解析校验时报错，则说明 JWT 令牌被篡改或失效了，令牌非法。 
+
+:::
+
+#### 1.2.3 登录下发令牌
+
+通过 JWT 令牌技术来跟踪会话，主要是两步操作：
+
+1. 生成令牌
+	- 在登录成功之后来生成一个 JWT 令牌，并且把这个令牌直接返回给前端
+
+2. 校验令牌
+	- 拦截前端请求，从请求中获取到令牌，对令牌进行解析校验
+
+**实现步骤：**
+
+1. 引入 JWT 工具类
+
+2. 登录完成后，调用工具类生成 JWT 令牌并返回
+
+**JWT工具类：**
+
+```java
+public class JwtUtils {
+
+    private static String signKey = "itheima";    // 签名密钥
+    private static Long expire = 43200000L;    // 有效时间
+
+    /**
+     * 生成JWT令牌
+     * @param claims JWT第二部分负载 payload 中存储的内容
+     * @return
+     */
+    public static String generateJwt(Map<String, Object> claims){
+        String jwt = Jwts.builder()
+                .addClaims(claims)    // 自定义信息（有效载荷）
+                .signWith(SignatureAlgorithm.HS256, signKey)    // 签名算法（头部）
+                .setExpiration(new Date(System.currentTimeMillis() + expire))    // 过期时间
+                .compact();
+        return jwt;
+    }
+
+    /**
+     * 解析JWT令牌
+     * @param jwt JWT令牌
+     * @return JWT第二部分负载 payload 中存储的内容
+     */
+    public static Claims parseJWT(String jwt){
+        Claims claims = Jwts.parser()
+                .setSigningKey(signKey)    // 指定签名密钥
+                .parseClaimsJws(jwt)    // 指定令牌Token
+                .getBody();
+        return claims;
+    }
+}
+```
+
+**登录成功，生成 JWT 令牌并返回：**
+
+```java
+@RestController
+@Slf4j
+public class LoginController {
+    
+    // 依赖业务层对象
+    @Autowired
+    private EmpService empService;
+
+    @PostMapping("/login")
+    public Result login(@RequestBody Emp emp) {
+        // 调用业务层：登录功能
+        Emp loginEmp = empService.login(emp);
+
+        // 判断：登录用户是否存在
+        if(loginEmp !=null ){
+            // 自定义信息
+            Map<String , Object> claims = new HashMap<>();
+            claims.put("id", loginEmp.getId());
+            claims.put("username",loginEmp.getUsername());
+            claims.put("name",loginEmp.getName());
+
+            // 使用JWT工具类，生成身份令牌
+            String token = JwtUtils.generateJwt(claims);
+            return Result.success(token);
+        }
+        return Result.error("用户名或密码错误");
+    }
+}
+```
+
+### 1.3 过滤器 Filter
+
+在每次请求中，请求头都会携带 JWT 令牌到服务端，此时服务端需要统一拦截所有的请求，从而判断是否携带的有合法的 JWT 令牌。
+
+#### 1.3.1 介绍
+
+- Filter 表示过滤器，是 JavaWeb 三大组件（Servlet、Filter、Listener）之一。
+
+- 过滤器可以把对资源的请求拦截下来，从而实现一些特殊的功能。
+	- 使用了过滤器之后，要想访问 web 服务器上的资源，必须先经过滤器，过滤器处理完毕之后，才可以访问对应的资源。
+
+- 过滤器一般完成一些通用的操作，比如：登录校验、统一编码处理、敏感字符处理等。
+
+过滤器的基本使用操作：
+
+- 第 $1$ 步，定义过滤器：定义一个类，实现 Filter 接口，并重写其所有方法。
+
+- 第 $2$ 步，配置过滤器：Filter 类上加 `@WebFilter` 注解，配置拦截资源的路径。引导类上加 `@ServletComponentScan` 开启 Servlet 组件支持。
+
+**定义过滤器：**
+
+```java
+// 定义一个类，实现一个标准的Filter过滤器的接口
+public class DemoFilter implements Filter {
+    
+    // 初始化方法, 只调用一次
+    @Override    
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("init 初始化方法执行了");
+    }
+
+    // 拦截到请求之后调用, 调用多次
+    @Override 
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        System.out.println("Demo 拦截到了请求...放行前逻辑");
+        // 放行
+        chain.doFilter(request,response);
+    }
+
+    // 销毁方法, 只调用一次
+    @Override 
+    public void destroy() {
+        System.out.println("destroy 销毁方法执行了");
+    }
+}
+```
+
+- **`init` 方法**：过滤器的初始化方法。在 web 服务器启动的时候会自动的创建Filter过滤器对象，在创建过滤器对象的时候会自动调用 `init()` 初始化方法，这个方法只会被调用一次。
+
+- **`doFilter` 方法**：这个方法是在每一次拦截到请求之后都会被调用，所以这个方法是会被调用多次的，每拦截到一次请求就会调用一次 `doFilter()` 方法。
+
+- **`destroy` 方法**： 是销毁的方法。当我们关闭服务器的时候，它会自动的调用销毁方法 `destroy()`，而这个销毁方法也只会被调用一次。
+
+在定义完 Filter 之后，Filter 其实并不会生效，还需要完成 Filter 的配置，只需要在 Filter 类上添加一个注解：`@WebFilter`，并指定属性 `urlPatterns`，通过这个属性指定过滤器要拦截哪些请求。
+
+```java
+// 配置过滤器要拦截的请求路径（ /* 表示拦截浏览器的所有请求 ）
+@WebFilter(urlPatterns = "/*") 
+public class DemoFilter implements Filter {
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("init 初始化方法执行了");
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        System.out.println("Demo 拦截到了请求...放行前逻辑");
+        chain.doFilter(request,response);
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("destroy 销毁方法执行了");
+    }
+}
+```
+
+接下来我们还需要在启动类上面加上一个注解 `@ServletComponentScan`，通过这个注解来开启 SpringBoot 项目对于 Servlet 组件的支持。
+
+```java
+@ServletComponentScan
+@SpringBootApplication
+public class TliasWebManagementApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(TliasWebManagementApplication.class, args);
+    }
+
+}
+```
+
+::: tip
+
+在过滤器Filter中，如果不执行放行操作，将无法访问后面的资源。
+
+放行操作：
+
+```java
+chain.doFilter(request, response);
+```
+
+:::
+
+#### 1.3.2 Filter 详解
+
+##### 1.3.2.1 执行流程
+
+![](https://cloud.bytelighting.cn/f/G3dtV/Filter%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+
+过滤器拦截到了请求后，如果希望继续访问后面的 web 资源，就要执行放行操作，放行就是调用 FilterChain 对象当中的 `doFilter()` 方法，在调用 `doFilter()` 方法之前所编写的代码属于放行之前的逻辑。
+
+在放行后访问完 web 资源之后还会回到过滤器当中，回到过滤器之后如有需求还可以执行放行之后的逻辑，放行之后的逻辑我们写在 `doFilter()` 这行代码之后。
+
+```java
+@WebFilter(urlPatterns = "/*") 
+public class DemoFilter implements Filter {
+    
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("init 初始化方法执行了");
+    }
+    
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        
+        System.out.println("DemoFilter   放行前逻辑.....");
+
+        // 放行请求
+        filterChain.doFilter(servletRequest,servletResponse);
+
+        System.out.println("DemoFilter   放行后逻辑.....");
+        
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("destroy 销毁方法执行了");
+    }
+}
+```
+
+##### 1.3.2.2 拦截路径配置
+
+Filter 可以根据需求，配置不同的拦截资源路径：
+
+| 拦截路径     | urlPatterns值 | 含义                                |
+| ------------ | ------------- | ----------------------------------- |
+| 拦截具体路径 | /login        | 只有访问 /login 路径时，才会被拦截  |
+| 目录拦截     | /emps/*       | 访问 /emps 下的所有资源，都会被拦截 |
+| 拦截所有     | /*            | 访问所有资源，都会被拦截            |
+
+即修改 `@WebFilter` 注解中的配置：
+
+```java
+@WebFilter(urlPatterns = "/login")   // 拦截/login具体路径
+public class DemoFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        System.out.println("DemoFilter   放行前逻辑.....");
+
+        // 放行请求
+        filterChain.doFilter(servletRequest,servletResponse);
+
+        System.out.println("DemoFilter   放行后逻辑.....");
+    }
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        Filter.super.init(filterConfig);
+    }
+
+    @Override
+    public void destroy() {
+        Filter.super.destroy();
+    }
+}
+```
+
+##### 1.3.2.3 过滤器链
+
+**过滤器链**：指在一个 web 应用程序当中，可以配置多个过滤器，多个过滤器就形成了一个过滤器链。
+
+而这个链上的过滤器在执行的时候会一个一个的执行，会先执行第一个 Filter，放行之后再来执行第二个 Filter，如果执行到了最后一个过滤器放行之后，才会访问对应的 web 资源。
+
+访问完 web 资源之后，按照我们刚才所介绍的过滤器的执行流程，还会回到过滤器当中来执行过滤器放行后的逻辑，而在执行放行后的逻辑的时候，顺序是反着的。
+
+### 1.4 拦截器 Interceptor
+
+#### 1.4.1 介绍
+
+1. 拦截器：
+
+	- 是一种动态拦截方法调用的机制，类似于过滤器。
+
+	- 拦截器是 Spring 框架中提供的，用来动态拦截控制器方法的执行。
+
+2. 拦截器的作用：
+
+	- 拦截请求，在指定方法调用前后，根据业务需要执行预先设定的代码。
+
+在拦截器当中，通常是做一些通用性的操作，比如：我们可以通过拦截器来拦截前端发起的请求，将登录校验的逻辑全部编写在拦截器当中。在校验的过程当中，如发现用户登录了（携带 JWT 令牌且是合法令牌），就可以直接放行，去访问请求的资源。如果校验时发现并没有登录或是非法令牌，就可以直接给前端响应未登录的错误信息。
+
+拦截器的使用步骤和过滤器类似，也分为两步：
+
+1. 定义拦截器
+
+2. 注册配置拦截器
+
+**自定义拦截器**：实现 HandlerInterceptor 接口，并重写其所有方法。
+
+```java
+// 自定义拦截器
+@Component
+public class LoginCheckInterceptor implements HandlerInterceptor {
+    // 目标资源方法执行前执行。 
+    // 返回true：放行；返回false：不放行
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        System.out.println("preHandle .... ");
+        
+        return true; // true表示放行
+    }
+
+    // 目标资源方法执行后执行
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        System.out.println("postHandle ... ");
+    }
+
+    // 视图渲染完毕后执行，最后执行
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        System.out.println("afterCompletion .... ");
+    }
+}
+```
+
+**注册配置拦截器**：实现 WebMvcConfigurer 接口，并重写 addInterceptors 方法。
+
+```java
+@Configuration  
+public class WebConfig implements WebMvcConfigurer {
+
+    // 自定义的拦截器对象
+    @Autowired
+    private LoginCheckInterceptor loginCheckInterceptor;
+    
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 注册自定义拦截器对象
+        registry.addInterceptor(loginCheckInterceptor).addPathPatterns("/**");  // 设置拦截器拦截的请求路径（ /** 表示拦截所有请求）
+    }
+}
+```
+
+#### 1.4.2 Interceptor详解
+
+两个部分：
+
+1. 拦截器的拦截路径配置
+
+2. 拦截器的执行流程
+
+##### 1.4.2.1 拦截路径
+
+在注册配置拦截器的时候，要指定拦截器的拦截路径，通过 `addPathPatterns("要拦截路径")` 方法，指定要拦截哪些资源。
+
+在配置拦截器时，`excludePathPatterns("不拦截路径")` 方法，可以指定哪些资源不需要拦截。
+
+```java
+@Configuration  
+public class WebConfig implements WebMvcConfigurer {
+
+    // 拦截器对象
+    @Autowired
+    private LoginCheckInterceptor loginCheckInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 注册自定义拦截器对象
+        registry.addInterceptor(loginCheckInterceptor)
+                .addPathPatterns("/**")  // 设置拦截器拦截的请求路径（ /** 表示拦截所有请求）
+                .excludePathPatterns("/login");  // 设置不拦截的请求路径
+    }
+}
+```
+
+常见拦截路径设置：
+
+| 拦截路径  | 含义                  | 举例                                                  |
+| --------- | --------------------- | ----------------------------------------------------- |
+| /*        | 一级路径              | 能匹配 /depts，/emps，/login，不能匹配 /depts/1       |
+| /**       | 任意级路径            | 能匹配 /depts，/depts/1，/depts/1/2                   |
+| /depts/*  | /depts 下的一级路径   | 能匹配 /depts/1，不能匹配 /depts/1/2，/depts          |
+| /depts/** | /depts 下的任意级路径 | 能匹配 /depts，/depts/1，/depts/1/2，不能匹配 /emps/1 |
+
+##### 1.4.2.2 执行流程
+
+![](https://cloud.bytelighting.cn/f/8Pgu3/%E6%8B%A6%E6%88%AA%E5%99%A8%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+
+- 当打开浏览器来访问部署在 Web 服务器当中的 Web 应用时，此时我们所定义的过滤器会拦截到这次请求。拦截到这次请求之后，它会先执行放行前的逻辑，然后再执行放行操作。
+
+- Tomcat 并不识别所编写的 Controller 程序，但是它识别 Servlet 程序，所以在 Spring 的 Web 环境中提供了一个非常核心的 Servlet：`DispatcherServlet`（前端控制器），所有请求都会先进行到 `DispatcherServlet`，再将请求转给 Controller。
+
+- 当定义了拦截器后，会在执行 Controller 的方法之前，请求被拦截器拦截住。执行 `preHandle()` 方法，这个方法执行完成后需要返回一个布尔类型的值，如果返回 true，就表示放行本次操作，才会继续访问 controller 中的方法；如果返回 false，则不会放行（controller 中的方法也不会执行）。
+
+- 在 controller 当中的方法执行完毕之后，再回过来执行 `postHandle()` 这个方法以及 `afterCompletion()` 方法，然后再返回给 `DispatcherServlet`，最终再来执行过滤器当中放行后的这一部分逻辑的逻辑。执行完毕之后，最终给浏览器响应数据。
+
+::: tip 过滤器和拦截器之间的区别
+
+- **接口规范不同**：过滤器需要实现 Filter 接口，而拦截器需要实现 HandlerInterceptor 接口。
+
+- **拦截范围不同**：过滤器 Filter 会拦截所有的资源，而 Interceptor 只会拦截 Spring 环境中的资源。
+
+:::
+
+## 2. 异常处理
+
+### 2.1 全局异常处理器
+
+定义全局异常处理器：
+
+- 就是定义一个类，在类上加上一个注解 `@RestControllerAdvice`，加上这个注解就代表我们定义了一个全局异常处理器。
+
+- 在全局异常处理器当中，需要定义一个方法来捕获异常，在这个方法上需要加上注解 `@ExceptionHandler` 。
+
+	通过 `@ExceptionHandler` 注解当中的 value 属性来指定我们要捕获的是哪一类型的异常。
+
+```java
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    // 处理异常
+    @ExceptionHandler(Exception.class)    // 指定能够处理的异常类型
+    public Result ex(Exception e){
+        e.printStackTrace();    // 打印堆栈中的异常信息
+
+        // 捕获到异常之后，响应一个标准的Result
+        return Result.error("对不起,操作失败,请联系管理员");
+    }
+}
+```
+
+::: tip
+
+@RestControllerAdvice = @ControllerAdvice + @ResponseBody
+
+处理异常的方法返回值会转换为 json 后再响应给前端
+
+:::
+
+全局异常处理器的使用，主要涉及到两个注解：
+
+- `@RestControllerAdvice`：表示当前类为全局异常处理器
+- `@ExceptionHandler`：指定可以捕获哪种类型的异常进行处理
