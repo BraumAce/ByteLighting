@@ -1,0 +1,59 @@
+---
+category: 
+  - hot100
+  - 数据结构
+tag: 
+  - 二叉树
+title: "将有序数组转换为二叉搜索树"
+domain: algorithms/leetcode
+related:
+  - algorithms/leetcode/hot100/validate-binary-search-tree
+  - algorithms/leetcode/hot100/kth-smallest-element-in-bst
+  - algorithms/leetcode/hot100/binary-tree-inorder
+  - algorithms/leetcode/hot100/construct-binary-tree-from-preorder-and-inorder
+source: raw/legacy/algorithm/leetcode/hot100/将有序数组转换为二叉搜索树.md
+status: published
+last_reviewed: 2026-04-12
+---
+
+# 将有序数组转换为二叉搜索树
+
+<!-- more -->
+
+[108.将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/description/?envType=study-plan-v2&envId=top-100-liked)
+
+## 题意
+
+给你一个整数数组 `nums` ，其中元素已经按 **升序** 排列，请你将其转换为一棵 **平衡** 二叉搜索树。
+
+**平衡二叉树**：是指该树所有节点的左右子树的深度相差不超过 1。
+
+## 思路
+
+由于 BST 的中序遍历是升序的，所以本题等同于根据中序遍历的序列建立二叉搜索树。
+
+因为本题要求高度平衡，所以选择序列的中间值作为根节点，不断二分递归建立左子树和右子树。
+
+## 代码
+
+```java
+class Solution {
+    TreeNode dfs(int[] nums, int l, int r) {
+        if (l > r) return null;
+
+        // 以升序数组的中间元素作为根节点
+        int mid = l + (r - l) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+
+        // 递归的构建左子树与右子树
+        root.left = dfs(nums, l, mid - 1);
+        root.right = dfs(nums, mid + 1, r);
+        
+        return root;
+    }
+
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return dfs(nums, 0, nums.length - 1);
+    }
+}
+```
