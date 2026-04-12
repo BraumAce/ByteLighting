@@ -4,4 +4,5 @@ dir:
   text: "算法"
   icon: "code"
 index: false
+article: false
 ---

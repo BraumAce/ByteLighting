@@ -4,4 +4,5 @@ dir:
   text: "设计模式"
   icon: "design-mode"
 index: false
+article: false
 ---

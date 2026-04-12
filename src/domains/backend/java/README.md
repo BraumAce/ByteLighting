@@ -4,4 +4,5 @@ dir:
   text: "Java"
   icon: "java"
 index: false
+article: false
 ---

@@ -4,4 +4,5 @@ dir:
   text: "热题 100"
   icon: "leetcode"
 index: false
+article: false
 ---

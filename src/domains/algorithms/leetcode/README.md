@@ -4,4 +4,5 @@ dir:
   text: "LeetCode"
   icon: "leetcode"
 index: false
+article: false
 ---

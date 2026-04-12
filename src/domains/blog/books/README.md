@@ -1,7 +1,8 @@
 ---
 dir:
-  order: 1
-  text: "读书笔记"
-  icon: "book"
+  order: 2
+  text: "书籍"
+  icon: "bookshelf"
 index: false
+article: false
 ---

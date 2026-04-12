@@ -4,4 +4,5 @@ dir:
   text: "架构设计"
   icon: "server"
 index: false
+article: false
 ---

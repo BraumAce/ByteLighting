@@ -4,4 +4,5 @@ dir:
   text: "项目实战"
   icon: "github"
 index: false
+article: false
 ---

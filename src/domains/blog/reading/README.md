@@ -2,12 +2,14 @@
 title: 阅读记录
 dir:
   order: 1
-  text: "阅读记录"
+  text: "阅读"
   icon: "book"
 sticky: true
 category:
   - 文章
 order: 1
+index: false
+article: false
 ---
 
 # 阅读记录

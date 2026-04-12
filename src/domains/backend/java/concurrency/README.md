@@ -4,4 +4,5 @@ dir:
   text: "并发编程"
   icon: "java"
 index: false
+article: false
 ---

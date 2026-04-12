@@ -4,4 +4,5 @@ dir:
   text: "程序人生"
   icon: "coffee"
 index: false
+article: false
 ---

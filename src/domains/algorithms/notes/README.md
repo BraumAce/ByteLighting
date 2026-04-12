@@ -4,4 +4,5 @@ dir:
   text: "算法笔记"
   icon: "note"
 index: false
+article: false
 ---

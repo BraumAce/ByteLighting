@@ -4,4 +4,5 @@ dir:
   text: "数据库"
   icon: "database"
 index: false
+article: false
 ---

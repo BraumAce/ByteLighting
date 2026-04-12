@@ -4,4 +4,5 @@ dir:
   text: "操作系统"
   icon: "operating-system"
 index: false
+article: false
 ---

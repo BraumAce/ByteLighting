@@ -4,4 +4,5 @@ dir:
   text: "系统设计"
   icon: "design"
 index: false
+article: false
 ---

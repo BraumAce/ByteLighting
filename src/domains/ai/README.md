@@ -4,4 +4,5 @@ dir:
   text: "AI"
   icon: "AI"
 index: false
+article: false
 ---

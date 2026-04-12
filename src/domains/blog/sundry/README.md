@@ -4,4 +4,5 @@ dir:
   text: "杂谈"
   icon: "coffee"
 index: false
+article: false
 ---

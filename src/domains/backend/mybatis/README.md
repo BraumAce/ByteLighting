@@ -4,4 +4,5 @@ dir:
   text: "MyBatis"
   icon: "mybatis"
 index: false
+article: false
 ---

@@ -4,4 +4,5 @@ dir:
   text: "后端"
   icon: "server"
 index: false
+article: false
 ---

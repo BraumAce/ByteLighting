@@ -4,4 +4,5 @@ dir:
   text: "计算机"
   icon: "computer"
 index: false
+article: false
 ---

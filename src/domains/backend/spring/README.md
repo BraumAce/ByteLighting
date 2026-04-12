@@ -4,4 +4,5 @@ dir:
   text: "Spring"
   icon: "spring"
 index: false
+article: false
 ---
