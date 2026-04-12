@@ -7,7 +7,7 @@ tag:
 order: 1
 comment: true
 title: "软件工程"
-domain: backend/architecture/ruankao
+domain: backend/architecture/ruankao/software-engineering
 related:
   - backend/architecture/ruankao/component-based-engineering
   - backend/architecture/ruankao/software-testing

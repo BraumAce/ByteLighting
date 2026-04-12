@@ -6,7 +6,7 @@ tag:
 - 评论系统
 reprint: true
 title: "评论系统功能和架构设计"
-domain: backend/architecture/system-design
+domain: backend/architecture/system-design/comment
 related:
   - backend/architecture/system-design/comment-system-storage
   - backend/architecture/bilibili-comment-system

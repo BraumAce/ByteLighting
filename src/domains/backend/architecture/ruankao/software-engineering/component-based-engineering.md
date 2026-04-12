@@ -7,7 +7,7 @@ tag:
 order: 2
 comment: true
 title: "基于构件的软件工程（CBSE）"
-domain: backend/architecture/ruankao
+domain: backend/architecture/ruankao/software-engineering
 related:
   - backend/architecture/ruankao/software-engineering
   - backend/architecture/ruankao/software-testing

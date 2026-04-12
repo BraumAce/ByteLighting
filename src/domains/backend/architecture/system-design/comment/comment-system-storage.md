@@ -6,7 +6,7 @@ tag:
 - 评论系统
 reprint: true
 title: "评论系统存储和可用性设计"
-domain: backend/architecture/system-design
+domain: backend/architecture/system-design/comment
 related:
   - backend/architecture/system-design/comment-system-design
   - backend/architecture/bilibili-comment-system

@@ -8,7 +8,7 @@ reprint: true
 
 # Wiki 扩展字段
 title: B站评论系统架构设计
-domain: backend/architecture
+domain: backend/architecture/system-design/comment
 related:
   - backend/architecture/sofa-architecture-pattern
   - backend/architecture/software-architecture-styles

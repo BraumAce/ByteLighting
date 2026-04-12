@@ -9,7 +9,7 @@ comment: true
 
 # Wiki 扩展字段
 title: 软件架构风格
-domain: backend/architecture
+domain: backend/architecture/ruankao/system-architect-design
 related:
   - backend/architecture/bilibili-comment-system
   - backend/architecture/sofa-architecture-pattern

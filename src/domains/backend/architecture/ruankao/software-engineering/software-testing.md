@@ -7,7 +7,7 @@ tag:
 order: 3
 comment: true
 title: "软件测试"
-domain: backend/architecture/ruankao
+domain: backend/architecture/ruankao/software-engineering
 related:
   - backend/architecture/ruankao/software-engineering
   - backend/architecture/ruankao/requirements-engineering

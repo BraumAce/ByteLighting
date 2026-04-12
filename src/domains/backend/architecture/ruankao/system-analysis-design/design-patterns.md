@@ -6,7 +6,7 @@ category:
 tag:
   - 系统架构设计师
   - 系统分析与设计
-domain: backend/architecture/ruankao
+domain: backend/architecture/ruankao/system-analysis-design
 related:
   - backend/architecture/ruankao/system-analysis-design
   - backend/architecture/software-architecture-styles

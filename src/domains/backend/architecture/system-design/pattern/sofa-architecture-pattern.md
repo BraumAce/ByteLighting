@@ -6,7 +6,7 @@ tag:
 
 # Wiki 扩展字段
 title: SOFA 架构模式
-domain: backend/architecture
+domain: backend/architecture/system-design/pattern
 related:
   - backend/architecture/bilibili-comment-system
   - backend/architecture/software-architecture-styles
