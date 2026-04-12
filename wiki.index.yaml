@@ -12,28 +12,251 @@ domains:
         pages:
           - path: domains/ai/llm/prompt-best-practices.md
             title: Prompt 最佳实践
-            tags: [Prompt, LLM, 最佳实践]
-            related: [domains/ai/llm/context-engineering.md, domains/ai/llm/agent-skills.md]
+            tags: [Prompt]
           - path: domains/ai/llm/context-engineering.md
-            title: 上下文工程
-            tags: [上下文工程, LLM]
-            related: [domains/ai/llm/prompt-best-practices.md, domains/ai/llm/agent-skills.md]
+            title: 上下文工程 - 解锁大模型真正潜力的关键
+            tags: [Prompt]
           - path: domains/ai/llm/agent-skills.md
             title: Agent Skills
-            tags: [Agent, Skills, LLM]
-            related: [domains/ai/llm/debugging-agent-prompt.md, domains/ai/llm/agent-skill-design-philosophy.md]
+            tags: [Agent]
           - path: domains/ai/llm/debugging-agent-prompt.md
-            title: 调试 Agent 的 Prompt
-            tags: [Agent, Prompt, 调试]
-            related: [domains/ai/llm/agent-skills.md, domains/ai/llm/prompt-best-practices.md]
+            title: "\"写法+测评\" - 调试 Agent 的 Prompt"
+            tags: [Prompt, Agent]
           - path: domains/ai/llm/agent-skill-design-philosophy.md
-            title: Agent Skill 设计哲学
-            tags: [Agent, Skill, 设计哲学]
-            related: [domains/ai/llm/agent-skills.md, domains/ai/llm/debugging-agent-prompt.md]
+            title: Agent Skill 设计哲学：从联网场景到通用设计方法论
+            tags: [工作笔记, Agent]
+
+  algorithms:
+    title: 算法
+    description: 数据结构与算法、LeetCode、笔试题、算法笔记
+    children:
+      templates:
+        title: 算法模板
+        pages:
+          - path: domains/algorithms/templates/basic-algorithms.md
+            title: 基础算法
+            tags: [算法模板]
+          - path: domains/algorithms/templates/data-structures.md
+            title: 数据结构
+            tags: [算法模板]
+          - path: domains/algorithms/templates/dynamic-programming.md
+            title: 动态规划
+            tags: [算法模板]
+          - path: domains/algorithms/templates/search-and-graph.md
+            title: 搜索与图论
+            tags: [算法模板]
+          - path: domains/algorithms/templates/greedy.md
+            title: 贪心
+            tags: []
+          - path: domains/algorithms/templates/math.md
+            title: 数学知识
+            tags: []
+      notes:
+        title: 算法笔记
+        pages:
+          - path: domains/algorithms/notes/a-star-algorithm.md
+            title: A* 算法
+            tags: [图论]
+          - path: domains/algorithms/notes/dfs-island-problems.md
+            title: DFS之岛屿问题
+            tags: [DFS]
+          - path: domains/algorithms/notes/dfs-maze-problems.md
+            title: DFS之迷宫问题
+            tags: [DFS]
+          - path: domains/algorithms/notes/prefix-sum-problems.md
+            title: 前缀和相关题型
+            tags: [前缀和]
+          - path: domains/algorithms/notes/recursion-problems.md
+            title: 递归相关题型
+            tags: [递归]
+          - path: domains/algorithms/notes/search-algorithms.md
+            title: 搜索
+            tags: [BFS, DFS]
+          - path: domains/algorithms/notes/tips-and-tricks.md
+            title: 一些经验和技巧
+            tags: [经验]
+          - path: domains/algorithms/notes/union-find.md
+            title: 并查集
+            tags: [并查集]
+      leetcode:
+        title: LeetCode
+        children:
+          hot100:
+            title: Hot 100
+            pages:
+              - path: domains/algorithms/leetcode/hot100/add-two-numbers.md
+                title: 两数相加
+                tags: [链表]
+              - path: domains/algorithms/leetcode/hot100/binary-tree-diameter.md
+                title: 二叉树的直径
+                tags: [二叉树, 递归]
+              - path: domains/algorithms/leetcode/hot100/binary-tree-inorder.md
+                title: 二叉树的中序遍历
+                tags: [二叉树, 递归, 迭代]
+              - path: domains/algorithms/leetcode/hot100/binary-tree-level-order.md
+                title: 二叉树的层序遍历
+                tags: [二叉树, BFS]
+              - path: domains/algorithms/leetcode/hot100/binary-tree-right-side-view.md
+                title: 二叉树的右视图
+                tags: [二叉树, 递归, 迭代]
+              - path: domains/algorithms/leetcode/hot100/coin-change.md
+                title: 零钱兑换
+                tags: [背包问题]
+              - path: domains/algorithms/leetcode/hot100/construct-binary-tree-from-preorder-and-inorder.md
+                title: 从前序与中序遍历序列构造二叉树
+                tags: [二叉树, 递归, 哈希]
+              - path: domains/algorithms/leetcode/hot100/copy-list-with-random-pointer.md
+                title: 随机链表的复制
+                tags: [链表]
+              - path: domains/algorithms/leetcode/hot100/course-schedule.md
+                title: 课程表
+                tags: [DFS]
+              - path: domains/algorithms/leetcode/hot100/flatten-binary-tree-to-linked-list.md
+                title: 二叉树展开为链表
+                tags: [二叉树]
+              - path: domains/algorithms/leetcode/hot100/house-robber.md
+                title: 打家劫舍
+                tags: [递推]
+              - path: domains/algorithms/leetcode/hot100/implement-trie.md
+                title: 实现 Trie（前缀树）
+                tags: [字典树]
+              - path: domains/algorithms/leetcode/hot100/kth-smallest-element-in-bst.md
+                title: 二叉搜索树中第K小的元素
+                tags: [二叉树, 递归]
+              - path: domains/algorithms/leetcode/hot100/longest-common-subsequence.md
+                title: 最长公共子序列
+                tags: [线性DP]
+              - path: domains/algorithms/leetcode/hot100/longest-increasing-subsequence.md
+                title: 最长递增子序列
+                tags: [线性DP]
+              - path: domains/algorithms/leetcode/hot100/longest-valid-parentheses.md
+                title: 最长有效括号
+                tags: [线性DP, 栈]
+              - path: domains/algorithms/leetcode/hot100/lru-cache.md
+                title: LRU 缓存
+                tags: [链表]
+              - path: domains/algorithms/leetcode/hot100/max-depth-of-binary-tree.md
+                title: 二叉树的最大深度
+                tags: [二叉树, 递归, 迭代]
+              - path: domains/algorithms/leetcode/hot100/maximum-product-subarray.md
+                title: 乘积最大子数组
+                tags: [线性DP]
+              - path: domains/algorithms/leetcode/hot100/merge-k-sorted-lists.md
+                title: 合并K个升序链表
+                tags: [链表, 优先队列]
+              - path: domains/algorithms/leetcode/hot100/number-of-islands.md
+                title: 岛屿数量
+                tags: [DFS, BFS, 并查集]
+              - path: domains/algorithms/leetcode/hot100/partition-equal-subset-sum.md
+                title: 分割等和子集
+                tags: [背包问题]
+              - path: domains/algorithms/leetcode/hot100/path-sum-iii.md
+                title: 路径总和 III
+                tags: [二叉树, 递归, 前缀和, 哈希]
+              - path: domains/algorithms/leetcode/hot100/perfect-squares.md
+                title: 完全平方数
+                tags: [背包问题]
+              - path: domains/algorithms/leetcode/hot100/remove-nth-node-from-end.md
+                title: 删除链表的倒数第N个节点
+                tags: [链表, 双指针]
+              - path: domains/algorithms/leetcode/hot100/reverse-nodes-in-k-group.md
+                title: K个一组翻转链表
+                tags: [链表, 递归]
+              - path: domains/algorithms/leetcode/hot100/rotting-oranges.md
+                title: 腐烂的橘子
+                tags: [BFS]
+              - path: domains/algorithms/leetcode/hot100/sliding-window-maximum.md
+                title: 滑动窗口最大值
+                tags: [滑动窗口, 优先队列, 单调队列]
+              - path: domains/algorithms/leetcode/hot100/sort-list.md
+                title: 排序链表
+                tags: [链表]
+              - path: domains/algorithms/leetcode/hot100/symmetric-tree.md
+                title: 对称二叉树
+                tags: [二叉树, 递归]
+              - path: domains/algorithms/leetcode/hot100/validate-binary-search-tree.md
+                title: 验证二叉搜索树
+                tags: [二叉树, 递归]
+              - path: domains/algorithms/leetcode/hot100/word-break.md
+                title: 单词拆分
+                tags: [线性DP]
+        pages:
+          - path: domains/algorithms/leetcode/nowcoder-mock-exam.md
+            title: 牛客模考题
+            tags: [背包问题, DFS]
+          - path: domains/algorithms/leetcode/subtree-of-another-tree.md
+            title: 另一棵树的子树
+            tags: [二叉树, 递归]
+      for-offer:
+        title: 笔试真题
+        pages:
+          - path: domains/algorithms/for-offer/360-0914.md
+            title: 360笔试 - 0914
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/58tongcheng-0920.md
+            title: 58同城笔试 - 0920
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/baidu-1015.md
+            title: 百度笔试 - 1015
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/didi-0913.md
+            title: 滴滴笔试 - 0913
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/feiyu-1013.md
+            title: 飞鱼科技笔试 - 1013
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/haoweilai-0906.md
+            title: 好未来笔试 - 0906
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/huayu-1016.md
+            title: 华宇信息笔试 - 1016
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/huice-1002.md
+            title: 慧策笔试 - 1002
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/jd-0824.md
+            title: 京东笔试 - 0824
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/luckin-1010.md
+            title: 瑞幸笔试 - 1010
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/meituan-0824.md
+            title: 美团笔试 - 0824
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/meituan-0831.md
+            title: 美团笔试 - 0831
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/ningmeng-0819.md
+            title: 柠檬微趣笔试 - 0819
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/shenzhenfu-0910.md
+            title: 深信服笔试 - 0910
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/shenzhou-1009.md
+            title: 神州信息笔试 - 1009
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/shuidi-0912.md
+            title: 水滴笔试 - 0912
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/tongcheng-0924.md
+            title: 同程旅行笔试 - 0924
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/xiaoheihe-0907.md
+            title: 小黑盒笔试 - 0907
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/xiaomi-1012.md
+            title: 小米笔试 - 1012
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/xiecheng-0905.md
+            title: 携程笔试 - 0905
+            tags: [笔试题]
+          - path: domains/algorithms/for-offer/yuxin-1012.md
+            title: 宇信科技笔试 - 1012
+            tags: [笔试题]
 
   backend:
     title: 后端
-    description: Java、Spring、数据库、中间件、架构设计等
+    description: Java、Spring、数据库、中间件、架构设计、MyBatis、项目实战
     children:
       java:
         title: Java
@@ -41,140 +264,365 @@ domains:
           concurrency:
             title: 并发编程
             pages:
+              - path: domains/backend/java/concurrency/concurrency-pros-cons.md
+                title: 并发的优缺点
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/thread-states.md
+                title: 线程状态及其属性
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/three-properties.md
+                title: 三大性质总结：原子性、可见性、有序性
+                tags: [JUC]
               - path: domains/backend/java/concurrency/jmm-happens-before.md
                 title: Java 内存模型及 happens-before
-                tags: [JMM, happens-before, 并发]
-                related: [domains/backend/java/concurrency/synchronized.md, domains/backend/java/concurrency/volatile.md]
+                tags: [JUC]
               - path: domains/backend/java/concurrency/synchronized.md
                 title: 彻底理解 synchronized
-                tags: [synchronized, 锁, 并发]
-                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/backend/java/concurrency/aqs-deep-dive.md]
+                tags: [JUC]
               - path: domains/backend/java/concurrency/volatile.md
                 title: 彻底理解 volatile
-                tags: [volatile, 可见性, 并发]
-                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/backend/java/concurrency/synchronized.md]
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/final-keyword.md
+                title: 你真的了解 final 吗
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/lock-and-aqs-intro.md
+                title: 初识 Lock 与 AQS
+                tags: [JUC]
               - path: domains/backend/java/concurrency/aqs-deep-dive.md
                 title: 深入理解 AQS
-                tags: [AQS, Lock, 同步器]
-                related: [domains/backend/java/concurrency/synchronized.md, domains/backend/java/concurrency/thread-pool-executor.md]
-              - path: domains/backend/java/concurrency/threadlocal.md
-                title: 并发容器之 ThreadLocal
-                tags: [ThreadLocal, 线程安全]
-                related: [domains/backend/java/concurrency/jmm-happens-before.md, domains/blog/sundry/java-local-cache.md]
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/reentrant-lock.md
+                title: 彻底理解 ReentrantLock
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/reentrant-read-write-lock.md
+                title: 深入理解读写锁 ReentrantReadWriteLock
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/condition-await-signal.md
+                title: 详解 Condition 的 await 和 signal 等待通知机制
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/lock-support.md
+                title: LockSupport 工具
+                tags: [JUC]
               - path: domains/backend/java/concurrency/thread-pool-executor.md
                 title: 线程池 ThreadPoolExecutor 实现原理
-                tags: [线程池, ThreadPoolExecutor]
-                related: [domains/backend/java/concurrency/aqs-deep-dive.md, domains/backend/java/concurrency/threadlocal.md]
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/scheduled-thread-pool.md
+                title: 线程池之 ScheduledThreadPoolExecutor
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/future-task.md
+                title: FutureTask 基本操作总结
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/threadlocal.md
+                title: 并发容器之 ThreadLocal
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/threadlocal-memory-leak.md
+                title: 从源码深入详解 ThreadLocal 内存泄漏问题
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/blocking-queue.md
+                title: 并发容器之 BlockingQueue
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/array-linked-blocking-queue.md
+                title: 并发容器之 ArrayBlockingQueue 和 LinkedBlockingQueue 实现原理详解
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/concurrent-hashmap.md
+                title: 并发容器之 ConcurrentHashMap
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/concurrent-linked-queue.md
+                title: 并发容器之 ConcurrentLinkedQueue
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/copy-on-write-arraylist.md
+                title: 并发容器之 CopyOnWriteArrayList
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/countdown-latch-cyclic-barrier.md
+                title: Java 并发工具类 - CountDownLatch, CyclicBarrier
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/semaphore-exchanger.md
+                title: Java 并发工具类 - Semaphore, Exchanger
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/atomic-classes.md
+                title: atomic 包中的原子操作类总结
+                tags: [JUC]
+              - path: domains/backend/java/concurrency/producer-consumer.md
+                title: 一篇文章彻底弄懂生产者-消费者问题
+                tags: [JUC]
+        pages:
+          - path: domains/backend/java/fundamentals.md
+            title: Java 基础知识
+            tags: [基础]
+          - path: domains/backend/java/common-api.md
+            title: Java 常用 API
+            tags: [API]
+          - path: domains/backend/java/hashtable.md
+            title: 哈希表
+            tags: [基础]
+          - path: domains/backend/java/lambda.md
+            title: Java 之 Lambda 表达式
+            tags: [基础]
       spring:
         title: Spring
         pages:
           - path: domains/backend/spring/springboot-web-intro.md
-            title: Spring Boot Web 入门
-            tags: [Spring Boot, Web]
-            related: [domains/backend/spring/springboot-auth.md, domains/backend/spring/spring-ioc-deep-dive.md]
+            title: Web 入门
+            tags: [Spring]
           - path: domains/backend/spring/springboot-auth.md
-            title: Spring Boot 登录认证
-            tags: [Spring Boot, 认证, 登录]
-            related: [domains/backend/spring/springboot-web-intro.md]
+            title: 登录认证
+            tags: [Spring]
           - path: domains/backend/spring/spring-ioc-deep-dive.md
             title: 深入理解 IoC
-            tags: [Spring, IoC, 依赖注入]
-            related: [domains/backend/spring/springboot-web-intro.md, domains/backend/spring/eureka-source-startup.md]
+            tags: [Spring]
+          - path: domains/backend/spring/spring-dev-setup.md
+            title: Spring 开发准备
+            tags: [Spring]
           - path: domains/backend/spring/eureka-source-startup.md
             title: Eureka 源码 - 启动过程
-            tags: [Eureka, Spring Cloud, 源码]
-            related: [domains/backend/spring/spring-ioc-deep-dive.md]
+            tags: [SpringCloud]
+          - path: domains/backend/spring/eureka-source-register.md
+            title: Eureka 源码 - 注册过程
+            tags: [SpringCloud]
+          - path: domains/backend/spring/eureka-console.md
+            title: Eureka 控制台详解
+            tags: [SpringCloud]
       databases:
         title: 数据库
         pages:
           - path: domains/backend/databases/mysql-fundamentals.md
-            title: MySQL 基础
-            tags: [MySQL, 数据库]
-            related: [domains/backend/databases/mongodb-intro.md]
+            title: MySQL 基础知识
+            tags: [基础]
           - path: domains/backend/databases/mongodb-intro.md
             title: MongoDB 入门
-            tags: [MongoDB, NoSQL]
-            related: [domains/backend/databases/mysql-fundamentals.md]
+            tags: [基础]
       middleware:
         title: 中间件
         pages:
           - path: domains/backend/middleware/minio-overview.md
             title: MinIO 概述
-            tags: [MinIO, 对象存储]
-            related: [domains/backend/middleware/springboot-minio-integration.md]
+            tags: [MinIO]
+          - path: domains/backend/middleware/minio-deployment.md
+            title: MinIO 安装与部署
+            tags: [MinIO]
           - path: domains/backend/middleware/springboot-minio-integration.md
             title: SpringBoot 整合 MinIO
-            tags: [MinIO, Spring Boot]
-            related: [domains/backend/middleware/minio-overview.md, domains/backend/spring/springboot-web-intro.md]
+            tags: [MinIO]
+      mybatis:
+        title: MyBatis
+        pages:
+          - path: domains/backend/mybatis/mybatis-intro.md
+            title: MyBatis 入门导航
+            tags: [MyBatis]
+          - path: domains/backend/mybatis/mybatis-plus-wrapper.md
+            title: MyBatis-Plus Wrapper 条件构造器
+            tags: [MyBatis-Plus]
       architecture:
         title: 架构设计
+        children:
+          ruankao:
+            title: 软考笔记
+            pages:
+              - path: domains/backend/architecture/ruankao/software-engineering.md
+                title: 软件工程
+                tags: [系统架构设计师, 软件工程]
+              - path: domains/backend/architecture/ruankao/requirements-engineering.md
+                title: 需求工程
+                tags: [系统架构设计师, 软件工程]
+              - path: domains/backend/architecture/ruankao/design-patterns.md
+                title: 设计模式
+                tags: [系统架构设计师, 系统分析与设计]
+              - path: domains/backend/architecture/ruankao/software-system-architecture.md
+                title: 软件系统架构
+                tags: [系统架构设计师, 系统架构设计]
+              - path: domains/backend/architecture/ruankao/architecture-quality.md
+                title: 架构质量属性与评估
+                tags: [系统架构设计师, 系统架构设计]
+              - path: domains/backend/architecture/ruankao/software-reliability.md
+                title: 软件可靠性
+                tags: [系统架构设计师, 系统架构设计]
+              - path: domains/backend/architecture/ruankao/software-testing.md
+                title: 软件测试
+                tags: [系统架构设计师, 软件工程]
+              - path: domains/backend/architecture/ruankao/software-tools.md
+                title: 软件系统环境与工具
+                tags: [系统架构设计师, 软件工程]
+              - path: domains/backend/architecture/ruankao/system-analysis-design.md
+                title: 系统分析与设计
+                tags: [系统架构设计师, 系统分析与设计]
+              - path: domains/backend/architecture/ruankao/component-based-engineering.md
+                title: 基于构件的软件工程（CBSE）
+                tags: [系统架构设计师, 软件工程]
+          system-design:
+            title: 系统设计
+            pages:
+              - path: domains/backend/architecture/system-design/comment-system-design.md
+                title: 评论系统功能和架构设计
+                tags: [评论系统]
+              - path: domains/backend/architecture/system-design/comment-system-storage.md
+                title: 评论系统存储和可用性设计
+                tags: [评论系统]
         pages:
           - path: domains/backend/architecture/bilibili-comment-system.md
             title: B站评论系统架构设计
-            tags: [系统设计, 评论系统, 架构]
-            related: [domains/backend/architecture/sofa-architecture-pattern.md, domains/backend/architecture/software-architecture-styles.md]
+            tags: [评论系统]
           - path: domains/backend/architecture/sofa-architecture-pattern.md
             title: SOFA 架构模式
-            tags: [SOFA, 架构模式]
-            related: [domains/backend/architecture/bilibili-comment-system.md, domains/backend/architecture/software-architecture-styles.md]
+            tags: [架构模式]
           - path: domains/backend/architecture/software-architecture-styles.md
             title: 软件架构风格
-            tags: [架构风格, 软件工程]
-            related: [domains/backend/architecture/sofa-architecture-pattern.md, domains/backend/architecture/bilibili-comment-system.md]
-
-  algorithms:
-    title: 算法
-    description: 数据结构与算法、LeetCode、面试算法
-    children:
-      templates:
-        title: 算法模板
+            tags: [系统架构设计师, 系统架构设计]
+      projects:
+        title: 项目实战
         pages:
-          - path: domains/algorithms/templates/basic-algorithms.md
-            title: 基础算法
-            tags: [排序, 二分, 高精度, 前缀和, 差分]
-            related: [domains/algorithms/templates/data-structures.md, domains/algorithms/templates/search-and-graph.md]
-          - path: domains/algorithms/templates/data-structures.md
-            title: 数据结构
-            tags: [链表, 栈, 队列, 哈希, 堆, 并查集]
-            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/notes/union-find.md]
-          - path: domains/algorithms/templates/dynamic-programming.md
-            title: 动态规划
-            tags: [DP, 背包, 状态机]
-            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/templates/search-and-graph.md]
-          - path: domains/algorithms/templates/search-and-graph.md
-            title: 搜索与图论
-            tags: [DFS, BFS, 最短路, 最小生成树]
-            related: [domains/algorithms/templates/basic-algorithms.md, domains/algorithms/templates/dynamic-programming.md]
-      notes:
-        title: 算法笔记
-        pages:
-          - path: domains/algorithms/notes/union-find.md
-            title: 并查集
-            tags: [并查集, 数据结构]
-            related: [domains/algorithms/templates/data-structures.md]
+          - path: domains/backend/projects/user-center-1.md
+            title: 用户中心（一）：需求分析与初始化
+            tags: [用户中心]
+          - path: domains/backend/projects/user-center-2.md
+            title: 用户中心（二）：数据库设计与注册逻辑
+            tags: [用户中心]
+          - path: domains/backend/projects/user-center-3.md
+            title: 用户中心（三）：登录功能与用户管理
+            tags: [用户中心]
+          - path: domains/backend/projects/user-center-4.md
+            title: 用户中心（四）：前后端交互与页面开发
+            tags: [用户中心]
+          - path: domains/backend/projects/user-center-5.md
+            title: 用户中心（五）：注销与全局优化
+            tags: [用户中心]
+          - path: domains/backend/projects/mianshiba-intro.md
+            title: 面试吧 - 项目介绍
+            tags: [面试吧]
+          - path: domains/backend/projects/mianshiba-backend.md
+            title: 面试吧 - 后端开发
+            tags: [面试吧]
+          - path: domains/backend/projects/mianshiba-frontend.md
+            title: 面试吧 - 前端模板开发
+            tags: [面试吧]
+          - path: domains/backend/projects/bloom-filter-usage.md
+            title: 布隆过滤器在项目中的使用
+            tags: [用户匹配系统, 布隆过滤器]
+          - path: domains/backend/projects/ruoyi-rbac.md
+            title: RuoYi RBAC 权限控制
+            tags: [RuoYi]
+          - path: domains/backend/projects/ruoyi-scheduled-task.md
+            title: RuoYi 定时任务
+            tags: [RuoYi]
 
   cs-fundamentals:
     title: 计算机
-    description: 操作系统、设计模式、大数据
-    children: {}
+    description: 操作系统、大数据、设计模式
+    children:
+      operating-system:
+        title: 操作系统
+        pages:
+          - path: domains/cs-fundamentals/operating-system/shell-syntax.md
+            title: Shell 语法
+            tags: [基础]
+      big-data:
+        title: 大数据
+        pages:
+          - path: domains/cs-fundamentals/big-data/intro-to-big-data.md
+            title: 初识大数据
+            tags: [基础]
+      design-pattern:
+        title: 设计模式
+        pages: []
 
   blog:
     title: 程序人生
     description: 读书笔记、工具研究、杂谈
     children:
+      books:
+        title: 读书
+        children:
+          reading:
+            title: 阅读记录
+            pages:
+              - path: domains/blog/books/reading/2024-08.md
+                title: 阅读记录 2024.8 期
+                tags: []
+              - path: domains/blog/books/reading/2024-09.md
+                title: 阅读记录 2024.9 期
+                tags: []
+              - path: domains/blog/books/reading/2024-10.md
+                title: 阅读记录 2024.10 期
+                tags: []
+              - path: domains/blog/books/reading/2024-11.md
+                title: 阅读记录 2024.11 期
+                tags: []
+              - path: domains/blog/books/reading/2024-12.md
+                title: 阅读记录 2024.12 期
+                tags: []
+              - path: domains/blog/books/reading/2025-01.md
+                title: 阅读记录 2025.1 期
+                tags: []
+              - path: domains/blog/books/reading/2025-02.md
+                title: 阅读记录 2025.2 期
+                tags: []
+              - path: domains/blog/books/reading/2025-03.md
+                title: 阅读记录 2025.3 期
+                tags: []
+              - path: domains/blog/books/reading/2025-04.md
+                title: 阅读记录 2025.4 期
+                tags: []
+              - path: domains/blog/books/reading/2025-05.md
+                title: 阅读记录 2025.5 期
+                tags: []
+              - path: domains/blog/books/reading/2025-06.md
+                title: 阅读记录 2025.6 期
+                tags: []
+              - path: domains/blog/books/reading/2025-07.md
+                title: 阅读记录 2025.7 期
+                tags: []
+              - path: domains/blog/books/reading/2025-08.md
+                title: 阅读记录 2025.8 期
+                tags: []
+              - path: domains/blog/books/reading/2025-09.md
+                title: 阅读记录 2025.9 期
+                tags: []
+              - path: domains/blog/books/reading/2025-10.md
+                title: 阅读记录 2025.10 期
+                tags: []
+              - path: domains/blog/books/reading/2025-11.md
+                title: 阅读记录 2025.11 期
+                tags: []
+              - path: domains/blog/books/reading/2025-12.md
+                title: 阅读记录 2025.12 期
+                tags: []
+              - path: domains/blog/books/reading/2026-01.md
+                title: 阅读记录 2026.1 期
+                tags: []
+              - path: domains/blog/books/reading/2026-02.md
+                title: 阅读记录 2026.2 期
+                tags: []
+              - path: domains/blog/books/reading/2026-03.md
+                title: 阅读记录 2026.3 期
+                tags: []
       tools:
         title: 工具研究
         pages:
+          - path: domains/blog/tools/ai-toolset.md
+            title: AI 工具集
+            tags: [工具]
           - path: domains/blog/tools/claude-code-context-management.md
-            title: Claude Code 上下文管理
-            tags: [Claude Code, 上下文]
-            related: [domains/ai/llm/context-engineering.md]
+            title: Claude Code 上下文管理实战笔记
+            tags: [工作笔记, Agent]
+          - path: domains/blog/tools/self-hosted-cloud-storage.md
+            title: 自建网盘兼图床
+            tags: [教程]
+          - path: domains/blog/tools/vpn-proxy-setup.md
+            title: 科学上网与本地代理
+            tags: [教程]
       sundry:
         title: 杂谈
         pages:
           - path: domains/blog/sundry/java-local-cache.md
             title: Java 实现本地缓存的几种方式
-            tags: [Java, 缓存, Guava, Caffeine]
-            related: [domains/backend/java/concurrency/threadlocal.md]
+            tags: [工作笔记]
+          - path: domains/blog/sundry/linux-log-analysis.md
+            title: 如何使用 Linux 下的日志分析工具
+            tags: [工作笔记]
+          - path: domains/blog/sundry/requestparam-vs-pathvariable.md
+            title: "@RequestParam 和 @PathVariable 的区别"
+            tags: [工作笔记]
+          - path: domains/blog/sundry/stringutils-isempty-isblank.md
+            title: StringUtils 中的 isEmpty 与 isBlank
+            tags: [工作笔记, Java]
 
 synthesis: []

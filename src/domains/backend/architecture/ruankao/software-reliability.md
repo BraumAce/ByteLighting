@@ -1,5 +1,6 @@
 ---
 title: "软件可靠性"
+date: 2026-03-01
 category:
   - 软考
 tag:

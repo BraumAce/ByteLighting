@@ -1,5 +1,6 @@
 ---
 title: "架构质量属性与评估"
+date: 2026-02-22
 category:
   - 软考
 tag:

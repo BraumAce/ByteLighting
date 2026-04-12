@@ -1,5 +1,6 @@
 ---
 title: "MyBatis 入门导航"
+date: 2024-12-15
 category:
   - 常用框架
 tag:

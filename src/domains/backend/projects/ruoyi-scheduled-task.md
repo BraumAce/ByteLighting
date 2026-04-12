@@ -1,5 +1,6 @@
 ---
 title: "RuoYi 定时任务"
+date: 2024-09-29
 category:
   - 常用框架
 tag:

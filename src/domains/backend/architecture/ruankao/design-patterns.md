@@ -1,5 +1,6 @@
 ---
 title: "设计模式"
+date: 2026-01-02
 category:
   - 软考
 tag:

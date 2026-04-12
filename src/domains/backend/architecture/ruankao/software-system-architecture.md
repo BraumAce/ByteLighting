@@ -1,5 +1,6 @@
 ---
 title: "软件系统架构"
+date: 2026-02-22
 category:
   - 软考
 tag:

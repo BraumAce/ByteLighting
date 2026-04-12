@@ -1,5 +1,6 @@
 ---
 title: "RuoYi RBAC 权限控制"
+date: 2024-09-29
 category:
   - 常用框架
 tag:
