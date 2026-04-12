@@ -1,0 +1,80 @@
+---
+title: "二叉树的最大深度"
+date: 
+domain: algorithms/leetcode
+category: 
+  - hot100
+  - 数据结构
+tag: 
+  - 二叉树
+  - 递归
+  - 迭代
+related:
+  - binary-tree-diameter
+  - binary-tree-level-order
+  - symmetric-tree
+  - binary-tree-right-side-view
+source: raw/legacy/algorithm/leetcode/hot100/二叉树的最大深度.md
+status: ingested
+last_reviewed: 2026-04-12
+---
+
+# 二叉树的最大深度
+
+<!-- more -->
+
+[104.二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=top-100-liked)
+
+## 题意
+
+给定一个二叉树 `root` ，返回其最大深度。
+
+二叉树的 **最大深度** 是指从根节点到最远叶子节点的最长路径上的节点数。
+
+## 思路一：后序遍历（递归）
+
+递归实现：树深度 等于 左子树的深度 与 右子树的深度 中的 **最大值 $+1$** 。
+
+**代码：**
+
+```java
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+
+        int l = maxDepth(root.left);
+        int r = maxDepth(root.right);
+        return Math.max(l, r) + 1;
+    }
+}
+```
+
+## 思路二：层序遍历（迭代）
+
+队列实现：每遍历一层，则计数器 $+1$ ，直到遍历完成，则可得到树的深度。
+
+**代码：**
+
+```java
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+
+        List<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        
+        int res = 0;
+        while (!q.isEmpty()){
+            List<TreeNode> tmp = new LinkedList<>();
+            for (TreeNode node : q){
+                if (node.left != null) tmp.add(node.left);
+                if (node.right != null) tmp.add(node.right);
+            }
+            q = tmp;
+            res++;
+        }
+
+        return res;
+    }
+}
+```
