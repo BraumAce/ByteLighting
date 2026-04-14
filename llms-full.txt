@@ -44691,7 +44691,7 @@ url: 'https://blog.bytelighting.cn/domains/blog/reading/2026/2026.4.md'
 ---
 # 2026.4 期
 
-## 4.11
+## 4.13
 
 * [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://mp.weixin.qq.com/s/JycTfNd7EnmWCnJK-QCf0Q)
 
