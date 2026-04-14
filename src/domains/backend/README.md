@@ -6,6 +6,8 @@ dir:
   icon: "server"
 index: false
 article: false
+star: true
+comment: false
 ---
 
 以 Java 生态为主线，覆盖语言基础、Spring 全家桶、持久层框架、数据库原理与调优、主流中间件，以及系统架构设计与实战项目。从单机应用到分布式系统，兼顾理论深度与工程落地。

@@ -6,6 +6,8 @@ dir:
   icon: "code"
 index: false
 article: false
+star: true
+comment: false
 ---
 
 系统梳理数据结构与算法核心知识，覆盖常见面试题型分类、LeetCode 分类题解，以及可复用的算法模板。理解原理与应试实战并重，适合备战技术面试和日常查阅。

@@ -6,6 +6,8 @@ dir:
   icon: "computer"
 index: false
 article: false
+star: true
+comment: false
 ---
 
 计算机基础知识体系，涵盖操作系统原理、经典设计模式，以及大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。

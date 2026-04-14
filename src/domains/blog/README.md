@@ -6,6 +6,8 @@ dir:
   icon: "coffee"
 index: false
 article: false
+star: true
+comment: false
 ---
 
 技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。
