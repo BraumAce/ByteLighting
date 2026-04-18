@@ -44691,6 +44691,10 @@ url: 'https://blog.bytelighting.cn/domains/blog/reading/2026/2026.4.md'
 ---
 # 2026.4 期
 
+## 4.18
+
+* [AI Skill 体系全解：企业级 AI 能力标准化、可插拔、可审计](https://mp.weixin.qq.com/s/MUsZPU8xnu9ufk7z2zxo-w)
+
 ## 4.17
 
 * [一文讲透：Harness Engineering即控制论！](https://mp.weixin.qq.com/s/_Yn-PRW2kmoOusUbTbi3vQ)
