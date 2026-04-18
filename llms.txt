@@ -11,6 +11,7 @@
 - [Agent Skills](https://blog.bytelighting.cn/domains/ai/llm/agent-skills.md)
 - [上下文工程 - 解锁大模型真正潜力的关键](https://blog.bytelighting.cn/domains/ai/llm/context-engineering.md)
 - ["写法+测评" - 调试 Agent 的 Prompt](https://blog.bytelighting.cn/domains/ai/llm/debugging-agent-prompt.md)
+- [企业级 AI Skill 体系](https://blog.bytelighting.cn/domains/ai/llm/enterprise-skill-system.md)
 - [大模型应用与 Agent 开发资料](https://blog.bytelighting.cn/domains/ai/llm/llm-agent-dev-resources.md)
 - [Prompt 最佳实践](https://blog.bytelighting.cn/domains/ai/llm/prompt-best-practices.md)
 - [算法](https://blog.bytelighting.cn/domains/algorithms/index.md)
