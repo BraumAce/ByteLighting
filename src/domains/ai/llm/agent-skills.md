@@ -11,6 +11,7 @@ related:
   - ai/llm/context-engineering
   - ai/llm/debugging-agent-prompt
   - ai/llm/agent-skill-design-philosophy
+  - ai/llm/enterprise-skill-system
 source: raw/legacy/computer/llm/application/Agent Skills.md
 status: published
 last_reviewed: 2026-04-12

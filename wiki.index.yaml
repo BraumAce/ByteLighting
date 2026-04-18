@@ -1,6 +1,6 @@
 # wiki.index.yaml - LLM 维护的全局知识索引
 version: 1
-last_updated: 2026-04-12
+last_updated: 2026-04-18
 
 domains:
   ai:
@@ -25,6 +25,9 @@ domains:
           - path: domains/ai/llm/agent-skill-design-philosophy.md
             title: Agent Skill 设计哲学：从联网场景到通用设计方法论
             tags: [工作笔记, Agent]
+          - path: domains/ai/llm/enterprise-skill-system.md
+            title: 企业级 AI Skill 体系
+            tags: [Agent]
 
   algorithms:
     title: 算法
