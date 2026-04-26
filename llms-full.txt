@@ -45060,6 +45060,14 @@ url: 'https://blog.bytelighting.cn/domains/blog/reading/2026/2026.4.md'
 ---
 # 2026.4 期
 
+## 4.25
+
+* [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://mp.weixin.qq.com/s/7dkGfGUsr3UNHSwZ0EoI9g)
+
+## 4.24
+
+* [深度解析 Hermes Agent 如何实现“自进化”及其 Prompt / Context / Harness 的设计实践](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
+
 ## 4.23
 
 * [深入源码：Hermes Agent 如何实现 "Self-Improving"](https://mp.weixin.qq.com/s/Qi68ptxQRyiA932JU49SYQ)
