@@ -45060,6 +45060,16 @@ url: 'https://blog.bytelighting.cn/domains/blog/reading/2026/2026.4.md'
 ---
 # 2026.4 期
 
+## 4.28
+
+* [你不知道的 Agent：原理、架构与工程实践](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
+
+* [Harness Engineering实践心得：如何高效驾驭AI？](https://mp.weixin.qq.com/s/NtsksL2gkMtMqkILi4xvRg)
+
+* [Harness Engineering 来龙去脉](https://mp.weixin.qq.com/s/hsItMKR-J7w16DtjtkJQPw)
+
+* [读完这篇，你就搞懂 DeepSeek v4 了](https://mp.weixin.qq.com/s/MamimcCQj_Hd12T8iFVmKg)
+
 ## 4.27
 
 * [工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ)
