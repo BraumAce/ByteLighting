@@ -1,22 +1,12 @@
 ---
 title: "删除链表的倒数第N个节点"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
   - 双指针
-related:
-  - add-two-numbers
-  - reverse-nodes-in-k-group
-  - sort-list
-  - merge-k-sorted-lists
-  - copy-list-with-random-pointer
-source: raw/legacy/algorithm/leetcode/hot100/删除链表的倒数第N个节点.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 删除链表的倒数第N个节点

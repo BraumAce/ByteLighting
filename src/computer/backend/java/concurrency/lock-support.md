@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/condition-await-signal
-  - backend/java/concurrency/reentrant-lock
-  - backend/java/concurrency/aqs-deep-dive
-source: raw/legacy/computer/language/java/JUC 并发编程/13. LockSupport工具.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

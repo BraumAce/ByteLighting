@@ -4,16 +4,6 @@ category:
   - Java
 tag: 
   - 基础
-
-# Wiki 扩展字段
-domain: backend/java
-related:
-  - backend/java/fundamentals
-  - backend/java/common-api
-  - backend/java/lambda
-source: raw/legacy/computer/language/java/哈希表.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 哈希表

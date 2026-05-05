@@ -5,14 +5,6 @@ category:
   - Linux
 tag:
   - 基础
-
-# Wiki 扩展字段
-domain: cs-fundamentals/operating-system
-related:
-  - cs-fundamentals/operating-system
-source: raw/legacy/computer/operating-system/linux/Shell语法.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Shell 语法

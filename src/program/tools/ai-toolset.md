@@ -5,12 +5,6 @@ category:
 tag: 
 - 工具
 order: 1
-
-# Wiki 扩展字段
-domain: blog/tools
-source: raw/legacy/program/ai/tool/AI-toolset.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # AI 工具集

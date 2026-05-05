@@ -4,17 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/jmm-happens-before
-  - backend/java/concurrency/synchronized
-  - backend/java/concurrency/volatile
-  - backend/java/concurrency/aqs-deep-dive
-  - backend/java/concurrency/threadlocal
-source: raw/legacy/computer/language/java/JUC 并发编程/21. 线程池ThreadPoolExecutor实现原理.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 线程池 ThreadPoolExecutor 实现原理

@@ -6,14 +6,6 @@ category:
   - 数据结构
 tag:
   - 并查集
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/templates/data-structures
-source: raw/legacy/algorithm/note/并查集.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 并查集

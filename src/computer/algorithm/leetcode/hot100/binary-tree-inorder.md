@@ -1,7 +1,6 @@
 ---
 title: "二叉树的中序遍历"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
@@ -9,15 +8,6 @@ tag:
   - 二叉树
   - 递归
   - 迭代
-related:
-  - binary-tree-level-order
-  - construct-binary-tree-from-preorder-and-inorder
-  - validate-binary-search-tree
-  - kth-smallest-element-in-bst
-  - flatten-binary-tree-to-linked-list
-source: raw/legacy/algorithm/leetcode/hot100/二叉树的中序遍历.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树的中序遍历

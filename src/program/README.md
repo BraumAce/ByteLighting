@@ -1,10 +1,5 @@
 ---
 title: "程序人生"
-dir:
-  order: 5
-  text: "程序人生"
-  icon: "coffee"
-index: false
 article: false
 star: true
 comment: false

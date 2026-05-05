@@ -1,19 +1,11 @@
 ---
 title: "实现 Trie（前缀树）"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 图论
 tag: 
   - 字典树
-related:
-  - course-schedule
-  - number-of-islands
-  - rotting-oranges
-source: raw/legacy/algorithm/leetcode/hot100/实现Tire（前缀树）.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 实现 Trie（前缀树）

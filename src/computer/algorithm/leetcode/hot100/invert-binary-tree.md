@@ -6,15 +6,6 @@ tag:
   - 二叉树
   - 递归
 title: "翻转二叉树"
-domain: algorithms/leetcode
-related:
-  - algorithms/leetcode/hot100/symmetric-tree
-  - algorithms/leetcode/hot100/max-depth-of-binary-tree
-  - algorithms/leetcode/hot100/binary-tree-level-order
-  - algorithms/leetcode/hot100/flatten-binary-tree-to-linked-list
-source: raw/legacy/algorithm/leetcode/hot100/翻转二叉树.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 翻转二叉树

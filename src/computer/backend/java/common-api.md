@@ -4,16 +4,6 @@ category:
   - Java
 tag: 
   - API
-
-# Wiki 扩展字段
-domain: backend/java
-related:
-  - backend/java/fundamentals
-  - backend/java/lambda
-  - backend/java/hashtable
-source: raw/legacy/computer/language/java/常用API.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 常用API

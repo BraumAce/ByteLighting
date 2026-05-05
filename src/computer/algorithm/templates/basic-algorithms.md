@@ -7,16 +7,6 @@ category:
   - 模板
 tag:
   - 算法模板
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/data-structures
-  - algorithms/templates/dynamic-programming
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/template/基础算法.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 基础算法

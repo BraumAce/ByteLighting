@@ -6,18 +6,6 @@ order: 6
 category:
   - 模板
   - 贪心
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/data-structures
-  - algorithms/templates/dynamic-programming
-  - algorithms/templates/search-and-graph
-  - algorithms/templates/math
-source: raw/legacy/algorithm/template/贪心.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 贪心

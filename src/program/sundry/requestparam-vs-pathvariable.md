@@ -5,12 +5,6 @@ category:
 tag: 
 - 工作笔记
 comment: true
-
-# Wiki 扩展字段
-domain: blog/sundry
-source: raw/legacy/program/sundry/@RequestParam和@PathVariable的区别.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # @RequestParam 和 @PathVariable 的区别

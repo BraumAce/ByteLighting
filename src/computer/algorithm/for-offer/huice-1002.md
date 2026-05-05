@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - tongcheng-0924
-  - shenzhou-1009
-source: raw/legacy/algorithm/for-offer/慧策笔试-1002.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 慧策笔试 - 1002

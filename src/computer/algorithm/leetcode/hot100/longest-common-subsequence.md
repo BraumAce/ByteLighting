@@ -1,20 +1,11 @@
 ---
 title: "最长公共子序列"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 线性DP
-related:
-  - longest-increasing-subsequence
-  - maximum-product-subarray
-  - word-break
-  - longest-valid-parentheses
-source: raw/legacy/algorithm/leetcode/hot100/最长公共子序列.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 最长公共子序列

@@ -5,12 +5,6 @@ category:
   - 常用框架
 tag:
   - RuoYi
-domain: backend/projects
-related:
-  - backend/projects/ruoyi-scheduled-task
-source: raw/legacy/framework/ruoyi/RBAC权限控制.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # RBAC 权限控制

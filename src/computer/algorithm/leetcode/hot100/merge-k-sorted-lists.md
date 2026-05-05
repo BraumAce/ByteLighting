@@ -1,22 +1,12 @@
 ---
 title: "合并K个升序链表"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
   - 优先队列
-related:
-  - sort-list
-  - add-two-numbers
-  - remove-nth-node-from-end
-  - reverse-nodes-in-k-group
-  - sliding-window-maximum
-source: raw/legacy/algorithm/leetcode/hot100/合并K个升序链表.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 合并 K 个升序链表

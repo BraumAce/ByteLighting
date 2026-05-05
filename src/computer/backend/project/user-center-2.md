@@ -6,17 +6,6 @@ category:
 - 项目
 tag: 
 - 用户中心
-
-# Wiki 扩展字段
-domain: backend/projects
-related:
-  - backend/projects/user-center-1
-  - backend/projects/user-center-3
-  - backend/projects/user-center-4
-  - backend/projects/user-center-5
-source: raw/legacy/open-project/user-center/2. 中.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 第二期 - 中

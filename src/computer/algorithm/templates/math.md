@@ -6,18 +6,6 @@ order: 4
 category:
   - 模板
   - 数学
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/data-structures
-  - algorithms/templates/dynamic-programming
-  - algorithms/templates/search-and-graph
-  - algorithms/templates/greedy
-source: raw/legacy/algorithm/template/数学知识.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 数学知识

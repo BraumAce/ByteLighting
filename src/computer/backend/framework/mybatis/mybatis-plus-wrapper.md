@@ -5,12 +5,6 @@ category:
   - 常用框架
 tag:
   - MyBatis-Plus
-domain: backend/mybatis
-related:
-  - backend/mybatis/mybatis-intro
-source: raw/legacy/framework/mybatis-plus/MyBatis-Plus基础/MyBatis-Plus Wrapper.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # MyBatis-Plus Wrapper 条件构造器

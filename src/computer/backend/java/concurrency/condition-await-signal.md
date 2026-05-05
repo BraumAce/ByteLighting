@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/lock-and-aqs-intro
-  - backend/java/concurrency/reentrant-lock
-  - backend/java/concurrency/lock-support
-source: raw/legacy/computer/language/java/JUC 并发编程/12. 详解Condition的await和signal等待通知机制.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

@@ -1,20 +1,11 @@
 ---
 title: "乘积最大子数组"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 线性DP
-related:
-  - longest-common-subsequence
-  - longest-increasing-subsequence
-  - house-robber
-  - longest-valid-parentheses
-source: raw/legacy/algorithm/leetcode/hot100/乘积最大子数组.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 乘积最大子数组

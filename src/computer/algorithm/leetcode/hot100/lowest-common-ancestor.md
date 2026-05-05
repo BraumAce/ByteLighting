@@ -6,15 +6,6 @@ tag:
   - 二叉树
   - 递归
 title: "二叉树的最近公共祖先"
-domain: algorithms/leetcode
-related:
-  - algorithms/leetcode/hot100/max-depth-of-binary-tree
-  - algorithms/leetcode/hot100/binary-tree-level-order
-  - algorithms/leetcode/hot100/validate-binary-search-tree
-  - algorithms/leetcode/hot100/kth-smallest-element-in-bst
-source: raw/legacy/algorithm/leetcode/hot100/二叉树的最近公共祖先.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树的最近公共祖先

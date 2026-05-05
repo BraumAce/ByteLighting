@@ -1,7 +1,6 @@
 ---
 title: "岛屿数量"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 图论
@@ -9,13 +8,6 @@ tag:
   - DFS
   - BFS
   - 并查集
-related:
-  - rotting-oranges
-  - course-schedule
-  - implement-trie
-source: raw/legacy/algorithm/leetcode/hot100/岛屿数量.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 岛屿数量

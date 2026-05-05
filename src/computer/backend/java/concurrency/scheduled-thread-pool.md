@@ -4,14 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/thread-pool-executor
-  - backend/java/concurrency/future-task
-source: raw/legacy/computer/language/java/JUC 并发编程/22. 线程池之ScheduledThreadPoolExecutor.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

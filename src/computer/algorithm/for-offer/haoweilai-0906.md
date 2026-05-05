@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - xiecheng-0905
-  - xiaoheihe-0907
-source: raw/legacy/algorithm/for-offer/好未来笔试-0906.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 好未来笔试 - 0906

@@ -5,12 +5,6 @@ category:
   - 常用框架
 tag:
   - MyBatis
-domain: backend/mybatis
-related:
-  - backend/mybatis/mybatis-plus-wrapper
-source: raw/legacy/framework/mybatis/MyBatis基础/MyBatis入门导航.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # MyBatis 入门导航

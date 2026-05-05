@@ -4,16 +4,6 @@ category:
   - LLM 应用
 tag: 
   - Prompt
-
-domain: ai/llm
-related:
-  - ai/llm/prompt-best-practices
-  - ai/llm/agent-skills
-  - ai/llm/debugging-agent-prompt
-  - ai/llm/agent-skill-design-philosophy
-source: raw/legacy/computer/llm/application/上下文工程.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 上下文工程 —— 解锁大模型真正潜力的关键

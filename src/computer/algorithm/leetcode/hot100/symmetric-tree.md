@@ -1,21 +1,12 @@
 ---
 title: "对称二叉树"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 二叉树
   - 递归
-related:
-  - binary-tree-level-order
-  - binary-tree-diameter
-  - max-depth-of-binary-tree
-  - validate-binary-search-tree
-source: raw/legacy/algorithm/leetcode/hot100/对称二叉树.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 对称二叉树

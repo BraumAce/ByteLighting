@@ -6,14 +6,6 @@ tag:
   - 工作笔记
   - Agent
 comment: true
-
-# Wiki 扩展字段
-domain: blog/tools
-related:
-  - ai/llm/context-engineering
-source: raw/legacy/program/ai/article/Claude Code 上下文管理.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Claude Code 上下文管理实战笔记：9 条高效使用策略

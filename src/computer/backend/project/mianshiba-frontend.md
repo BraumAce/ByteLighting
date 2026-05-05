@@ -5,15 +5,6 @@ category:
 - 项目
 tag: 
 - 面试吧
-
-# Wiki 扩展字段
-domain: backend/projects
-related:
-  - backend/projects/mianshiba-intro
-  - backend/projects/mianshiba-backend
-source: raw/legacy/open-project/mianshiba/3. 前端模板开发.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 第三期 - 前端模版开发

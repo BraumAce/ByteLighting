@@ -5,16 +5,6 @@ category:
 tag: 
   - SpringCloud
 reprint: true
-
-# Wiki 扩展字段
-domain: backend/spring
-related:
-  - backend/spring/springboot-web-intro
-  - backend/spring/springboot-auth
-  - backend/spring/spring-ioc-deep-dive
-source: raw/legacy/framework/spring-cloud/源码剖析/1. Eureka源码 - 启动过程.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Eureka 源码 - 启动过程

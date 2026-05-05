@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - jd-0824
-  - meituan-0831
-source: raw/legacy/algorithm/for-offer/美团笔试-0824.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 美团笔试 - 0824

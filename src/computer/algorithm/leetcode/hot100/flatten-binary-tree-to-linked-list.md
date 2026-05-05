@@ -1,20 +1,11 @@
 ---
 title: "二叉树展开为链表"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 二叉树
-related:
-  - binary-tree-inorder
-  - binary-tree-level-order
-  - binary-tree-right-side-view
-  - construct-binary-tree-from-preorder-and-inorder
-source: raw/legacy/algorithm/leetcode/hot100/二叉树展开为链表.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树展开为链表

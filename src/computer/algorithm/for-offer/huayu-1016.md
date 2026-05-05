@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - baidu-1015
-  - feiyu-1013
-source: raw/legacy/algorithm/for-offer/华宇信息笔试-1016.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 华宇信息笔试 - 1016

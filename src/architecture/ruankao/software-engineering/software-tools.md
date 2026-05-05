@@ -7,14 +7,6 @@ tag:
 order: 4
 comment: true
 title: "软件系统环境与工具"
-domain: backend/architecture/ruankao/software-engineering
-related:
-  - backend/architecture/ruankao/software-engineering
-  - backend/architecture/ruankao/software-testing
-  - backend/architecture/software-architecture-styles
-source: raw/legacy/architecture/ruankao-system-architect/software-engineering/软件系统环境与工具.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 软件系统环境与工具

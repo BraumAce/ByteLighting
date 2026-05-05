@@ -1,20 +1,11 @@
 ---
 title: "零钱兑换"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 背包问题
-related:
-  - perfect-squares
-  - partition-equal-subset-sum
-  - house-robber
-  - word-break
-source: raw/legacy/algorithm/leetcode/hot100/零钱兑换.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 零钱兑换

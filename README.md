@@ -14,34 +14,34 @@
 
 ## 简介
 
-ByteLighting Wiki — 基于 [Karpathy llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 模式构建的结构化知识库。内容由人和 LLM 共同维护，既可供人阅读，也可供 LLM 检索。
+ByteLighting 是一个个人技术博客，记录工程实践、知识沉淀与学习笔记。基于 VuePress 2 + [vuepress-theme-hope](https://theme-hope.vuejs.press/) 构建。
 
-基于 VuePress 2 + [vuepress-theme-hope](https://theme-hope.vuejs.press/) 构建，支持 Obsidian 浏览和图谱视图。
+## 内容分类
 
-## 知识领域
+- [AI](https://blog.bytelighting.cn/ai/) — 大模型应用、Prompt 工程、Agent
+- [程序人生](https://blog.bytelighting.cn/program/) — 读书笔记、工具研究、杂谈
+- [架构设计](https://blog.bytelighting.cn/architecture/) — 系统设计、软考系统架构师
+- 计算机
+  - [通用技术](https://blog.bytelighting.cn/computer/technology/) — 操作系统、设计模式、大数据
+  - [算法](https://blog.bytelighting.cn/computer/algorithm/) — 算法笔记、模板、LeetCode、笔试题
+  - [后端设计](https://blog.bytelighting.cn/computer/backend/) — Java、数据库、框架、项目实战
 
-- [AI](https://blog.bytelighting.cn/domains/ai/) — 大模型应用、Prompt 工程、Agent
-- [后端](https://blog.bytelighting.cn/domains/backend/) — Java、Spring、数据库、中间件、架构设计、项目实战
-- [算法](https://blog.bytelighting.cn/domains/algorithms/) — 算法笔记、模板、LeetCode、面试题
-- [计算机](https://blog.bytelighting.cn/domains/cs-fundamentals/) — 操作系统、设计模式、大数据
-- [程序人生](https://blog.bytelighting.cn/domains/blog/) — 读书笔记、工具研究、杂谈
-
-## 架构
+## 目录结构
 
 ```
 ByteLighting/
-├── CLAUDE.md              # Schema：LLM 行为规范
-├── wiki.index.yaml        # 全局知识索引
-├── raw/                   # 原始素材层（LLM 只读）
-│   ├── legacy/            # 旧博客文章存档
-│   └── inbox/             # 新素材投放区
-├── src/domains/           # Wiki 层（LLM + 人共同维护）
+├── CLAUDE.md              # 协作者写作规范
+├── deploy.sh              # 部署脚本
+├── package.json           # 依赖与脚本
+├── src/                   # 站点源码
+│   ├── .vuepress/         # 主题与构建配置
 │   ├── ai/
-│   ├── backend/
-│   ├── algorithms/
-│   ├── cs-fundamentals/
-│   └── blog/
-└── src/synthesis/         # 跨领域综合分析
+│   ├── program/
+│   ├── architecture/
+│   ├── computer/
+│   ├── intro.md
+│   └── README.md          # 首页
+└── dev-ops/               # 部署相关（Nginx / Docker）
 ```
 
 ## 特性
@@ -51,7 +51,6 @@ ByteLighting/
 - RSS 订阅：Atom / RSS 格式
 - 评论系统：Giscus
 - PWA 支持
-- Obsidian 兼容：`src/` 目录可直接作为 Obsidian Vault
 
 ## 关于本站
 

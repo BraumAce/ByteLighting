@@ -6,13 +6,6 @@ category:
 tag:
   - 系统架构设计师
   - 系统架构设计
-domain: backend/architecture/ruankao/system-architect-design
-related:
-  - backend/architecture/ruankao/software-system-architecture
-  - backend/architecture/ruankao/software-reliability
-source: raw/legacy/architecture/ruankao-system-architect/system-architect-design/架构质量属性与评估.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 架构质量属性与评估

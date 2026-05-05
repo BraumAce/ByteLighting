@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/concurrency-pros-cons
-  - backend/java/concurrency/thread-states
-  - backend/java/concurrency/jmm-happens-before
-source: raw/legacy/computer/language/java/JUC 并发编程/7. 三大性质总结：原子性、可见性、有序性.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

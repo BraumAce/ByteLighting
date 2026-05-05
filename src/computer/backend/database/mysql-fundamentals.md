@@ -4,14 +4,6 @@ category:
   - MySQL
 tag: 
   - 基础
-
-# Wiki 扩展字段
-domain: backend/databases
-related:
-  - backend/databases/mongodb-intro
-source: raw/legacy/computer/database/mysql/MySQL基础.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # MySQL 基础知识

@@ -1,7 +1,6 @@
 ---
 title: "滑动窗口最大值"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
@@ -9,12 +8,6 @@ tag:
   - 滑动窗口
   - 优先队列
   - 单调队列
-related:
-  - rotting-oranges
-  - merge-k-sorted-lists
-source: raw/legacy/algorithm/leetcode/hot100/滑动窗口最大值.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 滑动窗口最大值

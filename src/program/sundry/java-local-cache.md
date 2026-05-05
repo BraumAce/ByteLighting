@@ -5,14 +5,6 @@ category:
 tag:
   - 工作笔记
 comment: true
-
-# Wiki 扩展字段
-domain: blog/sundry
-related:
-  - backend/java/concurrency/threadlocal
-source: raw/legacy/program/sundry/Java实现本地缓存的几种方式.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Java 实现本地缓存的几种方式

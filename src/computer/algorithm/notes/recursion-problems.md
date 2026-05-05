@@ -5,18 +5,6 @@ category:
   - 笔记
 tag:
   - 递归
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/search-algorithms
-  - algorithms/notes/dfs-island-problems
-  - algorithms/notes/dfs-maze-problems
-  - algorithms/notes/tips-and-tricks
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/note/递归相关题型.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 递归相关题型

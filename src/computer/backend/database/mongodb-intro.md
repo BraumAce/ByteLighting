@@ -5,14 +5,7 @@ category:
 tag: 
   - 基础
 
-# Wiki 扩展字段
 title: MongoDB 入门
-domain: backend/databases
-related:
-  - backend/databases/mysql-fundamentals
-source: raw/legacy/computer/database/mongo/1. MongoDB入门.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 半小时入门 MongoDB

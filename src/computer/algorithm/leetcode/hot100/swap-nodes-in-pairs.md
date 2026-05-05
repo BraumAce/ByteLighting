@@ -5,15 +5,6 @@ category:
 tag: 
   - 链表
 title: "两两交换链表中的节点"
-domain: algorithms/leetcode
-related:
-  - algorithms/leetcode/hot100/remove-nth-node-from-end
-  - algorithms/leetcode/hot100/reverse-nodes-in-k-group
-  - algorithms/leetcode/hot100/add-two-numbers
-  - algorithms/leetcode/hot100/sort-list
-source: raw/legacy/algorithm/leetcode/hot100/两两交换链表中的节点.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 两两交换链表中的节点

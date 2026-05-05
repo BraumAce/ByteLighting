@@ -6,15 +6,7 @@ category:
 tag:
   - MinIO
 
-# Wiki 扩展字段
 title: SpringBoot 整合 MinIO
-domain: backend/middleware
-related:
-  - backend/middleware/minio-overview
-  - backend/spring/springboot-web-intro
-source: raw/legacy/computer/middleware/MinIO/SpringBoot整合MinIO.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # SpringBoot 整合 MinIO

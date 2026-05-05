@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - 360-0914
-  - tongcheng-0924
-source: raw/legacy/algorithm/for-offer/58同城笔试-0920.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 58同城笔试 - 0920

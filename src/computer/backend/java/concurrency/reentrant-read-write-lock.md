@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/lock-and-aqs-intro
-  - backend/java/concurrency/reentrant-lock
-  - backend/java/concurrency/condition-await-signal
-source: raw/legacy/computer/language/java/JUC 并发编程/11. 深入理解读写锁ReentrantReadWriteLock.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

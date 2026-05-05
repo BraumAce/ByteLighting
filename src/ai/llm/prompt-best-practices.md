@@ -4,16 +4,6 @@ category:
   - LLM 应用
 tag: 
   - Prompt
-
-domain: ai/llm
-related:
-  - ai/llm/context-engineering
-  - ai/llm/agent-skills
-  - ai/llm/debugging-agent-prompt
-  - ai/llm/agent-skill-design-philosophy
-source: raw/legacy/computer/llm/application/Prompt最佳实践.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Prompt 最佳实践

@@ -5,14 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - xiaomi-1012
-  - yuxin-1012
-  - baidu-1015
-source: raw/legacy/algorithm/for-offer/飞鱼科技笔试-1013.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 飞鱼科技笔试 - 1013

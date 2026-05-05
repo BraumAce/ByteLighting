@@ -5,14 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - meituan-0831
-  - haoweilai-0906
-  - xiaoheihe-0907
-source: raw/legacy/algorithm/for-offer/携程笔试-0905.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 携程笔试 - 0905

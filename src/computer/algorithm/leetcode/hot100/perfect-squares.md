@@ -1,20 +1,11 @@
 ---
 title: "完全平方数"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 背包问题
-related:
-  - coin-change
-  - partition-equal-subset-sum
-  - house-robber
-  - word-break
-source: raw/legacy/algorithm/leetcode/hot100/完全平方数.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 完全平方数

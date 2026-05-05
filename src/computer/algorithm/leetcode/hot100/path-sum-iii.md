@@ -1,7 +1,6 @@
 ---
 title: "路径总和 III"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
@@ -10,14 +9,6 @@ tag:
   - 递归
   - 前缀和
   - 哈希
-related:
-  - binary-tree-diameter
-  - binary-tree-level-order
-  - max-depth-of-binary-tree
-  - construct-binary-tree-from-preorder-and-inorder
-source: raw/legacy/algorithm/leetcode/hot100/路径总和 III.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 路径总和 III

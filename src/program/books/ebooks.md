@@ -6,10 +6,6 @@ category:
 tag:
   - 电子书
 order: 1
-domain: blog/books
-source: raw/legacy/program/book/电子书.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 电子书

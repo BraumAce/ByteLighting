@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/synchronized
-  - backend/java/concurrency/three-properties
-  - backend/java/concurrency/thread-pool-executor
-source: raw/legacy/computer/language/java/JUC 并发编程/24. atomic包中的原子操作类总结.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

@@ -7,15 +7,6 @@ tag:
   - 递归
   - 树形DP
 title: "二叉树中的最大路径和"
-domain: algorithms/leetcode
-related:
-  - algorithms/leetcode/hot100/max-depth-of-binary-tree
-  - algorithms/leetcode/hot100/binary-tree-diameter
-  - algorithms/leetcode/hot100/path-sum-iii
-  - algorithms/leetcode/hot100/flatten-binary-tree-to-linked-list
-source: raw/legacy/algorithm/leetcode/hot100/二叉树中的最大路径和.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树中的最大路径和

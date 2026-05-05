@@ -5,12 +5,6 @@ category:
   - 常用框架
 tag:
   - RuoYi
-domain: backend/projects
-related:
-  - backend/projects/ruoyi-rbac
-source: raw/legacy/framework/ruoyi/定时任务.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 定时任务

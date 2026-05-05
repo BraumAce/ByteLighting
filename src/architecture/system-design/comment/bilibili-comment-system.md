@@ -6,15 +6,7 @@ tag:
   - 评论系统
 reprint: true
 
-# Wiki 扩展字段
 title: B站评论系统架构设计
-domain: backend/architecture/system-design/comment
-related:
-  - backend/architecture/sofa-architecture-pattern
-  - backend/architecture/software-architecture-styles
-source: raw/legacy/architecture/system-design/comment/B站评论系统架构设计.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # B站评论系统架构设计

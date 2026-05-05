@@ -5,21 +5,6 @@ category:
   - 笔记
 tag:
   - 经验
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/prefix-sum-problems
-  - algorithms/notes/search-algorithms
-  - algorithms/notes/recursion-problems
-  - algorithms/notes/a-star-algorithm
-  - algorithms/notes/dfs-island-problems
-  - algorithms/notes/dfs-maze-problems
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/data-structures
-source: raw/legacy/algorithm/note/一些经验和技巧.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 一些经验和技巧

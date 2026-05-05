@@ -6,18 +6,6 @@ category:
 tag:
   - BFS
   - DFS
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/recursion-problems
-  - algorithms/notes/a-star-algorithm
-  - algorithms/notes/dfs-island-problems
-  - algorithms/notes/dfs-maze-problems
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/note/搜索.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 搜索

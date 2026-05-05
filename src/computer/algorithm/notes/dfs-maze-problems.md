@@ -6,18 +6,6 @@ category:
   - 图论
 tag:
   - DFS
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/dfs-island-problems
-  - algorithms/notes/search-algorithms
-  - algorithms/notes/recursion-problems
-  - algorithms/notes/a-star-algorithm
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/note/DFS之迷宫问题.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # DFS之迷宫问题

@@ -5,12 +5,6 @@ category:
 tag: 
 - 工作笔记
 comment: true
-
-# Wiki 扩展字段
-domain: blog/sundry
-source: raw/legacy/program/sundry/如何使用Linux下的日志分析工具.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 如何使用 Linux 下的日志分析工具

@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/array-linked-blocking-queue
-  - backend/java/concurrency/producer-consumer
-  - backend/java/concurrency/condition-await-signal
-source: raw/legacy/computer/language/java/JUC 并发编程/19. 并发容器之BlockingQueue.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

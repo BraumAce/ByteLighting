@@ -1,20 +1,12 @@
 ---
 title: "牛客模考题"
 date: 
-domain: algorithms/leetcode
 category: 
   - 数据结构
   - 动态规划
 tag: 
   - 背包问题
   - DFS
-related:
-  - hot100/number-of-islands
-  - hot100/coin-change
-  - hot100/implement-trie
-source: raw/legacy/algorithm/leetcode/牛客模考题.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 牛客模考题

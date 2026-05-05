@@ -3,16 +3,6 @@ category:
   - 常用框架
 tag: 
   - Spring
-
-# Wiki 扩展字段
-domain: backend/spring
-related:
-  - backend/spring/springboot-web-intro
-  - backend/spring/springboot-auth
-  - backend/spring/eureka-source-startup
-source: raw/legacy/framework/spring-boot/IOC/1. 深入理解IoC.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 深入理解 IoC

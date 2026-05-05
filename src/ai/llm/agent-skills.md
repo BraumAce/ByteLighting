@@ -4,17 +4,6 @@ category:
   - LLM 应用
 tag: 
   - Agent
-
-domain: ai/llm
-related:
-  - ai/llm/prompt-best-practices
-  - ai/llm/context-engineering
-  - ai/llm/debugging-agent-prompt
-  - ai/llm/agent-skill-design-philosophy
-  - ai/llm/enterprise-skill-system
-source: raw/legacy/computer/llm/application/Agent Skills.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Agent Skills

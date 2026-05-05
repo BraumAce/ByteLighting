@@ -1,21 +1,11 @@
 ---
 title: "打家劫舍"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 递推
-related:
-  - coin-change
-  - partition-equal-subset-sum
-  - word-break
-  - maximum-product-subarray
-  - longest-increasing-subsequence
-source: raw/legacy/algorithm/leetcode/hot100/打家劫舍.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 打家劫舍

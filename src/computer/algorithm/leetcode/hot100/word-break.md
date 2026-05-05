@@ -1,21 +1,11 @@
 ---
 title: "单词拆分"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 线性DP
-related:
-  - longest-common-subsequence
-  - longest-increasing-subsequence
-  - house-robber
-  - coin-change
-  - partition-equal-subset-sum
-source: raw/legacy/algorithm/leetcode/hot100/单词拆分.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 单词拆分

@@ -4,15 +4,7 @@ category:
 tag: 
   - 架构模式
 
-# Wiki 扩展字段
 title: SOFA 架构模式
-domain: backend/architecture/system-design/pattern
-related:
-  - backend/architecture/bilibili-comment-system
-  - backend/architecture/software-architecture-styles
-source: raw/legacy/architecture/system-design/pattern/SOFA架构模式.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # SOFA 架构模式

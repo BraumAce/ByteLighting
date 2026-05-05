@@ -1,22 +1,12 @@
 ---
 title: "K个一组翻转链表"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
   - 递归
-related:
-  - add-two-numbers
-  - remove-nth-node-from-end
-  - sort-list
-  - merge-k-sorted-lists
-  - copy-list-with-random-pointer
-source: raw/legacy/algorithm/leetcode/hot100/K个一组翻转链表.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # K 个一组翻转链表

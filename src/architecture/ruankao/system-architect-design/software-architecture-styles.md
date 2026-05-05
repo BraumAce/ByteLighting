@@ -7,15 +7,7 @@ tag:
 order: 1
 comment: true
 
-# Wiki 扩展字段
 title: 软件架构风格
-domain: backend/architecture/ruankao/system-architect-design
-related:
-  - backend/architecture/bilibili-comment-system
-  - backend/architecture/sofa-architecture-pattern
-source: raw/legacy/architecture/ruankao-system-architect/system-architect-design/软件架构风格.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 软件架构风格

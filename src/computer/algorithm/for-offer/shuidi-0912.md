@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - shenzhenfu-0910
-  - didi-0913
-source: raw/legacy/algorithm/for-offer/水滴笔试-0912.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 水滴笔试 - 0912

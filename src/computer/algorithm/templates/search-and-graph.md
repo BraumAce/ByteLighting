@@ -8,16 +8,6 @@ category:
   - 图论
 tag:
   - 算法模板
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/data-structures
-  - algorithms/templates/dynamic-programming
-source: raw/legacy/algorithm/template/搜索与图论.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 搜索与图论

@@ -4,14 +4,6 @@ category:
 - 工具搭建
 tag: 
 - 教程
-
-# Wiki 扩展字段
-domain: blog/tools
-related:
-  - blog/tools/self-hosted-cloud-storage
-source: raw/legacy/program/tool-build/科学上网与本地代理.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 科学上网与本地代理

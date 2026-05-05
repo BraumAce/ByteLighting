@@ -1,7 +1,6 @@
 ---
 title: "二叉树的最大深度"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
@@ -9,14 +8,6 @@ tag:
   - 二叉树
   - 递归
   - 迭代
-related:
-  - binary-tree-diameter
-  - binary-tree-level-order
-  - symmetric-tree
-  - binary-tree-right-side-view
-source: raw/legacy/algorithm/leetcode/hot100/二叉树的最大深度.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树的最大深度

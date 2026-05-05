@@ -1,20 +1,11 @@
 ---
 title: "LRU 缓存"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
-related:
-  - copy-list-with-random-pointer
-  - add-two-numbers
-  - sort-list
-  - merge-k-sorted-lists
-source: raw/legacy/algorithm/leetcode/hot100/LRU缓存.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # LRU 缓存

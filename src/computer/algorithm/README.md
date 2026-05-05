@@ -1,10 +1,5 @@
 ---
 title: "算法"
-dir:
-  order: 3
-  text: "算法"
-  icon: "code"
-index: false
 article: false
 star: true
 comment: false

@@ -5,12 +5,6 @@ category:
 tag: 
 - 用户匹配系统
 - 布隆过滤器
-
-# Wiki 扩展字段
-domain: backend/projects
-source: raw/legacy/open-project/user-match/布隆过滤器在项目中的使用.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 布隆过滤器在项目中的使用

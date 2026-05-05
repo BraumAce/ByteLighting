@@ -5,16 +5,6 @@ category:
 tag: 
   - Prompt
   - Agent
-
-domain: ai/llm
-related:
-  - ai/llm/prompt-best-practices
-  - ai/llm/context-engineering
-  - ai/llm/agent-skills
-  - ai/llm/agent-skill-design-philosophy
-source: "raw/legacy/computer/llm/application/\"写法+测评\" — 调试Agent的Prompt.md"
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # "写法 + 测评" —— 调试 Agent 的 Prompt

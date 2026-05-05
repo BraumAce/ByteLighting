@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - huice-1002
-  - luckin-1010
-source: raw/legacy/algorithm/for-offer/神州信息笔试-1009.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 神州信息笔试 - 1009

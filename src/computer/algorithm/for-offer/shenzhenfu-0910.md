@@ -5,14 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - xiaoheihe-0907
-  - shuidi-0912
-  - didi-0913
-source: raw/legacy/algorithm/for-offer/深信服笔试-0910.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 深信服笔试 - 0910

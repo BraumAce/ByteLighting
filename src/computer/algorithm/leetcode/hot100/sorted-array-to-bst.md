@@ -5,15 +5,6 @@ category:
 tag: 
   - 二叉树
 title: "将有序数组转换为二叉搜索树"
-domain: algorithms/leetcode
-related:
-  - algorithms/leetcode/hot100/validate-binary-search-tree
-  - algorithms/leetcode/hot100/kth-smallest-element-in-bst
-  - algorithms/leetcode/hot100/binary-tree-inorder
-  - algorithms/leetcode/hot100/construct-binary-tree-from-preorder-and-inorder
-source: raw/legacy/algorithm/leetcode/hot100/将有序数组转换为二叉搜索树.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 将有序数组转换为二叉搜索树

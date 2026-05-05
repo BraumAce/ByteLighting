@@ -6,13 +6,6 @@ category:
 tag:
   - 系统架构设计师
   - 系统分析与设计
-domain: backend/architecture/ruankao/system-analysis-design
-related:
-  - backend/architecture/ruankao/system-analysis-design
-  - backend/architecture/software-architecture-styles
-source: raw/legacy/architecture/ruankao-system-architect/system-analysis-design/设计模式.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 设计模式

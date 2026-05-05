@@ -7,14 +7,6 @@ tag:
 order: 5
 comment: true
 title: "需求工程"
-domain: backend/architecture/ruankao/software-engineering
-related:
-  - backend/architecture/ruankao/software-engineering
-  - backend/architecture/ruankao/system-analysis-design
-  - backend/architecture/software-architecture-styles
-source: raw/legacy/architecture/ruankao-system-architect/software-engineering/需求工程.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 需求工程

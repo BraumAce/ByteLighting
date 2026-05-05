@@ -6,15 +6,6 @@ category:
   - 中间件
 tag:
   - MinIO
-
-# Wiki 扩展字段
-domain: backend/middleware
-related:
-  - backend/middleware/minio-overview
-  - backend/middleware/springboot-minio-integration
-source: raw/legacy/computer/middleware/MinIO/MinIO安装与部署.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # MinIO 安装与部署

@@ -1,20 +1,11 @@
 ---
 title: "两数相加"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
-related:
-  - remove-nth-node-from-end
-  - reverse-nodes-in-k-group
-  - sort-list
-  - merge-k-sorted-lists
-source: raw/legacy/algorithm/leetcode/hot100/两数相加.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 两数相加

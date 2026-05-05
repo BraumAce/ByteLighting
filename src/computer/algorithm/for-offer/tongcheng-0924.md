@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - 58tongcheng-0920
-  - huice-1002
-source: raw/legacy/algorithm/for-offer/同程旅行笔试-0924.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 同程旅行笔试 - 0924

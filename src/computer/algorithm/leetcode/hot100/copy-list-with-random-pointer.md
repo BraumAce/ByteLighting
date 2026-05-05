@@ -1,20 +1,11 @@
 ---
 title: "随机链表的复制"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 链表
-related:
-  - lru-cache
-  - add-two-numbers
-  - reverse-nodes-in-k-group
-  - sort-list
-source: raw/legacy/algorithm/leetcode/hot100/随机链表的复制.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 随机链表的复制

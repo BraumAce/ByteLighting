@@ -4,14 +4,6 @@ category:
   - 大数据
 tag:
   - 基础
-
-# Wiki 扩展字段
-domain: cs-fundamentals/big-data
-related:
-  - cs-fundamentals/big-data
-source: raw/legacy/computer/big-data/初识大数据.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 初识大数据

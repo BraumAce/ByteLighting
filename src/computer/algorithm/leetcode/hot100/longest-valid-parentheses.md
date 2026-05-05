@@ -1,21 +1,12 @@
 ---
 title: "最长有效括号"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 线性DP
   - 栈
-related:
-  - longest-common-subsequence
-  - longest-increasing-subsequence
-  - maximum-product-subarray
-  - word-break
-source: raw/legacy/algorithm/leetcode/hot100/最长有效括号.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 最长有效括号

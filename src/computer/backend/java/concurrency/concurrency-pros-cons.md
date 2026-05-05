@@ -4,14 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/thread-states
-  - backend/java/concurrency/three-properties
-source: raw/legacy/computer/language/java/JUC 并发编程/1. 并发的优缺点.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 并发的优缺点

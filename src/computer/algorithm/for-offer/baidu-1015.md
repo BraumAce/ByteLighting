@@ -5,13 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - feiyu-1013
-  - huayu-1016
-source: raw/legacy/algorithm/for-offer/百度笔试-1015.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 百度笔试 - 1015

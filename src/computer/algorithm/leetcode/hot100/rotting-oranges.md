@@ -1,20 +1,11 @@
 ---
 title: "腐烂的橘子"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 图论
 tag: 
   - BFS 
-related:
-  - number-of-islands
-  - course-schedule
-  - implement-trie
-  - sliding-window-maximum
-source: raw/legacy/algorithm/leetcode/hot100/腐烂的橘子.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 腐烂的橘子

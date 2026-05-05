@@ -6,10 +6,6 @@ tag:
   - FastAPI
 comment: true
 title: "FastAPI -- 构建高性能 API 的 Web 框架"
-domain: blog/sundry
-source: raw/legacy/program/sundry/FastAPI—构建高性能API的Web框架.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # FastAPI -- 构建高性能 API 的 Web 框架

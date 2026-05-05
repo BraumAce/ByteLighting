@@ -6,14 +6,7 @@ category:
 tag:
   - MinIO
 
-# Wiki 扩展字段
 title: MinIO 概述
-domain: backend/middleware
-related:
-  - backend/middleware/springboot-minio-integration
-source: raw/legacy/computer/middleware/MinIO/MinIO概述.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # MinIO 概述

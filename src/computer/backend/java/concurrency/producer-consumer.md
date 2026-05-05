@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/blocking-queue
-  - backend/java/concurrency/condition-await-signal
-  - backend/java/concurrency/array-linked-blocking-queue
-source: raw/legacy/computer/language/java/JUC 并发编程/27. 一篇文章彻底弄懂生产者—消费者问题.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

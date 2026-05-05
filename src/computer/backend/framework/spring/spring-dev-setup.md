@@ -4,19 +4,6 @@ category:
   - 常用框架
 tag: 
   - Spring
-
-# Wiki 扩展字段
-domain: backend/spring
-related:
-  - backend/spring/springboot-web-intro
-  - backend/spring/springboot-auth
-  - backend/spring/spring-ioc-deep-dive
-  - backend/spring/eureka-source-startup
-  - backend/spring/eureka-source-register
-  - backend/spring/eureka-console
-source: raw/legacy/framework/spring-boot/2. Spring开发准备.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Spring 开发准备

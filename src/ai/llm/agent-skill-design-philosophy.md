@@ -5,17 +5,6 @@ category:
 tag: 
   - 工作笔记
   - Agent
-
-domain: ai/llm
-related:
-  - ai/llm/prompt-best-practices
-  - ai/llm/context-engineering
-  - ai/llm/agent-skills
-  - ai/llm/debugging-agent-prompt
-  - ai/llm/enterprise-skill-system
-source: raw/legacy/program/ai/article/Agent Skill 设计哲学.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Agent Skill 设计哲学：从联网场景到通用设计方法论

@@ -5,14 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - shenzhou-1009
-  - xiaomi-1012
-  - yuxin-1012
-source: raw/legacy/algorithm/for-offer/瑞幸笔试-1010.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 瑞幸笔试 - 1010

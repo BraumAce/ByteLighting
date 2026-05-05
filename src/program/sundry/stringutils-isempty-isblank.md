@@ -6,12 +6,6 @@ tag:
 - 工作笔记
 - Java
 comment: true
-
-# Wiki 扩展字段
-domain: blog/sundry
-source: raw/legacy/program/sundry/StringUtils中的isEmpty与isBlank.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # StringUtils 中的 isEmpty 与 isBlank

@@ -1,21 +1,12 @@
 ---
 title: "二叉树的直径"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 二叉树
   - 递归
-related:
-  - max-depth-of-binary-tree
-  - path-sum-iii
-  - binary-tree-level-order
-  - symmetric-tree
-source: raw/legacy/algorithm/leetcode/hot100/二叉树的直径.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树的直径

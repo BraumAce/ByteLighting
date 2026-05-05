@@ -1,22 +1,12 @@
 ---
 title: "二叉树的层序遍历"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 二叉树
   - BFS
-related:
-  - symmetric-tree
-  - binary-tree-diameter
-  - max-depth-of-binary-tree
-  - binary-tree-right-side-view
-  - binary-tree-inorder
-source: raw/legacy/algorithm/leetcode/hot100/二叉树的层序遍历.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 二叉树的层序遍历

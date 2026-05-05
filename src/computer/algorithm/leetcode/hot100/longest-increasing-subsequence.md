@@ -1,20 +1,11 @@
 ---
 title: "最长递增子序列"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 线性DP
-related:
-  - longest-common-subsequence
-  - maximum-product-subarray
-  - longest-valid-parentheses
-  - word-break
-source: raw/legacy/algorithm/leetcode/hot100/最长递增子序列.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 最长递增子序列

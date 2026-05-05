@@ -1,21 +1,12 @@
 ---
 title: "验证二叉搜索树"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
 tag: 
   - 二叉树
   - 递归
-related:
-  - kth-smallest-element-in-bst
-  - binary-tree-inorder
-  - binary-tree-level-order
-  - construct-binary-tree-from-preorder-and-inorder
-source: raw/legacy/algorithm/leetcode/hot100/验证二叉搜索树.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 验证二叉搜索树

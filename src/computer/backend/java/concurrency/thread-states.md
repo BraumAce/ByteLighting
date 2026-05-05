@@ -4,14 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/concurrency-pros-cons
-  - backend/java/concurrency/three-properties
-source: raw/legacy/computer/language/java/JUC 并发编程/2. 线程状态及其属性.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 线程状态及其属性

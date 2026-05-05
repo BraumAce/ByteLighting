@@ -5,17 +5,6 @@ category:
   - 笔记
 tag:
   - 前缀和
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/tips-and-tricks
-  - algorithms/notes/search-algorithms
-  - algorithms/notes/recursion-problems
-  - algorithms/templates/basic-algorithms
-source: raw/legacy/algorithm/note/前缀和相关题型.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 前缀和相关题型

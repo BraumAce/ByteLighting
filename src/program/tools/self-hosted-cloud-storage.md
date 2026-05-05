@@ -5,14 +5,6 @@ category:
 tag: 
 - 教程
 sticky: true
-
-# Wiki 扩展字段
-domain: blog/tools
-related:
-  - blog/tools/vpn-proxy-setup
-source: raw/legacy/program/tool-build/自建网盘兼图床.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 自建网盘兼图床

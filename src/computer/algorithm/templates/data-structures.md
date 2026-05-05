@@ -8,17 +8,6 @@ category:
   - 数据结构
 tag:
   - 算法模板
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/dynamic-programming
-  - algorithms/templates/search-and-graph
-  - algorithms/notes/union-find
-source: raw/legacy/algorithm/template/数据结构.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 数据结构

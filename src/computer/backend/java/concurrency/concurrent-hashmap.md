@@ -4,15 +4,6 @@ category:
   - 并发编程
 tag:
   - JUC
-
-domain: backend/java/concurrency
-related:
-  - backend/java/concurrency/concurrent-linked-queue
-  - backend/java/concurrency/copy-on-write-arraylist
-  - backend/java/concurrency/synchronized
-source: raw/legacy/computer/language/java/JUC 并发编程/14. 并发容器之ConcurrentHashMap.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 

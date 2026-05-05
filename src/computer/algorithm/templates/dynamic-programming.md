@@ -8,16 +8,6 @@ category:
   - 动态规划
 tag:
   - 算法模板
-
-# Wiki 扩展字段
-domain: algorithms/templates
-related:
-  - algorithms/templates/basic-algorithms
-  - algorithms/templates/data-structures
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/template/动态规划.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 动态规划

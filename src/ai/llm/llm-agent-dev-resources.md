@@ -7,14 +7,6 @@ tag:
   - LLM
   - Agent
   - 资料集
-domain: ai/llm
-related:
-  - ai/llm/agent-skills
-  - ai/llm/agent-skill-design-philosophy
-  - ai/llm/debugging-agent-prompt
-source: raw/legacy/program/ai/article/大模型应用开发.md + Agent系统开发.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 大模型应用与 Agent 开发资料

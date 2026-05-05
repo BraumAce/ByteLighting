@@ -1,20 +1,11 @@
 ---
 title: "分割等和子集"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 动态规划
 tag: 
   - 背包问题
-related:
-  - coin-change
-  - perfect-squares
-  - house-robber
-  - word-break
-source: raw/legacy/algorithm/leetcode/hot100/分割等和子集.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 分割等和子集

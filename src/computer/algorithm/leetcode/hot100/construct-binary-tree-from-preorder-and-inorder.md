@@ -1,7 +1,6 @@
 ---
 title: "从前序与中序遍历序列构造二叉树"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 数据结构
@@ -9,14 +8,6 @@ tag:
   - 二叉树
   - 递归
   - 哈希
-related:
-  - binary-tree-inorder
-  - binary-tree-level-order
-  - validate-binary-search-tree
-  - flatten-binary-tree-to-linked-list
-source: raw/legacy/algorithm/leetcode/hot100/从前序与中序遍历序列构造二叉树.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 从前序与中序遍历序列构造二叉树

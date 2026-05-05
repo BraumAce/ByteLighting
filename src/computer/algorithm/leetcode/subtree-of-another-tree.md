@@ -1,19 +1,11 @@
 ---
 title: "另一棵树的子树"
 date: 
-domain: algorithms/leetcode
 category: 
   - 数据结构
 tag: 
   - 二叉树
   - 递归
-related:
-  - hot100/symmetric-tree
-  - hot100/binary-tree-diameter
-  - hot100/max-depth-of-binary-tree
-source: raw/legacy/algorithm/leetcode/另一棵树的子树.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 另一棵树的子树

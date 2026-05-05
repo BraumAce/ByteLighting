@@ -5,14 +5,6 @@ category:
 - For-Offer
 tag: 
 - 笔试题
-domain: algorithms/for-offer
-related:
-  - luckin-1010
-  - xiaomi-1012
-  - feiyu-1013
-source: raw/legacy/algorithm/for-offer/宇信科技笔试-1012.md
-status: migrated
-last_reviewed: 2026-04-12
 ---
 
 # 宇信科技笔试 - 1012

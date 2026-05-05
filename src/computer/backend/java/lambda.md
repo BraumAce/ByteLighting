@@ -4,16 +4,6 @@ category:
   - Java
 tag: 
   - 基础
-
-# Wiki 扩展字段
-domain: backend/java
-related:
-  - backend/java/fundamentals
-  - backend/java/common-api
-  - backend/java/hashtable
-source: raw/legacy/computer/language/java/Java之Lambda表达式.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # Java 之 Lambda 表达式

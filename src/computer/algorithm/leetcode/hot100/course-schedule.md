@@ -1,19 +1,11 @@
 ---
 title: "课程表"
 date: 
-domain: algorithms/leetcode
 category: 
   - hot100
   - 图论
 tag: 
   - DFS
-related:
-  - number-of-islands
-  - rotting-oranges
-  - implement-trie
-source: raw/legacy/algorithm/leetcode/hot100/课程表.md
-status: ingested
-last_reviewed: 2026-04-12
 ---
 
 # 课程表

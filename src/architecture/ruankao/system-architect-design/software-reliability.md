@@ -6,13 +6,6 @@ category:
 tag:
   - 系统架构设计师
   - 系统架构设计
-domain: backend/architecture/ruankao/system-architect-design
-related:
-  - backend/architecture/ruankao/architecture-quality
-  - backend/architecture/ruankao/software-testing
-source: raw/legacy/architecture/ruankao-system-architect/system-architect-design/软件可靠性.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # 软件可靠性

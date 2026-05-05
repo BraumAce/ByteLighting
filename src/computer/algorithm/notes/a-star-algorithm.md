@@ -5,16 +5,6 @@ category:
   - 笔记
 tag:
   - 图论
-
-# Wiki 扩展字段
-domain: algorithms/notes
-related:
-  - algorithms/notes/search-algorithms
-  - algorithms/notes/dfs-maze-problems
-  - algorithms/templates/search-and-graph
-source: raw/legacy/algorithm/note/A-star算法.md
-status: published
-last_reviewed: 2026-04-12
 ---
 
 # A* 算法
