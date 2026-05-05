@@ -8,8 +8,8 @@ export default navbar([
     text: "计算机",
     icon: "computer",
     children: [
-      { text: "通用技术", icon: "books", link: "/computer/technology/" },
       { text: "算法", icon: "code", link: "/computer/algorithm/" },
+      { text: "通用技术", icon: "pattern", link: "/computer/technology/" },
       { text: "后端设计", icon: "framework", link: "/computer/backend/" },
     ],
   },
@@ -17,7 +17,7 @@ export default navbar([
     text: "关于本站",
     icon: "about",
     children: [
-      { text: "全部文章", icon: "books", link: "/article/" },
+      { text: "全部文章", icon: "text", link: "/article/" },
       { text: "关于作者", icon: "about", link: "/intro.html" },
       { text: "更新历史", icon: "history", link: "/timeline/" },
     ],
