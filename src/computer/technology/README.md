@@ -1,6 +1,5 @@
 ---
 title: "计算机"
-article: false
 star: true
 comment: false
 ---

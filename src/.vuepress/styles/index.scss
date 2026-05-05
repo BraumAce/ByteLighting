@@ -20,6 +20,13 @@ body {
     .slimsearch-key-hints {
         display: none;
     }
+
+    // 去掉灰色圆形背景，与导航栏整体透明保持一致；hover 时给浅色反馈
+    background: transparent;
+
+    &:hover {
+        background: var(--vp-c-control-hover);
+    }
 }
 
 // 隐藏首页的内容区域

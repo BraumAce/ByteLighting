@@ -1,6 +1,5 @@
 ---
 title: "AI"
-article: false
 star: true
 comment: false
 ---

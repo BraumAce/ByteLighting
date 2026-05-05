@@ -1,6 +1,5 @@
 ---
 title: "架构设计"
-article: false
 star: true
 comment: false
 ---

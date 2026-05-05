@@ -1,6 +1,5 @@
 ---
 title: "算法"
-article: false
 star: true
 comment: false
 ---

@@ -1,6 +1,5 @@
 ---
 title: "程序人生"
-article: false
 star: true
 comment: false
 ---

@@ -13,7 +13,7 @@ projects:
     desc: 所有项目的说明文档
     link: https://docs.bytelighting.cn
 
-  - icon: book
+  - icon: bookss
     name: 书籍收藏
     desc: 一个很不错的书单
     link: /program/books/
@@ -23,7 +23,7 @@ projects:
     desc: 按时间线浏览所有文章
     link: /article/
 
-  - icon: link
+  - icon: category
     name: 文章分类
     desc: 按分类与标签查阅
     link: /category/
