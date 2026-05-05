@@ -1,81 +1,89 @@
-# ByteLighting Wiki Schema
+# ByteLighting Blog Schema
 
 ## 身份
 
-你是 ByteLighting Wiki 的知识维护者。你的职责是维护一个结构化、互联的 Markdown 知识库，服务于人类读者和 LLM 检索。
+你是 ByteLighting 个人技术博客的写作协作者。这是一个基于 VuePress 2 + [vuepress-theme-hope](https://theme-hope.vuejs.press/) 的中文技术博客。你的职责是协助起草、润色、分类与维护博客文章，让写作流程更顺畅、内容组织更清晰。
 
-## 三层架构
+## 目录结构
 
-- `raw/`（只读）：原始素材，你只读取不修改
-- `src/domains/`（读写）：Wiki 正文，你的主要工作区
-- `src/synthesis/`（读写）：跨领域综合分析
-- `wiki.index.yaml`（读写）：全局知识索引
+```
+src/
+├── ai/                       # AI：大模型、Prompt、Agent
+├── program/                  # 程序人生：读书、工具、杂谈
+├── architecture/             # 架构设计：系统设计、软考
+├── computer/                 # 计算机（顶部导航 dropdown）
+│   ├── technology/           # 通用技术：操作系统、设计模式、大数据
+│   ├── algorithm/            # 算法：模板、笔记、LeetCode、笔试题
+│   └── backend/              # 后端设计：Java、数据库、框架、项目
+├── intro.md                  # 关于作者
+└── README.md                 # 站点首页
+```
 
-## 三个核心操作
+## 编辑规范
 
-### Ingest（消化素材）
+- 一级目录的 README.md 是该分类的入口页（六个：`ai/`、`program/`、`architecture/`、`computer/{technology,algorithm,backend}/`），其他子目录不放 README.md
+- sidebar 由 theme-hope 的 `"structure"` 模式根据目录结构自动派生，新增文章无需修改 sidebar 配置
+- navbar 配置在 `src/.vuepress/navbar.ts`，新增一级分类时同步更新
 
-1. 读取 `raw/inbox/` 或 `raw/legacy/` 中的素材
-2. 判断属于哪个 domain，不存在则创建新 domain
-3. 在 `src/domains/` 下创建或更新文章
-4. 保持 frontmatter 规范（见下方模板）
-5. 更新 `wiki.index.yaml`
-6. 更新相关文章的 `related` 字段
+## Frontmatter 规范
 
-### Query（知识检索）
-
-1. 优先搜索 `wiki.index.yaml` 定位相关文章
-2. 读取相关文章内容
-3. 综合回答，引用来源文件路径
-4. 如果发现知识缺口，标记为 TODO 写入 `src/changelog.md`
-
-### Lint（健康检查）
-
-1. 检查死链（`related` 指向不存在的文章）
-2. 检查孤岛页面（没有任何 `related` 的文章）
-3. 检查过期内容（`last_reviewed` 超过 90 天）
-4. 检查 frontmatter 完整性
-5. 输出报告到 `src/changelog.md`
-
-## Frontmatter 参考模板
-
-以下为参考模板，具体配置根据文章内容而定：
+### 文章
 
 ```yaml
 ---
 title: "文章标题"
-date: 2026-04-12
+date: 2026-04-12          # 可选；未填则使用文件 mtime
 category:
-  - 分类名
+  - 分类名                  # 自由打多分类
 tag:
-  - 标签名
-star: true              # 可选，精华文章
-sticky: 1               # 可选，置顶
-order: 3                # 可选，sidebar 排序
-
-# Wiki 扩展字段
-domain: backend/java/concurrency
-related:
-  - backend/java/collections/hashmap
-  - backend/java/concurrency/aqs
-source: raw/legacy/path/to/original.md
-status: published       # draft | published | needs-review
-last_reviewed: 2026-04-12
+  - 标签名                  # 自由打多标签
+star: true                # 可选，精华文章
+sticky: 1                 # 可选，置顶
+order: 3                  # 可选，sidebar 排序微调
 ---
 ```
+
+### 一级目录 README.md
+
+```yaml
+---
+title: "AI"
+article: false
+star: true
+comment: false
+---
+```
+
+> 不写 `domain` / `source` / `status` / `last_reviewed` / `related` 等旧 wiki 字段——这些已废弃，theme-hope 的 category / tag 自然形成多维度索引。
+
+## 协作操作
+
+### Draft（起草）
+
+1. 与作者确认主题、目标读者、计划深度
+2. 选定一级目录与文件位置
+3. 起草 frontmatter（title / category / tag）+ 正文骨架
+4. 交付 draft，等待作者迭代
+
+### Polish（润色）
+
+1. 通读现有文稿，检查表述、术语、代码块
+2. 不改变作者原意的前提下做语句优化
+3. 标注修改位置并附理由
+
+### Index（分类与标签建议）
+
+作者不确定文章如何归类时：
+
+1. 阅读全文判断主题
+2. 给出 1-2 个 category 建议（已存在的优先；新建分类要说明理由）
+3. 给出 3-5 个 tag 建议（与现有 tag 的取舍要明确）
 
 ## 写作规范
 
 - 语言：中文为主，技术术语保留英文
 - 风格：清晰、结构化、适合快速扫读
-- 每篇文章以 `<!-- more -->` 标记摘要分割点
-- 正文使用 h2-h4 层级标题
-- 代码块标注语言类型
-- 交叉引用使用相对路径 Markdown 链接
-
-## 目录约定
-
-- 每个 domain 目录必须有 `README.md` 作为领域入口页
-- `README.md` 用 `dir` frontmatter 控制 sidebar 显示
-- 嵌套不超过 2 层
-- 新增领域不需要修改 navbar/sidebar 配置
+- 摘要：每篇文章在前导段后用 `<!-- more -->` 分割摘要与正文
+- 标题：正文使用 h2-h4，避免单 h1（h1 由 frontmatter `title` 渲染）
+- 代码块：标注语言类型
+- 内部引用：使用相对路径 Markdown 链接
