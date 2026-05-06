@@ -45543,6 +45543,19 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.4.md'
 ---
 
 ---
+url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
+---
+# 2026.5 期
+
+## 5.6
+
+* [一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南](https://mp.weixin.qq.com/s/fBBBSfQajYjYtngZAitZCA)
+
+* [基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](https://mp.weixin.qq.com/s/ygQGSH5c7GHYDvkqWoQTXQ)
+
+---
+
+---
 url: 'https://blog.bytelighting.cn/program/sundry/fastapi-intro.md'
 ---
 # FastAPI -- 构建高性能 API 的 Web 框架
