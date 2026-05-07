@@ -48,7 +48,6 @@ order: 3                  # 可选，sidebar 排序微调
 ```yaml
 ---
 title: "AI"
-article: false
 star: true
 comment: false
 ---
@@ -88,4 +87,5 @@ comment: false
 
 ## 专项规范
 
+- Git 提交：见 [docs/conventions/git-commit.md](./docs/conventions/git-commit.md)
 - 阅读记录（`src/program/reading/`）：见 [docs/conventions/reading-format.md](./docs/conventions/reading-format.md)
