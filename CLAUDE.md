@@ -54,8 +54,6 @@ comment: false
 ---
 ```
 
-> 不写 `domain` / `source` / `status` / `last_reviewed` / `related` 等旧 wiki 字段——这些已废弃，theme-hope 的 category / tag 自然形成多维度索引。
-
 ## 协作操作
 
 ### Draft（起草）
@@ -87,3 +85,7 @@ comment: false
 - 标题：正文使用 h2-h4，避免单 h1（h1 由 frontmatter `title` 渲染）
 - 代码块：标注语言类型
 - 内部引用：使用相对路径 Markdown 链接
+
+## 专项规范
+
+- 阅读记录（`src/program/reading/`）：见 [docs/conventions/reading-format.md](./docs/conventions/reading-format.md)
