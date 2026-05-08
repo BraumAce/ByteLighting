@@ -22,3 +22,4 @@ src/.vuepress/.temp/
 src/.obsidian/
 docs/superpowers/
 raw/inbox/processed/
+.claude/settings.local.json

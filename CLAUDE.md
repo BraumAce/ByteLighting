@@ -34,9 +34,9 @@ src/
 title: "文章标题"
 date: 2026-04-12          # 可选；未填则使用文件 mtime
 category:
-  - 分类名                  # 自由打多分类
+  - 分类名                  # 通常 1 个，详见专项规范
 tag:
-  - 标签名                  # 自由打多标签
+  - 标签名                  # 1-2 个为主，详见专项规范
 star: true                # 可选，精华文章
 sticky: 1                 # 可选，置顶
 order: 3                  # 可选，sidebar 排序微调
@@ -68,15 +68,7 @@ comment: false
 2. 不改变作者原意的前提下做语句优化
 3. 标注修改位置并附理由
 
-### Index（分类与标签建议）
-
-作者不确定文章如何归类时：
-
-1. 阅读全文判断主题
-2. 给出 1-2 个 category 建议（已存在的优先；新建分类要说明理由）
-3. 给出 3-5 个 tag 建议（与现有 tag 的取舍要明确）
-
-## 写作规范
+## 整体写作规范
 
 - 语言：中文为主，技术术语保留英文
 - 风格：清晰、结构化、适合快速扫读
@@ -87,5 +79,9 @@ comment: false
 
 ## 专项规范
 
-- Git 提交：见 [docs/conventions/git-commit.md](./docs/conventions/git-commit.md)
-- 阅读记录（`src/program/reading/`）：见 [docs/conventions/reading-format.md](./docs/conventions/reading-format.md)
+由 skill `bytelighting-conventions` 在命中场景时主动触发；源文件位于 `docs/conventions/`：
+
+- [git-commit.md](./docs/conventions/git-commit.md) — Git 提交
+- [reading-format.md](./docs/conventions/reading-format.md) — 阅读记录
+- [ai-structure.md](./docs/conventions/ai-structure.md) — `src/ai/` 归类
+- [categorization.md](./docs/conventions/categorization.md) — 分类与标签
