@@ -2,11 +2,10 @@
 title: "大模型应用与 Agent 开发资料"
 date: 2026-04-12
 category:
-  - AI
+  - Agent 工程
 tag:
-  - LLM
-  - Agent
   - 资料集
+  - Agent
 ---
 
 # 大模型应用与 Agent 开发资料

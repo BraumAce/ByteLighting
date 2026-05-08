@@ -1,10 +1,9 @@
 ---
 title: "Agent Skill 设计哲学：从联网场景到通用设计方法论"
 category: 
-  - AI
+  - Skills
 tag: 
-  - 工作笔记
-  - Agent
+  - Skills
 ---
 
 # Agent Skill 设计哲学：从联网场景到通用设计方法论

@@ -1,7 +1,7 @@
 ---
 title: "Prompt 最佳实践"
 category: 
-  - LLM 应用
+  - 提示词工程
 tag: 
   - Prompt
 ---

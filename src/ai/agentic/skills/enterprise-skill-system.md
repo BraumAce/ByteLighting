@@ -1,9 +1,9 @@
 ---
 title: "企业级 AI Skill 体系"
 category:
-  - LLM 应用
+  - Skills
 tag:
-  - Agent
+  - Skills
 ---
 
 # 企业级 AI Skill 体系

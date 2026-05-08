@@ -1,9 +1,8 @@
 ---
 title: "\"写法+测评\" - 调试 Agent 的 Prompt"
 category: 
-  - LLM 应用
+  - 提示词工程
 tag: 
-  - Prompt
   - Agent
 ---
 
