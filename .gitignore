@@ -1,9 +1,24 @@
-.idea/
-.vscode/
+# Dependencies
 node_modules/
-src/.obsidian/
+
+# Build output
+src/.vuepress/dist/
+
+# VuePress cache
 src/.vuepress/.cache/
 src/.vuepress/.temp/
-src/.vuepress/dist/
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# Tool cache
+.ruff_cache/
+
+# OS
+.DS_Store
+
+# Project local
+src/.obsidian/
 docs/superpowers/
 raw/inbox/processed/
