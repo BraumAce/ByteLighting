@@ -13,7 +13,7 @@ url: 'https://blog.bytelighting.cn/computer/algorithm/leetcode/hot 100/sort-list
 
 题目要求时间空间复杂度分别为 $O(nlogn)$ 和 $O(1)$，自然想到二分，从而联想到归并排序。
 
-> 归并排序详情：[归并排序](./../../template/基础算法.md#2-归并排序)
+> 归并排序详情：[归并排序](./../../templates/basic-algorithms.md#2-归并排序)
 
 使用快慢指针 `fast` 和 `slow`，找到中间结点后，先递归再合并。
 
