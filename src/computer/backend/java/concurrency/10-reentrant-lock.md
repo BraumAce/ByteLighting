@@ -1,9 +1,10 @@
 ---
-title: "彻底理解 ReentrantLock"
+title: "10 彻底理解 ReentrantLock"
 category:
   - 并发编程
 tag:
   - JUC
+order: 10
 ---
 
 

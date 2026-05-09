@@ -1,6 +1,5 @@
 ---
 title: "最长递增子序列"
-date: 
 category: 
   - hot100
   - 动态规划

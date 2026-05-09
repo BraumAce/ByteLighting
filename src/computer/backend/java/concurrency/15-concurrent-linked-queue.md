@@ -1,9 +1,10 @@
 ---
-title: "并发容器之 ConcurrentLinkedQueue"
+title: "15 并发容器之 ConcurrentLinkedQueue"
 category:
   - 并发编程
 tag:
   - JUC
+order: 15
 ---
 
 
@@ -29,7 +30,7 @@ private static class Node<E> {
 }
 ```
 
-Node 节点主要包含了两个域：一个是数据域 `item`，另一个是 `next` 指针，用于指向下一个节点从而构成链式队列。并且都是用volatile进行修饰的，以保证内存可见性（关于 volatile 可以看[这篇文章](./5.%20彻底理解volatile.md)）。
+Node 节点主要包含了两个域：一个是数据域 `item`，另一个是 `next` 指针，用于指向下一个节点从而构成链式队列。并且都是用volatile进行修饰的，以保证内存可见性（关于 volatile 可以看[这篇文章](./05-volatile.md)）。
 
 另外 ConcurrentLinkedQueue 含有这样两个成员变量：
 

@@ -1,6 +1,5 @@
 ---
 title: "对称二叉树"
-date: 
 category: 
   - hot100
   - 数据结构

@@ -1,9 +1,10 @@
 ---
-title: "Java 并发工具类 - CountDownLatch, CyclicBarrier"
+title: "25 Java 并发工具类 - CountDownLatch, CyclicBarrier"
 category:
   - 并发编程
 tag:
   - JUC
+order: 25
 ---
 
 

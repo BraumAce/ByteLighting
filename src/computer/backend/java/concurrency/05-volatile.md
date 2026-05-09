@@ -1,9 +1,10 @@
 ---
-title: "彻底理解 volatile"
+title: "05 彻底理解 volatile"
 category:
   - 并发编程
 tag:
   - JUC
+order: 5
 ---
 
 # 彻底理解 volatile

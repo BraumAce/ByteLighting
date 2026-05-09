@@ -1,9 +1,10 @@
 ---
-title: "LockSupport 工具"
+title: "13 LockSupport 工具"
 category:
   - 并发编程
 tag:
   - JUC
+order: 13
 ---
 
 
@@ -13,7 +14,7 @@ tag:
 
 ## 1. LockSupport 简介
 
-在之前介绍 [AQS 的底层实现](./9.%20深入理解AQS.md)，以及在 [ReentrantLock](./10.%20彻底理解ReentrantLock.md) 和 [ReentReadWriteLocks](./11.%20深入理解读写锁ReentrantReadWriteLock.md) 中，介绍过线程间等待/通知机制使用 Condition 时都会调用 `LockSupport.park()` 方法和 `LockSupport.unpark()` 方法。关于这个在同步组件的实现中被频繁使用的 LockSupport 究竟为何方神圣，现在来看看。
+在之前介绍 [AQS 的底层实现](./09-aqs-deep-dive.md)，以及在 [ReentrantLock](./10-reentrant-lock.md) 和 [ReentReadWriteLocks](./11-reentrant-read-write-lock.md) 中，介绍过线程间等待/通知机制使用 Condition 时都会调用 `LockSupport.park()` 方法和 `LockSupport.unpark()` 方法。关于这个在同步组件的实现中被频繁使用的 LockSupport 究竟为何方神圣，现在来看看。
 
 LockSupport 位于 java.util.concurrent.locks 包下，有兴趣的可以直接去看源码，该类的方法并不是很多。LockSupprot 是线程的阻塞原语，用来阻塞线程和唤醒线程。
 

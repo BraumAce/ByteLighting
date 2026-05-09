@@ -1,6 +1,5 @@
 ---
 title: "另一棵树的子树"
-date: 
 category: 
   - 数据结构
 tag: 

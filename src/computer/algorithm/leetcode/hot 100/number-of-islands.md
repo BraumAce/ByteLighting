@@ -1,6 +1,5 @@
 ---
 title: "岛屿数量"
-date: 
 category: 
   - hot100
   - 图论

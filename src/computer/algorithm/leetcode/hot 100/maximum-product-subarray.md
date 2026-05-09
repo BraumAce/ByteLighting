@@ -1,6 +1,5 @@
 ---
 title: "乘积最大子数组"
-date: 
 category: 
   - hot100
   - 动态规划

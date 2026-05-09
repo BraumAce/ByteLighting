@@ -1,9 +1,10 @@
 ---
-title: "一篇文章彻底弄懂生产者-消费者问题"
+title: "27 一篇文章彻底弄懂生产者-消费者问题"
 category:
   - 并发编程
 tag:
   - JUC
+order: 27
 ---
 
 
@@ -512,7 +513,7 @@ public class ProductorConsumer {
 
 2. `void signalAll()`：与第一种的区别在于能够唤醒所有等待在 condition 上的线程。
 
-也就是说 `wait` -> `await`，`notify` -> `Signal`。[关于 lock 中 condition 消息通知的原理解析可以看这篇文章](./12.%20详解Condition的await和signal等待通知机制.md)。
+也就是说 `wait` -> `await`，`notify` -> `Signal`。[关于 lock 中 condition 消息通知的原理解析可以看这篇文章](./12-condition-await-signal.md)。
 
 如果采用 lock 中 Conditon 的消息通知原理来实现生产者-消费者问题，原理同使用 `wait`/`notifyAll` 一样。直接上代码：
 
@@ -644,7 +645,7 @@ public class ProductorConsumer {
 1. 当队列已满时，阻塞向队列中插入数据的线程，直至队列中未满；
 2. 当队列为空时，阻塞从队列中获取数据的线程，直至队列非空时为止。
 
-[关于 BlockingQueue 更多细节可以看这篇文章](./19.%20并发容器之BlockingQueue.md)。
+[关于 BlockingQueue 更多细节可以看这篇文章](./19-blocking-queue.md)。
 
 可以利用 BlockingQueue 实现生产者-消费者问题，阻塞队列完全可以充当共享数据区域，就可以很好的完成生产者和消费者线程之间的协作。
 

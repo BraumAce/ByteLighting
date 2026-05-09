@@ -1,9 +1,10 @@
 ---
-title: "线程状态及其属性"
+title: "02 线程状态及其属性"
 category:
   - 并发编程
 tag:
   - JUC
+order: 2
 ---
 
 # 线程状态及其属性

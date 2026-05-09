@@ -1,9 +1,10 @@
 ---
-title: "线程池之 ScheduledThreadPoolExecutor"
+title: "22 线程池之 ScheduledThreadPoolExecutor"
 category:
   - 并发编程
 tag:
   - JUC
+order: 22
 ---
 
 
@@ -55,7 +56,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize,
 }
 ```
 
-可以看出由于 ScheduledThreadPoolExecutor 继承了 ThreadPoolExecutor，它的构造方法实际上是调用了 [ThreadPoolExecutor](./21.%20线程池ThreadPoolExecutor实现原理.md)，理解 ThreadPoolExecutor 构造方法的几个参数的意义后，理解这就很容易了。
+可以看出由于 ScheduledThreadPoolExecutor 继承了 ThreadPoolExecutor，它的构造方法实际上是调用了 [ThreadPoolExecutor](./21-thread-pool-executor.md)，理解 ThreadPoolExecutor 构造方法的几个参数的意义后，理解这就很容易了。
 
 可以看出，ScheduledThreadPoolExecutor 的核心线程池的线程个数为指定的 corePoolSize，当核心线程池的线程个数达到 corePoolSize 后，就会将任务提交给有界阻塞队列 DelayedWorkQueue，对 DelayedWorkQueue 在下面进行详细介绍，线程池允许最大的线程个数为 `Integer.MAX_VALUE`，也就是说理论上这是一个大小无界的线程池。
 
@@ -231,7 +232,7 @@ void ensurePrestart() {
 1. **新建 Worker 类，当执行任务时，就会调用被 Worker 所重写的 `run` 方法，进而会继续执行 `runWorker` 方法**。
 2. **在 `runWorker` 方法中会调用 `getTask` 方法从阻塞队列中不断的去获取任务进行执行，直到从阻塞队列中获取的任务为 `null`，线程才结束终止**。
 
-`addWorker` 方法是 ThreadPoolExecutor 类中的方法，对 ThreadPoolExecutor 的源码分析看 [这篇文章](./21.%20线程池ThreadPoolExecutor实现原理.md)。
+`addWorker` 方法是 ThreadPoolExecutor 类中的方法，对 ThreadPoolExecutor 的源码分析看 [这篇文章](./21-thread-pool-executor.md)。
 
 ## 5. 总结
 

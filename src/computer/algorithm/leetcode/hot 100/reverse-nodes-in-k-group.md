@@ -1,6 +1,5 @@
 ---
 title: "K个一组翻转链表"
-date: 
 category: 
   - hot100
   - 数据结构

@@ -1,6 +1,5 @@
 ---
 title: "最长有效括号"
-date: 
 category: 
   - hot100
   - 动态规划

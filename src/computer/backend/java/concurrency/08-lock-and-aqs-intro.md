@@ -1,9 +1,10 @@
 ---
-title: "初识 Lock 与 AQS"
+title: "08 初识 Lock 与 AQS"
 category:
   - 并发编程
 tag:
   - JUC
+order: 8
 ---
 
 

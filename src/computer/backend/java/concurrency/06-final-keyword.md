@@ -1,9 +1,10 @@
 ---
-title: "你真的了解 final 吗"
+title: "06 你真的了解 final 吗"
 category:
   - 并发编程
 tag:
   - JUC
+order: 6
 ---
 
 

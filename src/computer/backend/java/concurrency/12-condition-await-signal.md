@@ -1,9 +1,10 @@
 ---
-title: "详解 Condition 的 await 和 signal 等待通知机制"
+title: "12 详解 Condition 的 await 和 signal 等待通知机制"
 category:
   - 并发编程
 tag:
   - JUC
+order: 12
 ---
 
 
@@ -59,7 +60,7 @@ private transient Node firstWaiter;
 private transient Node lastWaiter;
 ```
 
-可以发现 ConditionObject 通过持有等待队列的头尾指针来管理等待队列。需要注意的是 Node 类复用了在 AQS 中的 Node 类，其节点状态和相关属性可以去看 [AQS的实现原理](./9.%20深入理解AQS.md)。
+可以发现 ConditionObject 通过持有等待队列的头尾指针来管理等待队列。需要注意的是 Node 类复用了在 AQS 中的 Node 类，其节点状态和相关属性可以去看 [AQS的实现原理](./09-aqs-deep-dive.md)。
 
 Node 类有这样一个属性：
 
@@ -326,7 +327,7 @@ final boolean transferForSignal(Node node) {
 
 关键逻辑请看注释，这段代码主要做了两件事情：
 1. 将头结点的状态更改为 CONDITION
-2. 调用 `enq` 方法，将该节点尾插入到同步队列中（关于 `enq`方法请看 [AQS的底层实现](./9.%20深入理解AQS.md)）
+2. 调用 `enq` 方法，将该节点尾插入到同步队列中（关于 `enq`方法请看 [AQS的底层实现](./09-aqs-deep-dive.md)）
 
 现在我们可以得出结论：**调用 condition 的 `signal` 的前提条件是当前线程已经获取了 lock，该方法会使得等待队列中的头节点即等待时间最长的那个节点移入到同步队列，而移入到同步队列后才有机会使得等待线程被唤醒，即从 `await` 方法中的 `LockSupport.park(this)` 方法中返回，从而才有机会使得调用 `await` 方法的线程成功退出**。
 

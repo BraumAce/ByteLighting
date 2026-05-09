@@ -1,6 +1,5 @@
 ---
 title: "二叉搜索树中第K小的元素"
-date: 
 category: 
   - hot100
   - 数据结构

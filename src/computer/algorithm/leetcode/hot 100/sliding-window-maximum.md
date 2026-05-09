@@ -1,6 +1,5 @@
 ---
 title: "滑动窗口最大值"
-date: 
 category: 
   - hot100
   - 数据结构

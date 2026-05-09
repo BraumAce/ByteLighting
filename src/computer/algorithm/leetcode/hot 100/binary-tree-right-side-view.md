@@ -1,6 +1,5 @@
 ---
 title: "二叉树的右视图"
-date: 
 category: 
   - hot100
   - 数据结构

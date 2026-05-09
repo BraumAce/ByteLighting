@@ -1,6 +1,5 @@
 ---
 title: "分割等和子集"
-date: 
 category: 
   - hot100
   - 动态规划

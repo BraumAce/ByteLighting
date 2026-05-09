@@ -1,9 +1,10 @@
 ---
-title: "并发容器之 BlockingQueue"
+title: "19 并发容器之 BlockingQueue"
 category:
   - 并发编程
 tag:
   - JUC
+order: 19
 ---
 
 
@@ -13,7 +14,7 @@ tag:
 
 ## 1. BlockingQueue 简介
 
-在实际编程中，会经常使用到 JDK 中 Collection 集合框架中的各种容器类如实现 List，Map，Queue 接口的容器类，但是这些容器类基本上不是线程安全的，除了使用 Collections 可以将其转换为线程安全的容器，$Doug \ Lea$ 大师为我们都准备了对应的线程安全的容器，如实现 List 接口的 [CopyOnWriteArrayList](./16.%20并发容器之CopyOnWriteArrayList.md)，实现 Map 接口的 [ConcurrentHashMap](./14.%20并发容器之ConcurrentHashMap.md)，实现 Queue 接口的 [ConcurrentLinkedQueue](./15.%20并发容器之ConcurrentLinkedQueue.md)。
+在实际编程中，会经常使用到 JDK 中 Collection 集合框架中的各种容器类如实现 List，Map，Queue 接口的容器类，但是这些容器类基本上不是线程安全的，除了使用 Collections 可以将其转换为线程安全的容器，$Doug \ Lea$ 大师为我们都准备了对应的线程安全的容器，如实现 List 接口的 [CopyOnWriteArrayList](./16-copy-on-write-arraylist.md)，实现 Map 接口的 [ConcurrentHashMap](./14-concurrent-hashmap.md)，实现 Queue 接口的 [ConcurrentLinkedQueue](./15-concurrent-linked-queue.md)。
 
 最常用的 “**生产者-消费者**” 问题中，队列通常被视作线程间操作的数据容器，这样就可以对各个模块的业务功能进行解耦，生产者将 “生产” 出来的数据放置在数据容器中，而消费者仅仅只需要在 “数据容器” 中进行获取数据即可，这样生产者线程和消费者线程就能够进行解耦，只专注于自己的业务功能即可。
 

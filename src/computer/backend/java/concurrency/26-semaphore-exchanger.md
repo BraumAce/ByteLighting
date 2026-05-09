@@ -1,9 +1,10 @@
 ---
-title: "Java 并发工具类 - Semaphore, Exchanger"
+title: "26 Java 并发工具类 - Semaphore, Exchanger"
 category:
   - 并发编程
 tag:
   - JUC
+order: 26
 ---
 
 

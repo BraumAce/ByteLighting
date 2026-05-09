@@ -1,6 +1,5 @@
 ---
 title: "验证二叉搜索树"
-date: 
 category: 
   - hot100
   - 数据结构

@@ -1,6 +1,5 @@
 ---
 title: "LRU 缓存"
-date: 
 category: 
   - hot100
   - 数据结构

@@ -1,6 +1,5 @@
 ---
 title: "二叉树的直径"
-date: 
 category: 
   - hot100
   - 数据结构

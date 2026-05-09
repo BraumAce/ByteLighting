@@ -1,6 +1,5 @@
 ---
 title: "二叉树的最大深度"
-date: 
 category: 
   - hot100
   - 数据结构

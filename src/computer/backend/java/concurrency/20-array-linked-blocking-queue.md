@@ -1,9 +1,10 @@
 ---
-title: "并发容器之 ArrayBlockingQueue 和 LinkedBlockingQueue 实现原理详解"
+title: "20 并发容器之 ArrayBlockingQueue 和 LinkedBlockingQueue 实现原理详解"
 category:
   - 并发编程
 tag:
   - JUC
+order: 20
 ---
 
 
@@ -13,7 +14,7 @@ tag:
 
 ## 1. ArrayBlockingQueue 简介
 
-在多线程编程过程中，为了业务解耦和架构设计，经常会**使用并发容器用于存储多线程间的共享数据**，这样不仅可以保证线程安全，还可以简化各个线程操作。例如在 “生产者-消费者” 问题中，会使用阻塞队列（BlockingQueue）作为数据容器，关于 BlockingQueue 可以看 [这篇文章](./19.%20并发容器之BlockingQueue.md)。
+在多线程编程过程中，为了业务解耦和架构设计，经常会**使用并发容器用于存储多线程间的共享数据**，这样不仅可以保证线程安全，还可以简化各个线程操作。例如在 “生产者-消费者” 问题中，会使用阻塞队列（BlockingQueue）作为数据容器，关于 BlockingQueue 可以看 [这篇文章](./19-blocking-queue.md)。
 
 为了加深对阻塞队列的理解，唯一的方式是对其实现原理进行理解，这篇文章就主要来看看 ArrayBlockingQueue 和 LinkedBlockingQueue 的实现原理。
 
@@ -23,7 +24,7 @@ tag:
 
 当前队列为空时，会阻塞消费数据的线程，直至队列非空时，通知被阻塞的线程；当队列满时，会阻塞插入数据的线程，直至队列未满时，通知插入数据的线程（生产者线程）。
 
-多线程中消息通知机制最常用的是 Lock 的 [Condition 机制](./12.%20详解Condition的await和signal等待通知机制.md)。那么 ArrayBlockingQueue 的实现是不是也会采用 Condition 的通知机制呢？下面来看看。
+多线程中消息通知机制最常用的是 Lock 的 [Condition 机制](./12-condition-await-signal.md)。那么 ArrayBlockingQueue 的实现是不是也会采用 Condition 的通知机制呢？下面来看看。
 
 ### 2.1 ArrayBlockingQueue 的主要属性
 

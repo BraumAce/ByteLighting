@@ -5,24 +5,24 @@ export const backend = arraySidebar([
     text: "Java",
     icon: "java",
     prefix: "java/",
-    collapsible: true,
+    collapsible: false,
     children: [
       { text: "Java 基础", prefix: "base/", collapsible: true, children: "structure" },
-      { text: "JUC", prefix: "concurrency/", collapsible: true, children: "structure" },
+      { text: "JUC 并发编程", prefix: "concurrency/", collapsible: true, children: "structure" },
     ],
   },
   {
     text: "数据库",
     icon: "database",
     prefix: "database/",
-    collapsible: true,
+    collapsible: false,
     children: "structure",
   },
   {
     text: "框架",
     icon: "framework",
     prefix: "framework/",
-    collapsible: true,
+    collapsible: false,
     children: [
       { text: "Spring", prefix: "spring/", collapsible: true, children: "structure" },
       { text: "MyBatis", prefix: "mybatis/", collapsible: true, children: "structure" },
@@ -33,7 +33,7 @@ export const backend = arraySidebar([
     text: "项目",
     icon: "application",
     prefix: "project/",
-    collapsible: true,
+    collapsible: false,
     children: "structure",
   },
 ]);

@@ -1,9 +1,10 @@
 ---
-title: "Java 内存模型及 happens-before"
+title: "03 Java 内存模型及 happens-before"
 category:
   - 并发编程
 tag:
   - JUC
+order: 3
 ---
 
 # Java 内存模型及 happens-before

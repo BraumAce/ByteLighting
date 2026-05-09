@@ -1,6 +1,5 @@
 ---
 title: "随机链表的复制"
-date: 
 category: 
   - hot100
   - 数据结构

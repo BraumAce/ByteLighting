@@ -1,6 +1,5 @@
 ---
 title: "打家劫舍"
-date: 
 category: 
   - hot100
   - 动态规划

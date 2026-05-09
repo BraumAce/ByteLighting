@@ -1,6 +1,5 @@
 ---
 title: "从前序与中序遍历序列构造二叉树"
-date: 
 category: 
   - hot100
   - 数据结构

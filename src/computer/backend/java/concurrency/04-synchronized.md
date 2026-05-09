@@ -1,9 +1,10 @@
 ---
-title: "彻底理解 synchronized"
+title: "04 彻底理解 synchronized"
 category:
   - 并发编程
 tag:
   - JUC
+order: 4
 ---
 
 # 彻底理解 synchronized

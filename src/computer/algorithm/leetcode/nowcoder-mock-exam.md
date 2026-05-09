@@ -1,6 +1,5 @@
 ---
 title: "牛客模考题"
-date: 
 category: 
   - 数据结构
   - 动态规划

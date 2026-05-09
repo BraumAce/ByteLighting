@@ -1,6 +1,5 @@
 ---
 title: "二叉树展开为链表"
-date: 
 category: 
   - hot100
   - 数据结构

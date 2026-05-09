@@ -1,9 +1,10 @@
 ---
-title: "并发容器之 ThreadLocal"
+title: "17 并发容器之 ThreadLocal"
 category:
   - 并发编程
 tag:
   - JUC
+order: 17
 ---
 
 # 并发容器之 ThreadLocal

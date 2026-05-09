@@ -1,6 +1,5 @@
 ---
 title: "实现 Trie（前缀树）"
-date: 
 category: 
   - hot100
   - 图论

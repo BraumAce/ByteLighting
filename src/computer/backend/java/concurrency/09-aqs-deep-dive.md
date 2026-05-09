@@ -1,9 +1,10 @@
 ---
-title: "深入理解 AQS"
+title: "09 深入理解 AQS"
 category:
   - 并发编程
 tag:
   - JUC
+order: 9
 ---
 
 # 深入理解 AQS

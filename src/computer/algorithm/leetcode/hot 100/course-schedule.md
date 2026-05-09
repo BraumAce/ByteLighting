@@ -1,6 +1,5 @@
 ---
 title: "课程表"
-date: 
 category: 
   - hot100
   - 图论

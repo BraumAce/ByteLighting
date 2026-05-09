@@ -1,6 +1,5 @@
 ---
 title: "合并K个升序链表"
-date: 
 category: 
   - hot100
   - 数据结构
