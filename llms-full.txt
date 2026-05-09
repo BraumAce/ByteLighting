@@ -42576,199 +42576,71 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.10.md'
 
 ## 10.30
 
-```component VPCard
-title: 聊聊大厂潜规则：完美胜于完成
-order: -10desc: 五阳
-logo: https://p3-passport.byteacctimg.com/img/user-avatar/37ab43d26638e020489f67411d3acb5f~100x100.awebp
-link: https://juejin.cn/post/7396361501789667338
-background: rgba(46, 144, 208, 0.3)
-```
+* [聊聊大厂潜规则：完美胜于完成](https://juejin.cn/post/7396361501789667338)：作者从中小厂跳到大厂后的范式转变——小厂强调「完成胜于完美」（敏捷快速试错、不写设计方案直接撸码、长不出精通领域），大厂强调「完美胜于完成」（写技术方案 / SOP / 重构方案的时间多于写代码，光干活不够还要会推销项目挑战）；附 6 个亮点话术模板：需求复杂如何沟通、高并发低延迟如何突破、上下游一致性如何对齐、扩展性如何预留、项目梳理如何拆解、项目周期短如何快速交付。
 
-```component VPCard
-title: MySQL 核心模块揭秘 | 24 期 | 锁等待超时
-order: -10desc: 爱可生开源社区
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM46meTSXGpkLaeqRscuItvyAs42Ckica6iaS4sT1K5qcOqA/132
-link: https://mp.weixin.qq.com/s/cZBNEjltJWYO4oSu1X5jyg
-background: rgba(46, 144, 208, 0.3)
-```
+* [MySQL 核心模块揭秘 | 24 期 | 锁等待超时](https://mp.weixin.qq.com/s/cZBNEjltJWYO4oSu1X5jyg)：基于 MySQL 8.0.32 InnoDB 源码拆解锁等待超时机制——后台线程 `ib_srv_lock_to` 每秒扫一遍 `waiting_threads` slot 数组（同时兼任死锁检查），用 `当前时间 - suspend_time > wait_timeout` 判定超时，命中后从 `trx_locks` 链表与 rec\_hash / 表 locks 链表双向删除锁结构、触发 slot.event 唤醒事务，由 `innodb_rollback_on_timeout` 决定是否回滚。
 
 ## 10.28
 
-```component VPCard
-title: 微信全文搜索技术优化
-order: -10desc: 腾讯技术工程
-logo: http://wx.qlogo.cn/mmhead/Iic9WLWEQMg2jTKicld7jhiagcz7jJxuYcpjicxAAiaVaNpdIiabCLIxOHIZFVsWH3cRNQjLF1TBznTJc/132
-link: https://mp.weixin.qq.com/s/2L4fYm5WPtPQSv9WzzHg_A
-background: rgba(46, 144, 208, 0.3)
-```
+* [微信全文搜索技术优化](https://mp.weixin.qq.com/s/2L4fYm5WPtPQSv9WzzHg_A)：iOS 微信 2021 年全文搜索全面升级——从 SQLite FTS3 / Like / 内存遍历升级到 SQLite FTS5（事务能力、技术风险、读写性能综合最优）；在 WCDB 中实现 FTS5 segment 自动 merge 把 merge 操作搬到子线程，避免 crisismerge 卡顿；自研 VerbatimTokenizer 分词器替代旧 OneOrBinaryTokenizer，索引体积减小同时支持英文 stemming / Unicode 归一化 / 简繁转换 / 符号过滤；扩展 FTS5 多级分隔符 + 自定义 SubstringMatchInfo 辅助函数实现属性级精准搜索；落地优化：UNINDEXED 约束去冗余索引、cache 未建索引数据兜底、并行搜索 + 中断机制。
 
 ## 10.27
 
-```component VPCard
-title: 来聊聊Java的反射机制
-order: -10desc: 写代码的SharkChili
-logo: http://wx.qlogo.cn/mmhead/8h9QXaJ70ibc5N8fZZAW3BTVEWOww7GNmNsibq8cOtMiaWRgD016hzRmgia2cBAF9tnAmJSRrDLjFVI/132
-link: https://mp.weixin.qq.com/s?__biz=MzkwODYyNTM2MQ==&mid=2247486632&idx=1&sn=4c0766c320ad136a3010cdb4b2315224&chksm=c0c65816f7b1d10067b77886f2dae3e7bfc6dbf264a1c013f330c12f036c40704ad55c47a7c5#rd
-background: rgba(46, 144, 208, 0.3)
-```
+* [来聊聊Java的反射机制](https://mp.weixin.qq.com/s?__biz=MzkwODYyNTM2MQ==\&mid=2247486632\&idx=1\&sn=4c0766c320ad136a3010cdb4b2315224\&chksm=c0c65816f7b1d10067b77886f2dae3e7bfc6dbf264a1c013f330c12f036c40704ad55c47a7c5)：Java 反射机制实战教程——三种获取 Class 对象方式（类名.class / 对象.getClass() / Class.forName()，仅最后一种属于反射）、反射获取构造方法 / 成员变量 / 方法（getXxx vs getDeclaredXxx 的非私有 vs 全部差异），通过 `setAccessible(true)` 暴力访问私有成员；附通过反射调用 main 方法、利用反射绕过泛型擦除往 `ArrayList<String>` 塞 Integer 等实验。
 
 ## 10.26
 
-```component VPCard
-title: 为什么单线程的 Redis 如何做到每秒数万 QPS ？
-order: -10desc: 小林coding
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5Kh6QZ0Kow3MJCcPpZ8cuUvVib6iazFvovfTgDekDkZLGA/132
-link: https://mp.weixin.qq.com/s/oeOfsgF-9IOoT5eQt5ieyw
-background: rgba(46, 144, 208, 0.3)
-```
+* [为什么单线程的 Redis 如何做到每秒数万 QPS ？](https://mp.weixin.qq.com/s/oeOfsgF-9IOoT5eQt5ieyw)：飞哥从 Redis 源码拆解高 QPS 网络原理——核心就两个函数：`initServer` 启动时（创建 epoll 对象、监听端口、把 listen socket 注册给 epoll）+ `aeMain` 事件循环（epoll\_wait 发现可读可写事件 → 接新连接挂到 epoll → 读命令处理后挂到写任务队列 → beforesleep 真正发出去 → 一次写不完则注册写事件回调）；本质是 Linux epoll 多路复用 + Reactor 模式的工程化运用。
 
 ## 10.22
 
-```component VPCard
-title: Java高性能缓存库 - Caffeine
-order: -10desc: 风之筝
-logo: 
-link: https://ghh3809.github.io/2021/05/31/caffeine/#23-%E5%88%B7%E6%96%B0%E6%9C%BA%E5%88%B6
-background: rgba(46, 144, 208, 0.3)
-```
+* [Java高性能缓存库 - Caffeine](https://ghh3809.github.io/2021/05/31/caffeine/)：Caffeine 本地缓存全面教程——四种 Cache 类型（Cache / LoadingCache / AsyncCache / AsyncLoadingCache）对应四种加载策略；驱逐策略支持基于大小（W-TinyLFU 算法接近最优命中率）+ 基于时间（最后访问 / 最后写入）+ 基于引用（弱引用 key / 弱软引用 value）；刷新机制 `refreshAfterWrite` 异步刷新避免击穿；附 SpringBoot CacheManager + `@Cacheable` / `@CacheEvict` / `@CachePut` 三注解 + sync 同步模式实战。
 
 ## 10.20
 
-```component VPCard
-title: 长篇图解java反射机制及其应用场景
-order: -10desc: 字母哥
-logo: https://static.zhihu.com/heifetz/assets/apple-touch-icon-120.d5793cac.png
-link: https://zhuanlan.zhihu.com/p/553787630
-background: rgba(46, 144, 208, 0.3)
-```
+* [长篇图解java反射机制及其应用场景](https://zhuanlan.zhihu.com/p/553787630)：图解版 Java 反射全景——反射要解决的本质问题是「运行期动态根据配置改变程序调用行为」，比如服务任务工作流根据 A 任务结果决定 B 调哪个类的哪个方法；类加载时方法区为每个类生成唯一 java.lang.Class 对象，反射围绕 Class / Constructor / Method / Field / Modifier / Annotation 六个核心类展开；常用场景：通过配置调用类方法、结合自定义注解实现 mybatis-plus `@TableName` 之类的功能（用 `org.reflections` 包扫描带注解的类）、按需加载 jar / class。
 
 ## 10.18
 
-```component VPCard
-title: 缓存和数据库一致性问题，看这篇就够了
-order: -10desc: 水滴与银弹
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM7RfgenGgsYuXa5mhlqzdAHwIkc8IVaA0MkfSYRzJGg8Q/132
-link: https://mp.weixin.qq.com/s?__biz=MzIyOTYxNDI5OA==&mid=2247487312&idx=1&sn=fa19566f5729d6598155b5c676eee62d&chksm=e8beb8e5dfc931f3e35655da9da0b61c79f2843101c130cf38996446975014f958a6481aacf1&scene=178&cur_album_id=1699766580538032128#rdcur_album_id=1699766580538032128#rd
-background: rgba(46, 144, 208, 0.3)
-```
+* [缓存和数据库一致性问题，看这篇就够了](https://mp.weixin.qq.com/s?__biz=MzIyOTYxNDI5OA==\&mid=2247487312\&idx=1\&sn=fa19566f5729d6598155b5c676eee62d\&chksm=e8beb8e5dfc931f3e35655da9da0b61c79f2843101c130cf38996446975014f958a6481aacf1)：Kaito 全面拆解缓存与 DB 一致性——「更新 DB + 更新缓存」并发下不一致且浪费机器；「先删缓存再更 DB」并发下还会被旧值回写覆盖，需配「延迟双删」；推荐「先更 DB 再删缓存」+ 消息队列 / 订阅 binlog 重试保证两步都成功；读写分离 + 主从延迟场景下用延迟双删 + 控制主从延迟缓解；底层心法：性能与一致性不可兼得，只能做最终一致性，把 MySQL 当 leader、Redis / ES 当 follower 通过订阅变更日志同步。
 
 ## 10.17
 
-```component VPCard
-title: 从一个事故中理解Redis（几乎）所有知识点
-order: -10desc: 阿里技术
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM4bGHHEe4N3y73ILDk0Jv7DPug7bZoBE1lFlYGxbvQJHg/132
-link: https://mp.weixin.qq.com/s/v_Wnrvf25UyKzRgvDziMeA
-background: rgba(46, 144, 208, 0.3)
-```
+* [从一个事故中理解Redis（几乎）所有知识点](https://mp.weixin.qq.com/s/v_Wnrvf25UyKzRgvDziMeA)：一次大 Key 高峰期把 Redis 内存打到 100% 的事故复盘串起 Redis 全知识点——破解迷思：内存 100% ≠ Redis 不可用（默认有 LRU 淘汰策略），但本次根因是输出**缓冲区**被大 Key 打爆（`mem_clients_normal` 占满 `used_memory_overhead`，`used_memory_dataset` 仅 2%）；用 `info memory` 拆 Redis 内存组成、过期 key 删除算法（每 100ms 采样、超 25% 过期则循环删导致阻塞）；最后落到业务部署 / Key 设计 / SDK 使用 / 命令使用 / 运维管理五大规范。
 
 ## 10.16
 
-```component VPCard
-title: EasyExcel处理Mysql百万数据的导入导出案例，秒级效率，拿来即用！
-order: -10desc: JavaBuild
-logo: https://assets.cnblogs.com/logo.svg
-link: https://www.cnblogs.com/JavaBuild/p/18185854
-background: rgba(46, 144, 208, 0.3)
-```
+* [EasyExcel处理Mysql百万数据的导入导出案例，秒级效率，拿来即用！](https://www.cnblogs.com/JavaBuild/p/18185854)：SpringBoot 整合 EasyExcel 百万级 Excel 导入导出基线版——技术选型对比 EasyExcel vs POI vs JXL vs JXLS（EasyExcel 简单 API + 高性能 vs POI 稳定但繁琐）；通过 `ReadListener.invoke` + `BATCH_COUNT` 分片读取、模板下载、前端配合的完整可跑案例；坦诚指出导入耗时仍在分钟级，下一篇专门做优化。
 
-```component VPCard
-title: 厉害了！12秒将百万数据通过EasyExcel导入MySQL数据库中
-order: -10desc: JavaBuild
-logo: https://assets.cnblogs.com/logo.svg
-link: https://www.cnblogs.com/JavaBuild/p/18187977
-background: rgba(46, 144, 208, 0.3)
-```
+* [厉害了！12秒将百万数据通过EasyExcel导入MySQL数据库中](https://www.cnblogs.com/JavaBuild/p/18187977)：上一篇 500 秒 → 20 秒的优化复盘——耗时点 1 读取：把线程安全但慢的 `CopyOnWriteArrayList` 换成 `ArrayList`、单批从 2w 提到 10w；耗时点 3 写入：双方案对比 JDBC 分批插入 + 手动事务控制（`addBatch` / `executeBatch` / `commit`）vs 多线程 + MyBatis-Plus 批量插入，最终多线程 + 手动事务把单字段百万行写入压到 12s。
 
 ## 10.13
 
-```component VPCard
-title: Elasticsearch 基础入门详文
-order: -10desc: 腾讯技术工程
-logo: http://wx.qlogo.cn/mmhead/Iic9WLWEQMg2jTKicld7jhiagcz7jJxuYcpjicxAAiaVaNpdIiabCLIxOHIZFVsWH3cRNQjLF1TBznTJc/132
-link: https://mp.weixin.qq.com/s/GG_zrQlaiP2nfPOxzx_j9w
-background: rgba(46, 144, 208, 0.3)
-```
+* [Elasticsearch 基础入门详文](https://mp.weixin.qq.com/s/GG_zrQlaiP2nfPOxzx_j9w)：腾讯 IEG 工程师的 ES 入门长文（v7.7）——从 Lucene / ES 历史背景与版本破坏性变更切入，再到 Cluster / Node / Shard / Replica / Index / Type / Document 基础概念，强调 ES 默认值多但需要数据使用者人工限制（如字段类型一旦定下来再变只能 reindex）。
 
-```component VPCard
-title: 浅谈 Elasticsearch 的入门与实践
-order: -10desc: 阿里云开发者
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM4yGEW4Je6O6aLExtOx3rQQXxibBoiawVa1y9ncdIvz8aWA/132
-link: https://mp.weixin.qq.com/s/wlh2AHpNLrz9dHxPw9UrkQ
-background: rgba(46, 144, 208, 0.3)
-```
+* [浅谈 Elasticsearch 的入门与实践](https://mp.weixin.qq.com/s/wlh2AHpNLrz9dHxPw9UrkQ)：阿里云开发者从 ES 两大核心特性（分布式存储 + 分析检索）切入——分布式概念（Node / Cluster / Shard / Replica）、数据模型（Index / Type / Document，7.0 起 Type 弃用）、检索能力（倒排索引 = 词汇表 + 倒排列表、Analyzer 三步走过滤 / 标准化 / 分词、中文用 jieba 替代默认暴力拆字）；查询类型分单词级 / 全文级 / Bool / 关联查询 + 数据同步实践案例。
 
-```component VPCard
-title: 一文轻松图解搞懂 Elasticsearch 原理！
-order: -10desc: 芋道源码
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5bTS3371AuibVpmnUiaxmGX5R3wnslrERwt1PH479guXibw/132
-link: https://mp.weixin.qq.com/s/WviiVaYJpRDx8AVGxGWO8Q
-background: rgba(46, 144, 208, 0.3)
-```
+* [一文轻松图解搞懂 Elasticsearch 原理！](https://mp.weixin.qq.com/s/WviiVaYJpRDx8AVGxGWO8Q)：图解版 ES 工作原理——倒排索引（词汇表 + 倒排列表）vs 正排索引；分布式架构（master 节点协调 + data 节点分片副本）；写入路径：协调节点 → 路由到主分片 → 同步副本；写入底层：buffer + translog → refresh 生成 segment 进 file system cache → flush 落盘 + 清空 translog → segment merge；读 / 搜索 / 删 / 更新底层逻辑（删除是标记 + segment merge 清理）。
 
-```component VPCard
-title: ElasticSearch (ES从入门到精通一篇就够了) 
-order: -10desc: 不吃香菜
-logo: https://pic.cnblogs.com/avatar/2729274/20220117165231.png
-link: https://www.cnblogs.com/buchizicai/p/17093719.html
-background: rgba(46, 144, 208, 0.3)
-```
+* [ElasticSearch (ES从入门到精通一篇就够了) ](https://www.cnblogs.com/buchizicai/p/17093719.html)：单篇 ES 全栈实战长文——倒排索引基础 → ES 数据库基本概念 → 安装 ES / Kibana / IK 分词器 → 索引库 Mapping 与 CRUD → 文档 CRUD → RestAPI（Java 客户端操作索引库与文档） → DSL 设置查询条件 + 搜索结果处理（高亮 / 排序 / 分页 / 聚合） → 拼音分词器 + 自动补全 → ES 与 MySQL 数据同步三种方案（同步双写 / 异步通知 / binlog 监听） → 集群搭建 + 脑裂 + 分布式存储与查询 + 故障转移。
 
 ## 10.10
 
-```component VPCard
-title: 全域用户建模在美团首页推荐的探索与实践
-order: -10desc: 美团技术团队
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5vhk5P7xlYy014w9hRdPMvmnciaYLl3pyQicvXV7aTXmDA/132
-link: https://mp.weixin.qq.com/s/9KBcHCjfNad_Fp3-SZrG3Q
-background: rgba(46, 144, 208, 0.3)
-```
-
-```component VPCard
-title: MySQL 是怎么做并发控制的？
-order: -10desc: 阿里云开发者
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM4yGEW4Je6O6aLExtOx3rQQXxibBoiawVa1y9ncdIvz8aWA/132
-link: https://mp.weixin.qq.com/s/EjKtAj9H6KpuRlWAfoLYSA
-background: rgba(46, 144, 208, 0.3)
-```
+* [MySQL 是怎么做并发控制的？](https://mp.weixin.qq.com/s/EjKtAj9H6KpuRlWAfoLYSA)：基于 MySQL 8.0.35 InnoDB 源码整体梳理三层并发控制——表级（MDL 锁保护表结构，DDL 升级 SHARED\_UPGRADABLE → EXCLUSIVE，5.6+ Online DDL / 8.0+ Instant DDL 几乎不锁表，非 InnoDB 表才走 Server 层表锁），页级（B+ tree Index / Page 上的 SX 锁保护节点安全，乐观写入只锁叶子、悲观写入 SMO 锁路径上所有节点），行级（行锁保护记录一致性，配合 MVCC 实现读写不冲突）。
 
 ## 10.09
 
-```component VPCard
-title: 防御性编程：让系统坚不可摧
-order: -10desc: 京东技术
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM4cdRlxw9AnSNxF2ECtbPo9EFSO5JUtVk8HQbp1ibf7WXw/132
-link: https://mp.weixin.qq.com/s/yV0ze2ALYxR-YqUPAt_I2w
-background: rgba(46, 144, 208, 0.3)
-```
+* [防御性编程：让系统坚不可摧](https://mp.weixin.qq.com/s/yV0ze2ALYxR-YqUPAt_I2w)：京东物流的防御式编程实战——五个最易踩坑的点（输入验证与清理 / 预防死循环 / 异常处理 / 边界条件检查 / 断言做内部不变量校验），每点配反例与修正实践；实践原则：通用性防御 > 细节性防御、按使用场景调防御力度、不是越多越好（防御过度会带来维护与性能成本）。
 
 ## 10.06
 
-```component VPCard
-title: 分库分表，可能真的要退出历史舞台了！
-order: -10desc: 芋道源码
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5bTS3371AuibVpmnUiaxmGX5R3wnslrERwt1PH479guXibw/132
-link: https://mp.weixin.qq.com/s/jpjGegUONlhnLA8PV4gN1w
-background: rgba(46, 144, 208, 0.3)
-```
+* [分库分表，可能真的要退出历史舞台了！](https://mp.weixin.qq.com/s/jpjGegUONlhnLA8PV4gN1w)：作者认为分库分表正被分布式数据库吃掉存量市场——单机 MySQL 三大瓶颈（单表过大查询吃力 / 单库资源告急 / 读高峰挤压写）历史上催生了框架层 / 驱动层（ShardingSphere）/ 代理层（MyCat）三种中间件，但 ElasticSearch、Cassandra 等 NoSQL 一直内置分片副本；如今 Aurora / PolarDB / TiDB / OceanBase 等分布式 / 兼容 MySQL 的产品已成熟，新业务直接选分布式数据库比加分库分表中间件更划算。
 
-```component VPCard
-title: 分库分表也没吹的那么神…… 这 7 个问题难以解决
-order: -10desc: 芋道源码
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5bTS3371AuibVpmnUiaxmGX5R3wnslrERwt1PH479guXibw/132
-link: https://mp.weixin.qq.com/s/THQr9xZ1nuU30KGrMZESJw
-background: rgba(46, 144, 208, 0.3)
-```
+* [分库分表也没吹的那么神…… 这 7 个问题难以解决](https://mp.weixin.qq.com/s/THQr9xZ1nuU30KGrMZESJw)：分库分表的七大死结——分布式事务难（XA / TCC / 最大努力都有代价）、非分片字段查询能力差（要么全表扫要么维护异构索引）、全局主键问题（雪花 ID / 号段服务额外引入）、全局唯一约束难建立（必须查所有分片）、需要持续造轮子（路由 / 拆分 / 聚合）、扩容困难（数据搬迁 + 路由变更 + 双写灰度）、运维成本激增；最后反问：为什么业务系统要替数据库负重前行？
 
 ## 10.02
 
-```component VPCard
-title: Web 性能优化｜了解 HTTP 协议后才能理解的预加载
-order: -10desc: 阿里技术
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM4bGHHEe4N3y73ILDk0Jv7DPug7bZoBE1lFlYGxbvQJHg/132
-link: https://mp.weixin.qq.com/s/7PuE0EvDI9j6svNMLtg0dQ
-background: rgba(46, 144, 208, 0.3)
-```
+* [Web 性能优化｜了解 HTTP 协议后才能理解的预加载](https://mp.weixin.qq.com/s/7PuE0EvDI9j6svNMLtg0dQ)：从 HTTP 协议层串起前端预加载技术全景——CDN 动态加速（边缘节点 + 智能路由替代静态加速）、`dns-prefetch` 提前 DNS 解析、`preconnect` 提前 TCP+TLS 建连、`preload` 高优强制加载关键资源、`prefetch` 低优空闲下载下一跳资源、`prerender` 预渲染（弊端多少用）、流式渲染、HTTP Early Hints（103 状态码提前下发资源 hints）、HTTP/2 Push；进阶玩法：mousedown 比 click 早 200ms 触发 prefetch、prefetch 默认不携带 cookie 需 `credentials="include"`、服务端识别 `Sec-Purpose: prefetch` Header 短期缓存避免重发请求。
 
 ---
 
@@ -42779,105 +42651,105 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.11.md'
 
 ## 11.30
 
-* [更快、更稳、更优，揭秘火山引擎全站加速 DCDN 规模容器化最佳实践](https://mp.weixin.qq.com/s/wUpBkmsmkNmfG3UAIP5V2w)
+* [更快、更稳、更优，揭秘火山引擎全站加速 DCDN 规模容器化最佳实践](https://mp.weixin.qq.com/s/wUpBkmsmkNmfG3UAIP5V2w)：火山引擎边缘云团队把 DCDN 节点 90% 流量迁到边缘容器平台的复盘——选 Kata + 富容器保留 systemd / sshd 运维体系且做安全隔离，EIP 直通模式兼容 LB 转发避免流冲突，调度亲和性绑定同机型 CPU 保证负载均衡，并通过故障迁移 + 风控熔断 + Pod 快照快速恢复保障稳定性，落地后资源筹备从月级降到周级、上线效率提升 80%、边缘资源售卖率提升 11%。
 
-* [字节跳动基于 Ray 的大规模多模态数据处理框架](https://mp.weixin.qq.com/s/PtlQ-SYQKTNXY8kAhsZhbA)
+* [字节跳动基于 Ray 的大规模多模态数据处理框架](https://mp.weixin.qq.com/s/PtlQ-SYQKTNXY8kAhsZhbA)：字节 Seed + Data Infra 团队的 Ray Summit 2024 分享——用 RayCore + RayData 构建 Audio / Video 多模态训练数据 pipeline 解决 PB 级数据 + 异构 CPU/GPU + 复杂 DAG 三大挑战；针对 K8s 不稳定 Pod 抢占下 RayData 任务卡死的问题，自研「任务重新分配 + RayData 自维护算子血缘」两个增强方案，绕开 Actor max\_restarts 限制让被抢占 Pod 不再阻塞整体作业。
 
 ## 11.29
 
-* [详解 Apache ShardingSphere 的架构和原理](https://mp.weixin.qq.com/s/JVcfR_vNW5K6_kMhhIfC7w)
+* [详解 Apache ShardingSphere 的架构和原理](https://mp.weixin.qq.com/s/JVcfR_vNW5K6_kMhhIfC7w)：《Apache ShardingSphere 权威指南》新书序章——从云原生数据库管理三大痛点（多 SDK 学习成本高 / 适配新需求要重写代码 / 异构数据库无统一标准）切入，介绍 ShardingSphere 三大法宝：标准化数据分片、分布式事务、数据库治理；底层架构与上层组件如何协作打通，给开发与 DBA 一套通用治理范式。
 
-* [B站创作端接入自研剪辑引擎](https://mp.weixin.qq.com/s/LrzYdDrfozuX2xG_g3sN7w)
+* [B站创作端接入自研剪辑引擎](https://mp.weixin.qq.com/s/LrzYdDrfozuX2xG_g3sN7w)：B 站创作端从第三方剪辑引擎切到自研引擎的迁移实录——第三方引擎的三大痛点（时间线模型固定难定制、多 App 共用一个对接研发响应慢、按 App 按年付费成本高）促成自研决策；接入挑战聚焦在原子素材（视频 / 音频 / 字幕 / 滤镜 / 贴纸 / 转场）+ 原子能力的抽象重设计，长期看随业务矩阵扩张边际成本趋零。
 
-* [大模型加持下的Linux操作系统开发和自动化维护实践](https://mp.weixin.qq.com/s/dlKd0Xzckk7Oy74dHiZFlQ)
+* [大模型加持下的Linux操作系统开发和自动化维护实践](https://mp.weixin.qq.com/s/dlKd0Xzckk7Oy74dHiZFlQ)：把大模型嵌入 Linux 发行版开发与运维——总览解决方案后逐项实现 + 新增模块拆解，回答「LLM 如何参与内核构建 / 包管理 / 故障自愈」这类系统级 AI 化命题。
 
-* [Prometheus在B端门店回收系统中的应用](https://mp.weixin.qq.com/s/Wqcv2IDNeVtesxb0LEyOxA)
+* [Prometheus在B端门店回收系统中的应用](https://mp.weixin.qq.com/s/Wqcv2IDNeVtesxb0LEyOxA)：B 端门店回收业务用 Prometheus 监控核心数据保稳定——四种 Metric 类型（Counter / Gauge / Histogram / Summary）的应用边界，配合 Grafana 大盘 + AlertManager 告警，落到核心业务数据的实时观测与告警链路。
 
 ## 11.28
 
-* [性能提升 2000%！揭秘 MyBatis-Plus 批量插入的终极优化技巧](https://mp.weixin.qq.com/s/bmqRiv_LwZRgZDfiZInJpA)
+* [性能提升 2000%！揭秘 MyBatis-Plus 批量插入的终极优化技巧](https://mp.weixin.qq.com/s/bmqRiv_LwZRgZDfiZInJpA)：MyBatis-Plus `saveBatch` 默认实现的局限（每条都执行 INSERT，并未真正批量）→ 开启 JDBC `rewriteBatchedStatements=true` 让驱动层把多条 INSERT 合并成一条 multi-row VALUES → 进一步用 `INSERT ... ON DUPLICATE KEY UPDATE` 处理冲突，最终把数十万行写入压到原来的 5%。
 
 ## 11.27
 
-* [10 个系统设计中的取舍](https://mp.weixin.qq.com/s/x6vrAf72JdfAIz3mPSo3gQ)
+* [10 个系统设计中的取舍](https://mp.weixin.qq.com/s/x6vrAf72JdfAIz3mPSo3gQ)：10 组系统设计常见 trade-off——垂直 vs 水平扩展、SQL vs NoSQL、批处理 vs 流处理、Normalization vs Denormalization、CAP 一致性 vs 可用性、强一致 vs 最终一致、REST vs GraphQL、有状态 vs 无状态、同步 vs 异步、长连 vs 短连，每组都给出适用场景与取舍依据。
 
 ## 11.26
 
-* [​B 站基于 Iceberg 的流批一体的探索和实践](https://mp.weixin.qq.com/s/CHZWcWao42_aI43U9c-A3g)
+* [​B 站基于 Iceberg 的流批一体的探索和实践](https://mp.weixin.qq.com/s/CHZWcWao42_aI43U9c-A3g)：B 站资深开发的 Iceberg 落地分享——海量用户行为数据传输、商业 / AI 在线训练、DB 数据同步、Iceberg 维表 Join 四个核心场景，把流批一体从概念落到具体的数据通路与 Join 方案。
 
-* [10 倍性能提升， GraalVM 应用可观测实践](https://mp.weixin.qq.com/s/Ov6LZegZ0-MwP9f9A9vlWw)
+* [10 倍性能提升， GraalVM 应用可观测实践](https://mp.weixin.qq.com/s/Ov6LZegZ0-MwP9f9A9vlWw)：GraalVM 解决 JVM 冷启动慢与运行时内存占用高问题，但带来可观测性挑战——文章给出 GraalVM Native Image 应用下的指标数据采集与调用链数据采集落地方案，让原本 JVM 上成熟的 APM 体系在 GraalVM 上继续可用。
 
 ## 11.25
 
-* [从零开始了解推荐系统全貌](https://mp.weixin.qq.com/s/n1PB5LGppaxlfRWx8WxhLg)
+* [从零开始了解推荐系统全貌](https://mp.weixin.qq.com/s/n1PB5LGppaxlfRWx8WxhLg)：腾讯程序员的推荐系统科普长文——推荐算法理解、整体框架、用户画像、内容画像、算法构建、当前发展、衡量标准（CTR / CVR / 多样性 / 新颖度）以及算法之外的工程考量（特征工程 / 数据闭环 / 冷启动），适合刚入门的工程师建立全景认知。
 
-* [转转度量平台技术建设实践](https://mp.weixin.qq.com/s/sDE2U6e3N5_Om-ejrLYUZw)
+* [转转度量平台技术建设实践](https://mp.weixin.qq.com/s/sDE2U6e3N5_Om-ejrLYUZw)：转转度量平台 V0.1 → V0.5 → V1 三代演进——V1 把数据源统一到数仓建设之上，技术架构上做指标管理、维度管理、口径治理与一致性校验，输出全公司一份「同一指标同一口径」。
 
-* [QCon演讲实录|赵彦奇：HTTPDNS 边缘下沉，性能、成本和稳定性之间的取舍与思考](https://mp.weixin.qq.com/s/kSdVfpk_PHYYokLYHlp9Mg)
+* [QCon演讲实录|赵彦奇：HTTPDNS 边缘下沉，性能、成本和稳定性之间的取舍与思考](https://mp.weixin.qq.com/s/kSdVfpk_PHYYokLYHlp9Mg)：HTTPDNS 边缘下沉的取舍报告——核心矛盾是「流量与资源的冲突」+「性能与稳定性的冲突」，解法走敏捷交付 + 演进式架构，靠智能调度平衡容量 / 性能 / 可靠性，配合云边端全链路流量调度与软件 / 系统架构优化兜底。
 
 ## 11.23
 
-* [23 种设计模式详解（全23种）](https://blog.csdn.net/A1342772/article/details/91349142)
+* [23 种设计模式详解（全23种）](https://blog.csdn.net/A1342772/article/details/91349142)：CSDN 阅读 10w+ 的 GoF 23 种设计模式速查长文——创建型 5（工厂方法 / 抽象工厂 / 单例 / 建造者 / 原型）+ 结构型 7（适配器 / 装饰器 / 代理 / 外观 / 桥接 / 组合 / 享元）+ 行为型 11（策略 / 模板方法 / 观察者 / 迭代子 / 责任链 / 命令 / 备忘录 / 状态 / 访问者 / 中介者 / 解释器），每种附定义、UML 类图、Java 代码示例，适合面试前回炉。
 
 ## 11.21
 
-* [vivo 企业云盘服务端实现简介](https://mp.weixin.qq.com/s/Rti55K_KzMDZiyA3H2NJ8Q)
+* [vivo 企业云盘服务端实现简介](https://mp.weixin.qq.com/s/Rti55K_KzMDZiyA3H2NJ8Q)：vivo 企业云盘服务端整体实现——文件秒传 / 断点续传 / 多端同步 / 分享权限管理等核心能力的服务端拆解，重点讲存储分层、上传链路、客户端协议、权限模型与企业管控特性。
 
 ## 11.20
 
-* [转转技术：亿级高性能通知系统实践](https://mp.weixin.qq.com/s/94zSJjCCeP5QnHKEL2oCTw)
+* [转转技术：亿级高性能通知系统实践](https://mp.weixin.qq.com/s/94zSJjCCeP5QnHKEL2oCTw)：转转通用消息通知系统实践——五层架构（配置层 / 接口层 / 基础服务层 / 通用组件层 / 存储层）；首次发送靠 Redis SETNX 保幂等 + Sentinel 滑动窗口动态发现问题服务自动路由到「异常通知执行器」做舱壁隔离 + 无界队列加自定义繁忙检测避免触发拒绝策略；重试发送靠分布式定时任务 + 锁防止重复捞取，配合 ES + MySQL 双写（用 update\_time 当版本号保最终一致）；流量突增两层降级（线程池繁忙走 MQ 削峰 → Sentinel 拦截直接落库延迟消费）。
 
-* [什么才是架构师的真内核？](https://mp.weixin.qq.com/s/v3F1pBdG444I9_3pi-718Q)
+* [什么才是架构师的真内核？](https://mp.weixin.qq.com/s/v3F1pBdG444I9_3pi-718Q)：架构师真正的内核不是堆技术词，而是「在约束条件下做最优决策」——抽象建模、问题分解、权衡取舍、跨域协作四项底层能力，配合对业务领域的深度理解，比掌握某个新框架重要得多。
 
 ## 11.18
 
-* [Java方法设计原则与实践：从Effective Java到团队案例](https://mp.weixin.qq.com/s/bUHlzpCdpKAp6D98lcdWdA)
+* [Java方法设计原则与实践：从Effective Java到团队案例](https://mp.weixin.qq.com/s/bUHlzpCdpKAp6D98lcdWdA)：从 Effective Java 出发的方法设计 checklist——入参（不要太多 / 谨慎使用可变参数 / 校验有效性）、返回值（避免返回 null、避免返回基本类型包装类）、命名、异常处理、文档与单元测试，配团队真实 Code Review 案例对比反例与修正。
 
 ## 11.16
 
-* [B站直播S14保障全解析：高效保障技术实践](https://mp.weixin.qq.com/s/Qci7QYgUtpvwsP8l7n1fpw)
+* [B站直播S14保障全解析：高效保障技术实践](https://mp.weixin.qq.com/s/Qci7QYgUtpvwsP8l7n1fpw)：B 站直播 S14 英雄联盟全球总决赛保障复盘——从赛事预案、压测建设、流量调度、CDN 容灾到值班 SOP 的端到端保障实践，重点拆解突发流量下的弹性扩缩容与回源链路稳定性策略。
 
 ## 11.13
 
-* [【提效】docker镜像构建优化-提速10倍](https://mp.weixin.qq.com/s/qU6dSiMuH7xDHhTDCcLMhw)
+* [【提效】docker镜像构建优化-提速10倍](https://mp.weixin.qq.com/s/qU6dSiMuH7xDHhTDCcLMhw)：Docker 镜像构建提速 10 倍的实战——动静分离原则（依赖装在 builder 阶段、源码后置避免缓存失效）+ 多阶段构建（builder 阶段下载依赖、runtime 阶段只 COPY 产物）；构建耗时优化（合理 layer 切分 + buildkit 并行）+ 镜像体积优化（剥除中间产物 + 选轻量基础镜像）。
 
 ## 11.12
 
-* [被问懵了，加密后的数据如何进行模糊查询？- 芋道源码](https://mp.weixin.qq.com/s/MvNx-XjpMm7hcGx7Q-hPeQ)
+* [被问懵了，加密后的数据如何进行模糊查询？](https://mp.weixin.qq.com/s/MvNx-XjpMm7hcGx7Q-hPeQ)：可逆加密字段做模糊查询的三档方案——「沙雕做法」全量加载内存解密 / 维护明文映射表（违背安全初衷）；「常规做法」数据库实现自定义解密函数 + 函数索引、或先取首末几位明文做粗筛再解密；「超神做法」对原文做 N-gram 切片后逐个加密入库，查询时把模糊词同样切 N-gram 加密做交集求并。
 
 ## 11.11
 
-* [腾讯文档在线表格卡顿指标探索之路 - 腾讯技术工程](https://mp.weixin.qq.com/s/JTL_x_07qfnIuMIum68m9Q)
+* [腾讯文档在线表格卡顿指标探索之路](https://mp.weixin.qq.com/s/JTL_x_07qfnIuMIum68m9Q)：腾讯文档在线表格的卡顿指标体系——重新定义「卡顿」（不是 FPS 而是用户操作到帧呈现的端到端时延），搭建大盘卡顿指标看板，把零散的性能埋点串成可量化、可下钻、可归因的指标体系。
 
 ## 11.9
 
-* [没有实际的高并发经验，面试如何吹一波牛？](https://juejin.cn/post/7418085899718098944)
+* [没有实际的高并发经验，面试如何吹一波牛？](https://juejin.cn/post/7418085899718098944)：高并发面试话术五板斧——系统稳定性（限流 / 熔断 / 降级）、资源争抢与锁竞争（分段锁 / CAS / Redis 红锁）、缓存优化（多级缓存 + 一致性方案 + 热点 Key 处理）、数据库压力（读写分离 / 分库分表 / 慢 SQL 优化）、队列与异步（MQ 削峰 / 线程池 / CompletableFuture），每点配可量化指标话术。
 
 ## 11.8
 
-* [京东面试：亿级黑名单 如何设计？亿级查重 呢？（答案含：布隆过滤器、布谷鸟过滤器）](https://mp.weixin.qq.com/s/G4Y1u85eJL2gDEedi8_RZg)
+* [京东面试：亿级黑名单 如何设计？亿级查重 呢？（答案含：布隆过滤器、布谷鸟过滤器）](https://mp.weixin.qq.com/s/G4Y1u85eJL2gDEedi8_RZg)：尼恩面试题——先回顾基数 / 二值 / 排序 / 聚合「四大统计」原理，再以亿级黑名单 + 亿级查重为切入，对比布隆过滤器（哈希多次置位 / 不能删除 / 有误判）vs 布谷鸟过滤器（指纹存储 / 支持删除 / 误判率更低 / 空间利用率更高），给出工程选型建议。
 
-* [Java方法设计原则与实践：从Effective Java到团队案例 - 京东云开发者社区](https://developer.jdcloud.com/article/4075)
+* [Java方法设计原则与实践：从Effective Java到团队案例](https://developer.jdcloud.com/article/4075)：京东云开发者社区版的同篇「Java 方法设计」——以 Effective Java 为底、配团队案例的方法设计 checklist：入参不超过 4 个、可变参数慎用、入参一律校验、返回值避空，注释驱动设计先于实现。
 
-* [电商库存系统的防超卖和高并发扣减方案 - 京东云开发者社区](https://developer.jdcloud.com/article/2840)
+* [电商库存系统的防超卖和高并发扣减方案](https://developer.jdcloud.com/article/2840)：电商库存防超卖与高并发扣减方案——单机锁演进到 Redis 分布式锁、再到 Redis 原子扣减（lua 脚本）+ MQ 异步落库、再到分桶库存（拆分热点 Key），最终用「预扣库存 + 异步对账」处理支付超时与回滚。
 
 ## 11.7
 
-* [揭秘JDQ限流架构：实时数据链路的多维动态带宽管控|京东零售技术实践 - 京东技术](https://mp.weixin.qq.com/s/h6bKrgJsFFCdnj_76VUdEA)
+* [揭秘JDQ限流架构：实时数据链路的多维动态带宽管控|京东零售技术实践](https://mp.weixin.qq.com/s/h6bKrgJsFFCdnj_76VUdEA)：京东零售 JDQ 实时数据链路的限流方案——原生 Kafka 限流按 client.id / user 单维度，无法应对实时数据链路的多维（topic / partition / consumer group）动态带宽管控；JDQ 自研限流模型把多维带宽配额下发到 Broker，运行时根据热点动态调权，避免单 topic 被打爆波及全集群。
 
 ## 11.6
 
 短链文章：
 
-* [一个企业级高并发短链接服务项目分享\_牛客网](https://www.nowcoder.com/discuss/554974739119267840)
+* [一个企业级高并发短链接服务项目分享\_牛客网](https://www.nowcoder.com/discuss/554974739119267840)：四川大学校招简历项目级短链方案——三高（高可用 / 高性能 / 高并发）覆盖；MurmurHash + Base62 编码生成 6 位短链可撑 5 亿条；冲突识别选「唯一索引插入失败再判断」而非先查再插减少网络往返；302 重定向方便统计点击；Redis 多级缓存 + Caffeine 本地缓存挡住读侧 100:1 读写比。
 
-* [京东短网址高可用提升最佳实践](https://juejin.cn/post/7382344353068974115)
+* [京东短网址高可用提升最佳实践](https://juejin.cn/post/7382344353068974115)：京东 `s.3.cn` 短网址服务（日均 1 亿条）的高可用改造——原方案随机算法在长链重复时能快速命中 Redis / HBase，但极端场景下生成性能波动；改造为「号段服务预生成短码 + 双写 Redis + HBase 兜底」，配合熔断降级与多机房部署提升整体 SLA。
 
-* [\[万字长文\] 系统设计之路：如何设计一个URL短链服务](https://mp.weixin.qq.com/s/HaOhvgtgbCJyNXp-DtgedQ)
+* [\[万字长文\] 系统设计之路：如何设计一个URL短链服务](https://mp.weixin.qq.com/s/HaOhvgtgbCJyNXp-DtgedQ)：万字长文版 URL 短链系统设计——从需求估算（QPS / 存储 / 带宽）→ 短码生成算法（Hash / 自增 ID / 雪花）→ 重定向 301 vs 302 取舍 → 数据库选型 → 缓存层级 → 高可用与扩展，串完整套系统设计 4S 流程。
 
-* [字节二面：100Wqps短链系统，如何设计？ - 疯狂创客圈 - 博客园](https://www.cnblogs.com/crazymakercircle/p/17079830.html)
+* [字节二面：100Wqps短链系统，如何设计？ - 疯狂创客圈 - 博客园](https://www.cnblogs.com/crazymakercircle/p/17079830.html)：字节二面真题级 100W QPS 短链方案——62 / 128 进制表示法对比，号段模式预取 + Redis Cluster 分片 + 多级缓存挡读、布隆过滤器挡无效查询、HBase 做冷数据存储，把 100W QPS 拆到工程可落地的每一层。
 
-* [腾讯女后端设计了一套短链系统，当场就想给她 offer！](https://yuanjava.com/short-link-system/#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E7%9F%AD%E9%93%BE%EF%BC%9F)
+* [腾讯女后端设计了一套短链系统，当场就想给她 offer！](https://yuanjava.com/short-link-system/#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E7%9F%AD%E9%93%BE%EF%BC%9F)：以「相对安全 + 美观」为出发点的短链设计——302 跳转原理、Base62 编码方案、Hash 冲突解决、过期机制、防刷与限流，给出一套可在面试现场连贯讲完的完整答题模板。
 
 不错的短链接产品：
 
@@ -42893,11 +42765,11 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.11.md'
 
 ## 11.4
 
-* [再也不用心惊胆战地使用 FastJSON 了 —— 序列化篇 - 阿里云开发者](https://mp.weixin.qq.com/s/QuFcaQpVBonOuC_a_m2JQQ)
+* [再也不用心惊胆战地使用 FastJSON 了 —— 序列化篇 - 阿里云开发者](https://mp.weixin.qq.com/s/QuFcaQpVBonOuC_a_m2JQQ)：阿里云开发者从源码层级拆解 FastJSON 序列化整体流程 + 详细流程——按字段类型分发到对应 Serializer、对自定义类型做反射缓存、对循环引用与日期格式做特殊处理；逐个揭示历史上踩过的坑（autoType 漏洞 / NullValue 处理 / 日期格式默认值）以及对应的安全配置项。
 
 ## 11.1
 
-* [走进京东零售广告研发部：大模型时代下的新一代广告系统 - 京东技术](https://mp.weixin.qq.com/s/-zlXHsPxj1PQJqafQGI1Qw)
+* [走进京东零售广告研发部：大模型时代下的新一代广告系统 - 京东技术](https://mp.weixin.qq.com/s/-zlXHsPxj1PQJqafQGI1Qw)：京东零售广告研发部大模型时代广告系统全景——广告用户意图理解、广告多模态内容理解、ListVCG 基于强化学习的序列拍卖机制、基于强化学习的多智能体博弈，把传统 CTR/CVR + 出价机制升级到大模型 + RL 驱动的新一代召回 / 排序 / 出价架构。
 
 ---
 
@@ -42906,153 +42778,153 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.12.md'
 ---
 # 2024.12 期
 
-* [数仓建设保姆级5W字教程，离线实时一网打尽（理论+实战）](https://dbaplus.cn/news-73-4289-1.html)
+* [数仓建设保姆级5W字教程，离线实时一网打尽（理论+实战）](https://dbaplus.cn/news-73-4289-1.html)：dbaplus 园陌的 5 万字数仓建设大全——基本概念（面向主题 / 集成 / 非易失 / 时变）、四种主流数仓架构（数据集市 / Inmon 企业信息工厂 / Kimball 维度建模 / 混合型）、ODS / DWD / DWS / ADS 分层模型、维度建模与一致性维度、Lambda vs Kappa vs 流批一体，一篇覆盖离线 + 实时数仓建设理论与实战。
 
 ## 12.31
 
-* [如何用 Redis 构建一个简单的聊天应用？](https://mp.weixin.qq.com/s/Lo0tVaUrItBm9oc6JIxWjw)
+* [如何用 Redis 构建一个简单的聊天应用？](https://mp.weixin.qq.com/s/Lo0tVaUrItBm9oc6JIxWjw)：用 Redis 撑起聊天 App 全部状态——第 1 阶段连接初始化（用户在线 hash + 心跳过期）；第 2 阶段消息处理用 Pub/Sub 做实时推送 + List 做历史消息 + Sorted Set 做消息已读位置，证明小聊天工具不用引入 IM 中间件也能跑得起来。
 
 ## 12.30
 
-* [Redis Sets 使用场景有哪些？如何实现共同好友？](https://mp.weixin.qq.com/s/xVJd2PH-0y100JDE9JQNxA)
+* [Redis Sets 使用场景有哪些？如何实现共同好友？](https://mp.weixin.qq.com/s/xVJd2PH-0y100JDE9JQNxA)：码哥版 Redis Set 用法盘点——元素全为 64 位整数且数量 ≤512 时底层用 intset 省内存，否则散列表 O(1) 操作；典型场景：共同关注（SINTERSTORE 求交集）、每日新增关注（SDIFFSTORE 求差集）、文章打标签（SADD + SMEMBERS）；附三国题材的「刘备 ∩ 曹操 = 貂蝉」共同好友实现 demo。
 
-* [四年匠心磨砺，快手系统软件技术创新与领域演进之路](https://mp.weixin.qq.com/s/xg3gOkM1QcED-dxA6G2T2Q)
+* [四年匠心磨砺，快手系统软件技术创新与领域演进之路](https://mp.weixin.qq.com/s/xg3gOkM1QcED-dxA6G2T2Q)：快手系统软件团队四年技术演进总览——从内核优化、容器调度、存储引擎到稳定性建设的全栈系统软件创新路径，回顾踩过的坑与沉淀的能力。
 
 ## 12.29
 
-* [“四两拨千斤” —— 1.2MB 数据如何吃掉 10GB 内存](https://mp.weixin.qq.com/s/WyHGfvD0ru0dNxtNrE2bRg)
+* [“四两拨千斤” —— 1.2MB 数据如何吃掉 10GB 内存](https://mp.weixin.qq.com/s/WyHGfvD0ru0dNxtNrE2bRg)：1.2 MB 输入吃掉 10 GB 内存的离奇 OOM 排查复盘——表面是数据量小但 JVM 堆爆，根因是 protobuf 嵌套字段被反序列化时触发深度展开导致对象数量级膨胀；通过堆 dump + MAT 定位到具体字段，最终改用懒解析或裁剪字段。
 
 ## 12.27
 
-* [关于「日志采样」的一些思考及实践](https://mp.weixin.qq.com/s/HWV41YOarHe37I2GnHY59A)
+* [关于「日志采样」的一些思考及实践](https://mp.weixin.qq.com/s/HWV41YOarHe37I2GnHY59A)：京东零售的请求级日志采样实践——核心难点是「采样标识」如何跨主线程 / 子线程 / 线程池 / 嵌套线程池透传；对比三种方案（包装线程池 / 业务代码显式透传 / 抽象组件 + 扩展 API），选第三种把控制逻辑收敛成组件 + `XxxUtils.wrap(Runnable)` 的最小侵入改造；落地时还需考虑采样算法（随机 vs traceId 取模）、最小粒度、info / error 联动策略、磁盘 IO 与日志速率联动等细节。
 
-* [B站推荐模型数据流的一致性架构](https://mp.weixin.qq.com/s/sNKOYgvOet8hBBHGg9ePxQ)
+* [B站推荐模型数据流的一致性架构](https://mp.weixin.qq.com/s/sNKOYgvOet8hBBHGg9ePxQ)：B 站推荐模型在线 / 离线特征一致性架构——靠「特征快照 + 统一特征服务」让训练样本与在线打分使用同一份特征值，规避线上线下分布偏移导致模型效果衰减。
 
 ## 12.26
 
-* [SQL 语句是怎么执行的？](https://mp.weixin.qq.com/s/qgswvrYk-ky5h0PzQSjlWQ)
+* [SQL 语句是怎么执行的？](https://mp.weixin.qq.com/s/qgswvrYk-ky5h0PzQSjlWQ)：MySQL SQL 执行链路图解——客户端 → 连接器 → 查询缓存 → 解析器 → 优化器 → 执行器 → 存储引擎，配合 Server 层与 InnoDB 引擎层的角色划分，把每条 SELECT / UPDATE 在 MySQL 内部走过的关卡讲透。
 
-* [深入剖析SQL死锁 - 两条SQL之间的死锁原因](https://mp.weixin.qq.com/s/2KzvHntq3PWLXpvwc1H6-g)
+* [深入剖析SQL死锁 - 两条SQL之间的死锁原因](https://mp.weixin.qq.com/s/2KzvHntq3PWLXpvwc1H6-g)：转转两条 `INSERT ... ON DUPLICATE KEY UPDATE` 互锁的死锁深挖——通过 `SHOW ENGINE INNODB STATUS` 和 `performance_schema.data_locks` 拿到锁信息后，下载 MySQL 8.0 源码 Debug 出加锁链路 `row_ins_clust_index_entry → row_ins_sec_index_entry → row_mysql_handle_errors`；结论：`ON DUPLICATE KEY UPDATE` 在 MySQL 内是逐 value 加锁、且处理重复 key 时会加间隙锁，并发两个事务同时加间隙锁就会互相阻塞产生死锁。
 
 ## 12.24
 
-* [干掉复杂的工具类，Hutool 工具库确实香！](https://mp.weixin.qq.com/s/Fkzpz9nkg6DRwgoEyYYgjQ)
+* [干掉复杂的工具类，Hutool 工具库确实香！](https://mp.weixin.qq.com/s/Fkzpz9nkg6DRwgoEyYYgjQ)：Hutool 工具库实战——日期 / 字符串 / 集合 / 反射 / IO / 加密 / HTTP 等常用工具类的落地用法对比，替代项目里大量自造轮子（DateUtils / StringUtil / FileUtil 等），减少重复代码与潜在 bug。
 
-* [大文件上传原理及实现方案](https://mp.weixin.qq.com/s/lvQN15Wg41-CzEbPHUtu1A)
+* [大文件上传原理及实现方案](https://mp.weixin.qq.com/s/lvQN15Wg41-CzEbPHUtu1A)：大文件上传方案——什么是大文件、跟普通上传的区别、原理与思路、具体实现方案；前端切片 + 并发上传 + 秒传（预先 hash 比对） + 断点续传（已上传分片记录） + 服务端合并校验。
 
-* [SpringBoot 实现 License 认证（只校验有效期）](https://mp.weixin.qq.com/s/tkzDF9NO_LU8NpWxXRSUjg)
+* [SpringBoot 实现 License 认证（只校验有效期）](https://mp.weixin.qq.com/s/tkzDF9NO_LU8NpWxXRSUjg)：SpringBoot 简易 License 认证——授权方生成 RSA 密钥对、用私钥对「主体 + 有效期」签名生成 `license.lic`；使用方启动时用公钥验签 + 校验过期时间，应付私有化部署场景的最小授权管控。
 
 ## 12.22
 
-* [Java CompletableFuture 异步超时实现探索](https://mp.weixin.qq.com/s/X6JXDQk5vjLyEqGchRj9dg)
+* [Java CompletableFuture 异步超时实现探索](https://mp.weixin.qq.com/s/X6JXDQk5vjLyEqGchRj9dg)：CompletableFuture 异步超时控制深挖——`get(timeout, unit)` 是阻塞超时，`orTimeout / completeOnTimeout`（Java 9+）是非阻塞超时；自定义版用 `ScheduledExecutor` 在 N 秒后调用 `completeExceptionally`，注意调度线程池要用 daemon 否则会阻塞 JVM 退出。
 
-* [详解MySQL字符集和Collation](https://mp.weixin.qq.com/s/j8PxIA1zweoXb1CvNl-HAw)
+* [详解MySQL字符集和Collation](https://mp.weixin.qq.com/s/j8PxIA1zweoXb1CvNl-HAw)：MySQL 字符集 + Collation 全景——连接 / Server / 库 / 表 / 列 / 字面量六层精细化配置；字符集转换发生时机、不同 Collation 下字符串比较与排序规则；以 8.0.34 默认的 utf8mb4 + utf8mb4\_0900\_ai\_ci 为例，演示「设错 set names 导致写入乱码」「ß = ss 命中两条数据」「同 ai\_ci vs as\_cs 排序大小写顺序不同」三类常见坑。
 
-* [Java程序中的潜在危机: 深入探讨NullPointerException｜得物技术](https://mp.weixin.qq.com/s/2AfUT0TcpOkZ34MSDgu1gA)
+* [Java程序中的潜在危机: 深入探讨NullPointerException｜得物技术](https://mp.weixin.qq.com/s/2AfUT0TcpOkZ34MSDgu1gA)：得物对 Java NPE 的系统化治理——常见 NPE 触发场景（自动拆箱 / 集合 stream / 多级链式调用 / Map.get），可选方案对比 `Optional` vs 显式判空 vs `Objects.requireNonNull` vs IDEA `@Nullable / @NotNull` 注解，落到团队级 NPE 排查与预防 SOP。
 
 ## 12.21
 
-* [B站装机系统实践：从初创到规模化的演进](https://mp.weixin.qq.com/s/tIuoIGqXKs_oNajvj-60bw)
+* [B站装机系统实践：从初创到规模化的演进](https://mp.weixin.qq.com/s/tIuoIGqXKs_oNajvj-60bw)：B 站机房装机系统从初创到规模化——PXE 网络引导 + Kickstart 自动化安装 + 配置管理工具一体化，把单机手动装系统升级为规模化批量装机，配合资产盘点与上架自动化对齐 IDC 运维。
 
-* [什么？CPU消耗要压降80% ——《事件序列化CPU开销压降》揭榜](https://mp.weixin.qq.com/s/DAtiegQIBkuWdcsPCpKpbA)
+* [什么？CPU消耗要压降80% ——《事件序列化CPU开销压降》揭榜](https://mp.weixin.qq.com/s/DAtiegQIBkuWdcsPCpKpbA)：事件序列化 CPU 开销压降 80% 的实战——定位热点是反复反射 + JSON 字符串拼接；改为 byte buffer 零拷贝 + 字段元信息预编译，去掉运行时反射；配合对象池减少 GC，最终单条事件序列化 CPU 从毫秒级降到微秒级。
 
 ## 12.20
 
-* [【述职黑话】ToB复杂业务状态的可复用的解决方案](https://mp.weixin.qq.com/s/FxByOt4xyTyaxP4HwevLeQ)
+* [【述职黑话】ToB复杂业务状态的可复用的解决方案](https://mp.weixin.qq.com/s/FxByOt4xyTyaxP4HwevLeQ)：ToB 业务复杂状态机的可复用方案——问题背景是状态分支爆炸 + 散落各业务方法；解法分两步：先解耦重构提取状态机模型 + 用设计模式（状态模式 / 策略模式 / 责任链）重构状态变迁，把「if/else 大杂烩」收敛成可声明、可复用的状态流转配置。
 
 ## 12.19
 
-* [小红书MySQL数据一致性校验能力探索与实践](https://mp.weixin.qq.com/s/JFtlCbcakyKd60H10ldEEw)
+* [小红书MySQL数据一致性校验能力探索与实践](https://mp.weixin.qq.com/s/JFtlCbcakyKd60H10ldEEw)：小红书 MySQL 主从 / 跨集群一致性校验体系——基于 binlog 增量对账 + 周期全量对账双轨；增量靠订阅 binlog 在下游异构存储（ES / TiDB / Redis）做实时比对；全量靠分片扫描 + 一致性快照避免长时间锁表，发现差异通知到告警平台。
 
-* [Flink 2.0 存算分离状态存储 — ForSt DB](https://mp.weixin.qq.com/s/r18WDkNApgIxuXZhpWfGaQ)
+* [Flink 2.0 存算分离状态存储 — ForSt DB](https://mp.weixin.qq.com/s/r18WDkNApgIxuXZhpWfGaQ)：Flink 2.0 状态存储 ForSt DB——把传统 RocksDB 本地状态升级为存算分离架构（计算节点保留热数据，冷状态存到对象存储），让 Flink 作业无状态化、可秒级扩缩容，同时减小 checkpoint 压力。
 
 ## 12.18
 
-* [小白也能看得懂！日志审计插件从入门到实战](https://mp.weixin.qq.com/s/p2U_FDaGyBmO-6SG-_28MQ)
+* [小白也能看得懂！日志审计插件从入门到实战](https://mp.weixin.qq.com/s/p2U_FDaGyBmO-6SG-_28MQ)：日志审计插件入门到实战——背景与概览，核心模块设计与实现细节，从拦截切面（AOP / Filter / Interceptor）到敏感字段脱敏、用户操作上下文采集、审计日志落库，再到查询与导出。
 
 ## 12.17
 
-* [线程池中线程异常后：销毁还是复用？](https://mp.weixin.qq.com/s/fdgpUhNu9Q-YeyGtig2j-g)
+* [线程池中线程异常后：销毁还是复用？](https://mp.weixin.qq.com/s/fdgpUhNu9Q-YeyGtig2j-g)：线程池中 Worker 抛异常后的真实行为——`execute` 提交时未捕获异常会让 Worker 退出（线程池补建一个新 Worker），而 `submit` 提交时异常被 FutureTask 吞掉只能在 `Future.get()` 才看见；结论：要么自己 try / catch、要么用 `Thread.UncaughtExceptionHandler`、要么覆写 `afterExecute` 主动捕获，否则线上排查会很痛。
 
-* [系统监控数据该用推还是拉？](https://mp.weixin.qq.com/s/e-agrLDxVvvG72mRLZ2AAg)
+* [系统监控数据该用推还是拉？](https://mp.weixin.qq.com/s/e-agrLDxVvvG72mRLZ2AAg)：监控数据采集 push vs pull 取舍——拉模型（Prometheus）服务发现简单、可观测性好、对客户端零侵入，但短任务和无 IP 实例不友好；推模型（StatsD / OpenTelemetry Collector）适合短任务和高基数 metric，但需要服务端聚合 + 反压机制；给出按任务生命周期与基数选择的判定表。
 
 ## 12.13
 
-* [MySQL核心揭秘：从查询到修改，彻底理解 Undo Log、Redo Log、Binlog 与 ACID 的关系](https://mp.weixin.qq.com/s/B3I7lEoCaNtB-_1cuikZsw)
+* [MySQL核心揭秘：从查询到修改，彻底理解 Undo Log、Redo Log、Binlog 与 ACID 的关系](https://mp.weixin.qq.com/s/B3I7lEoCaNtB-_1cuikZsw)：MySQL 三大 Log 与 ACID 的对应——Undo Log 实现原子性 + 一致性（事务回滚 + MVCC 快照读），Redo Log 实现持久性（WAL 先写日志再刷盘 + crash recovery），Binlog 实现主从复制（不是为了崩溃恢复）；从 Server 架构 → SQL 执行流程 → 三 Log 协作的二阶段提交，串联 ACID 全貌。
 
-* [从MySQL JOIN 算法角度看如何优化SQL](https://mp.weixin.qq.com/s/h16-2TUZRu4F4Cp1lDcNkA)
+* [从MySQL JOIN 算法角度看如何优化SQL](https://mp.weixin.qq.com/s/h16-2TUZRu4F4Cp1lDcNkA)：从 JOIN 算法角度看 SQL 优化——四种算法演进：Simple Nested-Loop（笛卡尔积式扫描，几乎不再使用）→ Block Nested-Loop（驱动表结果集进 Join Buffer 减少被驱动表扫描）→ Hash Join（MySQL 8.0 替换 BNL，关联列建哈希表降低比对次数）→ Index Nested-Loop（被驱动表关联列有索引，O(log n) 查找解决大表问题）；优化思路：让驱动表小、给关联列加索引、必要时减少返回字段让 8.0 用 Hash Join。
 
-* [MyBatis布尔字段映射陷阱全过程解析](https://mp.weixin.qq.com/s/iEzfsjtYKCUGpVm0ylBgMw)
+* [MyBatis布尔字段映射陷阱全过程解析](https://mp.weixin.qq.com/s/iEzfsjtYKCUGpVm0ylBgMw)：MyBatis 布尔字段映射陷阱实录——「is\_has\_messages」字段在 POJO 用 `boolean` 类型时一切正常，改成 `Boolean` 包装类后插入数据始终为 0；通过自定义拦截器打印实际 SQL 定位到 MyBatis 默认 TypeHandler 把 Boolean 转 0/1 时存在歧义，最终结论是「字段命名规范要远离 is\_ 前缀」+「布尔字段统一用 `tinyint(1)` + 明确 TypeHandler」。
 
-* [Redis是如何建立连接和处理命令的](https://mp.weixin.qq.com/s/FuroHE04BMpwbY0w9Pyfgw)
+* [Redis是如何建立连接和处理命令的](https://mp.weixin.qq.com/s/FuroHE04BMpwbY0w9Pyfgw)：Redis 客户端到服务端的连接与命令处理链路——TCP 三次握手 → ae 事件循环 epoll\_wait 接受新连接 → 创建 client 对象注册读事件 → 命令缓冲 + 解析 → 命令分发到 commandTable 对应处理器 → 写回客户端 buffer → beforesleep 真正发送，把 Redis 单线程网络模型完整跑通。
 
-* [聚焦沟通：货拉拉自研客服IM系统](https://mp.weixin.qq.com/s/S5RHePtWGVpjioVNJRuCPg)
+* [聚焦沟通：货拉拉自研客服IM系统](https://mp.weixin.qq.com/s/S5RHePtWGVpjioVNJRuCPg)：货拉拉自研客服 IM——围绕司机 / 货主 / 客服三方场景，自研 IM 解决长连接稳定性、消息保序、坐席分配、会话流转、智能机器人接入等定制需求，比直接用三方 IM 套件更贴合客服业务。
 
-* [B站评论系统的多级存储架构](https://mp.weixin.qq.com/s/ko7pbQSqvqOo0E2iiDyXJg)
+* [B站评论系统的多级存储架构](https://mp.weixin.qq.com/s/ko7pbQSqvqOo0E2iiDyXJg)：B 站评论系统从 TiDB 单点演进到多级存储——背景是 Redis 缓存 miss 时回源 TiDB 慢查询打爆数据库；引入自研 Taishan KV 存储承载排序索引，把「结构化 SQL」转「非结构化 NoSQL」，写场景换读场景性能；通过版本号 + 重试队列 + CAS 解决并发乱序与回退，配实时 / 离线对账兜底；降级走 Hedging 对冲策略（主存储超时后延迟 x ms 启动备份请求），TiKV 故障当夜评论服务无感切换到 Taishan。
 
 ## 12.11
 
-* [火山引擎 ByteHouse：湖仓一体架构的创新与实践](https://mp.weixin.qq.com/s?__biz=MzkxMjM2MDIyNQ%3D%3D\&mid=2247638548\&idx=1\&sn=670c7fd749d7c825d60df0203ecd4005\&scene=45#wechat_redirect)
+* [火山引擎 ByteHouse：湖仓一体架构的创新与实践](https://mp.weixin.qq.com/s?__biz=MzkxMjM2MDIyNQ%3D%3D\&mid=2247638548\&idx=1\&sn=670c7fd749d7c825d60df0203ecd4005\&scene=45#wechat_redirect)：ByteHouse 湖仓一体核心能力「快、通、全」——基于 ClickHouse 演进、自研优化器补齐复杂数据模型支持；自研 Native Reader 直读 Parquet / ORC 到 ByteHouse 内存格式避免 Arrow Table 中转；Multi Catalog 多元数据管理实现「仓 / 湖 / 数据集市」一图览全域；并提出 TP-AP 一体、湖仓一体、AP-AI 一体、数仓 - 数据集市一体四个一体化方向，把 ZeroETL 从理念推到现实。
 
-* [转转数仓评估体系实践](https://mp.weixin.qq.com/s/l9dxxSk_Uap_we17NLueBA)
+* [转转数仓评估体系实践](https://mp.weixin.qq.com/s/l9dxxSk_Uap_we17NLueBA)：转转数仓评估体系——评估稳定性 / 完备性 / 易用性 / 性能 / 成本五个维度，通过自动化指标采集 + 评估打分让数仓建设质量「可量化、可追踪、可复盘」。
 
-* [MQ消息乱序问题解析与实战解决方案](https://mp.weixin.qq.com/s/IfO9bid3eWjF9yw6aSGPgw)
+* [MQ消息乱序问题解析与实战解决方案](https://mp.weixin.qq.com/s/IfO9bid3eWjF9yw6aSGPgw)：MQ 消息乱序的两类场景与解法——同 topic 内乱序（多分区并行消费）靠 hash 分区让同业务实体的消息进同一分区 + 单线程消费；跨 topic 乱序（订单 / 支付 / 物流不同 topic）靠业务侧维护状态机 + 入库前校验前驱状态；附 Kafka / RocketMQ 顺序消息保障实践。
 
-* [别再自己瞎写工具类了，Spring Boot 内置工具类应有尽有](https://mp.weixin.qq.com/s/AifbKvXK2TMp_d6TmOIvmA)
+* [别再自己瞎写工具类了，Spring Boot 内置工具类应有尽有](https://mp.weixin.qq.com/s/AifbKvXK2TMp_d6TmOIvmA)：Spring Boot 内置工具类速查——Assert（参数校验）、ObjectUtils / StringUtils / CollectionUtils（对象 / 字符串 / 集合判空与处理）、FileCopyUtils / ResourceUtils / StreamUtils（文件 / 资源 / IO 流）、ReflectionUtils / AopUtils / AopContext（反射与代理判断），告别项目里自造轮子的 MyStringUtil。
 
-* [优雅掌握 SpringBoot 多租户架构，轻松驾驭复杂业务场景](https://mp.weixin.qq.com/s/kqYuvvCo8Ntl9cxRnraGzA)
+* [优雅掌握 SpringBoot 多租户架构，轻松驾驭复杂业务场景](https://mp.weixin.qq.com/s/kqYuvvCo8Ntl9cxRnraGzA)：SpringBoot 多租户架构落地——三种隔离方案对比：Database per Tenant（强隔离 / 高成本）、Schema per Tenant（中等）、Shared Schema with Tenant ID（弱隔离 / 低成本）；技术实现走 ThreadLocal 维护租户上下文 + MyBatis Plus 拦截器自动注入 tenant\_id + 数据源动态路由 AbstractRoutingDataSource。
 
 ## 12.10
 
-* [【Calcite】Apache Calcite 框架初探及概念详解](https://segmentfault.com/a/1190000040829100#item-10-12)
+* [【Calcite】Apache Calcite 框架初探及概念详解](https://segmentfault.com/a/1190000040829100#item-10-12)：Apache Calcite 概念详解——核心架构四阶段：SQL Parser（JavaCC 生成 AST）→ Validator（绑定元数据校验）→ Optimizer（基于 Volcano / Cascades 的 RBO + CBO 优化）→ Executor（物化执行计划）；适配器机制让一套 SQL 引擎跑在 MySQL / Cassandra / ES / Druid 等异构数据源上，是 Flink / Hive / Drill / Beam 的 SQL 层底座。
 
 ## 12.9
 
-* [Presto简介、部署、原理和使用介绍](https://blog.csdn.net/wt334502157/article/details/136352302)
+* [Presto简介、部署、原理和使用介绍](https://blog.csdn.net/wt334502157/article/details/136352302)：Presto 即席查询引擎全景——Facebook 2012 年开源（现 PrestoSQL / Trino），定位是「秒级响应的分布式 SQL 查询引擎」；典型用法：数据探索 / 实时仪表盘 / 数据湖查询 / ETL / 流式分析 / 多租户查询服务；可对接 Hive / MySQL / Oracle / Kafka 等，跨库 JOIN 一次完成。文章覆盖部署架构（Coordinator + Worker）、原理（Stage / Task / Split / Pipeline）和使用方法。
 
 ## 12.8
 
-* [数据仓库之MPP架构&分布式架构](https://zhuanlan.zhihu.com/p/650065770)
+* [数据仓库之MPP架构&分布式架构](https://zhuanlan.zhihu.com/p/650065770)：MPP vs 分布式架构选型——MPP（Massively Parallel Processing）走 Share Nothing，每节点独立磁盘内存通过专网协同，优先 Consistency，优点高性能 / 横向扩展，缺点存储不透明 / 单节点瓶颈 / 分布式事务难；分布式架构（Hadoop / Spark）走公共存储 + 计算下推，优先 Partition Tolerance，吞吐高但运算需减少数据移动；实际可组合用——HDFS 当公共存储，上层叠 MPP 的并行计算能力。
 
 ## 12.7
 
-* [奇淫巧技，CompletableFuture 异步多线程是真的优雅](https://mp.weixin.qq.com/s/xAZmkaT_PzWcRyjlA9yPjw)
+* [奇淫巧技，CompletableFuture 异步多线程是真的优雅](https://mp.weixin.qq.com/s/xAZmkaT_PzWcRyjlA9yPjw)：CompletableFuture 串接多线程任务——四种创建方式（runAsync / supplyAsync / 已有结果 completedFuture / 自定义 Executor）、链式 thenApply / thenCompose / thenAccept、组合 thenCombine / allOf / anyOf，让原本 Future + ExecutorService 的繁琐代码变成 fluent 风格。
 
-* [深入 ReentrantLock 内部：公平锁与非公平锁之奥秘](https://mp.weixin.qq.com/s/Kq1DhiWPyKzrdSU9yMLhXg)
+* [深入 ReentrantLock 内部：公平锁与非公平锁之奥秘](https://mp.weixin.qq.com/s/Kq1DhiWPyKzrdSU9yMLhXg)：ReentrantLock 公平 vs 非公平锁源码级对比——非公平锁 `lock()` 直接 CAS state 0→1 抢锁，失败再走 AQS 队列，吞吐高但可能饥饿；公平锁 `lock()` 多一道 `hasQueuedPredecessors()` 检查，无前驱才尝试 CAS，保证 FIFO 但吞吐低；从 `tryAcquire` 实现细节展示「为什么默认是非公平」的工程权衡。
 
 ## 12.6
 
-* [漫谈数仓『OLAP』](https://blog.csdn.net/mm_ren/article/details/117309784)
+* [漫谈数仓『OLAP』](https://blog.csdn.net/mm_ren/article/details/117309784)：OLAP 漫谈——1993 年 Edgar F. Codd 提出 OLAP 12 条评估规则，从 1975 年 Express 到 1985 Excel 数据透视表再到 1992 Essbase / 1999 Microsoft OLAP；核心概念维度 / 层次 / 成员 / 度量；五种基本操作钻取 / 上卷 / 切片 / 切块 / 旋转；MOLAP / ROLAP / HOLAP 三类实现差异；开源组件 Apache Kylin / Druid / Presto 性能比较。
 
 ## 12.5
 
-* [10分钟入门Flink -- 了解Flink](https://zhuanlan.zhihu.com/p/642671403)
+* [10分钟入门Flink -- 了解Flink](https://zhuanlan.zhihu.com/p/642671403)：程序员烟斗的 Flink 入门篇——直接 idea 写 main 跑批 + 流的 WordCount 两段示例对比，证明 Flink 已实现「批流统一」同 API 同算子；Flink 五大特性：有状态计算、事件时间（Event Time + Watermark 处理乱序）、高可用（CheckPoint + 状态恢复）、高吞吐、不同层级 API；应用场景：事件驱动（反欺诈 / 异常检测）、数据分析、数据管道（持续 ETL）。
 
-* [干货｜在抖音集团，存储实时数仓这样建](https://mp.weixin.qq.com/s/tdx4m2eN1uWLjjSau-5rAg)
+* [干货｜在抖音集团，存储实时数仓这样建](https://mp.weixin.qq.com/s/tdx4m2eN1uWLjjSau-5rAg)：抖音集团存储侧的实时数仓建设——实时数据数仓链路、Flink 数仓的问题与挑战（状态规模 / Exactly-Once / 维表 Join 性能）、目标与愿景，把存储类业务的实时数仓从 0 到 1 搭建起来。
 
-* [货拉拉大数据元数据管理体系演进和实践](https://mp.weixin.qq.com/s/JUUF97Phl1AoDJJ6Z4TlNg)
+* [货拉拉大数据元数据管理体系演进和实践](https://mp.weixin.qq.com/s/JUUF97Phl1AoDJJ6Z4TlNg)：货拉拉大数据元数据管理体系演进——从最初分散在 Hive Metastore + Atlas + 自研脚本的多套体系，统一到一个跨引擎的元数据中心，把字段血缘、表血缘、口径治理、影响面分析做到一处可用。
 
 ## 12.4
 
-* [OAuth 2.0 的一个简单解释](https://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
+* [OAuth 2.0 的一个简单解释](https://www.ruanyifeng.com/blog/2019/04/oauth_design.html)：阮一峰对 OAuth 2.0 的极简解释——核心问题就是「快递员问题」：业主不想把门钥匙给快递员，但又要让快递员进门送货；OAuth 的解法是发一把临时、受限、可撤销的 token，授权机制最终变成「资源拥有者向资源服务器要 token，把 token 给第三方应用」三方协议。
 
-* [OAuth 2.0 的四种方式](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
+* [OAuth 2.0 的四种方式](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)：阮一峰续篇——RFC 6749 四种授权方式：授权码（最完整，适合 Web 应用，前端拿 code 后端换 token）、隐藏式（前端 SPA，token 直接回到前端）、密码式（用户高度信任的应用，直接给账密）、凭证式（机器对机器，client\_id + secret 直拿 token）；每种附流程图与适用场景。
 
 ## 12.3
 
-* [逻辑数据平台的 NoETL 之道（内含Q\&A）](https://mp.weixin.qq.com/s/_G74MQgVY3TqCm6uY0qRiw)
+* [逻辑数据平台的 NoETL 之道（内含Q\&A）](https://mp.weixin.qq.com/s/_G74MQgVY3TqCm6uY0qRiw)：Aloudata 余俊讲逻辑数据平台 NoETL 的价值——传统数据架构靠 ETL 把数据搬到数仓再做分析，逻辑化平台用元数据虚拟化让数仓「不实际搬数」，跨源查询 + 物化视图自动改写 + 缓存让查询性能可控；附企业落地案例与 Q\&A 答疑。
 
-* [一文详解物化视图改写](https://mp.weixin.qq.com/s/3PZQPIF3antViN2AhdtNig)
+* [一文详解物化视图改写](https://mp.weixin.qq.com/s?__biz=Mzk2NDgzOTk3NA==\&mid=2247518797\&idx=1\&sn=fdbaee7b4a62219a30482c082c1d7618\&source=41\&poc_token=HHwQ_2mjGw3N7356G4D_wiF3RWfPDG5JJGJKhgt5)：阿里云 OLAP 产品部云曦讲查询优化器视角的物化视图改写——物化视图是预计算的特殊表（视图的缓存），数据仓库要解决「选择 / 维护 / 运用」三件事；查询改写让物化视图像索引一样透明加速 SQL 不改业务代码，集成到优化器规则中借列消除 / 谓词下推 / 解关联子查询扩大命中范围；改写检查两步——先比 Join Graph 验证物化视图 Join 关系与查询一致（Inner Join 无向边、Outer Join 有向边），再做 Output 检查确认视图含足够数据，含 GroupBy / Aggregation 时再做一轮聚合；最终所有候选改写进 CBO 与原查询一起选最优计划。
 
 ## 12.2
 
-* [实战：单点登录（SSO）如此简单](https://mp.weixin.qq.com/s/Gv01Knd1iXpWhJJRNQpLVw)
+* [实战：单点登录（SSO）如此简单](https://mp.weixin.qq.com/s/Gv01Knd1iXpWhJJRNQpLVw)：SSO 实战手把手——三类 SSO 方案对比（同域 Cookie 共享 / 跨域 CAS Server 中央认证 / OAuth 2.0 / SAML），重点讲 CAS 流程：用户访问 App A 未登录 → 跳到 SSO Server → 登录后下发 ST → A 拿 ST 找 SSO Server 验证 → 拿到用户信息后建立 A 的会话；附配置示例与插件效果演示。
 
 ## 12.1
 
-* [【点个赞吧】 - B站千亿级点赞系统服务架构设计](https://mp.weixin.qq.com/s/4T_S7nR8-HXJ59IbK4FBWQ)
+* [【点个赞吧】 - B站千亿级点赞系统服务架构设计](https://mp.weixin.qq.com/s/4T_S7nR8-HXJ59IbK4FBWQ)：B 站千亿级点赞系统架构——存储用 TiDB / TiKV 写入 + Redis 多级缓存读，靠点赞 / 取消点赞的幂等性设计 + 异步消息消费扣减计数器，再配合用户级 / 资源级双维度索引支撑「我点过的」「谁点过这条」两类查询。
 
-* [微博架构组面试：类微博点赞系统设计](https://mp.weixin.qq.com/s/SCrTwoCQUZ8fNdWp3wdBVw)
+* [微博架构组面试：类微博点赞系统设计](https://mp.weixin.qq.com/s/SCrTwoCQUZ8fNdWp3wdBVw)：微博架构组面试真题级点赞系统——分两幕：Part 1 代码 Review 环节考察候选人读懂面试官给的代码并指出问题；Part 2 类微博点赞系统设计，从需求估算、数据模型、缓存方案、热点 Key 处理、计数一致性到读写比 100:1 下的扩展策略。
 
 ---
 
@@ -43063,99 +42935,39 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.8.md'
 
 ## 8.28
 
-```component VPCard
-title: 一文读懂UML | 轻松搞定·需求分析！
-order: -8desc: UML
-logo: https://static.zhihu.com/heifetz/assets/apple-touch-icon-120.d5793cac.png
-link: https://www.zhihu.com/tardis/bd/art/405447739
-background: rgba(46, 144, 208, 0.3)
-```
+* [一文读懂UML | 轻松搞定·需求分析！](https://www.zhihu.com/tardis/bd/art/405447739)：UML 速通——分结构型 / 行为型两类，逐个拆解类图、对象图、活动图、状态机图、顺序图、通信图六种常用图：类间关联 / 包含 / 继承 / 依赖关系符号、活动图判断分支与泳道并发、顺序图 Loop / Alt / opt 三种循环分支语法，配大量实例图理解，主要参考《火球——UML 大战需求分析》。
 
 ## 8.27
 
-```component VPCard
-title: 一个IM（即时通讯）项目的后端系统
-order: -8desc: echo-im
-logo: https://gitee.com/assets/favicon.ico
-link: https://gitee.com/brother-one/echo-im
-background: rgba(46, 144, 208, 0.3)
-```
+* [一个IM（即时通讯）项目的后端系统](https://gitee.com/brother-one/echo-im)：开源生产级 IM 系统 echo-im 的实现——SpringBoot 3 + Netty + WebSocket 微服务架构，严守「实时性 / 不丢失 / 幂等性 / 时序性」四大原则：应用层 ACK + Redis/MySQL 双存储 + MQ 补偿保证不丢，雪花 MsgId + 客户端 SEQ 保证幂等与有序，且 RabbitMQ / Redis / RocketMQ 三种消息中间件按 serverId hash 路由可切换。
 
-```component VPCard
-title: 临时抱佛脚必看｜一个月速通高级系统架构设计师！（低分飘过版）
-order: -8desc: 阿里云开发者
-logo: https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico
-link: https://mp.weixin.qq.com/s/Ts3KQloKrFK_9y1MAZDbTg
-background: rgba(46, 144, 208, 0.3)
-```
+* [临时抱佛脚必看｜一个月速通高级系统架构设计师！（低分飘过版）](https://mp.weixin.qq.com/s/Ts3KQloKrFK_9y1MAZDbTg)：阿里工程师 40 天软考高级架构师应试 SOP——第一周熟悉考纲，第二周用「软考通」APP 刷完 750 道选择题，第三周按 09-22 年规律背简答题（质量属性 / UML / 嵌入式 / 数据库 / Web 架构），第四周准备 5 套论文模板覆盖历年命题方向；心法是「会八股 + 自圆其说让阅卷老师看出技术」即可低分飘过。
 
 ## 8.26
 
-```component VPCard
-title: Redisson-红锁(Redlock)-使用/原理
-order: -8desc: 自学精灵
-logo: https://static.way2j.com/img/icon/way2j.ico
-link: https://way2j.com/a/1338
-background: rgba(46, 144, 208, 0.3)
-```
+* [Redisson-红锁(Redlock)-使用/原理](https://way2j.com/a/1338)：解决 Redis 主从异步复制下分布式锁安全失效问题——客户端依次向 N 个完全独立的 Redis master 申请锁，仅当 N/2+1 节点成功且总耗时 < 锁失效时间才算成功；附 RedissonRedLock 调用示例与 RedissonMultiLock.tryLock 源码解析（失败节点上限计算、争锁超时控制、锁自动续期）。
 
-```component VPCard
-title: 用户认证：基于jwt和session的区别和优缺点
-order: -8desc: Wayne
-logo: https://static.zhihu.com/heifetz/assets/apple-touch-icon-120.d5793cac.png
-link: https://zhuanlan.zhihu.com/p/108999941
-background: rgba(46, 144, 208, 0.3)
-```
+* [用户认证：基于jwt和session的区别和优缺点](https://zhuanlan.zhihu.com/p/108999941)：JWT vs Session 取舍——区别在状态存放位置（Session 在服务端、JWT 在客户端 Header / Payload / Signature 三段拼接）；JWT 优势是无状态、易水平扩展、载荷可携带常用信息减少查库，劣势是 Payload 仅 base64 不加密不能放敏感数据、长度远超 sessionId 致每请求开销大、签发后到期前无法废弃（要么维护 redis 黑名单退化成有状态）；结论：JWT 适合「短有效期 + 一次性」场景（如激活邮件链接），单点登录与长会话管理仍优先用 Session。
 
 ## 8.25
 
-```component VPCard
-title: 什么是系统设计？以及如何设计一个新鲜事系统？
-order: -8desc: 罗远航
-logo: https://blog.luoyuanhang.com/favicon.ico?v=5.1.0
-link: https://blog.luoyuanhang.com/2020/05/24/system-design-0/
-background: rgba(46, 144, 208, 0.3)
-```
+* [什么是系统设计？以及如何设计一个新鲜事系统？](https://blog.luoyuanhang.com/2020/05/24/system-design-0/)：九章算法 4S 分析法系统设计方法论——Scenario（先估 DAU / QPS 定规模与机器选型）→ Service（Replay 所有需求 + Merge 同类逻辑拆服务）→ Storage（为每个服务选合适的库与 schema）→ Scale（解决缺陷 + 容错维护），并以「设计一个新鲜事系统」完整走一遍方法论。
 
-```component VPCard
-title: 三种权限模型该如何选择？看完这篇就够了
-order: -8desc: Authing 身份云
-logo: https://files.authing.co/authing-website/seo-default.jpg
-link: https://mp.weixin.qq.com/s/PQvOoWkvA0zSFoiSSmbbdQ
-background: rgba(46, 144, 208, 0.3)
-```
+* [三种权限模型该如何选择？看完这篇就够了](https://mp.weixin.qq.com/s/PQvOoWkvA0zSFoiSSmbbdQ)：RBAC / ABAC / NGAC 三种权限模型对比与选型——RBAC 适合角色明确的中小企业，ABAC 适合多用户、需细粒度动态策略的大型组织，NGAC 以图模型叠加策略解决 RBAC「角色爆炸」与 ABAC「属性管理负担」问题；附 Authing 上 RBAC（角色-资源-操作）+ ABAC（基于属性的限制条件如 MFA / IP / 资源所有者）集成示例。
 
 ## 8.24
 
-```component VPCard
-title: 基于有限状态机与消息队列的三方支付系统补单实践
-order: -8desc: 字节跳动技术团队
-logo: https://cloud.bytelighting.cn/f/K72T9/Tech_Blog.png
-link: https://mp.weixin.qq.com/s/9Z-N3cfWu7oMVJsTDkbb-Q
-background: rgba(46, 144, 208, 0.3)
-```
+* [基于有限状态机与消息队列的三方支付系统补单实践](https://mp.weixin.qq.com/s/9Z-N3cfWu7oMVJsTDkbb-Q)：字节支付团队补单机制演进——从「卡单 / 掉单」中间态切入，靠状态机 + 幂等性让正向流程直接复用为补偿接口；四版迭代：单纯 MQ 即时补偿 → 异常表兜底发送失败消息 → RocketMQ 死信队列 + 业务低峰兜底定时任务 → 按异常类型精细化补偿（缺啥补啥），形成「即时消息为矛、异常表 + 延时重试为盾」的业务层最终一致性方案。
 
 ## 8.23
 
-```component VPCard
-title: 低延时直播系统在欧洲杯的实践
-order: -8desc: 爱奇艺技术产品团队
-logo: https://cloud.bytelighting.cn/f/jg0iO/iQiYi_logo.png
-link: https://mp.weixin.qq.com/s/v8KdPsBHNR6EHQHfj8ppWg
-background: rgba(0, 220, 90, 0.5)
-```
+* [低延时直播系统在欧洲杯的实践](https://mp.weixin.qq.com/s/v8KdPsBHNR6EHQHfj8ppWg)：爱奇艺体育欧洲杯 51 场低延时直播降本方案——RTMP 传输用 QUIC 重构（更快建连、消除队头阻塞、BBR / Cubic 弱网拥塞控制），自研 Rcache 服务部署到点播服务器复用点播带宽（成本约低延时直播一半），配合 Prepush 提前拉起、按运营商 / 区域哈希调度、RCache 多备路无感切换、起播失败回退切片流兜底，实测点播带宽复用率 82%、延时较切片直播减少 20 秒。
 
 ## 8.19
 
-```component VPCard
-title: 云音乐贵州机房迁移总体方案回顾
-order: -8desc: 网易云音乐技术团队
-logo: https://s1.music.126.net/style/favicon.ico?v20180823
-link: https://mp.weixin.qq.com/s/ra-TAgyVUxZgp8cxQjunnA
-background: rgba(221, 236, 245, 1)
-```
+* [云音乐贵州机房迁移总体方案回顾](https://mp.weixin.qq.com/s/ra-TAgyVUxZgp8cxQjunnA)：网易云音乐 2000+ 应用、100w+ QPS 不停机搬迁贵州机房复盘——分批四原则（团队 / 领域解耦、服务端流量自闭环、C 端优先、资源约束分批）；切流主入口为客户端域名 + 网关按用户 ID / 设备 ID / IP 比例灰度，RPC 路由对齐、定时任务 / MQ 切换、存储层最后切换（DB / Redis / Memcached 各按场景选「读本地写远程 / 双写 / 禁写」策略）；在 30ms 跨机房 RT、200Gbps 长传带宽、不出 P2 三重约束下，配套信息盘点、新增风险处理、历史债务清理、监控告警、应急预案、杭州集群下线等八项稳定性保障。
 
-(正好今天网易云的机房 “炸” 了三个小时)
+> 正好今天网易云的机房 "炸" 了三个小时 😁
 
 ---
 
@@ -43166,107 +42978,41 @@ url: 'https://blog.bytelighting.cn/program/reading/2024/2024.9.md'
 
 ## 9.20
 
-```component VPCard
-title: 消息队列选型看这一篇就够了
-order: -9desc: 腾讯技术工程
-logo: http://wx.qlogo.cn/mmhead/Iic9WLWEQMg2jTKicld7jhiagcz7jJxuYcpjicxAAiaVaNpdIiabCLIxOHIZFVsWH3cRNQjLF1TBznTJc/132
-link: https://mp.weixin.qq.com/s/jWKHAic4Tt4Ohsj4pTmYFw
-background: rgba(46, 144, 208, 0.3)
-```
+* [消息队列选型看这一篇就够了](https://mp.weixin.qq.com/s/jWKHAic4Tt4Ohsj4pTmYFw)：腾讯工程师横向对比 Kafka / Pulsar / RocketMQ / RabbitMQ / NSQ 五大 MQ——架构（Broker-ZK / 计算存储分离 / 主从 / 分布式磁盘）、推拉模式、延迟 / 死信 / 优先级 / 回溯 / 持久化 / TTL / 多租户 / 顺序 / 可靠性 / 负载均衡 / 扩容能力 14 个维度逐项打分；选型结论：传统日志大数据高吞吐选 Kafka，要可靠性 / 跨地域容灾 / 高分区 / 延迟队列选 Pulsar，Golang 栈定制选 NSQ。
 
 ## 9.17
 
-```component VPCard
-title: 利用Redis实现每周热评，简直无敌
-order: -9desc: Java基基
-logo: https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Uva0Q3pladxqDkS6KTZkwiaB8mTpR4HicOYhnGNFIVHnQ/132
-link: https://mp.weixin.qq.com/s/9HUnJ30p2ayDnDoW1f4sSg
-background: rgba(46, 144, 208, 0.3)
-```
+* [利用Redis实现每周热评，简直无敌](https://mp.weixin.qq.com/s/9HUnJ30p2ayDnDoW1f4sSg)：Redis sorted set 实现 7 天文章热评榜——每天一个 `day:rank:{yyyymmdd}` zset 存当日各文评论数（`ZINCRBY` 增减），用 `ZUNIONSTORE` 把 7 天 zset 并集合成 `week:rank` 出周榜，前端 `zrevrange` 取 Top N 配合 hash 缓存文章 id / title / commentCount / authorId 完全避开查库。
 
 ## 9.16
 
-```component VPCard
-title: 设计模式
-order: -9desc: 程序猿 - 小陈
-logo: https://isxiaochen.github.io/favicon.ico
-link: https://isxiaochen.github.io/2023/06/30/design-pattern/
-background: rgba(46, 144, 208, 0.3)
-```
+* [设计模式](https://isxiaochen.github.io/2023/06/30/design-pattern/)：个人博客的 GoF 设计模式速查笔记——六大原则（开闭 / 里氏替换 / 依赖倒转 / 接口隔离 / 迪米特 / 合成复用），创建型 4（单例 / 工厂方法 / 原型 / 建造者），结构型 7（代理 / 适配器 / 装饰者 / 桥接 / 外观 / 组合 / 享元），行为型 11（模板方法 / 策略 / 命令 / 职责链 / 状态 / 观察者 / 中介者 / 迭代器 / 访问者 / 备忘录 / 解释器），结尾用 Spring IOC 源码（BeanFactory / BeanDefinition / BeanDefinitionReader / Registry）作落地案例。
 
 ## 9.15
 
-```component VPCard
-title: 4 个维度搞懂 Nacos 注册中心
-order: -9desc: 芋道源码
-logo: http://wx.qlogo.cn/mmhead/Q3auHgzwzM5bTS3371AuibVpmnUiaxmGX5R3wnslrERwt1PH479guXibw/132
-link: https://mp.weixin.qq.com/s/1JY-CnK0MgcWADIu0KOYgA
-background: rgba(46, 144, 208, 0.3)
-```
+* [4 个维度搞懂 Nacos 注册中心](https://mp.weixin.qq.com/s/1JY-CnK0MgcWADIu0KOYgA)：Nacos 动态服务发现原理四维拆解——通讯协议（1.x http → 2.x grpc 长连接、官方测试性能 9 倍提升）、服务注册（grpc 建连 + 健康检查 + redo 缓存补偿失败注册 + Distro 协议节点间最终一致同步）、心跳机制（2.x 改用 grpc 连接监测替代 http 定时心跳）、服务订阅推送（早期 udp 丢包改 grpc 推送 + 推送任务队列重试 + SDK 内存优先 + 磁盘容灾兜底）。
 
-```component VPCard
-title: JUC 并发编程
-order: -9desc: 程序猿 - 小陈
-logo: https://isxiaochen.github.io/favicon.ico
-link: https://isxiaochen.github.io/2023/06/30/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/
-background: rgba(46, 144, 208, 0.3)
-```
+* [JUC 并发编程](https://isxiaochen.github.io/2023/06/30/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/)：Java 并发体系完整学习笔记——Thread API（停止 / 打断 / join / 守护）、synchronized monitor 原理（轻量级 / 偏向 / 锁膨胀 / 自旋 / 锁消除）、wait/notify 与保护性暂停 / 生产者消费者 / Park\&Unpark；JMM 三大特性（可见 / 有序 / volatile / happens-before）、CAS / Atomic / Unsafe / 不可变设计；线程池 ThreadPoolExecutor + 四种 jdk 池 + Tomcat 池 + Fork/Join；AQS 原理 + ReentrantLock / 读写锁 / StampedLock；Semaphore / CountDownLatch / CyclicBarrier；ConcurrentHashMap（JDK7 死链 + JDK8 CAS+synchronized）/ BlockingQueue / ConcurrentLinkedQueue / CopyOnWriteArrayList。
 
 ## 9.14
 
-```component VPCard
-title: Java线程池实现原理及其在美团业务中的实践
-order: -9desc: 美团技术团队
-logo: https://wx.qlogo.cn/mmhead/Q3auHgzwzM5vhk5P7xlYy014w9hRdPMvmnciaYLl3pyQicvXV7aTXmDA/132
-link: https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww
-background: rgba(46, 144, 208, 0.3)
-```
+* [Java线程池实现原理及其在美团业务中的实践](https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww)：详解 ThreadPoolExecutor 设计与美团动态化线程池——`ctl` 一个 AtomicInteger 高 3 位 runState + 低 29 位 workerCount 用位运算管两值，任务调度走「核心线程 → 队列 → 最大线程 → 拒绝」四级，Worker 复用 + 5 状态生命周期；落地动态化线程池：corePoolSize / maximumPoolSize / workQueue 三大核心参数下沉到分布式配置中心、运行时即时生效，配套任务 Transaction 监控（频率 / 耗时 / 95/99 线）、Reject 告警、活跃度告警、操作日志、权限管控。
 
 ## 9.13
 
-```component VPCard
-title: 千万级数据查询：CK、ES、RediSearch 谁才是王炸？
-order: -9desc: Java基基
-logo: https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Uva0Q3pladxqDkS6KTZkwiaB8mTpR4HicOYhnGNFIVHnQ/132
-link: https://mp.weixin.qq.com/s/3yXoTuZsrp-z6qKIH7OsdA
-background: rgba(46, 144, 208, 0.3)
-```
+* [千万级数据查询：CK、ES、RediSearch 谁才是王炸？](https://mp.weixin.qq.com/s/3yXoTuZsrp-z6qKIH7OsdA)：千万底池筛 10W 数据方案四版演进——① CK 多线程分页（10-18s，深翻页 limit 性能瓶颈）→ ② ES scroll scan 深翻页（单线程未明显提升）→ ③ ES 只筛选返回 sku\_id + Hbase 按 rowKey O(1) 取详情（3-6s，关键洞见：ES 的 fetch 阶段比 query 重得多，砍字段从 32 → 1 个查询从 9.3s 降到 2.4s）→ ④ RediSearch + RedisJSON 基准上碾压 ES（建索引快 58%、吞吐 4 倍、隔离写快 200 倍以上）。
 
-```component VPCard
-title: 性能爆表：SpringBoot利用ThreadPoolTaskExecutor批量插入百万级数据实测！
-order: -9desc: Java基基
-logo: https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Uva0Q3pladxqDkS6KTZkwiaB8mTpR4HicOYhnGNFIVHnQ/132
-link: https://mp.weixin.qq.com/s/o9wnWGxb5B1jTlo-bJvm3w
-background: rgba(46, 144, 208, 0.3)
-```
+* [性能爆表：SpringBoot利用ThreadPoolTaskExecutor批量插入百万级数据实测！](https://mp.weixin.qq.com/s/o9wnWGxb5B1jTlo-bJvm3w)：ThreadPoolTaskExecutor + CountDownLatch 多线程批量入库实测——30 线程拆 100 条/批并行插入 200w 行 PostgreSQL，耗时 1.67 分钟 vs 单线程 5.75 分钟；附 `@EnableAsync` + `CallerRunsPolicy` 拒绝策略 + 线程池 yml 配置；经验值「CPU 核心数 × 2 + 2」线程数最优。
 
 ## 9.2
 
-```component VPCard
-title: 超全面 Spring 复习总结笔记
-order: -9desc: IT天宇
-logo: https://cdn2.jianshu.io/assets/press/resources/jianshu_app_icon-e234e35148ca1f29f847461d52b6d86c.png
-link: https://www.jianshu.com/p/15a0f94b4063
-background: rgba(46, 144, 208, 0.3)
-```
+* [超全面 Spring 复习总结笔记](https://www.jianshu.com/p/15a0f94b4063)：Spring 框架完整面试复习笔记——环境搭建 → IOC / DI 入门 → Bean 配置详解（实例化方式 / 作用域 / 生命周期 / BeanPostProcessor / 构造与 set 注入 / SpEL / 集合注入 / 注解装配） → AOP → JdbcTemplate → 事务管理 → Web/Junit 整合 → SSH 整合，按章节体例适合应届与社招快速串知识点。
 
 ## 9.1
 
-```component VPCard
-title: AgileBoot-Back-End
-order: -9desc: 基于若依框架优化的开源项目
-logo: https://github.githubassets.com/favicons/favicon.svg
-link: https://github.com/valarchie/AgileBoot-Back-End
-background: rgba(46, 144, 208, 0.3)
-```
+* [AgileBoot-Back-End](https://github.com/valarchie/AgileBoot-Back-End)：基于若依完全重构的 SpringBoot 3 + Vue 3 + TS 全栈快速开发脚手架（v2.0.0）——相比 Ruoyi 改进：统一异常类与错误码、统一返回模型、Lombok 去 getter/setter、Hutool + Guava 替自造轮子、MyBatis Plus 替原生 SQL（顺带去掉 SQL 注入 Filter）、Jackson 替 fastJson、字典用 Enum、JWT 多终端认证、注解式主从数据库切换 / 请求限流 / 重复请求拦截 / 菜单与数据权限拦截、配套大量单测与集成测试，库表精简到 10 张。
 
-```component VPCard
-title: 系统架构设计师教程全篇知识点提炼
-order: -9desc: 【新版系统架构】阿提说说
-logo: https://cloudcache.tencentcs.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png
-link: https://cloud.tencent.com/developer/article/2342976
-background: rgba(46, 144, 208, 0.3)
-```
+* [系统架构设计师教程全篇知识点提炼](https://cloud.tencent.com/developer/article/2342976)：软考新版《系统架构设计师教程（第 2 版）》全 19 章知识点速记——基础篇（绪论 / 计算机系统 / 信息系统 / 信息安全 / 软件工程 / 数据库 / 系统架构基础 7 章）+ 进阶篇（质量属性与架构评估 / 软件可靠性 / 架构演化与维护 / 未来信息综合技术 4 章）+ 实践篇（信息系统 / 层次式 / 云原生 / SOA / 嵌入式 / 通信 / 安全 / 大数据 8 类架构设计理论与实践），用于应试串点而非系统学习。
 
 ---
 
