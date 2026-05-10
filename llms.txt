@@ -9,6 +9,7 @@
 - [上下文工程 - 解锁大模型真正潜力的关键](https://blog.bytelighting.cn/ai/agent/context-engineering/context-engineering.md)
 - ["写法+测评" - 调试 Agent 的 Prompt](https://blog.bytelighting.cn/ai/agent/prompt-engineering/debugging-agent-prompt.md)
 - [Prompt 最佳实践](https://blog.bytelighting.cn/ai/agent/prompt-engineering/prompt-best-practices.md)
+- [RAG 向量漂移治理：从概念辨析到索引生命周期](https://blog.bytelighting.cn/ai/agentic/rag/vector-drift-governance.md)
 - [Agent Skill 设计哲学：从联网场景到通用设计方法论](https://blog.bytelighting.cn/ai/agentic/skills/agent-skill-design-philosophy.md)
 - [Agent Skills](https://blog.bytelighting.cn/ai/agentic/skills/agent-skills.md)
 - [企业级 AI Skill 体系](https://blog.bytelighting.cn/ai/agentic/skills/enterprise-skill-system.md)
