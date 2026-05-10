@@ -51,8 +51,7 @@ category:
 
 ## AI 协作
 
-作者贴入链接让 AI 补描述时：
+作者贴链接让 AI 补描述时：
 
-1. 抓取正文（微信公众号走 `mcp__plugin_everything-claude-code_exa__web_fetch_exa`，WebFetch 会被反爬挡）
-2. 提炼核心方法论 / 关键路径 / 实测结论
-3. 按上述格式补全，不擅自调整原有顺序与分组
+1. **抓正文走 `web-access` skill**：公众号必走；其他页面 `WebFetch` 失败再切。多篇并行时分治给子 Agent（prompt 写「必须加载 web-access skill 并遵循指引」），子 Agent 只回传摘要。禁用 exa、`mcp__claude-in-chrome__*`、自起 `--remote-debugging-port`。
+2. 按上述格式补全，不调整原有顺序与分组。
