@@ -98,6 +98,7 @@ export default hopeTheme({
     chartjs: true,
     echarts: true,
     flowchart: true,
+    mermaid: true,
 
     playground: {
       presets: ["ts", "vue"],
