@@ -9,7 +9,7 @@ export const ai = arraySidebar([
     children: "structure",
   },
   {
-    text: "智能体工程",
+    text: "智能体",
     icon: "application",
     prefix: "agent/",
     collapsible: false,
@@ -17,16 +17,17 @@ export const ai = arraySidebar([
       { text: "提示词工程", prefix: "prompt-engineering/", collapsible: true, children: "structure" },
       { text: "上下文工程", prefix: "context-engineering/", collapsible: true, children: "structure" },
       { text: "驾驭工程", prefix: "harness-engineering/", collapsible: true, children: "structure" },
-      { text: "Agentic 工程", prefix: "agentic-engineering/", collapsible: true, children: "structure" },
+      { text: "Agentic", prefix: "agentic-engineering/", collapsible: true, children: "structure" },
     ],
   },
   {
-    text: "智能体专项",
+    text: "工程化组件",
     icon: "gpt-guide",
     prefix: "agentic/",
     collapsible: false,
     children: [
       { text: "Skills", prefix: "skills/", collapsible: true, children: "structure" },
+      { text: "RAG", prefix: "rag/", collapsible: true, children: "structure" },
     ],
   },
 ]);
