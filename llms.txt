@@ -6,7 +6,9 @@
 
 - [AI](https://blog.bytelighting.cn/ai/index.md)
 - [大模型应用与 Agent 开发资料](https://blog.bytelighting.cn/ai/agent/agentic-engineering/llm-agent-dev-resources.md)
+- [从零撸 Mini Agent 框架，彻底搞懂 LLM 底层](https://blog.bytelighting.cn/ai/agent/agentic-engineering/mini-agent-from-scratch.md)
 - [上下文工程 - 解锁大模型真正潜力的关键](https://blog.bytelighting.cn/ai/agent/context-engineering/context-engineering.md)
+- [OpenClaw、Hermes、Claude Code 对比](https://blog.bytelighting.cn/ai/agent/harness-engineering/openclaw-hermes-claude-code.md)
 - ["写法+测评" - 调试 Agent 的 Prompt](https://blog.bytelighting.cn/ai/agent/prompt-engineering/debugging-agent-prompt.md)
 - [Prompt 最佳实践](https://blog.bytelighting.cn/ai/agent/prompt-engineering/prompt-best-practices.md)
 - [RAG 向量漂移治理：从概念辨析到索引生命周期](https://blog.bytelighting.cn/ai/agentic/rag/vector-drift-governance.md)
