@@ -46758,6 +46758,14 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 ---
 # 2026.5 期
 
+## 5.11
+
+* [Spring AI Session API：大多数人用 ChatMemory 用错了场景](https://mp.weixin.qq.com/s/-Tbl6fph2i8AeRIv5dgRNw)：Spring AI 1.1+ 记忆双层架构梳理——短期走 Session API（把 UserMessage + 后续 AssistantMessage / ToolCall / ToolResult 视为原子 Turn，配 SlidingWindow / TurnWindow / TokenCount / RecursiveSummarization 四种压缩策略 + Recall Storage 兜底，解决 MessageWindowChatMemory 切断工具调用-结果链的硬伤），长期走 AutoMemoryTools（仿 Claude Code，6 个沙箱化文件工具 + MEMORY.md 索引 + user/feedback/project/reference 四类记忆，由 LLM 自主决定何时写入）；AutoMemoryToolsAdvisor 必须排在 SessionMemoryAdvisor 之前，文件后端百条级、Redis 向量后端万条级，按数据量与运维成本选型。
+
+* [Harness 不是目的，知识才是护城河——一个 AI 工程交付团队的知识沉淀实践](https://mp.weixin.qq.com/s/JV4-oPP0jjsBCZ4tW3Gy1g)：腾讯团队对 Harness Engineering 的再审视——Skill / Agent / 工具链会随模型迭代过期，私域知识才是护城河；知识体系按「五层存储 × 五种类型（model / decision / guideline / pitfall / process）× 三级成熟度（draft → verified → proven，配自动衰减 Lint）」三维正交组织，团队知识库走独立 Git 仓库 + 区块链思路（log.md 追加、evidence.contributors 溯源、maturity 共识）；工作流即知识载体（16 阶段状态机配 /flow-import 冷启动与 /flow-run 运行时，ARCHIVE 自动提取并提升成熟度），上下文用三级渐进式索引（全景 → 分类清单 → 完整条目）替代一次性塞 5000-10000 行，叠加 Hapi 内网版把碎片时间转化为远程接管 AI 编程会话的产能。
+
+* [缓存使用实践总结：以淘宝交易结算场景为例](https://mp.weixin.qq.com/s/LRJUL9RAhr85FlsmStTCZQ)：淘宝汇金团队的缓存选型方法论——先用「不要求强一致 / 高读频 / 低写频 / 高性能要求」四条缓存条件筛选，再按「存储端（本地 vs 分布式）× 存储介质（内存型 vs 持久型）× 存储时机（静态 / 旁路 / 直写）」三维正交组合得最终方案；五类场景配方落地（费率配置走分布式+内存+静态、CAE 代扣协议走分布式+内存+旁路、收单网关配置走本地+内存+静态、分布式锁走分布式+持久+直写、库存扣减走分布式+持久+直写并分桶路由），配缓存穿透 / 击穿 / 雪崩 / 一致性 / 序列化兼容 / 本地缓存对象原地修改六类风险的治理清单。
+
 ## 5.9
 
 * [5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程](https://mp.weixin.qq.com/s/hVizUucsy8rwFOUR-VZ6wA)：阿里 Qoder 团队 5 人 7 天交付 QoderWork 的 SDD 实战复盘——四阶段流程 Specify → Plan → Implement → Validate 配 Spec Kit 三件套（spec.md / plan.md / tasks.md）+ constitution.md，DAY 0 不写一行代码先固化需求边界与成功指标，DAY 1-6 由 Quest 并行驱动 AI 实现；并提出 L1 Spec-First → L2 Spec-Anchored → L3 Spec-as-Source 三级演进光谱，核心论点：SDD 不让 AI 变聪明，而让 AI 变可控。
