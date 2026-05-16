@@ -46480,141 +46480,141 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.3.md'
 ---
 # 2026.3 期
 
-* [【飞书云文档】OpenClaw橙皮书：从入门到精通](https://my.feishu.cn/wiki/H27Iw9ussiaYbokymhncExtjnAh)
+* [【飞书云文档】OpenClaw橙皮书：从入门到精通](https://my.feishu.cn/wiki/H27Iw9ussiaYbokymhncExtjnAh)：花叔维护的 OpenClaw 项目全景手册 v1.4——分「认识 OpenClaw / 技术架构 / 部署方案 / 渠道接入 / 微信 ClawBot / 腾讯龙虾全家桶 / QClaw 公测 / 漏洞事件统计」八大部分加 FAQ 附录，按读者所处阶段（未装看部署、装好看接入）做分层导航，已同步上架微信读书并与同系列《Claude Code 橙皮书》并行更新。
 
-* [TRAE — 2026企业级AI编程实践手册](https://lcnziv86vkx6.feishu.cn/wiki/XZOSwI51wi5a5okxCF4cAxHSnBh)
+* [TRAE — 2026企业级AI编程实践手册](https://lcnziv86vkx6.feishu.cn/wiki/XZOSwI51wi5a5okxCF4cAxHSnBh)：TRAE 团队「用 AI 构建 AI」沉淀出的企业级 AI Coding 五大方法论支柱——Context Engineering 用渐进式索引破解上下文超限与噪音、Skills 把通用 AI 能力封装为企业场景化最佳实践、Spec Coding 把不确定性前置到需求阶段、分层 Rules 让 AI 产出符合企业编码与架构标准、智能体把 AI 从工具进化为具备目标理解与自主决策的伙伴。
 
-* [你不知道的 Claude Code：架构、治理与工程实践](https://tw93.fun/2026-03-12/claude.html)
+* [你不知道的 Claude Code：架构、治理与工程实践](https://tw93.fun/2026-03-12/claude.html)：tw93 把 Claude Code 拆成「CLAUDE.md / Tools+MCP / Skills / Hooks / Subagents / Verifiers」六层并配 Context-Action-Control-Isolation-Verification 五诊断面——揭出 200K 上下文中 MCP 工具定义 25K（12.5%）固定开销隐形杀手、Tool Output 噪声需 RTK Hook 重写、Compact Instructions + HANDOFF.md 替代算法压缩、Skills 描述符从 45 → 9 token、AskUserQuestion 三版演进与 Prompt Caching defer\_loading 等关键工程细节。
 
 ## 3.31
 
-* [Harness Engineering 来了，SDD 还有意义吗？](https://mp.weixin.qq.com/s/Laz4W0180y9yGW0b6EpUMQ)
+* [Harness Engineering 来了，SDD 还有意义吗？](https://mp.weixin.qq.com/s/Laz4W0180y9yGW0b6EpUMQ)：腾讯云何艺萍辨析 Mitchell Hashimoto「发现 Agent 出错就工程化消除复发可能」的个人视角与 OpenAI「5 个月 100 万行代码 1500 个 PR 全由 Agent 生成」的系统视角——结论是 Harness 与 SDD 不竞争：Harness 把 Agent 执行力放大，Spec 在 scaffolding 中担任「Agent 推理地图 / 语义约束基础 / 反馈回路判据」三角色，引擎越强 Spec 越重要，AGENTS.md 应保持 100 行目录式不当百科全书，Spec 漂移需主动检测机制。
 
 ## 3.30
 
-* [学习笔记：从 Agent 到 Skills — AI 智能体架构的范式转变](https://mp.weixin.qq.com/s/RMh2JqHwkjonPTZlwVKxsw)
+* [学习笔记：从 Agent 到 Skills — AI 智能体架构的范式转变](https://mp.weixin.qq.com/s/RMh2JqHwkjonPTZlwVKxsw)：以 auto-twitter-campaign 项目串讲 Anthropic「2024.11 开源 MCP + 2025.10 推出 Skills + 2025.12 双开放标准」两步棋——Skills 三层渐进式披露（30 字元数据预加载 / Markdown 指令按需加载 / 脚本资源执行时访问）、Director-Creator-Critic 同模型多 Prompt 编排替代多 Agent、MCP 14 个 Filesystem Tools 标准化连接，并区分「原生 Skill 是代码即能力、MCP 封装 Skill 是工具使用说明书」。
 
-* [Claude Code Skills 完全指南：从零打造你的生产级别 AI 编程助理工作流](https://mp.weixin.qq.com/s/M-K8cDwLhpID1gkcZOdUkQ)
+* [Claude Code Skills 完全指南：从零打造你的生产级别 AI 编程助理工作流](https://mp.weixin.qq.com/s/M-K8cDwLhpID1gkcZOdUkQ)：码哥用 fix-issue Skill 实战拆解 CLAUDE.md / Skills / Hooks 决策树（每次必用 / 按需加载 / 强制执行）——给出 5 个高级特性：description 前 250 字符决定自动触发关键词、disable-model-invocation 与 user-invocable 双字段控制谁能调用、`!\`command\`\` 预处理动态注入 PR diff、context:fork + Explore/Plan 子 Agent 隔离上下文、supporting files 拆分长 Skill，并介绍 /batch /simplify /loop /debug 四个内置 Skill。
 
 ## 3.29
 
-* [花叔：Polymarket 完全指南橙皮书](https://my.feishu.cn/wiki/KNV3wIJtEitp1skxXGTcTxLwnah?from=from_copylink)
+* [花叔：Polymarket 完全指南橙皮书](https://my.feishu.cn/wiki/KNV3wIJtEitp1skxXGTcTxLwnah?from=from_copylink)：花叔发布的 73 页 Polymarket 橙皮书 v2.0.0 PDF，飞书 wiki 仅作为下载入口承载 PDF 附件与作者 X 主页链接，正文未公开页面内容，可作为系统了解 Polymarket 玩法、机制与生态的完全指南材料。
 
 ## 3.28
 
-* [Claude 工程师亲授 OpenClaw 调教指南：Skills 的工程化心法](https://mp.weixin.qq.com/s/VjBNgfDhJSMMlGw5n6RQMA)
+* [Claude 工程师亲授 OpenClaw 调教指南：Skills 的工程化心法](https://mp.weixin.qq.com/s/VjBNgfDhJSMMlGw5n6RQMA)：基于 Claude Code 工程师 Thariq 长文解读 Skills 工程化心法——Skill 是含 SKILL.md/references/assets/scripts 的目录级能力包；SKILL.md 是 README+runbook+routing contract，description 是触发协议，references 承担渐进式披露，scripts 把确定性动作下沉；配套 9 类分类法、PreToolUse Hook 度量闭环，把提示工程升级为上下文工程。
 
 ## 3.26
 
-* [JavaGuide：LLM 基础扫盲](https://mp.weixin.qq.com/s/ZAipp74rijevYjFkzbswjw)
+* [JavaGuide：LLM 基础扫盲](https://mp.weixin.qq.com/s/ZAipp74rijevYjFkzbswjw)：1.6 万字 LLM 底层扫盲，以自回归生成为心智模型串起 Tokenizer/BPE、上下文窗口、Temperature/Top-p、Max Tokens 全链路；给出中英文 Token 压缩比经验值（1 中文≈0.6 Token、1 英文字符≈0.3 Token）、特殊 Token 占用、多模态图片 Token 计费规则，强调用官方 Tokenizer 精确计数而非估算。
 
-* [腾讯云：一文讲透从0构建AI Agent](https://mp.weixin.qq.com/s/SAXIAnJ3NtVWPeA-oHIsQA)
+* [腾讯云：一文讲透从0构建AI Agent](https://mp.weixin.qq.com/s/SAXIAnJ3NtVWPeA-oHIsQA)：以 LLM→API→Context→Tool Calling→Agent Loop→MCP/Sub-Agent/Skill 概念全景图开篇，给出 Agent = LLM + Tools + Loop 公式，按四阶段递进上代码：单次对话、history 数组多轮维护、Function Calling 工具注册表、引入 ReAct 循环；点出无状态本质、上下文窗口、滑窗/摘要/RAG 三种上下文管理策略。
 
-* [以 OpenClaw 为例介绍 AI Agent 的运作原理](https://mp.weixin.qq.com/s/78mBt_5efHrTD7tChBRcTw)
+* [以 OpenClaw 为例介绍 AI Agent 的运作原理](https://mp.weixin.qq.com/s/78mBt_5efHrTD7tChBRcTw)：以「龙虾」为隐喻拆解 AI Agent 运作——OpenClaw 是 LLM 之外的桥梁，靠 SOUL/IDENTITY/USER/MEMORY.md 维持身份与多轮上下文，通过 \[tool\_use] 协议执行 Read/Write/exec 等本地工具；覆盖 Spawn 派生 Sub-agent 防 Context 爆炸（禁止子子代）、SKILL.md 渐进披露、MEMORY + 日记 + RAG chunk 检索的记忆系统、HEARTBEAT 心跳与 Cron Job 定时机制、exec 任意指令的安全攻防。
 
 ## 3.24
 
-* [【龙虾大脑核心揭秘-1】OpenClaw处理流程链路解析](https://mp.weixin.qq.com/s/29luo-js2RONAMJ2b7lXbQ)
+* [【龙虾大脑核心揭秘-1】OpenClaw处理流程链路解析](https://mp.weixin.qq.com/s/29luo-js2RONAMJ2b7lXbQ)：拆解 OpenClaw 四层架构（Model/Skills/Workflow/Execution）与 Gateway/Agent/Skills/Memory 四组件，给出消息处理十步链路：启动扫描 skills 目录注入 system prompt、消息预处理、Memory 加载上下文、意图分解、ReAct 思考-行动-观察循环、技能匹配、RSA 签名权限沙箱、脚本执行、Observation 回填、响应返回；并归纳本地 Markdown 记忆、WebSocket 控制面、多模型路由等机制。
 
-* [业务逻辑的“坍塌”：当应用层只剩下胶水代码，在 AI Agent 时代，我们该构建什么](https://mp.weixin.qq.com/s/kVE6an0dqnO34SQnRXddWg)
+* [业务逻辑的"坍塌"：当应用层只剩下胶水代码，在 AI Agent 时代，我们该构建什么](https://mp.weixin.qq.com/s/kVE6an0dqnO34SQnRXddWg)：从 Transformer 推理不确定性（数值精度、硬件异构、采样策略、KV Cache）切入，论证 LLM 黑盒让传统「无状态应用 + 有状态 DB」反转为「有状态 Agent + 无状态 LLM」，Agent 代码退化为 Context 胶水层，并以本地 ollama + nmap/nuclei 手搓 ReAct 渗透测试 Agent 演示状态压缩、显现化与结构化知识三种工程化落地。
 
 ## 3.23
 
-* [拒绝重复造轮子！抽象 80% 工作场景，打造可复用的"AI 助手工厂”](https://mp.weixin.qq.com/s/hY-iMyw9faTUtLjvGFw3Bw)
+* [拒绝重复造轮子！抽象 80% 工作场景，打造可复用的"AI 助手工厂”](https://mp.weixin.qq.com/s/hY-iMyw9faTUtLjvGFw3Bw)：阿里智空间团队将 80% 工作抽象为复杂指令、知识问答、问题排查、极简四类场景，自研 FSWW 工具召回算法（论文 arxiv 2511.19483）与「逆向推理 + 正向执行」工具链，配合 IntentResult 模型、图文 RAG 嵌入、ReAct/ReActObservation 双执行引擎，并以「框架 prompt + 业务定制 prompt」插拔式架构落地一键三连配置化助手工厂。
 
-* [让AI变成Super员工的秘密：高效训练Skills](https://mp.weixin.qq.com/s/JU_PmeOgSNUbNFdl-AIGKQ)
+* [让AI变成Super员工的秘密：高效训练Skills](https://mp.weixin.qq.com/s/JU_PmeOgSNUbNFdl-AIGKQ)：作者打磨 web-testing Skill 复盘 4 个真实翻车（漏点深层 Tab 链接、只生成 HTML 漏 md、python3 -c base64 命令长度炸、报告结构悄悄压缩），提炼「跑→复盘→让 AI 自己改 Skill→再跑」迭代闭环，强调 SKILL.md 必须写「触发条件 + 必做动作 + 结束门禁」而非原则，用 checklist 阻断式校验抬高交付下限。
 
-* [知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】](https://mp.weixin.qq.com/s/P-p4-BH8AAOnTBRcpsoKeQ)
+* [知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】](https://mp.weixin.qq.com/s/P-p4-BH8AAOnTBRcpsoKeQ)：天猫近 200 人后端全栈试点中通过云端共享、信号驱动（关键词 + 多轮调试 + 否定 + 代码改动）自动捕获 1% 真正有价值的踩坑会话，LLM 提炼 pitfall/decision/faq 三类知识并五维度评分，repo → domain → global 分级召回，1 个月沉淀 128 条、置信度 0.92、召回率 85%，tsconfig 类问题从 30 分钟降至 1 分钟。
 
-* [Claude Code + OpenSpec 正在加速 AICoding 落地：从模型博弈到工程化的范式转移｜得物技术](https://mp.weixin.qq.com/s/aHAJxvrwobUKsPZ3w7GnYw)
+* [Claude Code + OpenSpec 正在加速 AICoding 落地：从模型博弈到工程化的范式转移｜得物技术](https://mp.weixin.qq.com/s/aHAJxvrwobUKsPZ3w7GnYw)：直指 AICoding 瓶颈是上下文管理而非模型（DORA 2024 显示 AI 采用率每 +25% 交付稳定性 -7.2%、32K Token 准确率从 99.3% 跌至 69.7%），用 Claude Code 的 Gather-Action-Verify 代理循环 + MCP 按需加载 + CLAUDE.md 持久记忆做执行，叠加 OpenSpec 的 proposal/specs/design/tasks 四工件与 propose-apply-archive 生命周期做规格驱动开发（SDD）。
 
 ## 3.20
 
-* [企业级 Agent 多智能体架构与选型指南 -- 来自1000+行业应用实践积累](https://mp.weixin.qq.com/s/_bz8DEgp4Lqt-xTa_lWN0A)
+* [企业级 Agent 多智能体架构与选型指南 -- 来自1000+行业应用实践积累](https://mp.weixin.qq.com/s/_bz8DEgp4Lqt-xTa_lWN0A)：基于 AgentScope Java 1.0.10 与 Spring AI Alibaba 1.1.2.2，主张 Single Agent First，并按上下文/分工/并行/结构化四阈值演进，系统梳理 Pipeline、Routing、Skills、Subagents、Supervisor、Handoffs、Custom Workflow 七种模式与工作流 vs 对话两大类的选型对照（多智能体协作准确率比单模型高约 32%、批评 + 优化 Agent 提升事实检索 26%）。
 
 ## 3.19
 
-* [深入理解OpenClaw技术架构与实现原理（下）](https://mp.weixin.qq.com/s/FUJEofqbK7vX-J64UX8Nkg)
+* [深入理解OpenClaw技术架构与实现原理（下）](https://mp.weixin.qq.com/s/FUJEofqbK7vX-J64UX8Nkg)：续接上篇，深入拆解 SandBox / 记忆管理 / Skills / Session / 自进化等模块——SandBox 基于 Docker 提供 off / non-main / all 三档隔离，session/agent/shared 三种容器作用域，默认只读根文件系统、network=none、capDrop=ALL；记忆系统以「文件即真相」为哲学，MEMORY.md 存长期、memory/YYYY-MM-DD.md 存短期，SQLite + sqlite-vec + FTS5 实现向量(0.7) + BM25(0.3) 混合搜索，叠加 MMR 去重和 30 天半衰期时间衰减。
 
-* [深入理解OpenClaw技术架构与实现原理（上）](https://mp.weixin.qq.com/s/wVcItgqsCiwl9-PZ56z27w)
+* [深入理解OpenClaw技术架构与实现原理（上）](https://mp.weixin.qq.com/s/wVcItgqsCiwl9-PZ56z27w)：OpenClaw 是 Local-First 的个人 AI 助手，以 Gateway 网关为单一控制平面，WebSocket（默认 18789 端口）+ HTTP + Control UI 单端口复用，承载 Sessions/Channels/Nodes/Cron 等；Pi Agent 以 RPC 模式运行 Agentic Loop（run.ts 主循环 + attempt.ts 单次尝试 + subscribe.ts 流式订阅），原生接入 Telegram/Slack/Discord/iMessage 等十余频道，通过 node.invoke 调用 macOS/iOS/Android 节点硬件能力。
 
-* [从架构到代码：深入理解 OpenClaw 的双源记忆系统](https://mp.weixin.qq.com/s/Ok3VwXft5fvvNWLBL6r2AA)
+* [从架构到代码：深入理解 OpenClaw 的双源记忆系统](https://mp.weixin.qq.com/s/Ok3VwXft5fvvNWLBL6r2AA)：OpenClaw 把记忆从上下文剥离为持久化磁盘存储，采用双源架构——动态记忆是 JSONL 会话日志，静态记忆是 Markdown（MEMORY.md 长期 + memory/YYYY-MM-DD.md 短期）；静态记忆由用户手编、session-memory Hook 在 /new 时转换、Memory Flush 在压缩前触发三种途径生成；Markdown 按 400 token / 80 token 重叠分块，sqlite-vec + FTS5 双索引向量 + BM25 混合检索；Issue #847 实测 72h 任务会话重置从 23 次降至 3 次。
 
-* [Claude Code 最佳实践：可验证、可治理、可分层的工程现实](https://mp.weixin.qq.com/s/RBpKqgDmf_S8l4DmaTJTSw)
+* [Claude Code 最佳实践：可验证、可治理、可分层的工程现实](https://mp.weixin.qq.com/s/RBpKqgDmf_S8l4DmaTJTSw)：把 Claude Code 当作代理系统而非 ChatBot，主循环是「收集上下文 → 采取行动 → 验证结果」，并按六层拆分治理——任务循环、CLAUDE.md 常驻契约（建议 2-3K tokens 内）、Skills 工作流、Tools/MCP 动作层、Hooks 控制层、Subagents 隔离层；强调「验证前置」（给测试样例 / 截图 / 可复现失败用例）、MCP 5 个 server 可吃掉 2 万+ tokens 固定开销，Prompt Caching 决定上层设计，用 /clear /compact /HANDOFF.md 主动管理上下文漂移。
 
-* [美团 BI 在指标平台和分析引擎上的探索和实践](https://mp.weixin.qq.com/s/LuCy56KRYk4W-USpDUViyg)
+* [美团 BI 在指标平台和分析引擎上的探索和实践](https://mp.weixin.qq.com/s/LuCy56KRYk4W-USpDUViyg)：美团以指标平台为核心重构 BI 架构，靠「自动语义」和「增强计算」两大能力破解传统数据集驱动的口径混乱与性能差——自动语义把业务口径解析为指标血缘并通过主外键自动关联星型/雪花/星座模型，实现「定义即研发」；增强计算用智能查询（多引擎 + 降级策略）和智能物化（自动建宽表/汇总表 + 周期调度回溯）平衡 Serving 与 Ad-hoc 双场景；目前支持百余业务线、查询量百万级、查询成功率 99.9%+。
 
 ## 3.18
 
-* [从RAG到GraphRAG：货拉拉元数据检索应用实践](https://mp.weixin.qq.com/s/AmbfOJJFypnsAkVTjC9eJQ)
+* [从RAG到GraphRAG：货拉拉元数据检索应用实践](https://mp.weixin.qq.com/s/AmbfOJJFypnsAkVTjC9eJQ)：货拉拉元数据找数场景中，Naive RAG 单字段切块 + 向量检索准确率仅 55%、召回率 60%，在同义词、多实体、关系召回上拉胯；2.0 切到 LightRAG 路线的 GraphRAG，把表/字段、业务术语/缩写、同义词三类实体建图，Query 经 LLM 抽高/低级关键词后混合检索（向量 + BM25 + 重排）+ 图关联形成 Local/Global Context；准确率提升至 78%、召回率 91%、TopK 命中率 90%、MRR 0.73，渗透率 30%、数仓答疑省 20% 时间。
 
-* [开源 Claude Code 工程级开发插件 Superpowers 完整上手攻略](https://mp.weixin.qq.com/s/n52dg8R2fzgHNIo9XX-HMA)
+* [开源 Claude Code 工程级开发插件 Superpowers 完整上手攻略](https://mp.weixin.qq.com/s/n52dg8R2fzgHNIo9XX-HMA)：拆解 Anthropic 开源插件 Superpowers 的分层架构（用户层 / 框架层 / 执行层 / 输出层）与 20+ 可组合 Skills 体系，核心是 Subagent-Driven Development：每个子 Agent 全新上下文启动以隔离污染，配合 Spec Review + Code Quality Review 两阶段审查；附 brainstorming、writing-plans、TDD、systematic-debugging、using-git-worktrees 等关键 Skill 速查表与触发关键词，给出 personal skills 覆盖默认技能的解析顺序。
 
-* [AI Coding前端实践后的复盘总结](https://mp.weixin.qq.com/s/CqYqbE0HdL7GzLGe_vbMmA)
+* [AI Coding前端实践后的复盘总结](https://mp.weixin.qq.com/s/CqYqbE0HdL7GzLGe_vbMmA)：淘天天猫品牌行业前端团队复盘后端同学用 AI Agent 写 React 页面的实战，归纳四类典型问题（目标描述模糊、上下文截图不全、跨组件改动相互干涉、组件库知识库缺失导致选错版本），对应给出 Prompt 高质量化、及时回滚、避免长上下文、人工干预的最佳实践，并指出 Agent 在截图还原、全局视角、代码可维护性上的边界，主张建立「AI 生成 + AI 治理」的闭环。
 
-* [如何让你的 Agent 更准确：MCP 工具设计技巧](https://mp.weixin.qq.com/s/wpiROVdoJAHvolkEpYo20w)
+* [如何让你的 Agent 更准确：MCP 工具设计技巧](https://mp.weixin.qq.com/s/wpiROVdoJAHvolkEpYo20w)：TRAE 团队从 LLM Tool Calling 完整链路（6 步多轮协议）切入，强调 MCP 工具是 Agent 的 UI 而非 REST API 封装；揭示 JSON 仅是中间格式、模型内部多用类 XML token、自定义格式不如原生 function calling；工具定义占 system prompt 影响 Prompt Caching，单工具约 250-300 tokens，OpenAI 建议 ≤20 个以避免注意力稀释与选择困难。
 
 ## 3.17
 
-* [Agent/Skills/Teams 架构演进过程及技术选型之道](https://mp.weixin.qq.com/s/Z8JYgxUdHSLo4ywgyt4ljg)
+* [Agent/Skills/Teams 架构演进过程及技术选型之道](https://mp.weixin.qq.com/s/Z8JYgxUdHSLo4ywgyt4ljg)：阿里云小二 Aivis 作者梳理 Single Agent → Multi-Agent → Agent Skills → Agent Teams 四阶段演化本质——补偿大模型领域知识与长期记忆缺失；Single Agent 受 Context Window 与 Lost in the Middle 制约，Multi-Agent 用 Planner/Reasoner/Executor 分工却带来路由错配与通信带宽损耗，Agent Skills 通过 User Prompt 渐进式披露替代 System Prompt 替换避免认知冲突，Agent Teams 面向未知问题做协同探索。
 
-* [腾讯云开发者：兄弟！你真的懂 Skill 吗？](https://mp.weixin.qq.com/s/h9BKGfLgH7GCNEhvwDBYBg)
+* [腾讯云开发者：兄弟！你真的懂 Skill 吗？](https://mp.weixin.qq.com/s/h9BKGfLgH7GCNEhvwDBYBg)：逐文件拆解 Anthropic 16 个官方 Skill 与约 2000 行框架源码，归纳 5 种执行模式（脚本执行、纯 Prompt 注入、库调用、参考文档编排、含子 Agent 编排）；核心揭示 16 个 Skill 全部不用 function calling 注册，而靠 SKILL.md + skill\_run 沙箱命令驱动；详解 7 步链路、CQRS state\_delta 解耦、\_stage\_skill 增量哈希、符号链接与只读保护、本地 / Docker 双 runtime。
 
 ## 3.16
 
-* [软件为何越做越乱？万字长文讲透软件的“复杂性”](https://mp.weixin.qq.com/s/Sr_SDdOk80IxgmQZeK3ffQ)
+* [软件为何越做越乱？万字长文讲透软件的“复杂性”](https://mp.weixin.qq.com/s/Sr_SDdOk80IxgmQZeK3ffQ)：借「限时折扣一年补丁风暴」故事讲透复杂性三大表现（变更放大、认知负荷、未知的未知）与两大根因（依赖、晦涩），对比战术编程与战略编程，主张投入 10-20% 时间持续优化设计；管理复杂性的核心方法：接口/实现分离、深模块（简单接口隐藏强大功能，如垃圾回收器）、信息隐藏对抗信息泄漏、警惕时间分解、「有点通用」优于过度专用、分层抽象。
 
-* [基于 Cursor Agent 的流水线 AI CR 实践｜得物技术](https://mp.weixin.qq.com/s/BtlrcAhqVDv0oIhnoM9hBQ)
+* [基于 Cursor Agent 的流水线 AI CR 实践｜得物技术](https://mp.weixin.qq.com/s/BtlrcAhqVDv0oIhnoM9hBQ)：得物在 MR 流水线中以 Cursor Agent CLI 取代传统 Diff + 大模型 API 的高误报 CR 链路，每次提交自动触发产出聚类为严重/警告/建议的 AI CR 报告，并提供一键添加 MR 评论、复制 Prompt、跳转本地 Cursor 创建 Chat 修复三种闭环；通过 `.cursor/rules` 内置 13 类 mdc 规则（空指针、React Hooks、安全编码、Monorepo 依赖等），优先用 Composer 1.5（44s）降级 Auto（91s），实测有效问题率约 50%。
 
 ## 3.14
 
-* [Claude Code 一篇带你从入门到精通](https://mp.weixin.qq.com/s/1FIyJ08MaKb6bHY2PGAmbQ)
+* [Claude Code 一篇带你从入门到精通](https://mp.weixin.qq.com/s/1FIyJ08MaKb6bHY2PGAmbQ)：系统拆解 Claude Code 的三大进阶能力：CLAUDE.md 通过 /init、/memory、`#` 操作符落地企业→项目→用户三级记忆并用 `@` 实现模块化导入；Skills 采用元数据 / SKILL.md / 资源三级渐进式披露（元数据约 100 token、SKILL.md <5k token、资源按需 bash 加载）配合手动 `/skill-name` 与自动发现两种触发；Sub-Agent 以独立上下文与受限工具承担任务委派，与 Skills 的「知识注入」形成「加技能 vs 召唤分身」分工。
 
 ## 3.13
 
-* [用自然语言替代复杂代码 | 大淘宝技术](https://mp.weixin.qq.com/s/hZgFoLFnAq6-yqd4i1v8ng)
+* [用自然语言替代复杂代码 | 大淘宝技术](https://mp.weixin.qq.com/s/hZgFoLFnAq6-yqd4i1v8ng)：天猫技术针对多 SKU 凑单破价资损巡检场景，用 AI 平台的「预置 Agent + 参数化调用」模式以自然语言业务规则替代 150+ 行硬编码计算逻辑，将高价规格按件分摊优惠后是否低于阈值的风险检测，从难维护的精确分支代码转为可读性强、修改便捷的 AI 驱动分析流程；核心结论是 AI 适合规则模糊、多步推理、对成本不敏感的场景，平台化降低 Prompt 调试与模型参数门槛。
 
-* [从IDE到Terminal：适合后端宝宝体质的Claude Code工作流｜得物技术](https://mp.weixin.qq.com/s/x9wUAM6QI1Ogv2B0biawbg)
+* [从IDE到Terminal：适合后端宝宝体质的Claude Code工作流｜得物技术](https://mp.weixin.qq.com/s/x9wUAM6QI1Ogv2B0biawbg)：作者基于「脑（模型）决定上限、手（提示词工作流）决定下限」选定 Claude Code CLI，用 zsh 函数 kcc/zcc/qcc 注入 ANTHROPIC\_BASE\_URL 等行内环境变量在 Kimi、智谱 GLM、七牛之间秒切模型；以 JetBrains IDE 为主轴，借 AppleScript + iTerm2 三面板布局打通 GUI/TUI 自动跟随切项目，并串起 command、skill、subAgent、MCP、hook、plugin 六类扩展与飞书 MCP、@模糊搜索、注意力哨兵等技巧。
 
-* [Skills开发技能指南：OpenClaw也好，Skills也好，都别脱离具体场景谈方案](https://mp.weixin.qq.com/s/uRpg2tDFvH2KboiHLvq0MA)
+* [Skills开发技能指南：OpenClaw也好，Skills也好，都别脱离具体场景谈方案](https://mp.weixin.qq.com/s/uRpg2tDFvH2KboiHLvq0MA)：作者从「中台复用」推导出 Skills 本质即公共 Prompt，强调「恰好而非更多」的渐进式披露设计避免上下文污染；开发方法是归纳法（从工作案例向外洞察 + 向内觉察沉淀经验）配合演绎法（套用同类场景）双轮迭代，并给出三个工程化案例：逆向建模用 UML 类图、序列图、伪代码显化实体/流程/规则做精细化 VibeCoding、基于染色 ID + 日志 MCP 的 30s 问题定位 Skill、打通 Git 的 AI-CR 闭环。
 
-* [一文搞懂爆火的SKills原理及实践案例](https://mp.weixin.qq.com/s/efGCTgegcE_Zp3G91uH06A)
+* [一文搞懂爆火的SKills原理及实践案例](https://mp.weixin.qq.com/s/efGCTgegcE_Zp3G91uH06A)：腾讯云开发者版同源浓缩版，沿「中台复用 Prompt」路径定义 Skills 为可按设计/开发/测试/运维分类的公共提示词，核心机制是元信息分级缓存的渐进式披露——按语义匹配后再加载实际内容以规避上下文窗口爆炸；开发路径用归纳法捕捉高频问题再演绎复用，并示范逆向建模（实体/流程/规则三问 + UML + 伪代码）、染色 ID 串联日志 MCP 的快速问题定位、AI 辅助 CR 与 Git 闭环三个落地场景。
 
 ## 3.11
 
-* [【万字】实战报告：AI Coding 已经能做交付了，但前提苛刻](https://mp.weixin.qq.com/s/Gc5P60gqmoXQov3fy0_85A)
+* [【万字】实战报告：AI Coding 已经能做交付了，但前提苛刻](https://mp.weixin.qq.com/s/Gc5P60gqmoXQov3fy0_85A)：作者通过「从 0 到 1 新项目、已有项目迭代、文档不全的老项目」三场景验证，得出 AI Coding 已可承接真实交付，但前提是把目标、字段、校验规则、feature flag、测试与 `pnpm lint/test/build` 验收命令显式写成可执行规格，输入质量而非模型本身决定结果稳定性。
 
-* [MySQL 的 SELECT \* 一定导致索引失效？](https://mp.weixin.qq.com/s/6lzPH4u3HnNjVlFrckNDhw)
+* [MySQL 的 SELECT \* 一定导致索引失效？](https://mp.weixin.qq.com/s/6lzPH4u3HnNjVlFrckNDhw)：从优化器回表成本权衡切入，系统梳理 7 类索引失效场景——`SELECT *` 非必然失效但因回表占比超 20%~30% 会被放弃、违背最左前缀（含 8.0.13 Index Skip Scan 在 8.0.31 的 Bug #109145）、索引列函数运算、`LIKE '%xx'` 前缀通配、OR 与 Index Merge、`IN` 超 `eq_range_index_dive_limit=200`、隐式类型转换发生在索引列侧、ORDER BY 触发 `Using filesort`。
 
 ## 3.9
 
-* [玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤](https://mp.weixin.qq.com/s/Q0CC0p5e-DQEYEk5ErQB1Q)
+* [玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤](https://mp.weixin.qq.com/s/Q0CC0p5e-DQEYEk5ErQB1Q)：从源码视角拆解 OpenClaw 多 Agent 架构，每个 Agent workspace 由 AGENTS/SOUL/TOOLS/IDENTITY/USER/HEARTBEAT/BOOTSTRAP/MEMORY 共 8 个 Markdown 构成人格，Session 以 per-session JSONL 懒加载，通过 Compaction 持久化压缩历史 + Session Pruning 临时裁剪 tool 结果两层策略喂给 LLM；并提示 Gateway 60s 健康快照会快速消耗 IM 额度、Mac Mini M1 即足够、安全上需按数据全 Open 预估风险。
 
 ## 3.8
 
-* [火山引擎：OpenClaw内置Mem0](https://mp.weixin.qq.com/s/9gcyRO_k4dkWRqsszOCiWQ)
+* [火山引擎：OpenClaw内置Mem0](https://mp.weixin.qq.com/s/9gcyRO_k4dkWRqsszOCiWQ)：剖析 OpenClaw 原生 file-first 记忆体系（MEMORY.md 长期、`memory/YYYY-MM-DD.md` 日志、`sessions/*.jsonl` + SQLite FTS5 与 sqlite-vec 混合检索，400 token 块、80 重叠）的 token 浪费痛点，引入 `openclaw-mem0-plugin` 把后端替换为 Mem0 Cloud（platform 模式 + apiKey + userId），暴露 `memory_search/list/store/get/forget` 工具与 `openclaw mem0 search --scope` CLI，支持跨会话跨 Agent 共享与企业级审计删除。
 
 ## 3.3
 
-* [RAG优化字典：20种RAG优化方法全解析](https://mp.weixin.qq.com/s/HR-Y1IEbHix_N3m0VBo9IQ)
+* [RAG优化字典：20种RAG优化方法全解析](https://mp.weixin.qq.com/s/HR-Y1IEbHix_N3m0VBo9IQ)：系统罗列 RAG 全链路优化方法并附代码——分块层有语义分块（百分位/标准差/IQR 三种断点）、chunk size 用忠实度 + 相关性评估选 128/256/512；检索层有上下文窗口扩展、CCH 标题嵌入与文本嵌入平均、文档增强问题生成、查询改写/Step-back 回退/子查询分解等查询转换策略，覆盖检索增强、查询优化、生成质量控制多维度。
 
-* [Skills：从编程工具的配角到Agent研发的核心](https://mp.weixin.qq.com/s/OmA2xcmpXNITxbR5bTsT6w)
+* [Skills：从编程工具的配角到Agent研发的核心](https://mp.weixin.qq.com/s/OmA2xcmpXNITxbR5bTsT6w)：Skills 价值高度场景依赖，在 Claude Code 中被 Commands 的即时性与 SubAgent 的专业性挤压而沦为鸡肋，但在企业级 Agent 平台里凭借标准化接口、按需加载（渐进式披露）、声明式解耦解决重复造轮子、能力孤岛与跨团队协作痛点；判断是否引入看复用频率、复杂度、协作规模、生态开放性四维度，原型/专用工具/小项目/性能敏感场景不推荐。
 
 ## 3.2
 
-* [打造高可靠 AI 助手：Skill 编排、Workflow 设计与 Spec Coding 的深度实践](https://mp.weixin.qq.com/s/nClVag8tyw7wuG-V1rhmfQ)
+* [打造高可靠 AI 助手：Skill 编排、Workflow 设计与 Spec Coding 的深度实践](https://mp.weixin.qq.com/s/nClVag8tyw7wuG-V1rhmfQ)：阿里基于上下文工程五大模式（状态管理、渐进式上下文、结构化输出、模版程序、多步处理）落地 Spec Coding，对比 Skill 与 Subagent 在上下文管理上的差异，针对 Skill 复杂度高与多 Skill 准确率低的痛点提出 Workflow 编排单元，以 kuspec CLI 把 WORKFLOW.md / WORKFLOW\_INIT.md 与 MCP 集成进 iFlow / Claude Code，覆盖框架插件开发、UI 改版、CRUD、小众技术栈、跨团队 SDK 接入等场景。
 
-* [AI Coding思考：从工具提效到范式变革，我们还缺什么？](https://mp.weixin.qq.com/s/4AXThfVLmhSXeRWK1gh4dA)
+* [AI Coding思考：从工具提效到范式变革，我们还缺什么？](https://mp.weixin.qq.com/s/4AXThfVLmhSXeRWK1gh4dA)：淘天天猫书牧用「目标传达复杂度 × 执行复杂度」四象限指出，企业级研发的 AI Coding 瓶颈不在 Agent 执行而在人向 AI 传达任务的信息熵过高，必须通过基础技术、业务架构、团队规范、代码仓库四层专家知识体系化沉淀实现系统性降熵，最终打通需求-设计-编码-验收全链路 SDD，把程序员从打字员推向产品工程师与业务架构师。
 
-* [AI编程的下半场来了？学会用Agent Skill解决编程的痛点问题](https://mp.weixin.qq.com/s/ho1l5v5mrNr_f6JXARMlFQ)
+* [AI编程的下半场来了？学会用Agent Skill解决编程的痛点问题](https://mp.weixin.qq.com/s/ho1l5v5mrNr_f6JXARMlFQ)：腾讯 CloudBase 把 8 年 Serverless 经验封装为 21 个 Skill + 1 个 cloudbase-guidelines 总纲，强制 AI 用云端原生 OPENID、Security Rules、托管 API Key 替代前端传参与硬编码，靠首行注入、CLAUDE.md / AGENT.md 项目家法与 settings.json Forced Eval Hook 三层手段把 Skill 激活率从 20% 提到 84%，并阐明 MCP 提供连接、Skills 提供工程直觉的分工。
 
-* [AI Agent在保险业务的落地实践：技术实战分享](https://mp.weixin.qq.com/s/Q9TdK8F8UByCdJjSGAjqaQ)
+* [AI Agent在保险业务的落地实践：技术实战分享](https://mp.weixin.qq.com/s/Q9TdK8F8UByCdJjSGAjqaQ)：京东保险给出经济收益公式 R=(Ch-Ca)×D×A×S 来挑选场景，落地 Eva Agent 四大亮点——保险领域小尺寸大模型（CPT + SHADOW-FT + structTuning，IDK/IMI/IUC 等 8 维测评）、深度知识库（表格序列化、Late Chunking、Embedding/Rerank 微调、DeepDoc 路由）、三档计划策略（提示词编排 / 搜索增强层级规划 / RL 自主编排），以及含记忆、策略库、经验池与 self-play RL 的可进化架构。
 
 ## 3.1
 
-* [规范驱动 AI 编程实战指南：OpenSpec vs Spec-Kit vs BMAD](https://mp.weixin.qq.com/s/kLVeNYxfg5xqcxixdttTGQ)
+* [规范驱动 AI 编程实战指南：OpenSpec vs Spec-Kit vs BMAD](https://mp.weixin.qq.com/s/kLVeNYxfg5xqcxixdttTGQ)：从 SDD 把规范升级为单一可信源的视角横评三款工具——OpenSpec 用 specs/ 与 changes/ 文件夹做「提案 → 实施 → 归档」三步循环，专攻遗留代码维护，5 分钟即可启动；Spec-Kit 走 /specify、/plan 斜杠命令的 6 步流程，工具无关，适合新项目；BMAD 多智能体模拟业务分析师、PM、架构师、开发、QA 全角色，适合企业级跨仓库复杂项目但学习与维护成本最高。
 
-* [图文详解：如何设计一个亿级用户排行榜？](https://mp.weixin.qq.com/s/0BM1DItHHwgnrgnzRdk8Gg)
+* [图文详解：如何设计一个亿级用户排行榜？](https://mp.weixin.qq.com/s/0BM1DItHHwgnrgnzRdk8Gg)：码哥按实时性、准确性、抗压力（峰值 100 万 QPS、P99 <200ms）、灵活性拆需求，给出数据接入（Kafka 多活 + MirrorMaker + DLQ）、计算（Lua 实时 / Spark 批 / Flink 混合 70%+30%）、存储（Redis Cluster 100 分片 + Caffeine 三级缓存 + ClickHouse 冷热分离）、展示（CDN + API 网关 + K8s HPA）四层架构，并用分层合并把跨分片 TOP100 查询从 530ms 优化到 80ms。
 
 ---
 
@@ -46623,133 +46623,133 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.4.md'
 ---
 # 2026.4 期
 
-* [Anthropic: Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+* [Anthropic: Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)：Anthropic 用 claude.ai 克隆实验总结长周期 Agent 的 Harness 设计——Init Agent 搭环境 + Coding Agent 增量推进特性，靠 Feature List + claude-progress.txt + Git commit 三件套强约束「每会话只做一条、不改测试」，每轮跑 Puppeteer MCP 端到端验证防早收，核心论点是 compaction 救不了长任务、必须把人类工程师的日常实践显式编码为 Harness 约束。
 
-* [Anthropic: Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+* [Anthropic: Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)：把 Prompt Engineering 升级为 Context Engineering——目标是每轮推理前从系统指令 / 工具 / MCP / 外部数据 / 消息历史中筛出 minimal high-signal token，对抗 Transformer n² 的 context rot 与 attention budget 上限；四类核心技术：Just-in-Time Retrieval 只存路径运行时加载、Structured Note-Taking 写 NOTES.md 外部化、Compaction 摘要换窗保留架构决策、Sub-Agent 隔离调研后只回传 1-2k token 摘要。
 
 ## 4.30
 
-* [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](https://mp.weixin.qq.com/s/HSWuUVt_AG6uPotiEvORwA)
+* [Agent 开发范式演进：从环境工程出发，"简化"多源实时上下文](https://mp.weixin.qq.com/s/HSWuUVt_AG6uPotiEvORwA)：阿里云 EventHouse 沈林提出企业级 Agent 真正瓶颈是「上下文供给能力」——三类感知（Polling/Monitoring + EDA 事件订阅 + Mount Query 冷数据即席查询）保信息完备、统一 Catalog 管 Schema/语义/新鲜度替代 MCP 临时抱佛脚、沿 DIKW 把 Catalog + SOUL/Prompt/Gold Sample/Benchmark 编译成 Knowledge Wiki 做知识对账、再把 Prompt + Wiki + 工具 + 模型整包走 CI/CD 与 Serverless 普惠。
 
 ## 4.29
 
-* [深入浅出Harness Engineerring之核心模式与理念](https://mp.weixin.qq.com/s/8PwDQSX7ZX6HdDiW-H9Dzg)
+* [深入浅出Harness Engineerring之核心模式与理念](https://mp.weixin.qq.com/s/8PwDQSX7ZX6HdDiW-H9Dzg)：腾讯云张碧泉横向梳理三套 Harness 范式——Claude Code 八类模式（持久化指令 / 分层记忆 / 做梦整理 / 渐进式压缩 / Explore-Plan-Act + 子 Agent 隔离 + Branch-Merge / 渐进式工具扩展 / 生命周期 hook）、Claude Managed Agents 「宠物 vs 牲畜」哲学（Claude 脑 / Harness 手 / Sandbox 工作台解耦让首 token 延迟降 60-90%）、Hermes 五段循环 + L1-L5 五层记忆（便利贴 / SKILL.md / 向量 / 用户建模 / FTS5 长期档案）。
 
-* [通用 AI Agent 驱动网关路由安全审计实践｜得物技术](https://mp.weixin.qq.com/s/b468fvlCr_PJ9UY26kbzSQ)
+* [通用 AI Agent 驱动网关路由安全审计实践｜得物技术](https://mp.weixin.qq.com/s/b468fvlCr_PJ9UY26kbzSQ)：得物用「通用 Agent + 业务 Skill」分层做网关路由越权审计——Claude Code/OpenCode 出推理与会话恢复，业务规则沉到 gateway-route-vuln-analyzer Skill；四步决策树（路由配置 → 认证识别 → @PreAuthorize / 用户 ID 来源 / 所有权三维代码审计 → 危害评估）配 Early-Exit 短路；Token 成本降 95%+ 靠 mcp2cli 替代 MCP 上下文加载、gitlab\_file 按需提参替代 1.47MB 整文件、YAML 替代 JSON，最终单条 ¥0.23 / qwen3.5-plus 召回 100%。
 
 ## 4.28
 
-* [你不知道的 Agent：原理、架构与工程实践](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
+* [你不知道的 Agent：原理、架构与工程实践](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)：阿里云团队从 Agent Loop 极简实现切入系统拆解——Workflow vs Agent 控制权、五种控制模式（Prompt Chaining / Routing / Parallelization / Orchestrator-Workers / Evaluator-Optimizer）、Harness 四件套（验收基线 / 执行边界 / 反馈信号 / 回退手段）、上下文五层与 Prompt Caching 前缀稳定性、Skills 用「Use when / Don't use when」反例把准确率从 73% 拉到 85%、工具设计三代演进（API → ACI → Tool Search / Programmatic Tool Calling），核心论点：Harness 与验证质量比模型选择更影响成功率。
 
-* [Harness Engineering实践心得：如何高效驾驭AI？](https://mp.weixin.qq.com/s/NtsksL2gkMtMqkILi4xvRg)
+* [Harness Engineering实践心得：如何高效驾驭AI？](https://mp.weixin.qq.com/s/NtsksL2gkMtMqkILi4xvRg)：腾讯云工程师以 JK Launcher（WPF/.NET 4.8）V3.0→V3.11 演进讲 Prompt → Context → Harness 三次跃迁——七 Agent 流水线（PM Orchestrator / 需求 / 架构 / Gate Review / Dev / CR / QA，仅 Dev 用 Claude 4.6 Opus 其余 composer-2 / gpt-5.4-medium 控成本）、文档驱动状态机配回退路由（发现问题的人不能自己修）、Rules / Skills / Scripts 三层分离把 14 条 1010 行规则砍到 4 条 275 行（其余迁移到 verify\_all.ps1 机器检测）。
 
-* [Harness Engineering 来龙去脉](https://mp.weixin.qq.com/s/hsItMKR-J7w16DtjtkJQPw)
+* [Harness Engineering 来龙去脉](https://mp.weixin.qq.com/s/hsItMKR-J7w16DtjtkJQPw)：以面试问答视角溯源 Harness Engineering——2026.2 Mitchell Hashimoto《My AI Adoption Journey》提出「每次犯错把修复沉到环境」的复利效应、OpenAI 一周后官方背书；核心等式 Agent = Model + Harness，按输入 / 动作 / 校验拆六层（上下文 / 工具 / 执行 / 记忆 / 评估 / 约束），用 Cognition 的 Context Anxiety、Anthropic 的 Planner-Generator-Evaluator、Codex AGENTS.md 改目录页、AI slop 后台日清等五个案例佐证。
 
-* [读完这篇，你就搞懂 DeepSeek v4 了](https://mp.weixin.qq.com/s/MamimcCQj_Hd12T8iFVmKg)
+* [读完这篇，你就搞懂 DeepSeek v4 了](https://mp.weixin.qq.com/s/MamimcCQj_Hd12T8iFVmKg)：解读 DeepSeek-V4-Pro（1.6T / 49B / 1M）与 V4-Flash（284B / 13B / 1M）的系统级重构——架构层 mHC 双随机矩阵约束多流残差解梯度问题、CSA + HCA 混合稀疏注意力（分块压缩 + 闪电索引 top-k + 标准注意力「海选-精选-精算」把 1M 上下文从 O(L²) 65000× 压回可算）、Muon + QK RMSNorm 防 Logits 爆炸；Infra 层细粒度计算通信重叠消 MoE bubble、TileLang、批无关性 + DeepGEMM 计算确定性、FP4 分模块量化，拿下 SWE Verified 80.6 / MRCR 1M 83.5 开源最高分。
 
 ## 4.27
 
-* [工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ)
+* [工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ)：Skill 本质是「知识注入」而非动态造工具，frontmatter description 决定加载率（触发短语 + 时序位置 + 产品关键词）；从 7 个顶级 Skill 提炼 5+1 模式——线性流程、决策树+按需加载、循环迭代、接力棒跨 session 持久化、多阶段+检查点、思维框架；防偷懒四件套（强硬语气 / 借口反驳表 / 量化阈值 / 负面指令）+ 知识三层（frontmatter ~100 / 主文件 <5K / references 按需）控 token 预算。
 
-* [淘天营销中后台生码工作流最佳实践](https://mp.weixin.qq.com/s/VjTyHFr17l_bObG6x8-Mmw)
+* [淘天营销中后台生码工作流最佳实践](https://mp.weixin.qq.com/s/VjTyHFr17l_bObG6x8-Mmw)：淘天营销中后台从本地收敛到云端 AoneSuper 解环境与长任务中断，用 git submodule + turborepo 跨仓库工作区、CodeAgent CLI Command 串场景化工作流；高确定性迁移/重构走「架构文档 + 领域 Skill（ProForm/ProTable）」固化规则（N 合一迁移采纳率 71% / 提效 58%），低确定性日常迭代走「产品功能树查表 + 分层研发指引 + 资产 MCP」自动沉淀（采纳率 50%+）；方法论：给精确知识、确定性交工程、不确定性留 Agent、知识正向循环。
 
 ## 4.26
 
-* [wechat-cli 源码剖析](https://mp.weixin.qq.com/s/ijH6SizUBxim5OLHXUtV8g)
+* [wechat-cli 源码剖析](https://mp.weixin.qq.com/s/ijH6SizUBxim5OLHXUtV8g)：只读 / 本地 / Agent 友好的微信查询 CLI（11 子命令 + JSON 默认输出）——init 期跨平台扫微信进程内存（task\_for\_pid / ReadProcessMemory / /proc/pid/mem）提取密钥并 HMAC-SHA512 校验后落盘，查询期 DBCache 按 mtime 增量做 AES-256-CBC 页级 SQLCipher 4 解密查 SQLite；亮点：zstd + appmsg/voip XML 解析、new-messages 状态文件持久化游标、formatter 双格式对接 Claude Code / OpenClaw。
 
 ## 4.25
 
-* [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://mp.weixin.qq.com/s/7dkGfGUsr3UNHSwZ0EoI9g)
+* [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://mp.weixin.qq.com/s/7dkGfGUsr3UNHSwZ0EoI9g)：800 行 TS 单进程 Agent 直接基于 Anthropic SDK 而非 LangChain，核心是薄抽象 + 显式控制流——Tool 用 SDK 原生 input\_schema 零中间层、ToolRegistry.exclude() 为子 Agent 生成受限工具集；ExecTool 三层防护（正则黑名单 + 30s/2MB 资源限制 + 首尾保留截断），EditFileTool 强制 oldText 唯一匹配；MessageBus 单路径路由出入站，SubagentManager 单进程并发跑 max 15 轮无历史 AgentLoop，REPL 用布尔互斥锁串行化 history 写入。
 
 ## 4.24
 
-* [深度解析 Hermes Agent 如何实现“自进化”及其 Prompt / Context / Harness 的设计实践](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
+* [深度解析 Hermes Agent 如何实现"自进化"及其 Prompt / Context / Harness 的设计实践](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)：Hermes 自进化走「内外双路径」——外路径动态 Skill 生成（10 轮无 skill\_manage 即 nudge、后台 review Agent 跑 Memory/Skill/Combined 三 Prompt 复盘）把踩坑纠错沉为结构化 Skill；内路径 RL 训练闭环（ShareGPT 轨迹 + Claude Opus 4.6 当教师 + 零推理过滤 + 轨迹头尾保护压到 15250 token + GRPO 规则化奖励 + ToolContext 让奖励函数真编译/读文件验证）——前者「记笔记」、后者「练内功」改权重。
 
 ## 4.23
 
-* [深入源码：Hermes Agent 如何实现 "Self-Improving"](https://mp.weixin.qq.com/s/Qi68ptxQRyiA932JU49SYQ)
+* [深入源码：Hermes Agent 如何实现 "Self-Improving"](https://mp.weixin.qq.com/s/Qi68ptxQRyiA932JU49SYQ)：拆 Hermes Self-Improving 闭环三件套——Memory（MEMORY.md/USER.md 双文件、严卡 2200/1375 字符上限、冻结快照复用 Prefix Cache）、Skill（SKILL.md + Pitfalls 段、5 次以上工具调用才值得创建、fuzzy\_find\_and\_replace + 安全扫描自动 patch）、Nudge Engine；用渐进式索引加载替代 OpenClaw「重型背包」让 Agent 越用越厚。
 
-* [从第一性原理思考 Agentic Engineering](https://mp.weixin.qq.com/s/77OguM-HsX8V9WvNLWvlSw)
+* [从第一性原理思考 Agentic Engineering](https://mp.weixin.qq.com/s/77OguM-HsX8V9WvNLWvlSw)：用演绎法替代归纳法做 Agentic Engineering——三条公理（SDLC 意图转化链信息损耗、LLM 上下文决定性 + 概率性 + 工作记忆易失、人类认知稀缺）推翻「喂代码 = 懂项目」「AI 不适合复杂系统」等假设，把目标锚定 L2 增强 / L3 解锁层级，主张 Context Engineering + 每步 human-in-the-loop 对抗错误指数累积。
 
 ## 4.22
 
-* [万字干货！Harness Engineering如何工程化落地？](https://mp.weixin.qq.com/s/77dyufF3MP8stHPS0BApNw)
+* [万字干货！Harness Engineering如何工程化落地？](https://mp.weixin.qq.com/s/77dyufF3MP8stHPS0BApNw)：以 JK Launcher 拆 Harness 七件套——Rule（软约束底线）、Skill（编译/测试/验证标准操作手册）、Sub Agent（分阶段角色）、Workflow（接力赛规则 + 三层视角 + 上下文纪律）、Scripts（硬门禁，把 XAML 中文 / Emoji / MessageBox / 本地化 / 编译测试检查落成脚本）、MCP（外接 CI / 签名 / 发布的插座）、SPEC + dev-map / 任务看板（地图与战场态势）。
 
-* [AI实践｜基于 Spring AI 从0到1构建 AI Agent](https://mp.weixin.qq.com/s/SWVnXUpnf1eig_jBOpNsvw)
+* [AI实践｜基于 Spring AI 从0到1构建 AI Agent](https://mp.weixin.qq.com/s/SWVnXUpnf1eig_jBOpNsvw)：以 Spring AI 从零搭 Agent Demo——AgentCore 编排走「意图识别 → RAG 注入 → 记忆 → ChatClient + ToolCallbacks」ReAct 循环（复用内置 ToolCallAdvisor 的 Agent Loop），ChatMemory 三层压缩（摘要 + Assistant 裁剪 + 滑动窗口，16 条阈值触发并保护 TOOL 边界），覆盖 Function Calling、RAG（多路召回 + RRF + Rerank）、Command/Skill、SubAgent、双向 MCP。
 
 ## 4.21
 
-* [Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q)
+* [Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q)：腾讯 CDN LEGO（百万行 C++、13824×N 维组合）先用 20 天 AI 零人工代码做 Rust nonstop 框架验证能力边界，再从 57 案例提炼 13 类问题 / 5 大根因（最高风险「不会说我不知道」），落地五层 Harness 三大抓手——上下文（Agent.md 项目宪法 + 反例免疫 + 38068 行本地 RFC + 竞品/安全调研 Agent 团队）、约束（权限基座 + 代码规则即编译器 + TaskList blockedBy 阻塞测试 CR）、反馈（9 阶段流水线 + Hook/Pitfall/MD 三通道 + 多模型对抗式 CR）。
 
-* [从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering](https://mp.weixin.qq.com/s/xLdQ9Z3n3SNwaQtmrM28FA)
+* [从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering](https://mp.weixin.qq.com/s/xLdQ9Z3n3SNwaQtmrM28FA)：用 Aegis 案例阐明 Harness 管「非确定性」而非「确定性」，以「执行流路由 × 状态存放位置」两轴划分四象限戳破软约束 Prompt、军火库 Tools、暴力 Retry、官僚文档流等伪/劣 Harness；借 sdd-riper-one-light 契约式设计（前置 Checkpoint + Restate、后置闭环回写、Spec is Truth 不变式）落地 8 阶段 SOP 与三层目标，论证程序员从「亲手写」迁到「定义目标、卡边界、控节奏、做验收」。
 
 ## 4.20
 
-* [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](https://mp.weixin.qq.com/s/YgGW92VBP8s846yzIxjVWQ)
+* [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](https://mp.weixin.qq.com/s/YgGW92VBP8s846yzIxjVWQ)：以 Prompt → Context → Harness 三阶段递进（70 → 85 → 95 分）拆解 Claude Code，重点是 System Prompt 的动态组装——`QueryEngine.ask` 调 `fetchSystemPromptParts` 并行拉 default prompt / systemContext（Git 状态）/ userContext（CLAUDE.md + 日期），用 `__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__` 切分静态/动态块最大化 KV Cache 命中，按 override > coordinator > agent > custom > default 优先级定最终 prompt。
 
 ## 4.18
 
-* [AI Skill 体系全解：企业级 AI 能力标准化、可插拔、可审计](https://mp.weixin.qq.com/s/MUsZPU8xnu9ufk7z2zxo-w)
+* [AI Skill 体系全解：企业级 AI 能力标准化、可插拔、可审计](https://mp.weixin.qq.com/s/MUsZPU8xnu9ufk7z2zxo-w)：把 Skill 定义为「标准化 / 可执行 / 可复用 / 可审计 / 可插拔的领域能力单元」，给出 LLM = 大脑 / Skill = 方法论 / Tool = 手脚 / Agent = 指挥官 四角模型；落地双层存储（classpath 内置只读 + data/skills 外部热更）+ 三阶段加载（发现 100 / 激活 5000 / 执行按需 tokens），用 SKILL.md frontmatter `allowed-tools` 卡工具白名单 + critic-agent 做合规质检。
 
 ## 4.17
 
-* [一文讲透：Harness Engineering即控制论！](https://mp.weixin.qq.com/s/_Yn-PRW2kmoOusUbTbi3vQ)
+* [一文讲透：Harness Engineering即控制论！](https://mp.weixin.qq.com/s/_Yn-PRW2kmoOusUbTbi3vQ)：把 OpenAI Harness Engineering（3 人 5 月 1500 PR / 100 万行 AI 代码）映射到维纳控制论闭环——AI 是控制器、代码仓库是被控系统、CI/lint/UAT 是传感器、MCP/Skill 是效应器；主张用框架规范缩小代码可能性空间 M、任务拆分实现共轭控制能力累积，AGENTS.md 控制在 100 行做索引并把人类经验沉回仓库。
 
-* [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://mp.weixin.qq.com/s/pr8oQ9wEC7Oa1NvvW89j6w)
+* [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://mp.weixin.qq.com/s/pr8oQ9wEC7Oa1NvvW89j6w)：用 Claude Code + 自定义 Skill / Command / MCP 把后台开发 11 阶段串成单终端会话——pm-dev 解需求建分支 → brainstorming → writing-plans → subagent-driven 并行执行 + 自动 commit → code-review → dtools 部署 → galileo-log-query 排日志 → /create-mr → /review-mr → /fix-mr → 合入；Skill 编排串联现成能力而非重造轮子，开发者从执行者变审核者。
 
 ## 4.15
 
-* [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://mp.weixin.qq.com/s/VHVZV0rrCxYkbrxjuQzIAQ)
+* [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://mp.weixin.qq.com/s/VHVZV0rrCxYkbrxjuQzIAQ)：Claude Code 四层架构——启动链路三段（入口分流 / 进程初始化 / 会话准备）区隔进程态与 AppState；REPL 作 runtime orchestrator 汇总能力面与事件流；QueryEngine 显式状态机（messages / toolUseContext / autoCompactTracking / maxOutputTokensRecoveryCount / pendingToolUseSummary）把上下文治理、失败恢复、工具回灌升格为 runtime 机制；Tool Runtime 用 schema + isConcurrencySafe + pre-tool hooks 把工具调用变受控 syscall，权限拒绝也归一化成 tool\_result。
 
-* [一文搞懂Hermes：新顶流Agent如何从经验中自我进化](https://mp.weixin.qq.com/s/yHva-zLaRTxe8b4HSUr86Q)
+* [一文搞懂Hermes：新顶流Agent如何从经验中自我进化](https://mp.weixin.qq.com/s/yHva-zLaRTxe8b4HSUr86Q)：Nous Research 开源 Hermes Agent（71.8K Stars）通过 Skills 闭环实现「经验提取→存储→检索→注入→验证→自动改进」——System Prompt 用 `5+ tool calls / fixing a tricky error` 触发 skill\_manage，创建走 7 道安全关（名称 / 分类 / frontmatter / ≤100K / 冲突 / tempfile+os.replace 原子写 / 90+ 模式安全扫描）；索引用进程内 LRU + 磁盘 manifest 两层缓存，三级 Progressive Disclosure（索引 20 tokens → skill\_view 全文 → 支撑文件）控 token 开销。
 
-* [OpenClaw Agent与Skill架构详解](https://mp.weixin.qq.com/s/7RWpW-wZuDmKuexf8smGGQ)
+* [OpenClaw Agent与Skill架构详解](https://mp.weixin.qq.com/s/7RWpW-wZuDmKuexf8smGGQ)：OpenClaw 基于 pi-mono 的双层架构——Agent 走 ReAct + 模型回退 + Auth Profile 熔断五层容错，Skill 以 SKILL.md 渐进披露（仅菜单注入 System Prompt、约束 `never read more than one skill up front`），Subagent 通过 sessions\_spawn 实现深度受限的并行隔离与 steer/kill 控制，Skill 与子 Agent 互补而非替代。
 
 ## 4.13
 
-* [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://mp.weixin.qq.com/s/JycTfNd7EnmWCnJK-QCf0Q)
+* [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://mp.weixin.qq.com/s/JycTfNd7EnmWCnJK-QCf0Q)：将 OpenClaw 归纳为 Prompt → Context → Harness 三段递进，重点剖 buildAgentSystemPrompt 的 23 模块动态组装（full/minimal/none 三种 PromptMode 分场景裁剪上下文），以及 AGENTS.md / SOUL.md / USER.md / TOOLS.md / MEMORY.md 这套 Markdown 文件驱动的 System Prompt 注入与长期记忆方案。
 
-* [详尽地带你从零开始设计实现一个AI Agent框架](https://mp.weixin.qq.com/s/YAGaXOWh2GBPSNsQt5SlJg)
+* [详尽地带你从零开始设计实现一个AI Agent框架](https://mp.weixin.qq.com/s/YAGaXOWh2GBPSNsQt5SlJg)：从 ReAct / Plan-and-Execute / Reflection 理论出发论证「Agent 框架核心就是在 while 循环里管上下文」，把工程实现拆三件——LLM Call（LiteLLM 标准化）、Tools Call（OpenAI Function Calling schema）、Context Engineering，并用 DeepSeek + 4 Tools（shell\_exec / file\_read / file\_write / python\_exec）+ MAX\_TURNS=20 messages 列表给最小可运行骨架。
 
 ## 4.10
 
-* [AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级](https://mp.weixin.qq.com/s/b7iygA6YIqFJ-b9Yr3EzHA)
+* [AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级](https://mp.weixin.qq.com/s/b7iygA6YIqFJ-b9Yr3EzHA)：淘天跨端团队从 Naive RAG 升级三件套——qwen-turbo 做 CoT 意图识别拆多维并行查询；弃 GraphRAG 的 Leiden 社区发现（成本高 / 不可增量 / 分钟级延迟）改用 LightRAG 的 R/P/D 三函数 + 双层检索（low-level 实体 + high-level 主题）拿秒级响应与增量更新；评测发现 LLM 评测 Agent 存「乐观偏差」必须人工校验兜底。
 
-* [97.9%采纳率，胶水编程：业务需求出码最佳实践【天猫AI Coding实践系列】](https://mp.weixin.qq.com/s/G3aKbzdGUyD2h1aVjvbr2g)
+* [97.9%采纳率，胶水编程：业务需求出码最佳实践【天猫AI Coding实践系列】](https://mp.weixin.qq.com/s/G3aKbzdGUyD2h1aVjvbr2g)：天猫「Vibe → SPEC → Glue」三级递进主张「别让 AI 写代码，让它抄代码」——四层物料补 SPEC 实现盲区（任务规格 SPEC / 开发规范 AGENTS.md 静态注入 / 代码模式样板间 / 领域知识 MCP knowledge Server 按需检索），Agent Hooks 按业务域 × 工作台自动路由 + 6 种 SPEC 模板，试点采纳率从 50% 拉到 97.9%。
 
 ## 4.8
 
-* [Claude Code：顶级开发团队设计的Harness工程项目源码什么样](https://mp.weixin.qq.com/s/MKWckXraK1irNvMgCIJXZw)
+* [Claude Code：顶级开发团队设计的Harness工程项目源码什么样](https://mp.weixin.qq.com/s/MKWckXraK1irNvMgCIJXZw)：以泄露的 Claude Code 源码（1900 文件 / 51.2 万行 TS / 875KB 的 REPL.tsx）拆工业级 Agent Harness 八层架构——Bun + React/Ink 自研 TUI、Fast Path 入口分发与并行预取实现亚秒级启动、AsyncGenerator 驱动 query.ts 主循环、43 工具 fail-closed 安全模型、Agent Swarms 多智能体编排、feature() 编译时门控做 Dead Code Elimination，归出「启动性能 / 类型贯穿 / 控制权自研 / Prompt Cache 字节级稳定」方法论。
 
 ## 4.7
 
-* [「纯干货」几万字都讲不明白的Memory架构与思考](https://mp.weixin.qq.com/s/bl77_Mb85C4AKe8h4__V6Q)
+* [「纯干货」几万字都讲不明白的Memory架构与思考](https://mp.weixin.qq.com/s/bl77_Mb85C4AKe8h4__V6Q)：把 Agent Memory 抽象为 Raw Ledger + Views + Policy 三件套闭环——三个核心命题：Memory 是 external state 而非存储、最小闭包须可审计/可回滚/可观测、基本单位是 event 序列但靠 views 与 policy 才成能力；用 System 1（通用 LLM）+ System 2（Agentic Memory 慢回路）正交分工，借 JitRL 的 logits 加性调制 Δ 与 UMEM 的语义邻域 GRPO 证明非参数化 Memory 可逼近参数化 fine-tune 上限。
 
 ## 4.6
 
-* [从多智能体编排到AI自主决策：资损防控体系的架构演进](https://mp.weixin.qq.com/s/kwM5w3LNurraRHr0dxS__A)
+* [从多智能体编排到AI自主决策：资损防控体系的架构演进](https://mp.weixin.qq.com/s/kwM5w3LNurraRHr0dxS__A)：阿里资损防控从 V1 的 5 Agent 编排（准确率 42.9% / 召回 63%）演进到 V2 单 Agent 自主决策（86% / 90%）——借鉴 OpenSpec 规范驱动开发，AI 全程持完整文档上下文 + 主动探索式工具链 + 六步结构化 SOP（数据先行 / 知识导航 / 深度比对 / 事实驱动 / 交互确认 / 知识自沉淀）+ Index 模式自迭代知识库 + 表结构硬校验 + Git 版本管理布防资产，验证「更强模型 = 更薄编排层」。
 
 ## 4.5
 
-* [Claude Code 源码架构解析：从启动、Prompt 到权限管道](https://mp.weixin.qq.com/s/ibU8rAPPkcWrBKw3wArUFw)
+* [Claude Code 源码架构解析：从启动、Prompt 到权限管道](https://mp.weixin.qq.com/s/ibU8rAPPkcWrBKw3wArUFw)：沿主链路串读 Claude Code 源码——main.tsx 并行预取按 Runtime 设计、prompts.ts 用 SYSTEM\_PROMPT\_DYNAMIC\_BOUNDARY 把 Prompt 做成可缓存装配层、QueryEngine + processUserInput + query.ts 构成「胖核心」主循环、Tool.ts 用 isReadOnly/isConcurrencySafe 保守默认值强制声明边界、FileEditTool「先读再改」硬校验、permissions.ts 治权限为 deny→ask→checkPermissions→mode→always allow 决策管道，外加 microcompact / autocompact / full compact 三级压缩。
 
-* [Claude Code 长任务为什么不容易跑偏：从压缩、记忆到续写的 Runtime 设计](https://mp.weixin.qq.com/s/SBkOZ2VyHG2Q2BCIJawNIg)
+* [Claude Code 长任务为什么不容易跑偏：从压缩、记忆到续写的 Runtime 设计](https://mp.weixin.qq.com/s/SBkOZ2VyHG2Q2BCIJawNIg)：Claude Code 把长任务治理拆三类 Runtime——上下文窗口（toolResultStorage 大结果落盘 + microcompact 清低价值结果 + autocompact 阈值触发 + reactiveCompact 兜底，compact 阶段严禁工具）、会话级状态续写（SessionMemory 在 10k token 后初始化、每 5k 或 3 次工具调用更新 Current State / Errors & Corrections / Worklog 等结构化字段）、跨会话长期记忆（memdir + MEMORY.md 200 行/25KB 索引 + 4 类 memoryType + sideQuery 选 top5 替代向量检索 + turn-end extractMemories + 24h/5session autoDream 后台巩固）。
 
 ## 4.2
 
-* [2026 年 AI 编码的"渐进式 Spec"实战指南](https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w)
+* [2026 年 AI 编码的"渐进式 Spec"实战指南](https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w)：用 No Spec No Code / Spec is Truth / Reverse Sync 三铁律落地 Spec Coding——核心是「渐进式复杂度」按需求体量加载不同深度流程避小需求担大流程开销；目录 `rules/ + knowledge/ + changes/` 组织，工作流走 `/propose → /apply → /review → /archive`，两层 AI 架构（编排层强模型生成 Spec + 执行层 Claude Code/opencode），起点是 Code is Cheap, Context is Expensive。
 
-* [Claude Code源码泄露深度解析：51.2万行代码里，藏着怎样的AI编程系统](https://mp.weixin.qq.com/s/JDjXDArHdu1GVsg2y9J0cQ)
+* [Claude Code源码泄露深度解析：51.2万行代码里，藏着怎样的AI编程系统](https://mp.weixin.qq.com/s/JDjXDArHdu1GVsg2y9J0cQ)：从 Bun source map 意外泄露的 51.2 万行 TS 切入拆 Claude Code 五层结构（入口 / 编排 / Prompt-Memory / 工具 / 服务）——`SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 切静态可缓存 + 动态注入、CLAUDE.md 四层级联记忆（managed / user / project / local）、40+ 工具构成可编排 OS、Verification Agent 用「to try to break it」反向约束偷懒，并暴露 KAIROS / COORDINATOR\_MODE / ULTRAPLAN 等 feature flag 表明已在做后台 daemon 与多 Agent 协调。
 
-* [Nanobot（OpenClaw 轻量实现）的底层原理解析](https://mp.weixin.qq.com/s/O8dOafau9EGxMmLllLRq-A)
+* [Nanobot（OpenClaw 轻量实现）的底层原理解析](https://mp.weixin.qq.com/s/O8dOafau9EGxMmLllLRq-A)：vivo 用精简版 Nanobot 反推 OpenClaw 本质——本地循环「构建 prompt → 调模型 → 执行工具 → 回填」并非新技术、火的原因是放权本地 + 个人专属感；按消息生命周期拆六阶段（channel 接入 / 访问路由 / ContextBuilder：identity + bootstrap files + MEMORY.md + Skills 摘要 / AgentLoop / Tools / 回执），并明确 Skill = Workflow/Prompt+Logic、Tool = 原子能力，二者层级不同。
 
 ## 4.1
 
-* [逆向深扒Claude Code源码，我发现了什么！？](https://mp.weixin.qq.com/s/hskSjAkezaV2epVzUq6ziw)
+* [逆向深扒Claude Code源码，我发现了什么！？](https://mp.weixin.qq.com/s/hskSjAkezaV2epVzUq6ziw)：把 Claude Code v2.1.88 总结为「12 层渐进式 Harness」叠加在极简 while-true 上：Agent Loop → Tool Dispatch → Planning（TodoWrite 让完成率翻倍）→ Sub-Agents（forkSubagent 隔离）→ Skills 按需注入 → 三层压缩（autoCompact/snipCompact/contextCollapse）→ Persistent Tasks → Background/Dream Tasks → Agent Teams → SendMessage 协议 → Coordinator 自治认领 → Worktree 隔离；buildTool 工厂 fail-closed 默认（默认串行、默认需权限），Blake2b 前缀缓存复用静态 system prompt。
 
-* [一文讲透如何构建Harness——六大组件全解析](https://mp.weixin.qq.com/s/HwqEaXSGkcYgUNrzB2okuA)
+* [一文讲透如何构建Harness——六大组件全解析](https://mp.weixin.qq.com/s/HwqEaXSGkcYgUNrzB2okuA)：用 Agent = Model + Harness 公式先列裸模型四硬伤（无跨会话记忆 / 不能执行代码 / 知识过时 / 无工作环境）再对应六组件——文件系统（含 Git 试错回滚）、Bash + 沙箱（Docker/gVisor/Firecracker/WASM/Nix 选型，自验循环让完成率高 40-60%）、AGENTS.md（纯上下文注入做长期记忆 + 层次化 + Git 版本化）、Web Search + MCP（破知识截止）、上下文工程（抗信息腐烂）、编排 + Hooks（多 Agent 质控），System Prompt 贯穿全程做神经中枢。
 
-* [Agent Skills：打通可复用专业领域知识的最后一公里](https://mp.weixin.qq.com/s/PonVlfEFbGLkaDt_1oWfdA)
+* [Agent Skills：打通可复用专业领域知识的最后一公里](https://mp.weixin.qq.com/s/PonVlfEFbGLkaDt_1oWfdA)：以 2025.10 Anthropic 发布、2025.12 联合开源 V1.0 规范的时间线切入，把 Skill 定义为 `SKILL.md + scripts/ + references/ + assets/` 文件夹包，靠 YAML 元数据（name / description / allowed-tools）+ Progressive Disclosure（≤500 行余下按需加载）做轻量复用；核心论断「不缺 Agent 缺可复用专业技能」，区分 Prompt（一次性指令）/ MCP（工具协议、Skills 消费对象）/ Skills（应用级能力包，类比 Docker 镜像）。
 
 ---
 
