@@ -46231,149 +46231,149 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.1.md'
 
 ## 1.30
 
-* [AI Agent 记忆系统：从短期到长期的技术架构与实践](https://mp.weixin.qq.com/s/mftM6jr0YiFxRATeNvm5Qg)
+* [AI Agent 记忆系统：从短期到长期的技术架构与实践](https://mp.weixin.qq.com/s/mftM6jr0YiFxRATeNvm5Qg)：把 Agent 记忆划为短期（会话内）与长期（跨会话），短期靠上下文工程的缩减 / 卸载 / 隔离三策略（ADK 的 events\_compaction\_config、LangChain 的 SummarizationMiddleware、AgentScope 的 AutoContextMemory 六级压缩），长期走 LLM 事实抽取 + Embedder + VectorStore + GraphStore + Reranker + SQLite 审计的 Record/Retrieve 闭环，以 Mem0、Zep、ReMe 等独立组件 API 接入 Agent 框架。
 
-* [1篇搞懂AI通识:大白话拆解核心点](https://mp.weixin.qq.com/s/6BOIzbGWi4-q0UsxCXIhuQ)
+* [1篇搞懂AI通识:大白话拆解核心点](https://mp.weixin.qq.com/s/6BOIzbGWi4-q0UsxCXIhuQ)：按「基础 → 核心 → 优化 → 落地 → 工具 → 术语」六层串讲——机器学习/深度学习/强化学习三圈关系、Transformer 并行计算 + 自注意力 + 位置编码、MOE 门控只激活相关专家（DeepSeek-V3 6710 亿参数仅激活 370 亿）、量化/蒸馏/剪枝/LoRA 瘦身、RAG/KAG/RLHF/对齐补能力，落到 Prompt、CoT、ToT 与 Token、Context Window、Agent、MCP、A2A 等高频术语。
 
-* [货拉拉待办中心架构设计：打造高效可靠的任务中枢](https://mp.weixin.qq.com/s/5NSCAyhIeIf6XDrpamrcDg)
+* [货拉拉待办中心架构设计：打造高效可靠的任务中枢](https://mp.weixin.qq.com/s/5NSCAyhIeIf6XDrpamrcDg)：把原本依赖 12+ 服务实时调用、P99 2 秒的待办查询，改造为本地 DB + 缓存的标准化待办中心，按常规 / 限时 / 阻塞三级策略统一生命周期；用标准化、异步化、协同三种管理模式，叠加场景控流 → 节点过滤 → 静默期控制三层限流（峰值 ↓80%、无效调用 ↓50%、调用频次 ↓60%），工厂 + 模板模式扩展场景，落地 50+ 场景日均 2 亿查询、P99 控制在 100ms 内。
 
 ## 1.29
 
-* [自建一个 Agent 很难吗？一语道破，万语难明](https://mp.weixin.qq.com/s/Wag50UOUoO2mOBSY7oxVSw)
+* [自建一个 Agent 很难吗？一语道破，万语难明](https://mp.weixin.qq.com/s/Wag50UOUoO2mOBSY7oxVSw)：用 Next.js + LangGraph + Claude-4.5-haiku 给奥德赛 TQL 平台搭 BFF Agent「小 D」，宿主页面 iframe 嵌入并双向暴露脚本/调试/执行工具；上下文工程围绕角色设定 + XML 提示词 + 少量正例（Anthropic 官方技巧）、Rag 知识库分三类（top 100 热门脚本、清洗后高频 TQL 指令与字段、deepwiki 服务端源码）、本地工具（editScript/editVariables/executeScript）+ 白名单 MCP（kbase、deepwiki）节约注意力。
 
-* [Claude 总是泛泛而谈？试试用 Skills 沉淀团队最佳实践](https://mp.weixin.qq.com/s/vw8pxPv5lWd4aC6dxIFMUQ)
+* [Claude 总是泛泛而谈？试试用 Skills 沉淀团队最佳实践](https://mp.weixin.qq.com/s/vw8pxPv5lWd4aC6dxIFMUQ)：Claude Skills 用 Progressive Disclosure 三层加载——Level 1 元数据约 100 tokens、Level 2 SKILL.md 触发时加载 1500-3000 tokens、Level 3 reference/scripts 引用时才消耗——50 个 Skill 启动仅占 5000 tokens；Skills 给 Claude「说明书 / 知识」，MCP 给「钥匙 / 工具」，二者协同；放在 ~/.claude/skills/ 或项目 .claude/skills/，靠 description 关键词自动激活，把团队规范、踩坑、专业领域沉淀为可复用 Markdown。
 
-* [Context Is All You Need：快手后端AI Coding的实践与思考](https://mp.weixin.qq.com/s/9hPYCv7UUHDzWfwWZoXeQg)
+* [Context Is All You Need：快手后端AI Coding的实践与思考](https://mp.weixin.qq.com/s/9hPYCv7UUHDzWfwWZoXeQg)：快手主站 Java 后端 AI 采纳率提至 60%-90% 的「码图」框架，分两阶段——Context 阶段把字节码解析成代码元素依赖图谱存 Neo4j、用 Cypher 让 AI 查上下游与影响范围；Control 阶段放弃单 Agent 转 Multi-Agent，主控 Agent 拆解、SubAgent 专注图/代码/语义检索，最终代码由 Kwaipilot 生成；引入 PRD → 概要设计（人）、概要设计 → 编码计划（SubAgent）两个中间层，工程师从写代码转为「设计执行」。
 
 ## 1.28
 
-* [Agentic Coding场景下基于职责分离的上下文管理思路分享](https://mp.weixin.qq.com/s/sLTlZZnAratkUTAJiG2uMg)
+* [Agentic Coding场景下基于职责分离的上下文管理思路分享](https://mp.weixin.qq.com/s/sLTlZZnAratkUTAJiG2uMg)：从长上下文退化与 read/write 重复返回值膨胀切入，提出将 Agentic Coding 工具拆为「行为」与「影响」两类职责，用结构化 `<ide>` 块动态承载文件最新内容，配合「延迟卸载」（保留最近 50-250 次操作）、事实与行为记忆区分等策略，替代 read\_full\_file 直塞上下文，缓解注意力稀释与幻觉。
 
 ## 1.27
 
-* [万字详解大模型推理加速核心原理：分形规律与资源计算公式](https://mp.weixin.qq.com/s/ytNCNlWJzXCRx7DvTxfp4A)
+* [万字详解大模型推理加速核心原理：分形规律与资源计算公式](https://mp.weixin.qq.com/s/ytNCNlWJzXCRx7DvTxfp4A)：借分形几何自相似性，提出大模型推理在宏观集群、中观框架、微观算子各层级统一遵循「看清楚 → 避免浪费 → 提升利用率 → 节约资源」逻辑，聚焦算力 / 显存 / 显存带宽 / 通信带宽四大资源，以 DeepSeek R1/V3（671B MoE、激活 37B、MLA dc=512）为例给出 Prefill/Decode 测算公式与 TP/EP/DP/PP 选型方法。
 
-* [腾讯混元AI Infra核心技术重磅开源：推理吞吐提升30%！](https://mp.weixin.qq.com/s/xfgYZTScSCYlwpnNR_MUSw)
+* [腾讯混元AI Infra核心技术重磅开源：推理吞吐提升30%！](https://mp.weixin.qq.com/s/xfgYZTScSCYlwpnNR_MUSw)：腾讯混元开源面向 H20 等推理卡的 LLM 算子库 HPC-Ops，用 CUDA + CuTe 重写 FusedMoE、Attention、GroupGEMM 等核心 kernel，通过 SwapAB 对齐 wgmma、Interleave 重排、persistent kernel 隐藏 prologue/epilogue，实现混元 QPM 提升 30%、DeepSeek 17%，Attention 较 FlashAttention 最高 2.22 倍。
 
 ## 1.26
 
-* [如何设计一个AI Agent系统](https://mp.weixin.qq.com/s/8ArJk0vpGP0o97kEtqscqA)
+* [如何设计一个AI Agent系统](https://mp.weixin.qq.com/s/8ArJk0vpGP0o97kEtqscqA)：从工程视角拆解 AI Agent = LLM + Planning + Memory + Tool Use 全栈框架，对比 Software 1.0/2.0/3.0 范式与传统研发差异，覆盖 Prompt Engineering（角色设定、Few-Shot、输出 Schema 约束、工具模板）、规划 / 记忆 / 工具 / Action 闭环及 Claude Skills 等新趋势，并以电商资损防控落地为案例呈现实践体会。
 
-* [AI编程实践：从Claude Code实践到团队协作的优化思考｜得物技术](https://mp.weixin.qq.com/s/GjPUDjjx2XmZX-G5qDC6eA)
+* [AI编程实践：从Claude Code实践到团队协作的优化思考｜得物技术](https://mp.weixin.qq.com/s/GjPUDjjx2XmZX-G5qDC6eA)：得物团队总结 Claude Code 实践方法论，强调单对话单模块的精准对话流、用 Plan 模式按 WBS 拆 M1-M12 模块并排 P0-P3 优先级、CLAUDE.md 压到 200 字内只做「护栏」、用 SKILL 沉淀 ES/Redis 等可复用 Prompt、用 MCP 接飞书审批/日历/多维表，构建子代理协作的人机开发范式。
 
 ## 1.25
 
-* [LangChain Blog: Tool Calling with LangChain](https://www.blog.langchain.com/tool-calling-with-langchain/)
+* [LangChain Blog: Tool Calling with LangChain](https://www.blog.langchain.com/tool-calling-with-langchain/)：LangChain 推出跨供应商统一的 Tool Calling 标准接口，核心 API 为 `ChatModel.bind_tools()` 绑定工具、`AIMessage.tool_calls` 读取标准化调用结果、`create_tool_calling_agent()` 构建通用 Agent，覆盖 OpenAI、Anthropic、Gemini、Mistral、Fireworks、Groq、Cohere 等，多工具场景用 bind\_tools，强制结构化抽取改用 `with_structured_output`。
 
 ## 1.24
 
-* [AI编码实践：从Vibe Coding到SDD](https://mp.weixin.qq.com/s/W6-e-uSPcGCqQAXxx_PDgA)
+* [AI编码实践：从Vibe Coding到SDD](https://mp.weixin.qq.com/s/W6-e-uSPcGCqQAXxx_PDgA)：淘特导购团队复盘从代码智能补全到 Agent Coding、Rules 约束、再到 SDD（Specification Driven Development）的演进路径，指出 Agentic Coding 暴露代码延续性差、风格不一、协同弱三大问题，SDD 以 spec.md 为唯一真理源但工具链不成熟、落地门槛高，团队最终采用「轻量技术方案模板 + Rules 严格约束 + Agent Coding 实现 + AI 汇总架构文档」的融合策略。
 
-* [读懂 AI Infra，看这六个关键词就够了](https://mp.weixin.qq.com/s/bBrXZrwaeHIVg5_lR02Ddg)
+* [读懂 AI Infra，看这六个关键词就够了](https://mp.weixin.qq.com/s/bBrXZrwaeHIVg5_lR02Ddg)：腾讯团队梳理 2025 年 AI Infra 六大方向——分布式推理（DistServe 提出 PD 分离、DOPD 动态调节、Step-3 的 AFD 把 Attention 与 FFN 分离部署、DeepEP/TRMT 优化跨机 EP）、TileLang 面向 Tile 的开发语言解耦数据流与调度、SeamlessFlow 的 RL 训推分离轨迹管理器与标签调度、模型-系统协同设计的算术强度匹配 roofline、Agent Infra 与国产化硬件适配。
 
 ## 1.22
 
-* [Agent Skills在货拉拉AI应用尝试](https://mp.weixin.qq.com/s/HrXOmJs3W6Nkg7pVoyfcJg)
+* [Agent Skills在货拉拉AI应用尝试](https://mp.weixin.qq.com/s/HrXOmJs3W6Nkg7pVoyfcJg)：货拉拉大数据团队基于 Anthropic 2025.12 开放的 Agent Skills 标准落地两个场景——自然语言查数（财务 / AB 实验报告打包成 SKILL.md + hive.py/doris.py 脚本）与指标归因分析（query\_demo.py 周环比 + holiday.py + OLAP 下钻），借助渐进式披露（Progressive Disclosure）三层加载机制将业务经验沉淀为可组合、可复用的能力单元，强调 description 质量决定调用准确度。
 
-* [一文读懂 Skills｜从概念到实操的完整指南](https://mp.weixin.qq.com/s/Bl4ODUxvwO8pYu9nXVmjuQ)
+* [一文读懂 Skills｜从概念到实操的完整指南](https://mp.weixin.qq.com/s/Bl4ODUxvwO8pYu9nXVmjuQ)：TRAE 开发者咸鱼系统讲解 Skills 的三层渐进式加载（元数据始终加载、SKILL.md 触发加载、scripts/references 按需加载）、与 Command/MCP 的边界、撰写五原则（原子性、Few-Shot、结构化指令、接口设计、迭代复盘），并在 TRAE 中以飞书文档 Spec Coding 为例演示多角色 Skill + 工具 Skill 组合实现需求分析、技术设计、任务拆解到编码的闭环。
 
-* [腾讯技术面：数据库核心八股终极典藏版](https://mp.weixin.qq.com/s/VCGrNOAc8v9i2n4ka6CRow)
+* [腾讯技术面：数据库核心八股终极典藏版](https://mp.weixin.qq.com/s/VCGrNOAc8v9i2n4ka6CRow)：腾讯云 TDSQL-C 团队从业务后台视角拆解云原生数据库实战要点——计算存储分离架构实现秒级扩容、Proxy 自适应负载均衡 + 最终 / 会话 / 全局三档一致性、连接池复用、事务写前 / 写后拆分降低主节点压力、四档容灾部署（同 AZ / 跨 AZ / 跨地域 / 跨云）与跨地域备份、连接保持防闪断、Serverless 应对波峰波谷流量。
 
 ## 1.21
 
-* [多 AI 协同 + SDD 编程实践：一个 AI 全流程交付实录](https://mp.weixin.qq.com/s/BwSxQX8XWyTKRe_y7OSd6w)
+* [多 AI 协同 + SDD 编程实践：一个 AI 全流程交付实录](https://mp.weixin.qq.com/s/BwSxQX8XWyTKRe_y7OSd6w)：作者以跨境保险产品为例，基于 OpenSpec 的 Specify→Plan→Tasks→Implement 四阶段 SDD 流程，通过 MCP 协议将 Codex（资深工程师，编码/调试/重构）、Gemini（长上下文分析师，海量文档/日志）注入 Claude Code（协调者），用 CLAUDE.md 强制规则「工具调用即默认」实现三 AI 无缝分工，规范作为共享语境避免单模型能力边界与人工复制粘贴损耗。
 
 ## 1.20
 
-* [Understanding LangChain Agents: create\_react\_agent vs create\_tool\_calling\_agent](https://medium.com/@anil.goyal0057/understanding-langchain-agents-create-react-agent-vs-create-tool-calling-agent-e977a9dfe31e)
+* [Understanding LangChain Agents: create\_react\_agent vs create\_tool\_calling\_agent](https://medium.com/@anil.goyal0057/understanding-langchain-agents-create-react-agent-vs-create-tool-calling-agent-e977a9dfe31e)：拆解 LangChain 两类 Agent 的根本差异在于 prompt 方式与期望返回格式——create\_react\_agent 走 Thought/Action/Observation 文本循环逐步推理，适合开源模型与可观测调试；create\_tool\_calling\_agent 直接传 function schema 让 LLM 输出结构化调用，更快更稳，依赖模型原生 tool calling 能力（GPT-4、Claude 等），生产场景首选后者。
 
 ## 1.19
 
-* [有手就行，教你从0到1快速手搓搭建个GUI Agent](https://mp.weixin.qq.com/s/yH5PUEWK2PKrTESZiJH8yA)
+* [有手就行，教你从0到1快速手搓搭建个GUI Agent](https://mp.weixin.qq.com/s/yH5PUEWK2PKrTESZiJH8yA)：基于 Gemini 3 Flash 的原生 GUI 理解与坐标定位能力，用 Environment/Preceptor/Decision/Operator 四件套半小时手搓 PC GUI Agent；要点在于多模态对话保留 conversation\_history 防止「输入循环」，用 LangGraph 编排「感知 → 决策 → 执行」闭环，操作层用 pyautogui + pyperclip 复制粘贴解决中文输入问题。
 
-* [1篇搞懂AI通识:大白话拆解核心点](https://mp.weixin.qq.com/s/smfnApnpRPsXUYVmID3SEw)
+* [1篇搞懂AI通识:大白话拆解核心点](https://mp.weixin.qq.com/s/smfnApnpRPsXUYVmID3SEw)：按基础 → 核心 → 优化 → 落地六层框架白话扫盲 AI 通识，覆盖机器学习 / 深度学习 / 强化学习关系、Transformer 自注意力与位置编码、MoE 混合专家（DeepSeek-V3 6710 亿总参仅激活 370 亿）、量化 / 蒸馏 / 剪枝瘦身、LoRA/QLoRA 轻量微调、RLHF 与 RAG/KAG，适合搭建端到端认知地图。
 
-* [小红书MySQL内核秒杀能力重磅再升级](https://mp.weixin.qq.com/s/Q-tap7xI3Y5diTMEt5hMyw)
+* [小红书MySQL内核秒杀能力重磅再升级](https://mp.weixin.qq.com/s/Q-tap7xI3Y5diTMEt5hMyw)：小红书自研 MySQL 合并秒杀方案在 24 年排队秒杀基础上再提 5 倍，128 线程 TPS 从 4276 提升至 23543；核心是 Leader 预读库存写入表级全局缓存，Follower 在缓存中合并扣减后由 Leader 一次性 2PC 提交，并对行锁做 phase1/phase2 流水线、Binlog 组并行提交与 Crash Recovery 组粒度回滚，业务 SQL 零改造。
 
 ## 1.18
 
-* [极速开发出一个高质量 Claude Agent Skills 最佳实践](https://mp.weixin.qq.com/s/5hFHlItI3XQUWekejC_kiw)
+* [极速开发出一个高质量 Claude Agent Skills 最佳实践](https://mp.weixin.qq.com/s/5hFHlItI3XQUWekejC_kiw)：Skill 是「怎么做」的经验封装，MCP 是「有什么工具」的协议，二者互补；高质量开发关键在于不手写而用 AI 写 AI——拉 anthropics/skills 仓库 + 官方 skill-creator 加上自备资料让模型生成；遵守 SKILL.md 500 行上限、动名词命名、渐进式披露（概览 + 引用、领域隔离、按需加载）与 Haiku/Sonnet/Opus 多模型回归测试。
 
-* [I Replaced Redis with PostgreSQL (And It's Faster)](https://dev.to/polliog/i-replaced-redis-with-postgresql-and-its-faster-4942)：Redis 是最常用的缓存工具，作者介绍它的痛点在哪里，怎么用 PostgreSQL 数据库替代。
+* [I Replaced Redis with PostgreSQL (And It's Faster)](https://dev.to/polliog/i-replaced-redis-with-postgresql-and-its-faster-4942)：用 PostgreSQL 单库替掉 Redis 三大用途，月省约 100 美元并消除一致性裂缝——缓存改 UNLOGGED 表跳过 WAL（写延迟 0.08ms vs Redis 0.05ms），Pub/Sub 用 LISTEN/NOTIFY 配合触发器把 INSERT 与通知原子化，任务队列用 FOR UPDATE SKIP LOCKED 实现无锁多 worker 抢占、并发崩溃自动重派。
 
 ## 1.15
 
-* [什么是技术架构、数据架构、业务架构、应用架构和代码架构？](https://mp.weixin.qq.com/s/Z6uwDk_p-JCJtZJKojSx-w)
+* [什么是技术架构、数据架构、业务架构、应用架构和代码架构？](https://mp.weixin.qq.com/s/Z6uwDk_p-JCJtZJKojSx-w)：以「控制复杂度」为架构第一目的，串联 4+1 视图（逻辑 / 开发 / 过程 / 物理 / 场景）、C4 模型（Context/Container/Component/Code）与 TOGAF-4A，再落到互联网常用的业务 / 技术 / 部署三分法，逐项拆解业务架构如何平台化与主辅流程分离、应用架构的稳定 / 解耦 / 抽象 / 松耦合 / 容错五原则、技术架构的无状态与可治理、以及数据架构的读写分离、分库分表与异构落地。
 
-* [阿里 Assistant Agent 开源，助力开发者快速构建答疑、诊断智能助手](https://mp.weixin.qq.com/s/gSG-xQ9XiipewiT-CDWkwA)
+* [阿里 Assistant Agent 开源，助力开发者快速构建答疑、诊断智能助手](https://mp.weixin.qq.com/s/gSG-xQ9XiipewiT-CDWkwA)：基于 Spring AI Alibaba 的企业级助手框架，采用 Code-as-Action 范式让 Agent 生成并在 GraalVM 多语言沙箱里执行代码以编排工具，核心包含评估图（LLM + 规则双引擎、dependsOn 拓扑并行）、Prompt Builder 按评估结果动态注入经验 / 工具 / 知识，叠加 SearchProvider SPI 接入知识库、MCP/OpenAPI 工具、经验自动沉淀与熟场景跳过 LLM 推理的快速响应路径。
 
 ## 1.14
 
-* [告别传统 Text-to-SQL：基于 Spring AI Alibaba 的数据分析智能体 DataAgent 深度解析](https://mp.weixin.qq.com/s/xPB9y5Wvl5_ZJck0ZeJulA)
+* [告别传统 Text-to-SQL：基于 Spring AI Alibaba 的数据分析智能体 DataAgent 深度解析](https://mp.weixin.qq.com/s/xPB9y5Wvl5_ZJck0ZeJulA)：用 Spring AI Alibaba Graph + Multi-Agent 把 Text-to-SQL 升级为「虚拟数据分析师」，十大能力包括 interruptBefore 的 Human-In-The-Loop、按 agentId 热更新的 Prompt 配置、查询重写 + 向量 / 关键词混合检索的深度 RAG、Docker 化 Python 执行引擎、SSE 流式 + 多轮上下文、MCP Server 与多模型热切换、跨库 Accessor、HTML/Markdown 报告生成，以及 SemanticConsistencyNode + 自愈循环纠错的语义模型与逻辑外键。
 
-* [提示词技巧分享：一劳永逸版！](https://mp.weixin.qq.com/s/36kjbcnby0YVTSzpcHHGBQ)
+* [提示词技巧分享：一劳永逸版！](https://mp.weixin.qq.com/s/36kjbcnby0YVTSzpcHHGBQ)：把 Gemini 3.0 Pro 调教成「创意总监」式 Prompt 助手，输入口语化描述后强制按四维度扩充（艺术风格与媒介、主体刻画、环境氛围、摄影语言含 85mm f/1.8 等参数），并以「构思推导 + 最终英文 Prompt」固定输出格式，覆盖文生图、文生视频（叙事 / 动态双版本）、文生文分镜剧本与图生文 / 图生视频反推，作者强调要看 AI 推导过程而非直接拿结果以保留思考能力。
 
 ## 1.13
 
-* [LangChain: Plan-and-Execute](https://langchain-ai.github.io/langgraph/tutorials/plan-and-execute/plan-and-execute/)
+* [LangChain: Plan-and-Execute](https://langchain-ai.github.io/langgraph/tutorials/plan-and-execute/plan-and-execute/)：用 LangGraph 复刻 Plan-and-Solve 与 Baby-AGI 思路，状态用 TypedDict 维护 input/plan/past\_steps/response，planner 节点借 gpt-4o + Pydantic structured output 生成有序步骤列表，agent 节点用 create\_react\_agent + Tavily 执行单步，replan 节点输出 Act（Plan 或 Response）并按 should\_end 决定回到 agent 或 END，相比 ReAct 显式长程规划且可让弱模型执行、强模型规划。
 
-* [大模型狂飙2025：一篇文理清从模型到智能体的架构演进](https://mp.weixin.qq.com/s/uEjyTo8thO2ZuWPIhYDZFA)
+* [大模型狂飙2025：一篇文理清从模型到智能体的架构演进](https://mp.weixin.qq.com/s/uEjyTo8thO2ZuWPIhYDZFA)：把 2025 LLM 工程栈拆为智能层（基础模型）、能力层（Tools 执行 + Skills 渐进式披露领域知识）、连接层（MCP 以 JSON-RPC 2.0 作 AI 的 USB-C 解决 N×M 集成）与编排层（LangChain 胶水 + LangGraph 有状态运行时），对比 ReAct / Plan-and-Solve / Reflection 认知架构与监督者式多 Agent 协作，并指出 MLOps 正向追踪幻觉与成本的 AgentOps 演进。
 
-* [AI工程vs传统工程 —「道法术」中的变与不变](https://mp.weixin.qq.com/s/Foiid7aYvTD0-ejBSGhM7A)
+* [AI工程vs传统工程 —「道法术」中的变与不变](https://mp.weixin.qq.com/s/Foiid7aYvTD0-ejBSGhM7A)：以淘宝「AI 万能搜」实践为底，用「道、法、术」框架对比 AI 工程与传统软件工程，「道」从追求绝对正确转向管理概率预期，「法」延续分层解耦、SOLID、熔断降级的同时把核心从领域模型迁向上下文工程、并用预编排 SOP 与多级意图漏斗划定不确定性边界，「术」在工程基本功之上补 Context Manager、Agentic RAG、Memory、人工标注 + 线上 AB 多维评估和 Trace 轨迹可视化，结论是 AI 工程是架构升级而非推倒重来。
 
-* [从零开始的大模型之旅｜解码大模型：开篇&技术篇1.1—基础架构概念](https://mp.weixin.qq.com/s/K6eLK1PNBm35GoNFVgQDvg)
+* [从零开始的大模型之旅｜解码大模型：开篇&技术篇1.1—基础架构概念](https://mp.weixin.qq.com/s/K6eLK1PNBm35GoNFVgQDvg)：系列开篇规划 3 大部分（基础概念 / 生态体系 / 业界动态）共 6 章；技术篇 1.1 聚焦 Transformer 基础架构，逐层拆解 Self-Attention 的 Q/K/V 三元组、8-16 头 Multi-Head Attention 的语法 / 语义 / 位置 / 共指分工、正弦余弦 Positional Encoding 的相对位置与平滑性、Encoder/Decoder 与掩码注意力的协作差异，并对比 Encoder-only（BERT）、Decoder-only（GPT）、Encoder-Decoder（T5）三种变体适用场景。
 
 ## 1.12
 
-* [CodeGenius Memory：构建面向代码生成的可控上下文系统](https://mp.weixin.qq.com/s/Yeh0b82jN4IYuaUMCUl_BQ)
+* [CodeGenius Memory：构建面向代码生成的可控上下文系统](https://mp.weixin.qq.com/s/Yeh0b82jN4IYuaUMCUl_BQ)：CodeGenius 将「保留最近 5 轮」固定窗口升级为分层 Memory 系统，遵循「输入 → 整理 → 压缩 → 生成」流程，三大机制：5 轮 batch 卸载历史 tool 出入参以兼顾 Claude 缓存（命中价 0.1 倍、写入 1.25 倍）、文件 append-only 仅首次带全量+后续 diff 并用 tree-sitter 对 >3000 行大文件生成带行号签名摘要、上下文用量达 70% 或检测新话题（>3K Token/5 分钟外）时套用 Claude Code Compact 九段式 prompt 把上百 K 压成 2-3K 摘要。
 
-* [用第一性原理拆解 Agentic Coding：从理论到实操](https://mp.weixin.qq.com/s/Zlwn42KyfjgwfX6lp-JthQ)
+* [用第一性原理拆解 Agentic Coding：从理论到实操](https://mp.weixin.qq.com/s/Zlwn42KyfjgwfX6lp-JthQ)：TRAE 团队从「LLM 只会自回归预测下一 token」第一性原理出发，串起 Attention O(n²) 复杂度、Prompt Caching 前缀匹配、RL 让模型「会做事」、Agent Loop 的 end\_turn/tool\_use/max\_tokens 三种停止条件，揭示有效上下文仅占标称 10-15%、中段「Dumb Zone」性能退化、会话间失忆与过早完成等坑；最佳实践是短对话 + 任务拆分，用 Observation Masking 或 LLM Summarization 管控上下文，以「复利工程」沉淀项目知识库。
 
 ## 1.11
 
-* [LangChain: Self-Reflective RAG with LangGraph](https://blog.langchain.com/agentic-rag-with-langgraph/)
+* [LangChain: Self-Reflective RAG with LangGraph](https://blog.langchain.com/agentic-rag-with-langgraph/)：对比 Chains / Routing / State Machines 三种 RAG 认知架构，主张用 LangGraph 的状态机实现可循环、可条件跳转的 Self-Reflective RAG，落地 Corrective RAG（CRAG）与 Self-RAG 两套范式：CRAG 引入轻量评分器，文档不相关时改写 query 并触发 Tavily Web Search 兜底；Self-RAG 用 Retrieve/ISREL/ISSUP/ISUSE 四类反思 token 控制检索、相关性、生成支持度与有用性，节点级用 Pydantic + OpenAI tool 做二元打分，再叠加 hallucination 与 answer relevance 双重 grader 形成回退重试闭环。
 
 ## 1.10
 
-* [Agent Skills (Claude Skills) 详细攻略，一篇文章精通](https://mp.weixin.qq.com/s/cNEhgtYO-RHorY8nbEKH3A)
+* [Agent Skills (Claude Skills) 详细攻略，一篇文章精通](https://mp.weixin.qq.com/s/cNEhgtYO-RHorY8nbEKH3A)：Anthropic 于 2025-12-18 把 Agent Skills 发布为开放标准（agentskills.io），Codex/Cursor/Opencode 跟进；Skills 本质是「带目录的渐进式提示词」，按 metadata/instructions/resources 三层渐进披露，仅元数据常驻上下文，正文与 scripts/references/assets 资源按需加载；实操示范在 `.claude/skills/` 下创建 SKILL.md（前置 YAML+正文），用「字幕转 markdown + ffmpeg python 脚本」与「帮我写作 + references 范文」演示资源层，并对比 Skills（轻、提示词主导）与 MCP（重、工具调用主导）的协同。
 
-* [「深度好文」MySQL 全局锁、表锁、行锁、间隙锁、临键锁详解，架构师必备高并发下的锁优化策略](https://mp.weixin.qq.com/s/DXw5S5T8gaBgaui5nzkWkw)
+* [「深度好文」MySQL 全局锁、表锁、行锁、间隙锁、临键锁详解，架构师必备高并发下的锁优化策略](https://mp.weixin.qq.com/s/DXw5S5T8gaBgaui5nzkWkw)：从 FLUSH TABLES WITH READ LOCK 全局锁、MDL / AUTO-INC 表级锁、到基于索引项的行级锁系统拆解 InnoDB 锁体系——Record Lock / Gap Lock / Next-Key Lock 三类行锁配合两阶段锁协议 2PL，RR 隔离级别用 Next-Key Lock 抑制幻读，意向锁 IS/IX 解决表行锁冲突；死锁三大场景（S 锁升级、交叉访问顺序、Gap + 插入意向锁）通过固定访问顺序 / 乐观锁 / 小事务 / 索引设计 / 降级 RC 预防，InnoDB 自动死锁检测回滚代价小事务报 ERROR 1213。
 
 ## 1.9
 
-* [告别碎片化日志：一套方案采集所有主流 AI 编程工具](https://mp.weixin.qq.com/s/91Dg5N35Lk1N_WTw78wGdg)
+* [告别碎片化日志：一套方案采集所有主流 AI 编程工具](https://mp.weixin.qq.com/s/91Dg5N35Lk1N_WTw78wGdg)：基于 MCP 的统一 AI 代码采集方案，覆盖 claude-code / codex / gemini / ykcli / iflow / qwen-code / qoder 等 macOS + Windows 主流工具——CLI 用 Hook 注入配置、IDE 解析 History 与 workspaceStorage 快照，Collector 做标准化与 Git/路径规范化，SLS 批量+重试上报；对比高德（DB 解析 + MCP 实时拦截，延迟明显）与 AIDC（仅 cursor 插件）的不足，核心指标 AGCR = AI 有效提交行数 / 分支 Diff 总行数 × 100%。
 
-* [认知重建：Speckit 用了三个月，我放弃了——走出工具很强但用不好的困境](https://mp.weixin.qq.com/s/CXx-0ar1EBf14vgQHHjU7A)
+* [认知重建：Speckit 用了三个月，我放弃了——走出工具很强但用不好的困境](https://mp.weixin.qq.com/s/CXx-0ar1EBf14vgQHHjU7A)：rickyshou 复盘 spec-driven 工具落地失败——speckit 5 阶段（Constitution→Specify→Plan→Tasks→Implement）+ 9 架构原则 + 7 层 LLM 输出约束、openspec 用 ADDED/MODIFIED/REMOVED/RENAMED Delta + Fail-Fast 冲突检测，都败在企业「跨 BG / 前后端 / FT / 项目多方博弈 + 动态变更」上；致命盲区是流程从零开始、没有「考古」上下文检索机制，AI 看不到业务边界与历史经验（一次需求 45 分钟纯讲解），出路是借鉴 Anthropic 多 Agent 协作 + 上下文工程 + 复合工程。
 
-* [拥抱大模型：深入剖析ReAct的核心原理、技术架构及其对AI领域的深远影响](https://mp.weixin.qq.com/s/dc83VfXyyvYq5zjUGy72mA)
+* [拥抱大模型：深入剖析ReAct的核心原理、技术架构及其对AI领域的深远影响](https://mp.weixin.qq.com/s/dc83VfXyyvYq5zjUGy72mA)：2022 普林斯顿 + Google《ReAct: Synergizing Reasoning and Acting in Language Models》提出 TAO 闭环（Thought → Act → Observe）——显式推理轨迹 + 外部环境锚定 + 1-5 个 few-shot 泛化无需微调；三层架构（核心逻辑层 LLM + 提示工程温度 0.2-0.3、执行循环层上下文管理器近期完整 + 早期摘要 / 行动解析器 / 循环调度器、外部交互层工具集），实测 Fever 幻觉率 8.2% vs CoT 23.5%，ALFWorld 2 示例达 71% vs RL 37%。
 
-* [什么是 MCP](https://mp.weixin.qq.com/s/XP_ND1FBEZcCyfaz0Wjicg)
+* [什么是 MCP](https://mp.weixin.qq.com/s/XP_ND1FBEZcCyfaz0Wjicg)：Anthropic 2024.11 推出的开源 Model Context Protocol，被称为「AI 应用的 USB-C 接口」——解决工具复用、模型 / 平台解耦、资源访问统一化三痛点；与 Function Calling 分层（FC 表达调用、MCP 跨模型跨平台标准化集成），C/S + Host 三层架构（MCP Hosts 如 Cursor/Claude Desktop、MCP Clients 内置、MCP Servers 连数据源），本地走 STDIO 远程走 Streamable HTTP（替代旧 SSE），生态含 MCP Mark / MCP.so / ModelScope / PulseMCP。
 
 ## 1.8
 
-* [如何画好一张架构图丨终极典藏版](https://mp.weixin.qq.com/s/10aIX8ksYHgXraAtXtN-Xg)
+* [如何画好一张架构图丨终极典藏版](https://mp.weixin.qq.com/s/10aIX8ksYHgXraAtXtN-Xg)：以「分层（解耦）+ 分模块（同层独立单元）+ 分功能（模块内入口）」三板斧为核心，横向分层 + 纵向切模块；好图四标准是结构清晰 / 外表美观 / 内容完整自闭环 / 术语粒度一致，设计感遵循亲密性 / 对齐 / 对比 / 重复四原则，配色用色轮三原色 + 互补 / 等距三色组、构图用黄金分割 0.618 与斐波那契；抽象两条路（业务建模自底向上、系统建模自顶向下），落地工具 UML 7 种常用图（类 / 时序 / 组件 / 部署 / 用例 / 状态 / 活动）。
 
-* [码哥跳动：MySQL InnoDB 事务隔离与 MVCC、版本链与 ReadView 原理详解](https://mp.weixin.qq.com/s/8DPhdPIPPWjVS9B1tmP1BQ)
+* [码哥跳动：MySQL InnoDB 事务隔离与 MVCC、版本链与 ReadView 原理详解](https://mp.weixin.qq.com/s/8DPhdPIPPWjVS9B1tmP1BQ)：从锁机制瓶颈切入讲清 MVCC 三大组件——隐藏字段（trx\_id 6 字节 + roll\_ptr 7 字节）、Undo Log 版本链、ReadView 可见性算法（low/up\_limit\_id 水位 + m\_ids 活跃事务列表四条规则），对比 RC 每次 SELECT 重建 ReadView 与 RR 事务首次复用快照的差异，并说明 InnoDB 在 RR 下用 Next-Key Lock 抑制幻读。
 
 ## 1.7
 
-* [Agent全面爆发！万字长文详解上下文工程](https://mp.weixin.qq.com/s/C5w6sD4VGJjZ_xrW7vvjRA)
+* [Agent全面爆发！万字长文详解上下文工程](https://mp.weixin.qq.com/s/C5w6sD4VGJjZ_xrW7vvjRA)：从 Chatbot 到 Agent 的形态演进出发，论证上下文从输入补充升级为系统状态载体，提示工程不足以表达持续变化的任务状态，进而引出 Context Engineering 五大模块——工具调用、结果反馈结构化、思考过程分层管理、交互记录、自主性边界约束，并以 MCP 作为结构化协议落地手段，对照 Manus「掩盖而非移除工具」等实践提升 Agent 可靠性。
 
-* [AI Coding后端开发实战：解锁AI辅助编程新范式](https://mp.weixin.qq.com/s/RU9TIveyjPvIXCsoVPp69w)
+* [AI Coding后端开发实战：解锁AI辅助编程新范式](https://mp.weixin.qq.com/s/RU9TIveyjPvIXCsoVPp69w)：面向后端开发给出两条核心能力——个人上下文管理三步法（需求拆解与文件筛选、.md 文档沉淀、跨会话记忆传递）与 AI 输出质量判断体系（功能正确性、代码质量、性能安全），并落地 PRD → 系分 → 编码 → 验证的标准化流程，配合 Python 脚本批处理与 Agent 提示词工程三大场景，强调分阶段保存、频繁提交与新会话靠 .md 复活上下文。
 
 ## 1.6
 
-* [AI 辅助重构 20 万行代码：渐进式重建代码秩序](https://mp.weixin.qq.com/s/t8KfhFo5NmjzAoFrzghMeQ)
+* [AI 辅助重构 20 万行代码：渐进式重建代码秩序](https://mp.weixin.qq.com/s/t8KfhFo5NmjzAoFrzghMeQ)：以推荐系统粗排服务为例，给出 AI 辅助重构五步——战略框架界定（新老并行、渐进演进）、AI 扫描出问题清单与优先级、暴力拆解 2000+ 行巨型函数、从 if-else 升级到策略模式再到依赖注入（AbstractDiversityRule、DiversityRuleManager）、用 Pipeline 取代闲置的 DAG 配置，强调工程师必须复核 AI 拆分点而非盲信生成代码。
 
 ## 1.5
 
-* [AI Coding 长文分享：如何真正把工具用起来，从原理到实践](https://mp.weixin.qq.com/s/MjBVTfo6Kp2RDG6v46_BPA)
+* [AI Coding 长文分享：如何真正把工具用起来，从原理到实践](https://mp.weixin.qq.com/s/MjBVTfo6Kp2RDG6v46_BPA)：基于 Cursor 把 AI Coding 原理拆透——Token 构成（SystemPrompt + Rules + 对话历史 + 工具结果）、Function Call 四类工具（搜索 / 编辑 / 运行 / MCP）、Codebase Indexing 七步 RAG 流程，重点解析 Merkle Tree 实现 O(log n) 增量同步与 10 分钟一次的变更检测，并对比 Claude Code 的代码理解路径，给出规则设置、渐进式提问与代码风格友好性建议。
 
-* [Claude Code七大组件，90%的人只会用1个？实战案例让你一次搞懂](https://mp.weixin.qq.com/s/cqzVctGWzzIxcqhciZPuRQ)
+* [Claude Code七大组件，90%的人只会用1个？实战案例让你一次搞懂](https://mp.weixin.qq.com/s/cqzVctGWzzIxcqhciZPuRQ)：以 7 个实战场景串起 Claude Code 全部组件——CLAUDE.md 注入项目记忆、Hooks 在 tool\_use/Edit 等事件自动跑 lint 与测试、SubAgents 拆分认证重构等复杂任务并行处理、Commands 用 $ARGUMENTS 触发 /review 与 /fix-issue、Skills 通过 SKILL.md frontmatter 封装 add-api-endpoint 工作流、Plugins 一键安装、MCP 接入外部数据源，强调组合用法让 5 轮交互压缩到 1 轮。
 
 ## 1.4
 
-* [库存合并扣减：一种基于分布式缓存的强一致性热点库存扣减方案](https://mp.weixin.qq.com/s/_ezTVydFszZnc0ZN-JEtlQ)
+* [库存合并扣减：一种基于分布式缓存的强一致性热点库存扣减方案](https://mp.weixin.qq.com/s/_ezTVydFszZnc0ZN-JEtlQ)：针对深库存热点抢购，给出 Redis 分桶计数 + DB 明细兜底的强一致方案——锁库存只加 lq 不动 sq，下单先扣 Redis 分桶再写明细，延迟 1s 通过覆盖索引 sum(quantity) 合并提交 DB，并设计扣减屏障防并发漏扫单据，压测单行 TPS 从 1.4w 提升至 3.2w，线上扣减成功率由 80% 升至 100%、耗时从 15ms+ 降至 7ms+。
 
 ---
 
@@ -46382,77 +46382,77 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.2.md'
 ---
 # 2026.2 期
 
-* [Claude Code 中文教程](https://github.com/KimYx0207/Claude-Code-Guide-Zh)
+* [Claude Code 中文教程](https://github.com/KimYx0207/Claude-Code-Guide-Zh)：系统整理 Claude Code、OpenClaw、Codex 三大模块共 39 篇教程 18 万字，覆盖环境配置、Commands、MCP 集成、Hooks 自动化、Skills 定制、Plugins 生态六类能力模块，提供零基础到企业实战三条学习路径，配 90+ 可运行示例与 230+ FAQ。
 
 ## 2.27
 
-* [AI 工程化落地实践：推翻"完美架构"，回归提示词本质](https://mp.weixin.qq.com/s/PRLrVURRycKOhnFOGGdJYA)
+* [AI 工程化落地实践：推翻"完美架构"，回归提示词本质](https://mp.weixin.qq.com/s/PRLrVURRycKOhnFOGGdJYA)：腾讯团队推翻自建 Command/Agent/Skill 三层 + 九步工作流的「完美架构」，受 NotebookLM 与 Claude Code 启发回归提示词本质，提炼「文档即记忆（AGENTS.md 同时给人和 AI 读）、先跑起来、声明式 Markdown 胜过命令式代码」三原则，把规范从代码下沉为文本。
 
-* [一文读懂 Agent Tools，拒绝复杂化、碎片化、黑盒化](https://mp.weixin.qq.com/s/rsu-k8NwzWceOfPxTRKkBA)
+* [一文读懂 Agent Tools，拒绝复杂化、碎片化、黑盒化](https://mp.weixin.qq.com/s/rsu-k8NwzWceOfPxTRKkBA)：从 Agent 工具调用 5 阶段生命周期提炼 Pydantic 类型化、自然语言 Docstring、结构化错误 + ReflectAndRetry、Human-in-the-loop、摘要返回防上下文溢出等设计准则；火山引擎 AgentKit Gateway 自动把 Swagger/OpenAPI 转 MCP，Token 节省 70%、调用准确率 98.5%、响应提速 300%。
 
-* [Agent Skills与MCP：一场被误解的“替代战争”](https://mp.weixin.qq.com/s/nM6S9rHmX_xBcK6jffUMgA)
+* [Agent Skills与MCP：一场被误解的“替代战争”](https://mp.weixin.qq.com/s/nM6S9rHmX_xBcK6jffUMgA)：Agent Skills 解决「怎么做才对」——以声明式 YAML 编排业务流程、合规规则与决策逻辑（如客服工单分类、贷款风控 SOP），MCP 解决「能不能做」——以 JSON-RPC 服务化封装数据访问与权限沙箱；二者非替代而是搭档，Skills 调度 MCP 工具构成业务 + 能力双层架构。
 
 ## 2.26
 
-* [如何从零开始实现一个 AI Agent 框架（理论+实践）](https://mp.weixin.qq.com/s/z1aDaPFhjYb2cv-9bFbdaQ)
+* [如何从零开始实现一个 AI Agent 框架（理论+实践）](https://mp.weixin.qq.com/s/z1aDaPFhjYb2cv-9bFbdaQ)：理论篇梳理 ReAct、Plan-and-Execute、Reflection/Self-Refine/CRITIC 三大范式与 LangChain/LlamaIndex/AutoGen/CrewAI/LangGraph/Semantic Kernel 选型矩阵，归纳 Agent 工程三大件——LLM Call、Tools Call、Context Engineering，核心引擎是 While 循环式 Agent Loop，结合 Manus「文件系统即上下文」与 CodeAct「代码即 affordance」两条共识。
 
-* [AI Agent系列｜深入解析Function Calling、MCP和Skills的本质差异与最佳实践](https://mp.weixin.qq.com/s/dAnNHayrE49FEl8TcLII2Q)
+* [AI Agent系列｜深入解析Function Calling、MCP和Skills的本质差异与最佳实践](https://mp.weixin.qq.com/s/dAnNHayrE49FEl8TcLII2Q)：Lynxe（原 JManus）作者拆解三者递进关系——Function Calling 用结构化 JSON 解决「非结构化转结构化」基础调用、MCP 用 JSON + HTTP 协议把既有系统批量接入降低集成成本、Skills 借 load\_skill 函数把 SKILL.md 文字流程动态注入上下文解决任务流程定义难题，三者皆建立在 Function Calling 之上。
 
 ## 2.25
 
-* [AI Agent系列｜深入了解智能体工作流核心：Agent vs 传统编程 vs Workflow 的本质区别](https://mp.weixin.qq.com/s/KE4UWEpoMYiIseykT7_Skw)
+* [AI Agent系列｜深入了解智能体工作流核心：Agent vs 传统编程 vs Workflow 的本质区别](https://mp.weixin.qq.com/s/KE4UWEpoMYiIseykT7_Skw)：以「谁在做决策」为切口对比三种范式——传统编程由程序员把所有规则硬编码、Workflow 由产品在图形化节点上铺设固定路径、Agent 把决策权下放给 LLM 与 Prompt 动态调整策略，分别对应专业编程、图形化拖拽、自然语言三档门槛，修改成本从瀑布协作压缩到业务自闭环，结论是 Agent 适合需要不确定性处理、多轮动态规划的差异化体验。
 
-* [Sentinel Java客户端限流原理解析｜得物技术](https://mp.weixin.qq.com/s/lqgzjj2l1phpR45nApALdw)
+* [Sentinel Java客户端限流原理解析｜得物技术](https://mp.weixin.qq.com/s/lqgzjj2l1phpR45nApALdw)：从 HTTP 请求入口出发串起 Sentinel 客户端全链路——RuleLoader 把流控/集群/熔断/参数/系统规则装入 FlowRuleManager 等管理器，SentinelServletFilter 与 @SentinelResource 切面通过 Entry 进入 ProcessorSlotChain，依次走 NodeSelectorSlot、ClusterBuilderSlot、StatisticSlot、FlowSlot 的 checkFlow，最终落在 ArrayMetric 上的 BucketLeapArray/OccupiableBucketLeapArray 滑动窗口算法做 QPS 统计与抢占式预占。
 
 ## 2.24
 
-* [AI Agent系列｜什么是 ReAct Agent？](https://mp.weixin.qq.com/s/KyWIEX_8oj5lcXjX5Co7Kw)
+* [AI Agent系列｜什么是 ReAct Agent？](https://mp.weixin.qq.com/s/KyWIEX_8oj5lcXjX5Co7Kw)：拆解 ReAct = Reasoning + Acting 的「观察—思考—行动—再观察」循环，依赖历史上下文（History）、当前环境信息、LLM Thinking、toolcall 工具、观察结果五个要素，每轮提示词固定为「历史上下文 + 环境信息 + 用户目标 + 必须至少调用一个工具」，以查天气并推荐穿衣写入文件的三轮 toolcall 为例演示动态决策，胜在面对 API 失败、数据异常时能换关键词或切策略。
 
-* [这个Skill能自动学会你的所有习惯，踩过的坑！](https://waytoagi.feishu.cn/wiki/VmkQwwvLriSxuek6qybcOgyZn7d)
+* [这个Skill能自动学会你的所有习惯，踩过的坑！](https://waytoagi.feishu.cn/wiki/VmkQwwvLriSxuek6qybcOgyZn7d)：介绍 GitHub 1660 星的 Claudeception 插件（作者 blader），让 Claude Code 把调试中踩过的坑自动蒸馏为新的 Skill 沉淀经验，提供自动 / 手动 / 查看三种模式，自动提取需同时满足「实际探索发现、对未来有帮助、有明确触发条件、已验证有效」四个条件并命中五种触发情境，安装分克隆仓库与配置 Hook 两步、支持用户级与项目级。
 
 ## 2.22
 
-* [2026 就用 Postgres](https://www.tigerdata.com/blog/its-2026-just-use-postgres)
+* [2026 就用 Postgres](https://www.tigerdata.com/blog/its-2026-just-use-postgres)：用「七个数据库 = 七套查询语言 + 七套备份 + 七套监控」的运维税反驳 right-tool-for-the-job——pg\_textsearch（BM25）替 Elasticsearch、pgvectorscale（HNSW/DiskANN，对 Pinecone p95 延迟低 28x、吞吐高 16x）替 Pinecone、TimescaleDB 替 InfluxDB、JSONB 替 MongoDB、UNLOGGED 表替 Redis、pgmq 替 Kafka、PostGIS 做 GIS；AI Agent 时代 fork 单库测试远比协调七套快照现实，Plexigrid 合并四库后查询快 350x、Flogistix 数据库成本降 66%。
 
 ## 2.21
 
-* [领域建模之数据模型设计方法论](https://cloud.tencent.com/developer/article/1926586)
+* [领域建模之数据模型设计方法论](https://cloud.tencent.com/developer/article/1926586)：给出业务模型到数据模型的五步实施流程——识别对象（复用已有模型 / 行业概念 / 名词）、组织对象（合并一词多用与复数、判断属性是否升级为对象）、定义对象间一对一/一对多/多对多关系、完善属性与状态机及边界、领域模型映射到数据模型，并补充派生字段、低级冗余（显示）与高级冗余（计算）、扩展表垂直拆分等工程技巧，以社区团购预排线调度为案例贯穿全程。
 
 ## 2.15
 
-* [检索增强生成 (RAG)](https://www.promptingguide.ai/zh/techniques/rag)
+* [检索增强生成 (RAG)](https://www.promptingguide.ai/zh/techniques/rag)：Meta 提出的 RAG 将参数记忆（预训练 seq2seq）与非参数记忆（维基百科密集向量索引）通过神经检索器结合，运行时根据 query 检索相关文档拼入 prompt 再交给生成器输出，从而缓解 LLM 幻觉、无需重训即可接入实时知识，在 Natural Questions、WebQuestions 等基准上生成内容更具事实性与多样性。
 
 ## 2.12
 
-* [从应用架构的视角看退小宝AI助手落地现状](https://mp.weixin.qq.com/s/TkdtpVihs2v0mDPRiqoEtw)
+* [从应用架构的视角看退小宝AI助手落地现状](https://mp.weixin.qq.com/s/TkdtpVihs2v0mDPRiqoEtw)：以淘天退小宝助手为案例，对比传统 Web 应用与 AI 应用在响应时间（首字 3s vs 500ms）、可用性（<99% vs 99.999%）、准确率（70-90% vs 近 100%）、成本（Qwen-Plus 千 token 1.4 元）的差异，论证 AI 原生应用优于在旧系统中嵌入 AI，并梳理从直调 LLM API、ReAct Agent 到 Workflow/LangGraph 图结构的演进，统一 LLM、Message、Tool、RAG、State、MCP 等核心概念。
 
 ## 2.10
 
-* [从零开始的大模型之旅｜解码大模型：技术篇1.2-训练技术概念](https://mp.weixin.qq.com/s/zcRGuHHe4Ct1xQz8QbJSog)
+* [从零开始的大模型之旅｜解码大模型：技术篇1.2-训练技术概念](https://mp.weixin.qq.com/s/zcRGuHHe4Ct1xQz8QbJSog)：系统讲解大模型训练栈——自监督学习通过 MLM、NSP、自回归三类 pretext task 从无标注语料学表示，迁移学习用 feature extraction 或 fine-tuning 把通用表示适配下游（情感分类样例从 10 万样本 65% 提到 1 万样本 85%），对比学习用 SimCLR/MoCo/SimCSE 拉近正例推远负例，RLHF 采用 SFT、Reward Model（Bradley-Terry 排序）、PPO 三阶段实现价值对齐。
 
 ## 2.9
 
-* [借助 AI Coding 快速打造 AI Agent 系统](https://mp.weixin.qq.com/s/SzMyIu6pAHVvU7nUnQSwjg)
+* [借助 AI Coding 快速打造 AI Agent 系统](https://mp.weixin.qq.com/s/SzMyIu6pAHVvU7nUnQSwjg)：淘天购物场景生成 Agent 从低代码 DSL 迁移到 LangGraph + Agent Skills + A2A + MCP，用 Planner 节点先输出 JSON 计划再按需激活 scene-generation、product-service、persistence-service 等 Skill（三层渐进式披露：metadata→SKILL.md→脚本），解决 ReAct 步骤遗漏与上下文膨胀；落地用 Cursor 做架构与 DSL 转换、AoneCopilot 处理内部协议补全，几天完成重构上线。
 
-* [设计模式Trustworthy Generation：提升RAG信赖度](https://mp.weixin.qq.com/s/xINFSTEeFZ2qTr5RtQYIIw)
+* [设计模式Trustworthy Generation：提升RAG信赖度](https://mp.weixin.qq.com/s/xINFSTEeFZ2qTr5RtQYIIw)：归纳 RAG 信赖度（真实性 + 完整度）四类根因——检索准确 / 召回不足、内容可靠性、前置 query 改写偏差、生成幻觉，给出四层方案：相似度 threshold / 问题分类 / 关键词触发做关联识别、in-line citation 加 token 级引用标注、CRAG 评估 doc 质量并兜底外部搜索、Self-RAG 自反思决定是否再检索，配合 Pre/Post-retrieve、Pre/Post-generate 四阶段 Guardrails 与 Human-in-the-Loop。
 
-* [MySQL 9.5 性能优化终极指南：从 10s 到 10ms 的 5 个核心心法](https://mp.weixin.qq.com/s/sujwkZdDdA_eYFm2wytkYg)
+* [MySQL 9.5 性能优化终极指南：从 10s 到 10ms 的 5 个核心心法](https://mp.weixin.qq.com/s/sujwkZdDdA_eYFm2wytkYg)：从表结构（TINYINT 替 INT、DATE 替 DATETIME、IP 存无符号整数、UUID 存 BINARY(16)、范式 vs 反范式）、索引（B-Tree/Hash/全文/空间/前缀/函数索引、覆盖索引、最左前缀、降序索引 DESC、INVISIBLE 索引灰度下线）、JOIN（小表驱动大表 STRAIGHT\_JOIN、临时表分阶段）、排序分组（避免 filesort、CTE 预聚合）、分页（Keyset Pagination 替代大 offset、覆盖索引子查询）展开，列出 10 类索引失效场景。
 
 ## 2.6
 
-* [150行 Python 代码,构建一个最简单的搜索引擎，解释它的原理](https://bart.degoe.de/building-a-full-text-search-engine-150-lines-of-code/)
+* [150行 Python 代码,构建一个最简单的搜索引擎，解释它的原理](https://bart.degoe.de/building-a-full-text-search-engine-150-lines-of-code/)：用 150 行 Python 在英文维基 627 万条 abstract 数据集上手搓全文检索引擎，pipeline 拆为 tokenization、lowercase、去标点、去 25 词停用词、Stemmer 词干化四步 analyze，构建词→docID 的 inverted index 支持 AND/OR 布尔检索，再用 TF × IDF（log10(N/df)）做相关性排序，最终笔记本上毫秒级返回 627 万文档命中结果。
 
 ## 2.4
 
-* [AgentScope 正式发布 Skills 支持 - 实现渐进式披露](https://mp.weixin.qq.com/s/_iUHLFap_3djHXMJClnfRg)
+* [AgentScope 正式发布 Skills 支持 - 实现渐进式披露](https://mp.weixin.qq.com/s/_iUHLFap_3djHXMJClnfRg)：针对多能力 Agent 上下文爆炸问题，AgentScope-Java 通过 Skill 三层渐进式披露解决——启动时只注入约 100 tokens/Skill 的元数据进 SystemPrompt，触发时用 load\_skill\_through\_path Tool 加载完整 SKILL.md SOP（约 2k），按需再拉 references 与 scripts，并提供 SkillBox、AgentSkillRepository、codeExecution 沙箱抽象，把 Tool 与 Skill 绑定实现联动激活。
 
-* [AI 原生研发范式：从“代码中心”到“文档驱动”的演进](https://mp.weixin.qq.com/s/WoEetgbDkNidf7Flmg8dUQ)
+* [AI 原生研发范式：从“代码中心”到“文档驱动”的演进](https://mp.weixin.qq.com/s/WoEetgbDkNidf7Flmg8dUQ)：阿里提出 Manual SDD（Spec-Driven Development）应对 AI 编程的上下文腐烂、审查瘫痪、维护断层三痛点，把 Spec 作为人与 AI 的 IR 通信协议；落地分 Lite/Team 两档，单兵 SOP 用 Initialization + RIPER（Research/Innovate/Plan/Execute/Review）+ LAFR 全链路，30 分钟跑通 docs/specs/feature-xxx 闭环，并以 Halo SystemConfig API 案例演示。
 
-* [一次大文件处理性能优化实录](https://mp.weixin.qq.com/s/iVLS1iK_RtWpca3qzUtQ0w)
+* [一次大文件处理性能优化实录](https://mp.weixin.qq.com/s/iVLS1iK_RtWpca3qzUtQ0w)：4GB / 1.14 亿行 ASCII 文件「删每行中间 1/3」双进程流式处理优化记录，主线是减系统调用、消对象分配、匹配 64-128KB 预读块、绕开 UTF-8 解码；Java 经 BATCH\_SIZE=5000 + 64KB 缓冲 + StringBuilder 从 637s 降至 9.2s（69×），再用 8MB 字节数组 + System.arraycopy 手解 \n 降至 5.1s，配合 TCP\_NODELAY 与 IO/Processor 解耦最终落到 3.2s。
 
 ## 2.3
 
-* [从传统编程转向大模型编程](https://mp.weixin.qq.com/s/S9XBcdof43MdwYd2tXGl1Q)
+* [从传统编程转向大模型编程](https://mp.weixin.qq.com/s/S9XBcdof43MdwYd2tXGl1Q)：钉钉作者主张工程师从 Code 产出者转为 Document 定义者，把日常开发当作人 + AI 结对编程，用「认知缓冲」对抗代码催眠；推荐按安全 → 复杂度 → 成本三档选模型，为每个模型固化 claude.md / gpt.md / gemini.md Prompt 模板，进阶用 SKILL.md + 脚本组成的 Claude Skill 实现 RL Lite 自我进化，最终落到 SDD「文档即源码」的标准流程。
 
 ## 2.2
 
@@ -46461,17 +46461,17 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.2.md'
   * 用户：扔 N 个 csv 表格，一个字都不说
   * 输出：自动生成一份非常完整、详细的数据分析报告，十几个图表，大量数据分析、图形、表格、回归、方差、趋势、结论，分析得一清二楚
 
-* [这大概是我读过关于AI大模型最全面、好读又易懂的文章了](https://mp.weixin.qq.com/s/N3-HLz7oVrke0ohWOkFEhg)
+* [这大概是我读过关于AI大模型最全面、好读又易懂的文章了](https://mp.weixin.qq.com/s/N3-HLz7oVrke0ohWOkFEhg)：作者白玉光以网络工程师视角科普 AI 大模型基石，从神经网络的输入层 / 隐藏层 / 输出层类比接入-汇聚-核心交换机讲起，逐步拆解单向正向传播、神经元树突 / 轴突、激活函数（阶跃 → Sigmoid）引入非线性、权重与偏置的「先综合后变换」机制，再延伸到大模型推理与训练、GPU 基础设施需求以及 Agent 使用范式，把 token、向量化、蒸馏、温度系数串成一条主线。
 
-* [大模型网关：大模型时代的智能交通枢纽｜得物技术](https://mp.weixin.qq.com/s/TKtDT1T_8_kQ1vFrVf2gSw)
+* [大模型网关：大模型时代的智能交通枢纽｜得物技术](https://mp.weixin.qq.com/s/TKtDT1T_8_kQ1vFrVf2gSw)：得物 12 月 Token 用量较 1 月增长 20.63 倍，自建大模型网关采取六步法落地——模型市场、统一 OpenAI like API、全流程成本管控、限流调度容灾、基于 Flink 的分钟级观测告警、API Key 生命周期管理；纳管 140 个内外部模型，上架从 1-2 天压到 10 分钟，Q3/Q4 单百万 Token 成本分别降 51.52% 和 48.37%。
 
-* [生产级Prompt自动化推理评估A/B实验结果的工程实践](https://mp.weixin.qq.com/s/y2Sq_KEFRlDEnFgDsEKxNQ)
+* [生产级Prompt自动化推理评估A/B实验结果的工程实践](https://mp.weixin.qq.com/s/y2Sq_KEFRlDEnFgDsEKxNQ)：将策略调优场景下的 A/B 实验巡检交给 LLM Prompt 推理，按「连续负向 / 趋势恶化 / 负向转正失败 / 正向衰减 / 高波动 / 兜底」六层优先级决策树串行触发，强制流量差 >5% 用千人 DAU 归一化，输出 isRecommendOffline + recommendation 纯 JSON，试运行一周策略下线由 300+ 降到 100+，准确率 68%，人工巡检从 6h/天压到 30min/天。
 
 ## 2.1
 
-* [Macbook+OpenClaw+MiniMax+飞书搭建24小时“数字员工”，3W个技能Skills随你调](https://mp.weixin.qq.com/s/5xQ_Ny7kxi9nSo8skVtxng)
+* [Macbook+OpenClaw+MiniMax+飞书搭建24小时"数字员工"，3W个技能Skills随你调](https://mp.weixin.qq.com/s/5xQ_Ny7kxi9nSo8skVtxng)：用 `npm install -g openclaw` + `openclaw onboard` 在 MacBook 起本地 Agent，接 MiniMax 海外 / 国内 Anthropic 兼容 endpoint（国内改 baseUrl 为 api.minimaxi.com/anthropic），通过 `@m1heng-clawd/feishu` 插件 + 飞书开放平台长连接事件回调把 IM 变成入口，再用 `npx skills add` 接 skills.sh 的 3.5w+ 技能包，配合 Hooks 与定时任务做成 24 小时数字员工。
 
-* [打造Jarvis，OpenClaw很野，但Agent Studio简直变态](https://mp.weixin.qq.com/s/VB-s2Qqw1Wbbvik3XjE1ig)
+* [打造Jarvis，OpenClaw很野，但Agent Studio简直变态](https://mp.weixin.qq.com/s/VB-s2Qqw1Wbbvik3XjE1ig)：作者基于 Claude Agent SDK 自研 Agent Studio（`npm i -g agentstudio` 起 4936 端口 Web 工作台），5 步通过 Tunely WebSocket 隧道把企业微信机器人接到本地 Agent，对比 OpenClaw 102k stars 多 IM 网关定位，主打四大能力：图形化定时任务（Cron / 自然语言）、基于 SDK 的自定义 Agent、A2A 协议做秘书 / 分布式 / IM 统一网关、以及含 22 个工具的 agentstudio-admin MCP 让 Agent 自己管理工作台。
 
 ---
 
