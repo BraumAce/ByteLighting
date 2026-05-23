@@ -46686,6 +46686,14 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 ---
 # 2026.5 期
 
+## 5.23
+
+* [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/11Krmb5KYmCHDQ4zN9O4uQ)
+
+* [腾讯云Agent Memory节省61% Token提升52%成功率的诀窍：Mermaid无限画布×上下文卸载](https://mp.weixin.qq.com/s/MSXKfefrqM31q-7WXIqCEg)
+
+* [OpenAI Codex Plugin for Claude Code 源码剖析](https://mp.weixin.qq.com/s/oOdSoAtitE_ayAfA607HwA)
+
 ## 5.21
 
 * [从0到1搭建 Agent ：Agent 原理分析及个人助手实践（长文干货）](https://mp.weixin.qq.com/s/ILX8GGETM84-_rQssCZhwQ)
