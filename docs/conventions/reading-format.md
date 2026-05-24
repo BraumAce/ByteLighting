@@ -53,5 +53,9 @@ category:
 
 作者贴链接让 AI 补描述时：
 
-1. **抓正文走 `web-access` skill**：公众号必走；其他页面 `WebFetch` 失败再切。多篇并行时分治给子 Agent（prompt 写「必须加载 web-access skill 并遵循指引」），子 Agent 只回传摘要。禁用 exa、`mcp__claude-in-chrome__*`、自起 `--remote-debugging-port`。
-2. 按上述格式补全，不调整原有顺序与分组。
+1. **先读正文，再写摘要**：不要只看标题或搜索摘要；至少确认页面标题、正文容器和正文长度，再提炼一句话描述。
+2. **公众号优先走 Chrome**：`mp.weixin.qq.com` 文章优先使用 `@chrome` 读取正文，确认 `#js_content` / `.rich_media_content` 可见；Chrome 不可用或触发验证时，再切 `@浏览器` / `web-access` / 可信转载页，并在交付时说明来源限制。
+3. **其他页面走 `web-access`**：普通网页按 `web-access` 路由抓正文；页面失败再搜索转载或官方来源，不用镜像内容替代官方事实。
+4. **多篇并行可分治**：多篇链接可交给子 Agent 分批处理；公众号子任务 prompt 明确「优先使用 Chrome 读取正文，只返回标题、正文长度、关键点和一句话摘要」，不要回传大段原文。
+5. **保持文件结构**：按上述格式补全，不调整原有顺序与分组；只改缺失或需要修订的描述。
+6. **工具禁用**：禁用 exa、`mcp__claude-in-chrome__*`、自起 `--remote-debugging-port`。
