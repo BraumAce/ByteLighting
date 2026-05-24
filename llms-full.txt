@@ -46688,23 +46688,23 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 
 ## 5.23
 
-* [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/11Krmb5KYmCHDQ4zN9O4uQ)
+* [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/11Krmb5KYmCHDQ4zN9O4uQ)：按 Agentic Workflow、Tool Use、CLI / Script、Skill、Workflow、Workspace、Memory 等维度重梳 Agent 技术演进——旧范式不是被简单淘汰，而是从硬编码流程、无状态函数调用和堆 Prompt，逐步转向 Skill 封装、动态编排、持久运行现场与可恢复记忆。
 
-* [腾讯云Agent Memory节省61% Token提升52%成功率的诀窍：Mermaid无限画布×上下文卸载](https://mp.weixin.qq.com/s/MSXKfefrqM31q-7WXIqCEg)
+* [腾讯云Agent Memory节省61% Token提升52%成功率的诀窍：Mermaid无限画布×上下文卸载](https://mp.weixin.qq.com/s/MSXKfefrqM31q-7WXIqCEg)：腾讯云 Agent Memory 的短期记忆压缩实践——完整原文卸载到外部文件，工具调用压成 JSONL，任务状态写入 Mermaid 无限画布，历史入口放进 metadata，在 SWEbench / Toolathlon / WideSearch / AA-LCR 连续长 Session 中同时降低 Token 与上下文噪音，WideSearch 最高节省 61.38% Token、通过率相对提升 51.52%。
 
-* [OpenAI Codex Plugin for Claude Code 源码剖析](https://mp.weixin.qq.com/s/oOdSoAtitE_ayAfA607HwA)
+* [OpenAI Codex Plugin for Claude Code 源码剖析](https://mp.weixin.qq.com/s/oOdSoAtitE_ayAfA607HwA)：逐层拆解 OpenAI 官方 `codex-plugin-cc` 的桥接架构——Claude Code 侧提供 `/codex:review`、`/codex:adversarial-review`、`/codex:rescue` 等命令，底层复用本机 Codex CLI / App Server，通过 Broker 协议、后台任务、状态持久化与 Review Gate，把 Codex 变成 Claude Code 工作流里的第二审阅者和异步 worker。
 
 ## 5.21
 
-* [从0到1搭建 Agent ：Agent 原理分析及个人助手实践（长文干货）](https://mp.weixin.qq.com/s/ILX8GGETM84-_rQssCZhwQ)
+* [从0到1搭建 Agent ：Agent 原理分析及个人助手实践（长文干货）](https://mp.weixin.qq.com/s/ILX8GGETM84-_rQssCZhwQ)：面向开发者的 Agent 从零搭建长文——先解释 Agent 与普通对话模型的差异，再把 LLM、Prompt、Planning、Tools、Memory、Execution 串成执行闭环，最后落到个人助手实践中的任务拆解、工具接入、上下文管理、调试评估和低成本工程化落地。
 
-* [QQ音乐Harness Engineering实践](https://mp.weixin.qq.com/s/yw3DvqKBIV5fIZkSG12zdA)
+* [QQ音乐Harness Engineering实践](https://mp.weixin.qq.com/s/yw3DvqKBIV5fIZkSG12zdA)：QQ 音乐商业化团队的 Harness Engineering 复盘——在 50+ 微服务、业务仓 / IDL 契约仓 / Harness 规范仓协同的复杂拓扑里，不重造 IDE 或通用 Agent Runtime，而是补齐 L5 工程治理层，用服务矩阵、五阶段流程、四道门禁、三层知识体系和 Self-Refinement，把 AI 协作升级为可审计、可复用、可治理的团队级过程。
 
 ## 5.20
 
-* [Claude Code Harness 工程：数仓侧落地方案｜得物技术](https://mp.weixin.qq.com/s/KmQJU7nXmYh5qgWPj4ajlw)
+* [Claude Code Harness 工程：数仓侧落地方案｜得物技术](https://mp.weixin.qq.com/s/KmQJU7nXmYh5qgWPj4ajlw)：得物离线数仓的 Claude Code Harness 方案——针对 compact 后约束丢失、规范靠记忆、血缘 / 自测 / 数据比对撑爆 context 等痛点，用 CLAUDE.md 持久化迭代状态，hooks 强制 SQL 规范与危险 DDL 检查，subagents 隔离高 token 读操作，再把需求分析、技术设计、ETL、自测、数据比对、SR 导入、性能优化、SLA/DQC 收敛成 8 步 SKILL 工作流。
 
-* [从Prompt、Context到Harness，工程的三次进化与终局之战](https://mp.weixin.qq.com/s/b1VL28GX5d17sKPfkSbIsw)
+* [从Prompt、Context到Harness，工程的三次进化与终局之战](https://mp.weixin.qq.com/s/b1VL28GX5d17sKPfkSbIsw)：梳理 AI 工程从 Prompt 到 Context 再到 Harness 的递进关系——Prompt Engineering 回答“该说什么”，Context Engineering 回答“模型该知道什么”，Harness Engineering 回答“怎样让系统稳定可靠”，工程师的价值也从手写代码转向判断模型边界、设计合适厚度的 Harness、让 AI 持续高质量产出。
 
 ## 5.19
 
