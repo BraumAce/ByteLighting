@@ -46686,6 +46686,14 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 ---
 # 2026.5 期
 
+## 5.26
+
+* [平平无奇的源码，竟藏着Agent的核心秘密？](https://mp.weixin.qq.com/s/LEzv1rji5RZX889fkZQrqw)
+
+## 5.25
+
+* [AI Infra入门干货总结：大模型是如何高效推理的](https://mp.weixin.qq.com/s/gCRMjGry2EmBmv1CFfCzVQ)
+
 ## 5.23
 
 * [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/11Krmb5KYmCHDQ4zN9O4uQ)：按 Agentic Workflow、Tool Use、CLI / Script、Skill、Workflow、Workspace、Memory 等维度重梳 Agent 技术演进——旧范式不是被简单淘汰，而是从硬编码流程、无状态函数调用和堆 Prompt，逐步转向 Skill 封装、动态编排、持久运行现场与可恢复记忆。
