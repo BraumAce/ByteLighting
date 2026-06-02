@@ -46686,6 +46686,16 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 ---
 # 2026.5 期
 
+## 5.30
+
+* [Claude Dynamic Workflows解析,迎接全新的AI编程生态](https://mp.weixin.qq.com/s/Xs7e3goFNUhJg5xEiO5YMA)：解析 Anthropic 发布的 Claude Code Dynamic Workflows 能力——Claude 不再只是对话对象，而是像一个真正的工程团队：先理解目标，再自编写 JavaScript 编排脚本，在后台启动数十到上千个 Subagent 并行工作，从不同角度分析问题、互相审查、迭代修正；计划写进代码而非塞进上下文窗口，思考过程存入运行时而非堆积在聊天记录，系统性解决上下文污染、逻辑漂移、复杂任务失控三大瓶颈；Bun 作者用此完成 Zig→Rust 迁移：生成约 75 万行 Rust 代码、测试通过率 99.8%、11 天完成；与 MCP（让 AI 接入世界）、Skills（让 AI 复用经验）并列为 AI 编程三大基础设施。
+
+## 5.29
+
+* [OpenClaw与Hermes：源码里的 AI Agent 架构知识大复盘](https://mp.weixin.qq.com/s/49dxdMXEUoWIYlIh8fFqMQ)：以开发 QQBot 插件为契机深入源码，完整经历「看山三境」——初见惊艳（24/7 常驻、跨 IM 通道、有人格长期记忆），用久发现痛点（费 token、健忘、复杂任务交付度低），踩坑后反而看懂每个不完美背后的工程取舍；OpenClaw 用 4 个设计回答 4 个问题：多协议可插拔 Channel 25+ Adapter、可插拔 Context Engine + 多级 Compaction、Dreaming 三阶段加权晋升记忆沉淀、凭证与业务失败分治；Hermes 补充另一组启示：技能自创建改进闭环、Smart Approval 三态安全审批、8 种沙箱后端执行隔离；Part III 正面对比并以 Google《Agentic Design Patterns》21 个模式为坐标系审视两套架构的覆盖与空白。
+
+* [从第一性原理思考 Agentic Engineering](https://mp.weixin.qq.com/s/5z2H4PaglgXK56Wj2RBXzA)：从第一性原理推导 Agentic Engineering 六条最佳实践——AI 双面效应分析（信息损耗：降低旧损耗引入新损耗；知识孤岛：通用知识丰富但私有知识缺失；重复性劳动：生成成本骤降但验证成为新瓶颈），生成能力爆炸与验证能力停滞的张力是 AI 时代核心矛盾；六条递进实践：Context Engineering 构建高信噪比上下文供给（Spec-First + Docs as Code）、基于知识不对称定义人机分工、AI 介入扩展到全 SDLC 链条、小任务多层次验证控制错误累积、工程化治理团队共有知识、从错误提取经验形成自下而上反馈闭环；配套开源框架含完整 SDLC Workflow、Best Practices、Self-Refinement 机制。
+
 ## 5.28
 
 * [让项目管理也 AI Native —— 两个 Git 仓库干掉了周报、洞察和效能报表](https://mp.weixin.qq.com/s/gaBKZFIZetj9H9eqyhT13g)：用两个 Git 仓库加 AI 编码助手和 Shell 脚本替代传统项目管理中约 80% 的人工操作（催周报、搬数据、画图表、写汇报）——第一个仓库负责业务进展跟踪，采用三层架构（原始 Markdown 自由输入 → AI 语义整合为结构化文档 → 生成静态 Dashboard 可视化），配备问题挖掘 Skill 自动识别跨团队阻塞和基建依赖热点；第二个仓库负责效能度量，通过大数据平台 CLI 拉取数据生成交互式报表；核心理念是降低填写门槛、让 AI 做信息搬运工、人只做输入和决策。
@@ -46795,6 +46805,25 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.5.md'
 * [一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南](https://mp.weixin.qq.com/s/fBBBSfQajYjYtngZAitZCA)：怎么写好一份「给 AI 看的 README」——遵循「地图，而非手册」原则，配合仓库聚合、验证闭环、lint 自动化、参考项目源码引入，让 AI「打开即理解、改完即验证」。
 
 * [基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](https://mp.weixin.qq.com/s/ygQGSH5c7GHYDvkqWoQTXQ)：得物团队的 AI 全栈方法论——用 Harness 思维让 AI「照着已有实现模仿」而非凭空创造，多仓工作区 + SDD 双文档对齐接口契约 + 多 Agent 前后端并行 + 三阶段分离验证，实测提效 50%+。
+
+---
+
+---
+url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
+---
+# 2026.6 期
+
+## 6.2
+
+* [AI软件工程范式革命的思考](https://mp.weixin.qq.com/s/8jREMnaavGcoaLklEBPPSQ)：从工程史视角推演软件工程的范式革命——经典工程靠「能源换低阶智能」完成工业化（蒸汽机→PLC），而软件工程五十年来始终依赖人脑作为认知主体，所有方法论（结构化编程、敏捷、DevOps）都只是「优化堆人力的方式」；大模型第一次实现「能源→高阶智能」，是与蒸汽机平行的工程史事件，但带来了新的不确定性（幻觉、漂移、不可解释），需要用二阶控制论设计自我纠偏系统；人的角色从「亲手消除偏差」退守到「设计能自我纠偏的系统」，类似工程史上自动化越彻底、工业相关人口反而越多的规律；落地路径分三阶段（辅助→自主→自治），最终瓶颈不是技术而是组织心智的转变。
+
+## 6.1
+
+* [面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)：从大淘宝营销业务实践出发，探讨传统架构（DDD 平台型 / MVC 业务型）与 AI「不确定性」本质的冲突——传统架构要求输入格式规范、输出可预测、流程预定义，而 AI 具有概率性和涌现性；提出 AI Friendly 架构三范式演进：确定性→概率性（将输出收敛至安全区间）、结构化→语义化（基于意图而非格式响应）、静态→动态（从规则转向规划）；核心能力包括 Multi-Agent 系统、Context Engineering、AI Friendly API 及 AI 可观测体系；实际应用中 AI 审核准确率达 95.7%，AI 答疑系统问题解决准确率超 98%。
+
+* [深入解析Chromium的 AI Coding 开发体系](https://mp.weixin.qq.com/s/sCmRKJjTpdB4k3145OzZMg)：以 Chromium（3500 万行 C++ 代码）为例拆解全球最大开源项目的 AI Coding 基建——在 `agents/` 目录下构建了完整的 AI Agent 基础设施，支持 Gemini CLI、Claude Code、GitHub Copilot 三工具复用；核心机制包括：AI Policy（人类始终是最终责任人，违规剥夺 Committer 权限）、四层分层 Prompt 体系（核心指令→完整工作流→平台模板→任务提示词）、18+ 可复用 Skills、RAG 知识库、15+ 场景的 Eval 评估测试框架；AI 使用政策核心原则：AI 是辅助工具，人类开发者对每一行代码负全责。
+
+* [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/ONYZFjxpIDgoRBSblLtGZg)：从 2023-2026 Agent 四个阶段（被动式 ReAct → 工具增强 → Skill 封装 → 自进化）系统梳理技术范式演进——早期 Agent 本质是「被动响应」的增强版 Chatbot，受限于模型能力只能完成单步推理；工具增强阶段引入 Function Call 链但仍依赖用户明确指令；Skill 阶段将专业知识封装为可复用模块实现即插即用；自进化阶段 Agent 具备持续学习和自我优化能力；核心论点：搞不清楚演化逻辑容易陷入「为升级而升级」的误区，旧范式并非简单淘汰而是可以相互结合使用。
 
 ---
 
