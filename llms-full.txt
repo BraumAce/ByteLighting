@@ -46813,6 +46813,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
 ---
 # 2026.6 期
 
+## 6.15
+
+* [别再问我什么是 Loop Engineering（橙皮书）](https://github.com/alchaincyf/loop-engineering-orange-book)：花叔——提出 loop engineering（循环工程）：在 harness 之上再搭一层「自动外循环」，按 prompt → context → harness → loop 四层栈组织，靠定时触发、自孵化 sub-agent、外部独立验证（AI 不能给自己打分）、记忆与下一步决策自动驱动 agent 干活；核心是把人从「逐条指挥 agent」升级为「设计指挥系统的工程师」，并警示验证债、理解腐烂、token 失控、认知投降四笔代价。
+* [一篇搞懂 AI Coding Agent 的 Token 成本控制](https://mp.weixin.qq.com/s/x8ssQ-trmIqHMPlvQSE9SA)：腾讯技术工程——Token 账单大头是系统反复搬运的上下文（固定前缀 + 会话历史 + 工具往返 + 重试）而非用户提问本身；以 Prompt Cache 稳定前缀为基础，沿「使用习惯 → 模型路由 → 上下文压缩（RTK/Caveman/headroom/context-mode）→ 代码图谱（Graphify/CodeGraph）→ Orchestrator-Worker 多 Agent 分工」五层路径，让便宜模型干标准活、贵模型只做高价值推理来系统性压成本。
+* [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](https://mp.weixin.qq.com/s/XpSpAiWY-nXjw8d8QPbabg)：阿里技术——后端「AI Friendly」的本质是把藏在人脑、群聊、事故里的系统知识显式化、可检索、可验证：用 Architecture Map + Service Card + 显式领域模型与不变量 + SKILL + 受控 Harness + Test-Gated 开发 + 结构化可观测 + L0-L5 分级权限 + Architecture as Code，把系统从「可维护」升级为「可被 Agent 维护」，沿 Copilot → Coworker → Operator 三阶段扩大 AI 可信半径，核心准则是「先可验证、再无人化」。
+
 ## 6.12
 
 * [如何构建一个更“好”的知识库？](https://mp.weixin.qq.com/s/77n3CmJ7qzyeEiXeFCjqtA)：大淘宝技术——系统讲解 RAG 知识库全链路优化，涵盖 RAGAS 评估框架、文档切分策略（Late Chunking）、混合检索（RRF 融合）、查询增强（HyDE/Multi-Query/EAR）、Cross-Encoder 重排序、AutoRAG 自动化优化、QuIM-RAG 问题倒排索引及 OpenViking 文件系统范式。
