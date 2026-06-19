@@ -8,10 +8,10 @@ heroText: ByteLighting
 heroFullScreen: true
 tagline: 弱小和无知不是生存的障碍，傲慢才是
 projects:
-  - icon: project
-    name: 项目文档
-    desc: 所有项目的说明文档
-    link: https://docs.bytelighting.cn
+  - icon: llm-wiki
+    name: LLM-Wiki
+    desc: AI 知识库
+    link: https://wiki.bytelighting.cn
 
   - icon: bookss
     name: 书籍收藏
