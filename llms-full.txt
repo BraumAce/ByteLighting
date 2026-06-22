@@ -46813,6 +46813,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
 ---
 # 2026.6 期
 
+## 6.22
+
+* [Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统](https://mp.weixin.qq.com/s/YqIyL7uW4EV2r5HLDW7wcA)：腾讯技术工程——把 Loop Engineering 定位为 ReAct（Inner Loop）之上的编排层（Outer Loop），用 Discover→Plan→Execute→Verify→Iterate 五阶段闭环与状态外置、对抗验证、断点续跑、多 Agent 并行等六要素，在 CodeBuddy 中以 /goal 条件驱动让 AI 跨多轮自治推进到可验证条件满足。
+
+* [一文吃透 Java 并发基础：从三类问题到线程状态机](https://mp.weixin.qq.com/s/oWbB59SiWzMyGN4NbNuBog)：写代码的 SharkChili——从「为什么需要多线程」出发梳理 Java 并发三类核心问题（安全性、活跃性、性能），辨析并发与并行、同步与异步，并解释程序计数器 / 虚拟机栈 / 本地方法栈为何线程私有。
+
 ## 6.21
 
 * [Progressive Disclosure: Claude-Mem's Context Priming Philosophy](https://docs.claude-mem.ai/progressive-disclosure)：Claude-Mem 官方文档——先给「有什么 + 取用成本」的轻量索引、由 agent 自行决定取什么的三层渐进式披露（索引→按需详情→源文件），替代传统 RAG 一次性塞满上下文的 context pollution，把有限注意力预算只花在高价值信息上。
