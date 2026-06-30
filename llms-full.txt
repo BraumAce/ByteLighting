@@ -46973,6 +46973,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
 ---
 # 2026.6 期
 
+## 6.30
+
+* [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](https://mp.weixin.qq.com/s/0w_xMwto4sLx6J_85OhWQw)
+
+* [万字长文推演Claude的代码统治力从何而来](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)
+
 ## 6.29
 
 * [MySQL binlog缓存一致性的Loop Engineering实践](https://mp.weixin.qq.com/s/vkrKxv3QR3ZPBe_LAV7NUg)：写代码的SharkChili——以 MySQL binlog 缓存一致性为实践案例，先讲清 row / statement / mixed、刷盘和 redo log 差异，再用 Loop Engineering 把缓存回写、位点推进、goal 编码和 loop 巡检组织成可验证闭环。
