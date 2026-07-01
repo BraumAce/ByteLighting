@@ -194,6 +194,7 @@
 - [2026.4 期](https://blog.bytelighting.cn/program/reading/2026/2026.4.md)
 - [2026.5 期](https://blog.bytelighting.cn/program/reading/2026/2026.5.md)
 - [2026.6 期](https://blog.bytelighting.cn/program/reading/2026/2026.6.md)
+- [2026.7 期](https://blog.bytelighting.cn/program/reading/2026/2026.7.md)
 - [FastAPI -- 构建高性能 API 的 Web 框架](https://blog.bytelighting.cn/program/sundry/fastapi-intro.md)
 - [Java 实现本地缓存的几种方式](https://blog.bytelighting.cn/program/sundry/java-local-cache.md)
 - [如何使用 Linux 下的日志分析工具](https://blog.bytelighting.cn/program/sundry/linux-log-analysis.md)

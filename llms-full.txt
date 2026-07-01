@@ -46975,9 +46975,9 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
 
 ## 6.30
 
-* [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](https://mp.weixin.qq.com/s/0w_xMwto4sLx6J_85OhWQw)
+* [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](https://mp.weixin.qq.com/s/0w_xMwto4sLx6J_85OhWQw)：涅羽（阿里云开发者）——把 Harness Engineering 落到 Agent = Model + Harness 的工程框架，提炼上下文精简、专才 Agent、Workspace 状态、Linter 约束四条铁律，并用钉钉「悟空」AI 招聘从全能 Agent 改为 2 Agent + N Skill 的案例说明可控 Agent 系统如何设计。
 
-* [万字长文推演Claude的代码统治力从何而来](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)
+* [万字长文推演Claude的代码统治力从何而来](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)：叶强盛（腾讯云开发者）——从 Anthropic 公开研究推演 Claude 代码能力的来源，主线是 Constitutional AI 约束下的可验证奖励 RL、代码场景的高密度自动反馈与产品端用户数据飞轮共同形成自我强化。
 
 ## 6.29
 
@@ -47092,6 +47092,19 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.6.md'
 * [面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)：大淘宝技术——传统架构与 AI 不确定性冲突，提出 AI Friendly 三范式：确定性→概率性、结构化→语义化、静态→动态，AI 审核准确率达 95.7%。
 * [深入解析Chromium的 AI Coding 开发体系](https://mp.weixin.qq.com/s/sCmRKJjTpdB4k3145OzZMg)：以 Chromium（3500 万行 C++）为例，拆解 `agents/` 目录下的完整 AI 基建：四层 Prompt 体系 + 18+ Skills + RAG 知识库 + Eval 框架，核心原则是人类对每行代码负全责。
 * [Agent核心技术概念与范式发生了哪些演变以及背后的思考](https://mp.weixin.qq.com/s/ONYZFjxpIDgoRBSblLtGZg)：梳理 2023-2026 Agent 四阶段演进（被动 ReAct → 工具增强 → Skill 封装 → 自进化），核心论点：旧范式并非淘汰而是可结合使用，搞不清演化逻辑容易陷入「为升级而升级」。
+
+---
+
+---
+url: 'https://blog.bytelighting.cn/program/reading/2026/2026.7.md'
+---
+# 2026.7 期
+
+## 7.1
+
+* [AI Agent 的 Skill 系统设计](https://mp.weixin.qq.com/s/idzAV3XkWWm7GnFOFyZUBw)：会员技术（大淘宝技术）——把 Skill 定义为让 Agent 稳定执行特定任务的能力包，围绕 description 触发、渐进披露、scripts / references / assets 分层、门控与前向测试，给出从提示词模板走向可维护行为系统的设计方法。
+
+* [Harness 工程之道：Skill 原理与最佳实践](https://mp.weixin.qq.com/s/yo2f5edeNNkYtCte9P0yhQ)：张梦杰（阿里云开发者）——结合 trade-ab-skill 讲解 Agent Skill 的开放规范与工程落地：用 Progressive Disclosure 管住上下文，用 SKILL.md frontmatter 负责发现与触发，再通过权限隔离、脚本增强、快照传参和触发 / 功能 / 性能测试把 Skill 做成可复用能力。
 
 ---
 
