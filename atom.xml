@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-01T14:40:59.147Z</updated>
+  <updated>2026-07-02T14:22:16.916Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -45,11 +45,20 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-01T14:38:49.000Z</updated>
+    <updated>2026-07-02T14:20:16.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.2</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/3Zbx4RHB4fOdomI5aA_wIQ" target="_blank" rel="noopener noreferrer">Loop Engineering又是啥？一文讲清企业Agent落地的四层工程进化论</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/0N-RnpGVy_PLSDHMwAIFNg" target="_blank" rel="noopener noreferrer">相比层出不穷的 Agent 框架，不变的 Agent Protocol 是什么</a></p>
+</li>
+</ul>
 <h2>7.1</h2>
 <ul>
 <li>
@@ -901,6 +910,26 @@
     <published>2026-04-12T09:52:25.000Z</published>
   </entry>
   <entry>
+    <title type="text">架构设计</title>
+    <id>https://blog.bytelighting.cn/architecture/</id>
+    <link href="https://blog.bytelighting.cn/architecture/"/>
+    <updated>2026-05-05T16:31:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
+<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
+<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
+</ul>
+]]></content>
+    <published>2026-04-12T09:52:25.000Z</published>
+  </entry>
+  <entry>
     <title type="text">程序人生</title>
     <id>https://blog.bytelighting.cn/program/</id>
     <link href="https://blog.bytelighting.cn/program/"/>
@@ -920,26 +949,6 @@
 <li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
 <li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
 <li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
-</ul>
-]]></content>
-    <published>2026-04-12T09:52:25.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">架构设计</title>
-    <id>https://blog.bytelighting.cn/architecture/</id>
-    <link href="https://blog.bytelighting.cn/architecture/"/>
-    <updated>2026-05-05T16:31:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
-<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
-<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
 </ul>
 ]]></content>
     <published>2026-04-12T09:52:25.000Z</published>

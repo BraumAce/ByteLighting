@@ -47100,6 +47100,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.7.md'
 ---
 # 2026.7 期
 
+## 7.2
+
+* [Loop Engineering又是啥？一文讲清企业Agent落地的四层工程进化论](https://mp.weixin.qq.com/s/3Zbx4RHB4fOdomI5aA_wIQ)
+
+* [相比层出不穷的 Agent 框架，不变的 Agent Protocol 是什么](https://mp.weixin.qq.com/s/0N-RnpGVy_PLSDHMwAIFNg)
+
 ## 7.1
 
 * [AI Agent 的 Skill 系统设计](https://mp.weixin.qq.com/s/idzAV3XkWWm7GnFOFyZUBw)：会员技术（大淘宝技术）——把 Skill 定义为让 Agent 稳定执行特定任务的能力包，围绕 description 触发、渐进披露、scripts / references / assets 分层、门控与前向测试，给出从提示词模板走向可维护行为系统的设计方法。
