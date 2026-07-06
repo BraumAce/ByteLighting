@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-03T15:54:21.344Z</updated>
+  <updated>2026-07-06T15:40:36.970Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -45,11 +45,20 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-03T15:52:21.000Z</updated>
+    <updated>2026-07-06T15:38:29.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.6</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/bsSBfvWyLUEdFHFZmFOckQ" target="_blank" rel="noopener noreferrer">为什么大模型的缓存命中率能到 90%？</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/7a2L-GatYYwI6s1uK9mTjA" target="_blank" rel="noopener noreferrer">Agent 评测：方法论与体系设计</a></p>
+</li>
+</ul>
 <h2>7.3</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/UE-RZH9hnbBd06CVapFGrA" target="_blank" rel="noopener noreferrer">从AI Coding到Harness Engineering的端到端工程开发实践</a></li>

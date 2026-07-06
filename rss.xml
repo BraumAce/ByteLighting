@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 03 Jul 2026 15:54:21 GMT</pubDate>
-    <lastBuildDate>Fri, 03 Jul 2026 15:54:21 GMT</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2026 15:40:36 GMT</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2026 15:40:36 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -54,6 +54,15 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
+7.6
+
+
+为什么大模型的缓存命中率能到 90%？
+
+
+Agent 评测：方法论与体系设计
+
+
 7.3
 
 从AI Coding到Harness Engineering的端到端工程开发实践
@@ -64,17 +73,20 @@
 Loop Engineering又是啥？一文讲清企业Agent落地的四层工程进化论
 
 
-相比层出不穷的 Agent 框架，不变的 Agent Protocol 是什么
-
-
-7.1
-
-
-AI Agent 的 Skill 系统设计：...</description>
+相比层出不穷的 Agent 框架，不变的 A...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.6</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/bsSBfvWyLUEdFHFZmFOckQ" target="_blank" rel="noopener noreferrer">为什么大模型的缓存命中率能到 90%？</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/7a2L-GatYYwI6s1uK9mTjA" target="_blank" rel="noopener noreferrer">Agent 评测：方法论与体系设计</a></p>
+</li>
+</ul>
 <h2>7.3</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/UE-RZH9hnbBd06CVapFGrA" target="_blank" rel="noopener noreferrer">从AI Coding到Harness Engineering的端到端工程开发实践</a></li>

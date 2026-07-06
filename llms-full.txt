@@ -47100,6 +47100,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.7.md'
 ---
 # 2026.7 期
 
+## 7.6
+
+* [为什么大模型的缓存命中率能到 90%？](https://mp.weixin.qq.com/s/bsSBfvWyLUEdFHFZmFOckQ)
+
+* [Agent 评测：方法论与体系设计](https://mp.weixin.qq.com/s/7a2L-GatYYwI6s1uK9mTjA)
+
 ## 7.3
 
 * [从AI Coding到Harness Engineering的端到端工程开发实践](https://mp.weixin.qq.com/s/UE-RZH9hnbBd06CVapFGrA)
