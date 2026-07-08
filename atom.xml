@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-06T16:00:27.955Z</updated>
+  <updated>2026-07-08T15:53:56.661Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -45,11 +45,41 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-06T15:46:17.000Z</updated>
+    <updated>2026-07-08T15:51:47.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.8</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/c8BymWxcopweHr11u7zY-Q" target="_blank" rel="noopener noreferrer">Harness 工程实践：如何让 Agent 完成自主迭代</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/BBySdR4uz9ybhcB0lak3rw" target="_blank" rel="noopener noreferrer">精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ayESVu4F_3RC3OdP8aV7ow" target="_blank" rel="noopener noreferrer">AI 自我改进的关键，从模型转向 Harness了！</a></p>
+</li>
+</ul>
+<h2>7.7</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/EdF_pyb_Ci7BFGXQbRsRoA" target="_blank" rel="noopener noreferrer">美团二面：Agent、Tools、Workflow 这三个的概念和区别介绍一下？</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/LGo7daiYYRf1r_YY3r-cXw" target="_blank" rel="noopener noreferrer">从Vibe Coding到Harness—— 一套大仓AI工程化实战</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/WEt8AL9DkCHH6wrOXZLGAA" target="_blank" rel="noopener noreferrer">从分布式架构到AI架构面试题</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/EChuGeLSUlZdPI0GrapqVg" target="_blank" rel="noopener noreferrer">Claude Code Skills 的技术实现和运行方式</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/AQLsjzD0s9d8kGUGdul0sg" target="_blank" rel="noopener noreferrer">Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环</a></p>
+</li>
+</ul>
 <h2>7.6</h2>
 <ul>
 <li>
