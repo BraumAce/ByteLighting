@@ -47102,23 +47102,23 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.7.md'
 
 ## 7.8
 
-* [Harness 工程实践：如何让 Agent 完成自主迭代](https://mp.weixin.qq.com/s/c8BymWxcopweHr11u7zY-Q)
+* [Harness 工程实践：如何让 Agent 完成自主迭代](https://mp.weixin.qq.com/s/c8BymWxcopweHr11u7zY-Q)：肖汉松（阿里技术）——复盘线上业务 Agent 的 Harness 自主优化闭环：把部署、评测、结果分析和 prompt 改写工具化，用父子 Agent、训练 / 验证集隔离与 champion-challenger 机制跑出 17 小时、16 轮迭代，防止早停、上下文爆炸和 reward hacking。
 
-* [精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事](https://mp.weixin.qq.com/s/BBySdR4uz9ybhcB0lak3rw)
+* [精打细算虾养成指南： 省 Token 和把 AI 用好，从来就是一件事](https://mp.weixin.qq.com/s/BBySdR4uz9ybhcB0lak3rw)：Kario Chen（腾讯技术工程）——把省 Token 归结为上下文工程：用 JIT 检索、上下文分层卸载、Prompt Caching、代表性示例和主 Agent + 子 Agent 架构，在更少上下文里给模型更强信号。
 
-* [AI 自我改进的关键，从模型转向 Harness了！](https://mp.weixin.qq.com/s/ayESVu4F_3RC3OdP8aV7ow)
+* [AI 自我改进的关键，从模型转向 Harness了！](https://mp.weixin.qq.com/s/ayESVu4F_3RC3OdP8aV7ow)：翁荔（Datawhale）——围绕《Harness Engineering for Self-Improvement》梳理 RSI 的近期路径：模型外的 Harness 通过工具、文件记忆、子 Agent、评估器和自我优化循环，成为 AI 自我改进的关键控制层。
 
 ## 7.7
 
-* [美团二面：Agent、Tools、Workflow 这三个的概念和区别介绍一下？](https://mp.weixin.qq.com/s/EdF_pyb_Ci7BFGXQbRsRoA)
+* [美团二面：Agent、Tools、Workflow 这三个的概念和区别介绍一下？](https://mp.weixin.qq.com/s/EdF_pyb_Ci7BFGXQbRsRoA)：犬小哈（小哈学Java）——用 Anthropic 定义和 Spring AI 示例区分 Tools、Workflow、Agent：Tool 是被动能力单元，Workflow 是固定路径编排，Agent 是带 ReAct 循环的自主决策系统，并强调能用 Workflow 就别上 Agent。
 
-* [从Vibe Coding到Harness—— 一套大仓AI工程化实战](https://mp.weixin.qq.com/s/LGo7daiYYRf1r_YY3r-cXw)
+* [从Vibe Coding到Harness—— 一套大仓AI工程化实战](https://mp.weixin.qq.com/s/LGo7daiYYRf1r_YY3r-cXw)：fitchzheng、leoshli（腾讯技术工程）——以 TAB 大仓为样本复盘 Harness 落地：SPEC 先行，Rule 下沉为 Skill / 脚本，4 个 Sub Agent、13 阶段 Workflow、7 道门禁脚本和 MCP 接口共同把跨仓需求做成可审计交付链路。
 
-* [从分布式架构到AI架构面试题](https://mp.weixin.qq.com/s/WEt8AL9DkCHH6wrOXZLGAA)
+* [从分布式架构到AI架构面试题](https://mp.weixin.qq.com/s/WEt8AL9DkCHH6wrOXZLGAA)：码农SharkChili（写代码的SharkChili）——把后端架构面试题从单体、读写分离、分布式与容量估算，延伸到 Claude Code / Harness：用记忆层、扩展层、集成层、编程层解释 AI 时代的架构推导能力。
 
-* [Claude Code Skills 的技术实现和运行方式](https://mp.weixin.qq.com/s/EChuGeLSUlZdPI0GrapqVg)
+* [Claude Code Skills 的技术实现和运行方式](https://mp.weixin.qq.com/s/EChuGeLSUlZdPI0GrapqVg)：小G（JavaGuide）——从 CLAUDE.md 与 Skill 的分工讲到 Claude Code 的 Skill 加载机制：用 description 触发、frontmatter / allowed-tools 约束、supporting files 渐进披露，把长流程从常驻上下文拆成按需操作手册。
 
-* [Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环](https://mp.weixin.qq.com/s/AQLsjzD0s9d8kGUGdul0sg)
+* [Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环](https://mp.weixin.qq.com/s/AQLsjzD0s9d8kGUGdul0sg)：也达（阿里云开发者）——把 Loop Engineering 定义为 Harness 之上的持续维护闭环：用 Connectors、Automations、Skills、Worktrees、Sub Agents、State 串起日志发现、补丁生成、334 条测试、预发验证和经验沉淀。
 
 ## 7.6
 
