@@ -28,6 +28,7 @@ export const ai = arraySidebar([
     children: [
       { text: "Skills", prefix: "skills/", collapsible: true, children: "structure" },
       { text: "RAG", prefix: "rag/", collapsible: true, children: "structure" },
+      { text: "MCP", prefix: "mcp/", collapsible: true, children: "structure" },
     ],
   },
 ]);
