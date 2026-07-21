@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-20T16:16:08.663Z</updated>
+  <updated>2026-07-21T15:36:50.012Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -240,11 +240,23 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-20T16:06:29.000Z</updated>
+    <updated>2026-07-21T15:34:53.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.21</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/2tW8I_TjLk7dtzysGNs3hQ" target="_blank" rel="noopener noreferrer">删掉80%的Skill，Agent反而更听话了</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/DrIpzHm777Zd8klcyAICBA" target="_blank" rel="noopener noreferrer">从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/RDIMNWfITiBqC7e8pBa8bw" target="_blank" rel="noopener noreferrer">NL2SQL 在超大规模数仓场景的架构突破与工程实践</a></p>
+</li>
+</ul>
 <h2>7.20</h2>
 <ul>
 <li>
