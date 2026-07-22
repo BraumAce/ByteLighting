@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 21 Jul 2026 15:36:50 GMT</pubDate>
-    <lastBuildDate>Tue, 21 Jul 2026 15:36:50 GMT</lastBuildDate>
+    <pubDate>Wed, 22 Jul 2026 15:48:45 GMT</pubDate>
+    <lastBuildDate>Wed, 22 Jul 2026 15:48:45 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -243,26 +243,35 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
+7.22
+
+
+让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环
+
+
+RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回｜得物技术
+
+
 7.21
 
 
 删掉80%的Skill，Agent反而更听话了
 
 
-从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践
-
-
-NL2SQL 在超大规模数仓场景的架构突破与工程实践
-
-
-7.20
-
-
-最新！万字综述 AI Agent 从记忆到自我进化！：管秉涛（Datawhale）——围绕记忆、推理和递归自我改进的三...</description>
+从 Vibe Coding 到 AI 原生研发团队：...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.22</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/imwXP56r-llaQwD-qAQM6Q" target="_blank" rel="noopener noreferrer">让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/gfFlUUNbKZ23G7NgWHU3YQ" target="_blank" rel="noopener noreferrer">RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回｜得物技术</a></p>
+</li>
+</ul>
 <h2>7.21</h2>
 <ul>
 <li>

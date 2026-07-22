@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-21T15:36:50.012Z</updated>
+  <updated>2026-07-22T15:48:45.095Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -240,11 +240,20 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-21T15:34:53.000Z</updated>
+    <updated>2026-07-22T15:43:46.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.22</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/imwXP56r-llaQwD-qAQM6Q" target="_blank" rel="noopener noreferrer">让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/gfFlUUNbKZ23G7NgWHU3YQ" target="_blank" rel="noopener noreferrer">RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回｜得物技术</a></p>
+</li>
+</ul>
 <h2>7.21</h2>
 <ul>
 <li>
