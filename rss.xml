@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 24 Jul 2026 15:01:25 GMT</pubDate>
-    <lastBuildDate>Fri, 24 Jul 2026 15:01:25 GMT</lastBuildDate>
+    <pubDate>Fri, 24 Jul 2026 15:03:05 GMT</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2026 15:03:05 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -243,6 +243,18 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
+7.24
+
+
+Token降本50%：Harness工作流的成本优化实践
+
+
+Loop Engineering 已死，Graph Engineering 永生
+
+
+分解一座冰山：后端系统「AI 知识库体系」建设实践（长文干货）
+
+
 7.23
 
 Agent 工程思考：从 ReAct 到 Agent Harness
@@ -250,20 +262,23 @@ Agent 工程思考：从 ReAct 到 Agent Harness
 7.22
 
 
-让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环
-
-
-RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回｜得物技术
-
-
-7.21
-
-
-删掉80%的Skil...</description>
+让 A...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.24</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Vl27JCPRcrM4rirewP_Hjw" target="_blank" rel="noopener noreferrer">Token降本50%：Harness工作流的成本优化实践</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/EEr4ErhWHwcs57-xgSC7uQ" target="_blank" rel="noopener noreferrer">Loop Engineering 已死，Graph Engineering 永生</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/4N-w61GYUWzfS5RqacwPAg" target="_blank" rel="noopener noreferrer">分解一座冰山：后端系统「AI 知识库体系」建设实践（长文干货）</a></p>
+</li>
+</ul>
 <h2>7.23</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/8Xsk2M-2Z3xg8vZdZWaitg" target="_blank" rel="noopener noreferrer">Agent 工程思考：从 ReAct 到 Agent Harness</a></li>
