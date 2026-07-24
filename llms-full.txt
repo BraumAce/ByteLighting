@@ -47360,6 +47360,10 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.7.md'
 ---
 # 2026.7 期
 
+## 7.23
+
+* [Agent 工程思考：从 ReAct 到 Agent Harness](https://mp.weixin.qq.com/s/8Xsk2M-2Z3xg8vZdZWaitg)
+
 ## 7.22
 
 * [让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环](https://mp.weixin.qq.com/s/imwXP56r-llaQwD-qAQM6Q)

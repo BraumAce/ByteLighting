@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 22 Jul 2026 15:48:45 GMT</pubDate>
-    <lastBuildDate>Wed, 22 Jul 2026 15:48:45 GMT</lastBuildDate>
+    <pubDate>Fri, 24 Jul 2026 15:01:25 GMT</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2026 15:01:25 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -243,6 +243,10 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
+7.23
+
+Agent 工程思考：从 ReAct 到 Agent Harness
+
 7.22
 
 
@@ -255,14 +259,15 @@ RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召
 7.21
 
 
-删掉80%的Skill，Agent反而更听话了
-
-
-从 Vibe Coding 到 AI 原生研发团队：...</description>
+删掉80%的Skil...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.23</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/8Xsk2M-2Z3xg8vZdZWaitg" target="_blank" rel="noopener noreferrer">Agent 工程思考：从 ReAct 到 Agent Harness</a></li>
+</ul>
 <h2>7.22</h2>
 <ul>
 <li>

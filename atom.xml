@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-22T15:48:45.095Z</updated>
+  <updated>2026-07-24T15:01:25.951Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -240,11 +240,15 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-22T15:43:46.000Z</updated>
+    <updated>2026-07-24T14:59:25.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.23</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/8Xsk2M-2Z3xg8vZdZWaitg" target="_blank" rel="noopener noreferrer">Agent 工程思考：从 ReAct 到 Agent Harness</a></li>
+</ul>
 <h2>7.22</h2>
 <ul>
 <li>
