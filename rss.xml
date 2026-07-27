@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 24 Jul 2026 15:03:05 GMT</pubDate>
-    <lastBuildDate>Fri, 24 Jul 2026 15:03:05 GMT</lastBuildDate>
+    <pubDate>Mon, 27 Jul 2026 15:09:02 GMT</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2026 15:09:02 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -243,6 +243,10 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
+7.25
+
+The new rules of context engineering for Claude 5 generation models
+
 7.24
 
 
@@ -252,21 +256,15 @@ Token降本50%：Harness工作流的成本优化实践
 Loop Engineering 已死，Graph Engineering 永生
 
 
-分解一座冰山：后端系统「AI 知识库体系」建设实践（长文干货）
-
-
-7.23
-
-Agent 工程思考：从 ReAct 到 Agent Harness
-
-7.22
-
-
-让 A...</description>
+分解一座冰山：后端系统...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.25</h2>
+<ul>
+<li><a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank" rel="noopener noreferrer">The new rules of context engineering for Claude 5 generation models</a></li>
+</ul>
 <h2>7.24</h2>
 <ul>
 <li>
