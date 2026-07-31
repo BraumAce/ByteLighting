@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 30 Jul 2026 15:59:40 GMT</pubDate>
-    <lastBuildDate>Thu, 30 Jul 2026 15:59:40 GMT</lastBuildDate>
+    <pubDate>Fri, 31 Jul 2026 16:05:50 GMT</pubDate>
+    <lastBuildDate>Fri, 31 Jul 2026 16:05:50 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -243,17 +243,19 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.7 期</source>
       <description>2026.7 期
 
-7.30
+7.31
 
+从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考：吴佐衍（阿里技术）——认为 Coding 能力接近被解决后，研发提效的主战场应从 Spec、Prompt 和固定 Workflow 转向环境与验证，把构建、部署、测试、数据、日志、监控和发布链路改造成 Agent 可调用、可反馈的基础设施。
 
-对Loop Engineering的思考：吕昊俣（腾讯云开发者）——从 Prompt、Context、Harness、Loop 到 Graph Engineering 梳理 AI 工程范式演进，结合控制论、TDD、证据链和预算机制说明如何从最小可收敛闭环逐步扩展无人值守能力。
-
-
-AI Coding的下一站，不是更会写...</description>
+...</description>
       <category>文章</category>
       <pubDate>Wed, 01 Jul 2026 14:38:49 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>7.31</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/EMUsGt6m1aNQ4T9yDtg7Jg" target="_blank" rel="noopener noreferrer">从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考</a>：吴佐衍（阿里技术）——认为 Coding 能力接近被解决后，研发提效的主战场应从 Spec、Prompt 和固定 Workflow 转向环境与验证，把构建、部署、测试、数据、日志、监控和发布链路改造成 Agent 可调用、可反馈的基础设施。</li>
+</ul>
 <h2>7.30</h2>
 <ul>
 <li>

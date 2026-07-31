@@ -5,7 +5,7 @@
   <subtitle>ByteLighting Wiki - 结构化知识库</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-07-30T15:59:40.582Z</updated>
+  <updated>2026-07-31T16:05:50.854Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -240,11 +240,15 @@
     <title type="text">2026.7 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.7.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.7.html"/>
-    <updated>2026-07-30T15:57:29.000Z</updated>
+    <updated>2026-07-31T16:01:09.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>7.31</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/EMUsGt6m1aNQ4T9yDtg7Jg" target="_blank" rel="noopener noreferrer">从 Spec 驱动转向环境与验证驱动——我对 AI Coding 的一点思考</a>：吴佐衍（阿里技术）——认为 Coding 能力接近被解决后，研发提效的主战场应从 Spec、Prompt 和固定 Workflow 转向环境与验证，把构建、部署、测试、数据、日志、监控和发布链路改造成 Agent 可调用、可反馈的基础设施。</li>
+</ul>
 <h2>7.30</h2>
 <ul>
 <li>
