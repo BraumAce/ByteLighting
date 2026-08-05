@@ -47505,6 +47505,11 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.8.md'
 ---
 # 2026.8 期
 
+## 8.5
+
+* [复杂业务团队的 AI Coding 交付实践：知识库、RD 流程和质量门禁](https://mp.weixin.qq.com/s/aopO-3KO9lenKF5WHhBD7w)：寂秋（淘天集团-物流技术团队）——以分层知识库、Skills 与 Markdown 化 RD 流程串起复杂业务 AI Coding，并在需求澄清、方案设计和实现校验等节点前置质量门禁，先沉淀团队上下文与协作协议，再逐步推进自动化交付。
+* [AI Infra进阶：如何让大模型输出确定的结果](https://mp.weixin.qq.com/s/YRwGxVsO93M0-2bupN-bqQ)：binnnliu（腾讯技术工程）——从浮点加法不满足结合律出发，解释动态组批、GEMM 调度与 Reduction Topology 如何造成 Batch Variance，并梳理 vLLM 按 GPU 架构固定 Split-K / BLOCK-K 等执行路径实现 Batch Invariance。
+
 ## 8.3
 
 * [AI 不自动带来超级组织](https://mp.weixin.qq.com/s/ZVExav2dpDdcsM6_4VwvWQ)：王健飞（腾讯研究院）——从 AI 裁员、“超级个体”与“一人公司”的矛盾出发，结合交易成本和组织协作分析 AI 如何削弱企业作为大规模人力动员工具的必要性，让权力从雇佣组织转向平台、基础设施与协作协议。

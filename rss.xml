@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting Wiki - 结构化知识库</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 03 Aug 2026 16:00:39 GMT</pubDate>
-    <lastBuildDate>Mon, 03 Aug 2026 16:00:39 GMT</lastBuildDate>
+    <pubDate>Wed, 05 Aug 2026 16:01:39 GMT</pubDate>
+    <lastBuildDate>Wed, 05 Aug 2026 16:01:39 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,13 +55,19 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
-8.3
+8.5
 
-AI 不自动带来超级组织：王健飞（腾讯研究院）——从 AI 裁员、“超级个体”与“一人公司”的矛盾出发，结合交易成本和组织协作分析 AI 如何削弱企业作为大规模人力动员工具的必要性，让权力从雇佣组织转向平台、基础设施与协作协议。</description>
+复杂业务团队的 AI Coding 交付实践：知识库、RD 流程和质量门禁：寂秋（淘天集团-物流技术团队）——以分层知识库、Skills 与 Markdown 化 RD 流程串起复杂业务 AI Coding，并在需求澄清、方案设计和实现校验等节点前置质量门禁，先沉淀团队上下文与协作协议，再逐步推进自动化交付。
+AI Inf...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.5</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/aopO-3KO9lenKF5WHhBD7w" target="_blank" rel="noopener noreferrer">复杂业务团队的 AI Coding 交付实践：知识库、RD 流程和质量门禁</a>：寂秋（淘天集团-物流技术团队）——以分层知识库、Skills 与 Markdown 化 RD 流程串起复杂业务 AI Coding，并在需求澄清、方案设计和实现校验等节点前置质量门禁，先沉淀团队上下文与协作协议，再逐步推进自动化交付。</li>
+<li><a href="https://mp.weixin.qq.com/s/YRwGxVsO93M0-2bupN-bqQ" target="_blank" rel="noopener noreferrer">AI Infra进阶：如何让大模型输出确定的结果</a>：binnnliu（腾讯技术工程）——从浮点加法不满足结合律出发，解释动态组批、GEMM 调度与 Reduction Topology 如何造成 Batch Variance，并梳理 vLLM 按 GPU 架构固定 Split-K / BLOCK-K 等执行路径实现 Batch Invariance。</li>
+</ul>
 <h2>8.3</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/ZVExav2dpDdcsM6_4VwvWQ" target="_blank" rel="noopener noreferrer">AI 不自动带来超级组织</a>：王健飞（腾讯研究院）——从 AI 裁员、“超级个体”与“一人公司”的矛盾出发，结合交易成本和组织协作分析 AI 如何削弱企业作为大规模人力动员工具的必要性，让权力从雇佣组织转向平台、基础设施与协作协议。</li>
