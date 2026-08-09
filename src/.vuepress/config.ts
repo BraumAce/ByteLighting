@@ -12,7 +12,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "ByteLighting",
-  description: "ByteLighting Wiki - 结构化知识库",
+  description: "ByteLighting - 个人技术博客",
 
   head: [
     // meta
@@ -31,13 +31,13 @@ export default defineUserConfig({
     [
       "meta", {
         name: "keywords",
-        content: "知识库, Wiki, AI, LLM, Java, 算法, 数据库, MySQL, Spring, Redis, 架构设计, 后端开发, 计算机基础",
+        content: "博客, Blog, AI, LLM, Java, 算法, 数据库, MySQL, Spring, Redis, 架构设计, 后端开发, 计算机基础",
       },
     ],
     [
       "meta", {
         name: "description",
-        content: "ByteLighting Wiki - 结构化知识库",
+        content: "ByteLighting - 个人技术博客",
       },
     ],
     [ "meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
