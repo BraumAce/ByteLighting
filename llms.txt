@@ -1,6 +1,6 @@
 # ByteLighting
 
-> ByteLighting Wiki - 结构化知识库This file contains links to all documentation sections.
+> ByteLighting - 个人技术博客This file contains links to all documentation sections.
 
 ## Table of Contents
 
@@ -169,7 +169,7 @@
 - [计算机](https://blog.bytelighting.cn/computer/technology/index.md)
 - [初识大数据](https://blog.bytelighting.cn/computer/technology/big-data/intro-to-big-data.md)
 - [Shell 语法](https://blog.bytelighting.cn/computer/technology/operating-system/shell-syntax.md)
-- [介绍页](https://blog.bytelighting.cn/intro.md)
+- [](https://blog.bytelighting.cn/intro.md)
 - [程序人生](https://blog.bytelighting.cn/program/index.md)
 - [电子书](https://blog.bytelighting.cn/program/books/ebooks.md)
 - [2024.10 期](https://blog.bytelighting.cn/program/reading/2024/2024.10.md)
