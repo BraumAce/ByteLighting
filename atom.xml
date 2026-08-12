@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-08-09T14:46:33.731Z</updated>
+  <updated>2026-08-12T15:50:34.371Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,16 @@
     <title type="text">2026.8 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.8.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.8.html"/>
-    <updated>2026-08-07T13:33:32.000Z</updated>
+    <updated>2026-08-12T15:48:18.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>8.12</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/fhcbG2_IyDq-QuH_dBHT-g" target="_blank" rel="noopener noreferrer">天猫AI助手：调度框架重构与AI Coding工程化实践</a>：大淘宝技术——以调度框架重构与团队 AI Coding 工程化双轮驱动，将硬编码节点链演进为三层调度和 Reducer/Event 写收敛，并用范式、Skill、Hook 与观测报告把单业务接入成本从 3.5–4.5 人天降至约 0.7 人天。</li>
+<li><a href="https://mp.weixin.qq.com/s/EIXbIqUYcnFHpwAiPsJDEg" target="_blank" rel="noopener noreferrer">得物知识问答：复合检索 Agent 的系统设计实践</a>：莲舟（得物技术）——以 AgentScope 构建融合企业知识库与飞书文档、消息、妙记的复合检索 Agent，通过多轮自主检索、FastPass/Reranker/LLM Grading 三级质量过滤，以及多实例 SSE 断点续传支撑生产级知识问答。</li>
+</ul>
 <h2>8.7</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/Ky7oM7NIytxThVk4APjiTg" target="_blank" rel="noopener noreferrer">淘宝主播Agent的Harness工程实战</a>：大淘宝技术——针对直播场景的高风险、高并发和长程可中断特性，构建 Harness 六元组与分层架构，以统一工作区抽象串联 MySQL 会话、Hologres 记忆和 GitLab 技能，并用上下文压缩、Schema/幂等、Hook、沙箱、DAG 规划和评测体系保障可控交付。</li>
