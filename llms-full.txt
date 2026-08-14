@@ -47512,6 +47512,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.8.md'
 ---
 # 2026.8 期
 
+## 8.14
+
+* [企业内Agent工具落地实践：统一Harness、Skill与虚拟文件系统](https://mp.weixin.qq.com/s/D4RId9oiULoFj567vawPig)：腾讯云开发者——针对企业 Agent 从演示走向生产的治理难题，以统一 Harness 承载执行、安全和可观测性，以 Skill 分发领域能力、虚拟文件系统管理长任务上下文与交付产物，并用分阶段路由和 Trace-to-Skill 闭环支撑落地。
+* [重构协同：关于AI Native团队的思考](https://mp.weixin.qq.com/s/s3ZDiBCWD8XBYKy-UflfbQ)：大淘宝技术——从 AI 提效的单点优化、全局低效困境出发，提出以知识底座、Agent 和人构成 AI Native 团队闭环，指出存量业务知识底座的构建、外化与自治是全局提效的核心瓶颈。
+* [DeepSeek Harness 拆解：一套能拼装的 Agent 架构](https://mp.weixin.qq.com/s/DeIty-Nn8tQvE4osy7_bpg)：腾讯技术工程——拆解 DeepSeek Harness 基于 Cordis 的“everything is a plugin”架构，重点说明 Fiber/effect 如何实现可逆副作用与热插拔，以及 Preset scope、Code Mode 隔离和工具注册调度等运行时设计。
+
 ## 8.12
 
 * [天猫AI助手：调度框架重构与AI Coding工程化实践](https://mp.weixin.qq.com/s/fhcbG2_IyDq-QuH_dBHT-g)：大淘宝技术——以调度框架重构与团队 AI Coding 工程化双轮驱动，将硬编码节点链演进为三层调度和 Reducer/Event 写收敛，并用范式、Skill、Hook 与观测报告把单业务接入成本从 3.5–4.5 人天降至约 0.7 人天。
