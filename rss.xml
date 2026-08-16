@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 14 Aug 2026 15:44:24 GMT</pubDate>
-    <lastBuildDate>Fri, 14 Aug 2026 15:44:24 GMT</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2026 14:55:12 GMT</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2026 14:55:12 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,13 +55,17 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
-8.14
+8.16
 
-企业内Agent工具落地实践：统一Harness、Skill与虚拟文件系统：腾讯云开发者——针对企业 Agent 从演示走向生产的治理难题，以统一 Harness 承载执行、安全和可观测性，以 Skill 分发领域能力、虚拟文件系统管理长任务上下文与交付产物，并用分阶段路由和 Trace-to-Skill 闭环支撑落地。...</description>
+从死锁四条件到Subagent实战：Java并发问题的AI时代解法：SharkChili（写代码的SharkChili）——从哲学家就餐与死锁四条件切入复盘 Java 锁顺序、动态调用与嵌套死锁解法，进一步引入 Subagent 隔离上下文与降噪思想，梳理并行、串行与嵌套 Agent 模式在 Java 故障定位与代码 C...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.16</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/4ReuJLV26GP9uiNmrEUyWw" target="_blank" rel="noopener noreferrer">从死锁四条件到Subagent实战：Java并发问题的AI时代解法</a>：SharkChili（写代码的SharkChili）——从哲学家就餐与死锁四条件切入复盘 Java 锁顺序、动态调用与嵌套死锁解法，进一步引入 Subagent 隔离上下文与降噪思想，梳理并行、串行与嵌套 Agent 模式在 Java 故障定位与代码 CR 中的工程化落地。</li>
+</ul>
 <h2>8.14</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/D4RId9oiULoFj567vawPig" target="_blank" rel="noopener noreferrer">企业内Agent工具落地实践：统一Harness、Skill与虚拟文件系统</a>：腾讯云开发者——针对企业 Agent 从演示走向生产的治理难题，以统一 Harness 承载执行、安全和可观测性，以 Skill 分发领域能力、虚拟文件系统管理长任务上下文与交付产物，并用分阶段路由和 Trace-to-Skill 闭环支撑落地。</li>
