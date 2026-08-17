@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 16 Aug 2026 14:55:12 GMT</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2026 14:55:12 GMT</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2026 15:53:12 GMT</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2026 15:53:12 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -17,8 +17,8 @@
     </image>
     <category>文章</category>
     <category>MCP</category>
-    <category>RAG</category>
     <category>架构设计</category>
+    <category>RAG</category>
     <category>Agentic</category>
     <category>Agent Harness</category>
     <category>Skills</category>
@@ -55,13 +55,20 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
-8.16
+8.17
 
-从死锁四条件到Subagent实战：Java并发问题的AI时代解法：SharkChili（写代码的SharkChili）——从哲学家就餐与死锁四条件切入复盘 Java 锁顺序、动态调用与嵌套死锁解法，进一步引入 Subagent 隔离上下文与降噪思想，梳理并行、串行与嵌套 Agent 模式在 Java 故障定位与代码 C...</description>
+AI时代的数据研发-Semantic（语义层）实践总结：大淘宝技术——以指标、维度、逻辑表和 CTE 构建连接物理数据与业务语义的统一抽象层，并结合 Wiki-RAG、Meta-ontology、Agentic 双轨架构及工程化校验，将数据研发从编写 SQL 转向定义和治理可供 AI 消费的语义资产。
+Agent的上限，...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.17</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/9gJV-RuSFAjO0nexT0xiAA" target="_blank" rel="noopener noreferrer">AI时代的数据研发-Semantic（语义层）实践总结</a>：大淘宝技术——以指标、维度、逻辑表和 CTE 构建连接物理数据与业务语义的统一抽象层，并结合 Wiki-RAG、Meta-ontology、Agentic 双轨架构及工程化校验，将数据研发从编写 SQL 转向定义和治理可供 AI 消费的语义资产。</li>
+<li><a href="https://mp.weixin.qq.com/s/VmH96QDoqrcV0tSUF2YCMQ" target="_blank" rel="noopener noreferrer">Agent的上限，可能不在模型，而在团队知识</a>：danteyang（腾讯技术工程）——将传统知识库从静态仓库升级为面向 Agent 的供给系统，通过流程自动沉淀、结构化人机共读、主动注入记账、有效期治理与退场复活，形成生产、提炼、消费、反馈和保鲜的知识飞轮。</li>
+<li><a href="https://mp.weixin.qq.com/s/fVqp5E-UJ9-b7kgAcvekCw" target="_blank" rel="noopener noreferrer">Harness 工程之道：Skill 原理与最佳实践</a>：阿里技术——系统梳理 Agent Skill 的渐进式披露、目录规范、语义触发与作用域机制，并以路由式 <a href="http://SKILL.md" target="_blank" rel="noopener noreferrer">SKILL.md</a>、分层知识、最小工具权限、确定性脚本、参数快照及观测驱动测试总结工程化实践。</li>
+</ul>
 <h2>8.16</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/4ReuJLV26GP9uiNmrEUyWw" target="_blank" rel="noopener noreferrer">从死锁四条件到Subagent实战：Java并发问题的AI时代解法</a>：SharkChili（写代码的SharkChili）——从哲学家就餐与死锁四条件切入复盘 Java 锁顺序、动态调用与嵌套死锁解法，进一步引入 Subagent 隔离上下文与降噪思想，梳理并行、串行与嵌套 Agent 模式在 Java 故障定位与代码 CR 中的工程化落地。</li>
@@ -498,52 +505,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</title>
-      <link>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</link>
-      <guid>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</source>
-      <description>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer
-
-
-原文作者：板牙 | 来源：阿里云开发者社区
-
-RAG 的三个结构性缺陷
-做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LL...</description>
-      <category>RAG</category>
-      <pubDate>Fri, 26 Jun 2026 14:22:33 GMT</pubDate>
-      <content:encoded><![CDATA[
-<!-- more -->
-<blockquote>
-<p>原文作者：板牙 | 来源：<a href="https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A" target="_blank" rel="noopener noreferrer">阿里云开发者社区</a></p>
-</blockquote>
-<h2>RAG 的三个结构性缺陷</h2>
-<p>做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LLM 生成答案，搞定。</p>
-<p>但工程知识库做到深处，你会发现 RAG 有三个结构性缺陷，是任何 prompt 技巧都救不回来的：</p>
-<h3>缺陷一：每次从零推导</h3>
-<p>正如 Karpathy 在 LLM Wiki 设计文档中一针见血指出的——&quot;the LLM is rediscovering knowledge from scratch on every question. There's no accumulation.&quot; 问一个需要综合 5 篇文档的问题，LLM 每次都得重新找到并拼接那 5 个片段，没有任何中间成果被保留。这就像每次做菜都从买菜开始，永远没有&quot;备菜&quot;这个环节。</p>
-<h3>缺陷二：无法连点成线</h3>
-<p>Microsoft GraphRAG 的研究明确指出了 baseline RAG 的两个失败模式：当答案需要通过共享属性连接分散信息时，平坦的向量检索无能为力；当需要对大规模语料做全局性的语义理解时，RAG 同样力不从心。</p>
-<h3>缺陷三：粒度混乱</h3>
-<p>一个 chunk 可能是&quot;系统设计原则&quot;，也可能是&quot;某个函数的第 42-143 行实现&quot;。向量空间不区分抽象层次——&quot;设计原则&quot;和&quot;代码实现&quot;在语义上可能很近，但它们服务于完全不同的认知需求。</p>
-<blockquote>
-<p>&quot;用向量检索做知识库，就像用搜索引擎替代知识体系——你能找到所有碎片，但拼不出全貌。&quot;</p>
-</blockquote>
-<h2>四大知识库范式演进</h2>
-<h3>范式一：Naive RAG — 平铺向量检索</h3>
-<p>文档 → chunk → embedding → 向量数据库 → 相似度检索。最基础也最广泛使用的模式，但默认配置下无积累、无关联、无层次、无角色区分。</p>
-<h3>范式二：LLM Wiki — 持续编译的知识工件</h3>
-<p>Andrej Karpathy 提出的模式，核心洞察：wiki 是一个持续积累的工件（persistent, compounding artifact）。LLM 不只是检索者，更是知识的维护者。三层架构：Raw Sources（人类策展）→ Wiki（LLM 完全拥有）→ Schema（人类 + LLM 共同演进）。</p>
-<h3>范式三：Graphify — 代码即图谱</h3>
-<p>把代码库、文档、配置文件等异构资源统一映射为一张可查询的知识图谱。双管道提取：AST 管道（离线，tree-sitter 解析）+ 语义管道（LLM 语义提取）。</p>
-<h3>范式四：GraphRAG — 图谱增强的检索</h3>
-<p>Microsoft GraphRAG 是对 Naive RAG 的结构化升级：先构建知识图谱 → Leiden 算法社区聚类 → 分层社区摘要 → 查询时结合图结构和摘要回答。</p>
-<h2>金字塔知识库（Pyramid KB）</h2>
-<h3>五层分层设计</h3>
-<p>| 层 | 职责 | 稳定性 | 类比 |<br>
-|</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>设计模式已死？—— AI 时代设计模式的永恒价值</title>
       <link>https://blog.bytelighting.cn/architecture/system-design/pattern/design-patterns-ai-era.html</link>
       <guid>https://blog.bytelighting.cn/architecture/system-design/pattern/design-patterns-ai-era.html</guid>
@@ -594,6 +555,52 @@ RAG 的三个结构性缺陷
 <li><strong>底层抽象是不变的</strong> — 不管编程范式如何变化，某些组织方式会不可避免地再次出现，治愈 AI FOMO 焦虑</li>
 <li><strong>经典始终是经典</strong> — 软件工程的底层规律不会因为 AI 的到来而改变，变的是表达形式</li>
 </ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</title>
+      <link>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</link>
+      <guid>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</source>
+      <description>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer
+
+
+原文作者：板牙 | 来源：阿里云开发者社区
+
+RAG 的三个结构性缺陷
+做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LL...</description>
+      <category>RAG</category>
+      <pubDate>Fri, 26 Jun 2026 14:22:33 GMT</pubDate>
+      <content:encoded><![CDATA[
+<!-- more -->
+<blockquote>
+<p>原文作者：板牙 | 来源：<a href="https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A" target="_blank" rel="noopener noreferrer">阿里云开发者社区</a></p>
+</blockquote>
+<h2>RAG 的三个结构性缺陷</h2>
+<p>做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LLM 生成答案，搞定。</p>
+<p>但工程知识库做到深处，你会发现 RAG 有三个结构性缺陷，是任何 prompt 技巧都救不回来的：</p>
+<h3>缺陷一：每次从零推导</h3>
+<p>正如 Karpathy 在 LLM Wiki 设计文档中一针见血指出的——&quot;the LLM is rediscovering knowledge from scratch on every question. There's no accumulation.&quot; 问一个需要综合 5 篇文档的问题，LLM 每次都得重新找到并拼接那 5 个片段，没有任何中间成果被保留。这就像每次做菜都从买菜开始，永远没有&quot;备菜&quot;这个环节。</p>
+<h3>缺陷二：无法连点成线</h3>
+<p>Microsoft GraphRAG 的研究明确指出了 baseline RAG 的两个失败模式：当答案需要通过共享属性连接分散信息时，平坦的向量检索无能为力；当需要对大规模语料做全局性的语义理解时，RAG 同样力不从心。</p>
+<h3>缺陷三：粒度混乱</h3>
+<p>一个 chunk 可能是&quot;系统设计原则&quot;，也可能是&quot;某个函数的第 42-143 行实现&quot;。向量空间不区分抽象层次——&quot;设计原则&quot;和&quot;代码实现&quot;在语义上可能很近，但它们服务于完全不同的认知需求。</p>
+<blockquote>
+<p>&quot;用向量检索做知识库，就像用搜索引擎替代知识体系——你能找到所有碎片，但拼不出全貌。&quot;</p>
+</blockquote>
+<h2>四大知识库范式演进</h2>
+<h3>范式一：Naive RAG — 平铺向量检索</h3>
+<p>文档 → chunk → embedding → 向量数据库 → 相似度检索。最基础也最广泛使用的模式，但默认配置下无积累、无关联、无层次、无角色区分。</p>
+<h3>范式二：LLM Wiki — 持续编译的知识工件</h3>
+<p>Andrej Karpathy 提出的模式，核心洞察：wiki 是一个持续积累的工件（persistent, compounding artifact）。LLM 不只是检索者，更是知识的维护者。三层架构：Raw Sources（人类策展）→ Wiki（LLM 完全拥有）→ Schema（人类 + LLM 共同演进）。</p>
+<h3>范式三：Graphify — 代码即图谱</h3>
+<p>把代码库、文档、配置文件等异构资源统一映射为一张可查询的知识图谱。双管道提取：AST 管道（离线，tree-sitter 解析）+ 语义管道（LLM 语义提取）。</p>
+<h3>范式四：GraphRAG — 图谱增强的检索</h3>
+<p>Microsoft GraphRAG 是对 Naive RAG 的结构化升级：先构建知识图谱 → Leiden 算法社区聚类 → 分层社区摘要 → 查询时结合图结构和摘要回答。</p>
+<h2>金字塔知识库（Pyramid KB）</h2>
+<h3>五层分层设计</h3>
+<p>| 层 | 职责 | 稳定性 | 类比 |<br>
+|</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1328,16 +1335,19 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>AI</title>
-      <link>https://blog.bytelighting.cn/ai/</link>
-      <guid>https://blog.bytelighting.cn/ai/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">AI</source>
-      <description>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。 知识体系 — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</description>
+      <title>程序人生</title>
+      <link>https://blog.bytelighting.cn/program/</link>
+      <guid>https://blog.bytelighting.cn/program/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
+      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
       <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。</p>
+      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
 <h2>知识体系</h2>
 <ul>
-<li><a href="/ai/llm/" target="_blank"><strong>大模型应用</strong></a> — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</li>
+<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
+<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
+<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
+<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -1357,19 +1367,16 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>程序人生</title>
-      <link>https://blog.bytelighting.cn/program/</link>
-      <guid>https://blog.bytelighting.cn/program/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
-      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
+      <title>AI</title>
+      <link>https://blog.bytelighting.cn/ai/</link>
+      <guid>https://blog.bytelighting.cn/ai/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">AI</source>
+      <description>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。 知识体系 — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</description>
       <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
+      <content:encoded><![CDATA[<p>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。</p>
 <h2>知识体系</h2>
 <ul>
-<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
-<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
-<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
-<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
+<li><a href="/ai/llm/" target="_blank"><strong>大模型应用</strong></a> — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</li>
 </ul>
 ]]></content:encoded>
     </item>
