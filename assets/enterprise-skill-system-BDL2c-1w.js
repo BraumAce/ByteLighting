@@ -5,15 +5,15 @@ import{A as e,L as t,O as n,f as r,l as i,m as a,p as o,s,u as c}from"./runtime-
 <span class="line"><span>│   └── ...</span></span>
 <span class="line"><span>├── references/                # 可选：参考文档、数据模板</span></span>
 <span class="line"><span>└── assets/                    # 可选：图标、配置文件</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-skill-md-标准格式" tabindex="-1"><a class="header-anchor" href="#_2-2-skill-md-标准格式"><span>2.2 <a href="http://SKILL.md" target="_blank" rel="noopener noreferrer">SKILL.md</a> 标准格式</span></a></h3><div class="language-markdown line-numbers-mode" data-highlighter="shiki" data-ext="markdown" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-markdown"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">---</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">dcf-valuation</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">description</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">现金流折现估值，用于计算股票内在价值</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">version</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66;">1.0.0</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">license</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">MIT</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">allowed-tools</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">calculateDcf</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">metadata</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">:</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">  author</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">sk</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">  category</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">投资分析</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">---</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">name: dcf-valuation</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">description: 现金流折现估值，用于计算股票内在价值</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">version: 1.0.0</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">license: MIT</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">allowed-tools: calculateDcf</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">metadata:</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">  author: sk</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">  category: 投资分析</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75;">---</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;"># DCF 估值技能</span></span>
 <span class="line"></span>

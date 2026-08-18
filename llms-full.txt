@@ -47512,6 +47512,10 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.8.md'
 ---
 # 2026.8 期
 
+## 8.18
+
+* [Agent的命门是上下文：关键不在少给，而在给对](https://mp.weixin.qq.com/s/PhWGXLaWK0wEpz4Jao09ng)：黄照坤（腾讯云开发者）——通过 CodeGraph 与 RTK 的多组实测揭示“局部压缩不等于端到端省 Token”（盲目压缩易引发补偿性搜索或历史累积），提出将上下文拆分为“轻量 Handoff + Artifact 路径”、按阶段启用工具与程序化状态机路由，实现精准供给。
+
 ## 8.17
 
 * [AI时代的数据研发-Semantic（语义层）实践总结](https://mp.weixin.qq.com/s/9gJV-RuSFAjO0nexT0xiAA)：大淘宝技术——以指标、维度、逻辑表和 CTE 构建连接物理数据与业务语义的统一抽象层，并结合 Wiki-RAG、Meta-ontology、Agentic 双轨架构及工程化校验，将数据研发从编写 SQL 转向定义和治理可供 AI 消费的语义资产。

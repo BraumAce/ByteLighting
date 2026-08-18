@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 17 Aug 2026 15:53:12 GMT</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2026 15:53:12 GMT</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2026 15:34:46 GMT</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2026 15:34:46 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,14 +55,17 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
-8.17
+8.18
 
-AI时代的数据研发-Semantic（语义层）实践总结：大淘宝技术——以指标、维度、逻辑表和 CTE 构建连接物理数据与业务语义的统一抽象层，并结合 Wiki-RAG、Meta-ontology、Agentic 双轨架构及工程化校验，将数据研发从编写 SQL 转向定义和治理可供 AI 消费的语义资产。
-Agent的上限，...</description>
+Agent的命门是上下文：关键不在少给，而在给对：黄照坤（腾讯云开发者）——通过 CodeGraph 与 RTK 的多组实测揭示“局部压缩不等于端到端省 Token”（盲目压缩易引发补偿性搜索或历史累积），提出将上下文拆分为“轻量 Handoff + Artifact 路径”、按阶段启用工具与程序化状态机路由，实现精准供...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.18</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/PhWGXLaWK0wEpz4Jao09ng" target="_blank" rel="noopener noreferrer">Agent的命门是上下文：关键不在少给，而在给对</a>：黄照坤（腾讯云开发者）——通过 CodeGraph 与 RTK 的多组实测揭示“局部压缩不等于端到端省 Token”（盲目压缩易引发补偿性搜索或历史累积），提出将上下文拆分为“轻量 Handoff + Artifact 路径”、按阶段启用工具与程序化状态机路由，实现精准供给。</li>
+</ul>
 <h2>8.17</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/9gJV-RuSFAjO0nexT0xiAA" target="_blank" rel="noopener noreferrer">AI时代的数据研发-Semantic（语义层）实践总结</a>：大淘宝技术——以指标、维度、逻辑表和 CTE 构建连接物理数据与业务语义的统一抽象层，并结合 Wiki-RAG、Meta-ontology、Agentic 双轨架构及工程化校验，将数据研发从编写 SQL 转向定义和治理可供 AI 消费的语义资产。</li>
@@ -1335,23 +1338,6 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>程序人生</title>
-      <link>https://blog.bytelighting.cn/program/</link>
-      <guid>https://blog.bytelighting.cn/program/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
-      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
-      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
-<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
-<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
-<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>架构设计</title>
       <link>https://blog.bytelighting.cn/architecture/</link>
       <guid>https://blog.bytelighting.cn/architecture/</guid>
@@ -1377,6 +1363,23 @@ Claude Agent S...</description>
 <h2>知识体系</h2>
 <ul>
 <li><a href="/ai/llm/" target="_blank"><strong>大模型应用</strong></a> — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>程序人生</title>
+      <link>https://blog.bytelighting.cn/program/</link>
+      <guid>https://blog.bytelighting.cn/program/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
+      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
+      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
+      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
+<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
+<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
+<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
 </ul>
 ]]></content:encoded>
     </item>
