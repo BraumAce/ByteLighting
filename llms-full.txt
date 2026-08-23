@@ -47514,19 +47514,19 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.8.md'
 
 ## 8.21
 
-* [Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战](https://mp.weixin.qq.com/s/WtmzcME_61Gnc0ipCbi3nA)
+* [Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战](https://mp.weixin.qq.com/s/WtmzcME_61Gnc0ipCbi3nA)：阿里技术——从输入裁剪、Deferred Tools、Skill 与 Read 去重，到缓存分层和推理控制，结合百炼实践将隐式缓存命中率从 33% 提升至 80%，一轮 20 次会话的输入费用降至原来的约十分之一。
 
-* [靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上](https://mp.weixin.qq.com/s/TIdXNlrcAOUZWVW1oWnnKQ)
+* [靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上](https://mp.weixin.qq.com/s/TIdXNlrcAOUZWVW1oWnnKQ)：腾讯技术工程——以 AgentLens 拆解六类 Token 消耗，围绕渐进式披露、脚本与 CLI、上下文隔离、代码图谱、稳定前缀和并行调用等 10 个方向优化，整体全流程预估降本 50%～65%。
 
-* [浅谈 SKILL 研发的最佳实践——以百补详情助手为例](https://mp.weixin.qq.com/s/Dok_hZa7tEXC_6wFi4VIpw)
+* [浅谈 SKILL 研发的最佳实践——以百补详情助手为例](https://mp.weixin.qq.com/s/Dok_hZa7tEXC_6wFi4VIpw)：大淘宝技术——以百亿补贴详情助手为例，从本地与远程解耦、决策树与渐进式披露，到真实运行时验证、原文直出和 HTML 报告，系统总结可持续迭代 Skill 的工程实践。
 
 ## 8.20
 
-* [Agentic RAG](https://mp.weixin.qq.com/s/tvto6IcTYZQw6bVEG4eXAg)
+* [Agentic RAG](https://mp.weixin.qq.com/s/tvto6IcTYZQw6bVEG4eXAg)：代码随想录——梳理 RAG 从固定流水线走向 Agentic RAG 的演进，围绕任务拆分、多源工具路由、证据评估和多轮纠错说明适用场景，并强调用规则、预算与权限约束动态检索的成本和延迟。
 
 ## 8.19
 
-* [AI Coding时代，研发项目管理新范式探索与实践](https://mp.weixin.qq.com/s/qmNj7b5vOsL3Aji01-7BLw)
+* [AI Coding时代，研发项目管理新范式探索与实践](https://mp.weixin.qq.com/s/qmNj7b5vOsL3Aji01-7BLw)：王畅（腾讯云开发者）——以腾讯健康实践说明 AI Coding 提升个体效率后，项目管理应转向治理组织摩擦，通过流程建模、状态自动化、AI 巡检与健康分析将中位交付周期从 19 天降至 9 天、30 天以上需求占比从 35% 降至 7%。
 
 ## 8.18
 
