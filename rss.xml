@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 23 Aug 2026 15:47:35 GMT</pubDate>
-    <lastBuildDate>Sun, 23 Aug 2026 15:47:35 GMT</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2026 15:49:09 GMT</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2026 15:49:09 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,6 +55,18 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
+8.21
+
+
+Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战
+
+
+靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上
+
+
+浅谈 SKILL 研发的最佳实践——以百补详情助手为例
+
+
 8.20
 
 Agentic RAG
@@ -62,14 +74,23 @@ Agentic RAG
 8.19
 
 AI Coding时代，研发项目管理新范式探索与实践
-
-8.18
-
-Agent的命门是上下文：关键不在少给，而在给对：黄照坤（腾讯云开发者）——通过 CodeGraph 与 RTK 的多组实测揭示“局部压缩不等于端到端省 Token”（盲目压缩易引发补偿性搜索或历史累积），提出将上下...</description>
+...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.21</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/WtmzcME_61Gnc0ipCbi3nA" target="_blank" rel="noopener noreferrer">Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/TIdXNlrcAOUZWVW1oWnnKQ" target="_blank" rel="noopener noreferrer">靠这10个优化点，我们把Multi-Agent工作流成本降了50%以上</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Dok_hZa7tEXC_6wFi4VIpw" target="_blank" rel="noopener noreferrer">浅谈 SKILL 研发的最佳实践——以百补详情助手为例</a></p>
+</li>
+</ul>
 <h2>8.20</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/tvto6IcTYZQw6bVEG4eXAg" target="_blank" rel="noopener noreferrer">Agentic RAG</a></li>
