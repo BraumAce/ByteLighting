@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-08-24T16:11:55.739Z</updated>
+  <updated>2026-08-25T15:24:28.965Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,23 @@
     <title type="text">2026.8 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.8.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.8.html"/>
-    <updated>2026-08-24T15:49:54.000Z</updated>
+    <updated>2026-08-25T15:21:43.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>8.25</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/kHpDP4yQoj5Vr0xGk2TDLg" target="_blank" rel="noopener noreferrer">一个Skill搞定服务重构：从链路分析到测试自动化</a>：徐鑫（腾讯云开发者）——将复杂历史服务重构固化为链路分析、方案审查、编码、CR、自动化测试五阶段 Skill，结合渐进式知识库、验证循环、成本上限与 Trace 可观测机制，在十余个 C++ 到 tRPC-Go 重构场景中验证。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/be0mThBu_zge1A2HFSPL3g" target="_blank" rel="noopener noreferrer">大模型之外，向量存储如何支撑 Agent 的检索链路</a>：木洛（千问AI平台）——从 Agent 的检索与长期记忆需求出发，比较 HNSW、DiskANN、IVF 的召回率、延迟与成本取舍，说明混合检索、分布式 TopK 和 Serverless 数据空间管理如何共同支撑规模化向量存储。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/IGSAgptmQ-ZDurI-pnhdog" target="_blank" rel="noopener noreferrer">全栈 AI Agent 从 0 到 1 ：智能播客平台开发全记录</a>：蔡欣彤（京东技术）——复盘 Smart Podcast Platform 从零搭建的完整路径，以 Vue 3、FastAPI、LangGraph、AG-UI、Qwen 多模态与语音模型、pydub 和 FFmpeg 打通内容理解、音色设计、语音合成、混音及分层资源管理。</p>
+</li>
+</ul>
 <h2>8.24</h2>
 <ul>
 <li>
