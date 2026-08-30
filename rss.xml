@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 27 Aug 2026 15:53:13 GMT</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2026 15:53:13 GMT</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2026 09:36:53 GMT</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2026 09:36:53 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,17 +55,26 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.8 期</source>
       <description>2026.8 期
 
-8.27
+8.29
 
 
-一文搞懂个人AI记忆系统构建全流程：左德军（腾讯云开发者）——提出把个人记忆拆为 identity、principles、preferences、context、knowledge 五层，并以两级目录、权重、YAML 元数据和总/子索引实现跨工具按需召回与人工确认维护。
+信任需要基础设施：如何让AI可靠的取数：踏雨（大淘宝技术）——以“代号层”统一业务语义、用确定性 SQL 引擎生成查询，并借助 Skill 门禁和审计机制约束 AI，构建可追溯、值得信任的取数基础设施。
 
 
-“AI写的代码，我完全不看”，世界级编程大师...</description>
+AI工程范式的跃迁，一文讲透Context Engineering！：梁凌郁（腾讯云开发者）——梳理 Promp...</description>
       <category>文章</category>
       <pubDate>Mon, 03 Aug 2026 15:58:30 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>8.29</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/K_-5EiY9PTURQ1Xj_llo0w" target="_blank" rel="noopener noreferrer">信任需要基础设施：如何让AI可靠的取数</a>：踏雨（大淘宝技术）——以“代号层”统一业务语义、用确定性 SQL 引擎生成查询，并借助 Skill 门禁和审计机制约束 AI，构建可追溯、值得信任的取数基础设施。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/tExSOifZrzCUW8GLMF5IrQ" target="_blank" rel="noopener noreferrer">AI工程范式的跃迁，一文讲透Context Engineering！</a>：梁凌郁（腾讯云开发者）——梳理 Prompt Engineering、ReAct 到 Context Engineering 的演进，围绕 Lost in the Middle、Context Rot 与 Attention Budget，给出上下文七要素、即时检索、压缩、结构化笔记和 Sub-Agent 隔离等长任务实践。</p>
+</li>
+</ul>
 <h2>8.27</h2>
 <ul>
 <li>
@@ -1505,6 +1514,21 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
+      <title>计算机</title>
+      <link>https://blog.bytelighting.cn/computer/technology/</link>
+      <guid>https://blog.bytelighting.cn/computer/technology/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">计算机</source>
+      <description>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。 知识体系 — 进程与线程、内存管理、I/O 模型、Linux 常用命令 — Hadoop、Spark、Flink 等大数据处理框架原理与使用</description>
+      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
+      <content:encoded><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
+<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>后端</title>
       <link>https://blog.bytelighting.cn/computer/backend/</link>
       <guid>https://blog.bytelighting.cn/computer/backend/</guid>
@@ -1518,21 +1542,6 @@ Claude Agent S...</description>
 <li><a href="/computer/backend/database/" target="_blank"><strong>数据库</strong></a> — MySQL 原理与调优、Redis 缓存、分布式事务</li>
 <li><a href="/computer/backend/framework/" target="_blank"><strong>框架</strong></a> — Spring 全家桶、MyBatis、消息队列与中间件</li>
 <li><a href="/computer/backend/project/" target="_blank"><strong>项目实战</strong></a> — 完整项目经验与架构复盘</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>计算机</title>
-      <link>https://blog.bytelighting.cn/computer/technology/</link>
-      <guid>https://blog.bytelighting.cn/computer/technology/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">计算机</source>
-      <description>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。 知识体系 — 进程与线程、内存管理、I/O 模型、Linux 常用命令 — Hadoop、Spark、Flink 等大数据处理框架原理与使用</description>
-      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
-<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
 </ul>
 ]]></content:encoded>
     </item>
