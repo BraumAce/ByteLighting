@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-01T15:35:05.032Z</updated>
+  <updated>2026-09-02T14:52:44.003Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,29 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-01T15:32:56.000Z</updated>
+    <updated>2026-09-02T14:50:38.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.2</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/rQYSuTF98-xGcdgGPuNHjQ" target="_blank" rel="noopener noreferrer">一文讲透确定性Harness</a>：左昊（腾讯云开发者）——以工单审核为例，通过阶段化编排、FlowTracer 全链路留痕、IsFinal 提前终止、统一网关与缓存，把 Agent 的复杂决策约束为可解释、可追溯的确定性流程。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/5Tvv8g20CybjbT0a7iUfHw" target="_blank" rel="noopener noreferrer">AI Agent 应用精细化评测：评测体系设计与工程实践</a>：砚东（AliExpress技术）——围绕商品中心 Agent，将评测从只看最终答案升级为覆盖感知、规划、记忆和工具的白盒体系，并以质量、成本、性能指标、Judge Task、EvalTrace 与真实/Mock 双模式支撑可诊断的平台化迭代。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/81-li5YG2rAHU1RP-EAZSQ" target="_blank" rel="noopener noreferrer">从会用Docker到懂设计：隔离、隐藏与行为限制</a>：码农 SharkChili（写代码的SharkChili）——从联合挂载、chroot、namespace 和 cgroup 拆解 Docker 的文件系统隐藏、进程/网络隔离与资源限制，再以约 100 行 Go 代码和 nginx 部署验证轻量隔离边界。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/OSYCiNajJw6c5-hGFSAfYw" target="_blank" rel="noopener noreferrer">AI 驱动研发体系的实践和思考</a>：默达（大淘宝技术）——以 Price360-KB 为例，借助“Agent + 文件夹 + Git”与项目 Harness 组织业务知识、代码、流程和验证证据，形成可验证、可沉淀的 AI 研发知识飞轮，明确人负责决策、Agent 负责执行。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Jcx_3OABcYwzzxWKFgivOA" target="_blank" rel="noopener noreferrer">得物小摊 AI Native 演进实录：用 Harness 构建可控 AI 交付</a>：正飞（得物技术）——以多 SKU 订单跨 H5、运营后台、Node 与 Go 运行时的交付为例，用 Version Contract、Execution Boundary、Evidence Gate 和 Repair Loop 把业务不变量、执行边界、验证证据与真实反馈串成可追溯的 Delivery Harness。</p>
+</li>
+</ul>
 <h2>9.1</h2>
 <ul>
 <li>

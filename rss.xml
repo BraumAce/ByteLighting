@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 01 Sep 2026 15:35:05 GMT</pubDate>
-    <lastBuildDate>Tue, 01 Sep 2026 15:35:05 GMT</lastBuildDate>
+    <pubDate>Wed, 02 Sep 2026 14:52:44 GMT</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2026 14:52:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,14 +55,35 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.9 期</source>
       <description>2026.9 期
 
-9.1
+9.2
 
 
-从 Loop 到 Graph Engineering 的演进思考与实战：姜剑（飞樰，千问AI平台）——从单 Loop 的 Goodhart 定律、目标盲视、循环冲突和测量衰减问题出发，提出以多层 Loop 互相监督的 Graph Engineering，并用 Anchors、Frozen Nodes、External J...</description>
+一文讲透确定性Harness：左昊（腾讯云开发者）——以工单审核为例，通过阶段化编排、FlowTracer 全链路留痕、IsFinal 提前终止、统一网关与缓存，把 Agent 的复杂决策约束为可解释、可追溯的确定性流程。
+
+
+AI Agent 应用精细化评测：评测体系设计与工程实践：砚东（AliExpress技术）——...</description>
       <category>文章</category>
       <pubDate>Tue, 01 Sep 2026 15:32:56 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>9.2</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/rQYSuTF98-xGcdgGPuNHjQ" target="_blank" rel="noopener noreferrer">一文讲透确定性Harness</a>：左昊（腾讯云开发者）——以工单审核为例，通过阶段化编排、FlowTracer 全链路留痕、IsFinal 提前终止、统一网关与缓存，把 Agent 的复杂决策约束为可解释、可追溯的确定性流程。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/5Tvv8g20CybjbT0a7iUfHw" target="_blank" rel="noopener noreferrer">AI Agent 应用精细化评测：评测体系设计与工程实践</a>：砚东（AliExpress技术）——围绕商品中心 Agent，将评测从只看最终答案升级为覆盖感知、规划、记忆和工具的白盒体系，并以质量、成本、性能指标、Judge Task、EvalTrace 与真实/Mock 双模式支撑可诊断的平台化迭代。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/81-li5YG2rAHU1RP-EAZSQ" target="_blank" rel="noopener noreferrer">从会用Docker到懂设计：隔离、隐藏与行为限制</a>：码农 SharkChili（写代码的SharkChili）——从联合挂载、chroot、namespace 和 cgroup 拆解 Docker 的文件系统隐藏、进程/网络隔离与资源限制，再以约 100 行 Go 代码和 nginx 部署验证轻量隔离边界。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/OSYCiNajJw6c5-hGFSAfYw" target="_blank" rel="noopener noreferrer">AI 驱动研发体系的实践和思考</a>：默达（大淘宝技术）——以 Price360-KB 为例，借助“Agent + 文件夹 + Git”与项目 Harness 组织业务知识、代码、流程和验证证据，形成可验证、可沉淀的 AI 研发知识飞轮，明确人负责决策、Agent 负责执行。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Jcx_3OABcYwzzxWKFgivOA" target="_blank" rel="noopener noreferrer">得物小摊 AI Native 演进实录：用 Harness 构建可控 AI 交付</a>：正飞（得物技术）——以多 SKU 订单跨 H5、运营后台、Node 与 Go 运行时的交付为例，用 Version Contract、Execution Boundary、Evidence Gate 和 Repair Loop 把业务不变量、执行边界、验证证据与真实反馈串成可追溯的 Delivery Harness。</p>
+</li>
+</ul>
 <h2>9.1</h2>
 <ul>
 <li>
