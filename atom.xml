@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-02T14:52:44.003Z</updated>
+  <updated>2026-09-03T15:39:56.356Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,20 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-02T14:50:38.000Z</updated>
+    <updated>2026-09-03T15:37:52.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.3</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/AzDms1atG5mRw7vbDnm7Qg" target="_blank" rel="noopener noreferrer">Agent每次接新任务都像新人第一天入职？带你告别“一次性智能”</a>：田倬月（腾讯云开发者）——围绕 Forge Memory 将任务中的设计理由、适用边界和失败经验沉淀为可审阅的项目知识，通过读取与沉淀准入进入后续 AI Coding 任务，并结合代码和验证结果持续校正。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/FPUqOssSU0jUb7lKUZRoCA" target="_blank" rel="noopener noreferrer">Harness Engineering：快手电商用 AI 流水线重塑研发范式</a>：快手技术——以领域知识库、open-door/close-door 对抗式 Agent 和 plan-execute-verify 验收贯通需求、Spec、开发、测试与 Oncall，推动全栈式超级个体和端到端自动交付。</p>
+</li>
+</ul>
 <h2>9.2</h2>
 <ul>
 <li>

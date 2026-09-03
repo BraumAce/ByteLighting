@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 02 Sep 2026 14:52:44 GMT</pubDate>
-    <lastBuildDate>Wed, 02 Sep 2026 14:52:44 GMT</lastBuildDate>
+    <pubDate>Thu, 03 Sep 2026 15:39:56 GMT</pubDate>
+    <lastBuildDate>Thu, 03 Sep 2026 15:39:56 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,17 +55,26 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.9 期</source>
       <description>2026.9 期
 
-9.2
+9.3
 
 
-一文讲透确定性Harness：左昊（腾讯云开发者）——以工单审核为例，通过阶段化编排、FlowTracer 全链路留痕、IsFinal 提前终止、统一网关与缓存，把 Agent 的复杂决策约束为可解释、可追溯的确定性流程。
+Agent每次接新任务都像新人第一天入职？带你告别“一次性智能”：田倬月（腾讯云开发者）——围绕 Forge Memory 将任务中的设计理由、适用边界和失败经验沉淀为可审阅的项目知识，通过读取与沉淀准入进入后续 AI Coding 任务，并结合代码和验证结果持续校正。
 
 
-AI Agent 应用精细化评测：评测体系设计与工程实践：砚东（AliExpress技术）——...</description>
+Harness Engineering：快手电...</description>
       <category>文章</category>
       <pubDate>Tue, 01 Sep 2026 15:32:56 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>9.3</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/AzDms1atG5mRw7vbDnm7Qg" target="_blank" rel="noopener noreferrer">Agent每次接新任务都像新人第一天入职？带你告别“一次性智能”</a>：田倬月（腾讯云开发者）——围绕 Forge Memory 将任务中的设计理由、适用边界和失败经验沉淀为可审阅的项目知识，通过读取与沉淀准入进入后续 AI Coding 任务，并结合代码和验证结果持续校正。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/FPUqOssSU0jUb7lKUZRoCA" target="_blank" rel="noopener noreferrer">Harness Engineering：快手电商用 AI 流水线重塑研发范式</a>：快手技术——以领域知识库、open-door/close-door 对抗式 Agent 和 plan-execute-verify 验收贯通需求、Spec、开发、测试与 Oncall，推动全栈式超级个体和端到端自动交付。</p>
+</li>
+</ul>
 <h2>9.2</h2>
 <ul>
 <li>
