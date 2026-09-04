@@ -47635,6 +47635,14 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.9.md'
 ---
 # 2026.9 期
 
+## 9.4
+
+* [淘宝百亿补贴数据分析助手 Agent 实战](https://mp.weixin.qq.com/s/BpsscOnYq-DWsb_DrID8hA)
+
+* [AgentLoop 数据飞轮实践（一）：总览 —— 让 Agent 持续调优的闭环](https://mp.weixin.qq.com/s/q53_zsgspgaxKgc7YRz_dQ)
+
+* [5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程](https://mp.weixin.qq.com/s/ph4PRUDZvMnfrGn_0CfT5g)
+
 ## 9.3
 
 * [Agent每次接新任务都像新人第一天入职？带你告别“一次性智能”](https://mp.weixin.qq.com/s/AzDms1atG5mRw7vbDnm7Qg)：田倬月（腾讯云开发者）——围绕 Forge Memory 将任务中的设计理由、适用边界和失败经验沉淀为可审阅的项目知识，通过读取与沉淀准入进入后续 AI Coding 任务，并结合代码和验证结果持续校正。
