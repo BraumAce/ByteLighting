@@ -47637,11 +47637,11 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.9.md'
 
 ## 9.4
 
-* [淘宝百亿补贴数据分析助手 Agent 实战](https://mp.weixin.qq.com/s/BpsscOnYq-DWsb_DrID8hA)
+* [淘宝百亿补贴数据分析助手 Agent 实战](https://mp.weixin.qq.com/s/BpsscOnYq-DWsb_DrID8hA)：天猫技术团队（大淘宝技术）——以 Intent/Supervisor/专家 Agent 的多 Agent 协同为骨架，通过 NL2MDL2SQL、六层知识体系和 SQL Validator Gate 串起取数、归因、血缘与评测，并用 Hologres 外部表加速多轮查询。
 
-* [AgentLoop 数据飞轮实践（一）：总览 —— 让 Agent 持续调优的闭环](https://mp.weixin.qq.com/s/q53_zsgspgaxKgc7YRz_dQ)
+* [AgentLoop 数据飞轮实践（一）：总览 —— 让 Agent 持续调优的闭环](https://mp.weixin.qq.com/s/q53_zsgspgaxKgc7YRz_dQ)：马云雷（阿里云云原生）——以“接入→观测→审计→数据集→评估→实验→经验库”串起 Agent 数据飞轮，人类专家模式先建立业务标准，全自动经验库再持续挖掘优化经验，并用消融实验验证耗时和成本收益。
 
-* [5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程](https://mp.weixin.qq.com/s/ph4PRUDZvMnfrGn_0CfT5g)
+* [5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程](https://mp.weixin.qq.com/s/ph4PRUDZvMnfrGn_0CfT5g)：王砚舒（阿里技术）——以 Specify→Plan→Implement→Validate 四阶段和 spec.md、plan.md、tasks.md、constitution.md 约束 AI 编程，结合增量 Spec、并行 Quest 与测试验收实现 5 人 7 天交付，并提醒防范 Spec 腐烂、官僚化与虚假信心。
 
 ## 9.3
 
