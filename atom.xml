@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-05T15:39:02.653Z</updated>
+  <updated>2026-09-08T15:46:21.207Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,23 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-05T15:36:59.000Z</updated>
+    <updated>2026-09-08T15:44:32.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.8</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/kZZac-VBgnQIZeookE9Y8g" target="_blank" rel="noopener noreferrer">从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？</a>：ivanxxie、davoszhang（腾讯技术工程）——沿着上下文、工具、循环、记忆、权限与沙箱等边界，串起 Agent 从单次 LLM 调用演化为 Harness 的工程路径，并对比 Pi、OpenCode、Codex 与 Hermes 的取舍。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/oyFcPzTy3s6zgSmA-JY5nQ" target="_blank" rel="noopener noreferrer">技术方案怎么用 AI 写？我总结了四段 Prompt 链加 3 个企业级模板！</a>：码哥（码哥跳动）——以需求消化、骨架生成、人填决策、评审模拟组成四段 Prompt 链，用三道人审关卡约束 AI 产出，强调数字、选型、字段和涉密内容必须由人核验。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/2ZmmCQelWs3r77U34XrAYg" target="_blank" rel="noopener noreferrer">OpenClaw 2.0：欠下的技术债，这次连本带利还清</a>：凌弘毅（腾讯云开发者）——从会话可迁移化、Control UI 客户端化、能力外置到三层安全与可撤销记忆，提炼 OpenClaw 2.0 收敛可靠性与技术债的架构变化，并给出 SQLite 迁移和生产升级的分阶段建议。</p>
+</li>
+</ul>
 <h2>9.4</h2>
 <ul>
 <li>
