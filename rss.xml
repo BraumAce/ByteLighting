@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 08 Sep 2026 15:46:21 GMT</pubDate>
-    <lastBuildDate>Tue, 08 Sep 2026 15:46:21 GMT</lastBuildDate>
+    <pubDate>Wed, 09 Sep 2026 15:33:34 GMT</pubDate>
+    <lastBuildDate>Wed, 09 Sep 2026 15:33:34 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,14 +55,35 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.9 期</source>
       <description>2026.9 期
 
-9.8
+9.9
 
 
-从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？：ivanxxie、davoszhang（腾讯技术工程）——沿着上下文、工具、循环、记忆、权限与沙箱等边界，串起 Agent 从单次 LLM 调用演化为 Harness 的工程路径，并对比 Pi、OpenCode、Codex 与 Hermes 的取舍...</description>
+5分钟烧掉1000块！Agent token成本如何治理：张波（腾讯云开发者）——从一次 5 分钟花费 1000 元的事故出发，提出事前预算、费用预估、过程可见、异常告警、随时干预、账单解释六环成本治理闭环，把消费权限作为 Agent 产品的一等公民。
+
+
+【AI 创新实践】“架构师 Agent” 系统化落地：刘瑞洲（阳...</description>
       <category>文章</category>
       <pubDate>Tue, 01 Sep 2026 15:32:56 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>9.9</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/bvshfhF-tIAru8JNfmEhPg" target="_blank" rel="noopener noreferrer">5分钟烧掉1000块！Agent token成本如何治理</a>：张波（腾讯云开发者）——从一次 5 分钟花费 1000 元的事故出发，提出事前预算、费用预估、过程可见、异常告警、随时干预、账单解释六环成本治理闭环，把消费权限作为 Agent 产品的一等公民。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Yj96bBD7LLhq_U1THdke8A" target="_blank" rel="noopener noreferrer">【AI 创新实践】“架构师 Agent” 系统化落地</a>：刘瑞洲（阳迪）（千问AI平台）——从需求准入到业务、架构、系统、基建四层知识，结合 AITOM、Service Knowledge、Git 回源和渐进式披露，落地技术方案设计 Agent 并扩展为架构师 Agent。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Vy2HpOyr7wVmPTVWa3mGig" target="_blank" rel="noopener noreferrer">Agent 长程任务断点续传：从框架 Checkpoint 到跨进程恢复的完整实践</a>：直播技术团队（大淘宝技术）——围绕 Spring AI Alibaba，采用框架 Checkpoint 加上层任务调度两层架构，通过 Hook、工具 Mock、MQ 摘流和任务表覆盖人机协作、多 Agent 及重启后的跨进程恢复。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ryDztxJW3RY7CB30vOnKyA" target="_blank" rel="noopener noreferrer">让AI真正读懂你的代码:一套可复用的Cursor 辅助编码实践</a>：货拉拉移动技术（货拉拉技术）——把 Cursor 辅助编码拆为自动注入的 Rules、意图触发的 Skills、业务 SSOT 和 MCP 外部工具，配合先计划后写码、自检与复盘，降低 token 浪费并提升代码与流程一致性。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/gyEEugg2z7zQxFpa_Eonmw" target="_blank" rel="noopener noreferrer">企业级 MultiAgent 落地：Plan 模式与主子 Agent 协作｜得物技术</a>：光度（得物技术）——以 Plan-and-Execute 管理长任务，以声明式主子 Agent 和 A2A 连接专业能力，并以持久化、断点恢复、SSE 可见性、租户隔离、追踪和异常防线满足企业生产要求。</p>
+</li>
+</ul>
 <h2>9.8</h2>
 <ul>
 <li>
