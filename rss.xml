@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 09 Sep 2026 15:33:34 GMT</pubDate>
-    <lastBuildDate>Wed, 09 Sep 2026 15:33:34 GMT</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2026 15:53:08 GMT</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2026 15:53:08 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,17 +55,32 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.9 期</source>
       <description>2026.9 期
 
+9.11
+
+
+2分钟到20秒！AI Agent让工单处理可提效9倍
+
+
+字节一天连发3篇自进化Agent，彻底杀疯了
+
+
 9.9
 
 
-5分钟烧掉1000块！Agent token成本如何治理：张波（腾讯云开发者）——从一次 5 分钟花费 1000 元的事故出发，提出事前预算、费用预估、过程可见、异常告警、随时干预、账单解释六环成本治理闭环，把消费权限作为 Agent 产品的一等公民。
-
-
-【AI 创新实践】“架构师 Agent” 系统化落地：刘瑞洲（阳...</description>
+5分钟烧掉1000块！Agent token成本如何治理：张波（腾讯云开发者）——从一次 5 分钟花费 1000 元的事故出发，提出事前预算、费用预估、过程可见、异常告警、随时干预、账单解释六环成本治...</description>
       <category>文章</category>
       <pubDate>Tue, 01 Sep 2026 15:32:56 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>9.11</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/3vCoUNIePz-_Yldv5fk-kQ" target="_blank" rel="noopener noreferrer">2分钟到20秒！AI Agent让工单处理可提效9倍</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/L6pY-3rDUy6pLQ96DcOFyg" target="_blank" rel="noopener noreferrer">字节一天连发3篇自进化Agent，彻底杀疯了</a></p>
+</li>
+</ul>
 <h2>9.9</h2>
 <ul>
 <li>

@@ -47635,6 +47635,12 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.9.md'
 ---
 # 2026.9 期
 
+## 9.11
+
+* [2分钟到20秒！AI Agent让工单处理可提效9倍](https://mp.weixin.qq.com/s/3vCoUNIePz-_Yldv5fk-kQ)
+
+* [字节一天连发3篇自进化Agent，彻底杀疯了](https://mp.weixin.qq.com/s/L6pY-3rDUy6pLQ96DcOFyg)
+
 ## 9.9
 
 * [5分钟烧掉1000块！Agent token成本如何治理](https://mp.weixin.qq.com/s/bvshfhF-tIAru8JNfmEhPg)：张波（腾讯云开发者）——从一次 5 分钟花费 1000 元的事故出发，提出事前预算、费用预估、过程可见、异常告警、随时干预、账单解释六环成本治理闭环，把消费权限作为 Agent 产品的一等公民。
