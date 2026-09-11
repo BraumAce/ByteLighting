@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-11T15:53:08.525Z</updated>
+  <updated>2026-09-11T16:00:12.345Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,7 +46,7 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-11T15:51:05.000Z</updated>
+    <updated>2026-09-11T15:57:53.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
@@ -54,10 +54,13 @@
 <h2>9.11</h2>
 <ul>
 <li>
-<p><a href="https://mp.weixin.qq.com/s/3vCoUNIePz-_Yldv5fk-kQ" target="_blank" rel="noopener noreferrer">2分钟到20秒！AI Agent让工单处理可提效9倍</a></p>
+<p><a href="https://mp.weixin.qq.com/s/3vCoUNIePz-_Yldv5fk-kQ" target="_blank" rel="noopener noreferrer">2分钟到20秒！AI Agent让工单处理可提效9倍</a>：江洋洋（腾讯云开发者）——以跨系统多模块并发取数、规则与 LLM 双通道评估、分层决策 Trace 和 SSE 事件流重构工单诊断，将单次处理从 2–3 分钟压缩至 20–40 秒。</p>
 </li>
 <li>
-<p><a href="https://mp.weixin.qq.com/s/L6pY-3rDUy6pLQ96DcOFyg" target="_blank" rel="noopener noreferrer">字节一天连发3篇自进化Agent，彻底杀疯了</a></p>
+<p><a href="https://mp.weixin.qq.com/s/L6pY-3rDUy6pLQ96DcOFyg" target="_blank" rel="noopener noreferrer">字节一天连发3篇自进化Agent，彻底杀疯了</a>：PaperAgent——围绕 Closed-Loop RSI 拆解 Aspire、S³Gym 与 HarnessDev 三篇论文，显示自进化 Agent 在模糊目标操作化、经验转策略和跨任务与执行器泛化上仍难稳定保留增益。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/UcPofW6YF_4JCLdxoS_PfQ" target="_blank" rel="noopener noreferrer">Agent 接了上百个工具，怎么选？</a>：小林哥（小林面试笔记）——区分 Tool Routing 与 Multi-Agent Routing，给出“工具注册表—确定性过滤—分层召回—LLM 精选—执行前鉴权”的分层路由链路。</p>
 </li>
 </ul>
 <h2>9.9</h2>
