@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 16 Sep 2026 14:57:08 GMT</pubDate>
-    <lastBuildDate>Wed, 16 Sep 2026 14:57:08 GMT</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2026 14:01:50 GMT</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2026 14:01:50 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,17 +55,29 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.9 期</source>
       <description>2026.9 期
 
-9.16
+9.17
 
 
-agent优化之GEPA——一种提示词自进化的优化方案：诗咏（大淘宝技术）——基于 GEPA 搭建任务无关的 Prompt 自进化系统，以“推理→评分→反思→选择”闭环和 Pareto 多目标择优自动归因 Badcase、生成候选并控制指标退化，同时提供零配置任务推断与冻结区、长度门禁。
+真正烧Token的不是代码，而是模型反复看同一份上下文：胡锦康（腾讯云开发者）——以 DevFlow 多 Agent 研发实践为例，通过短生命周期代码探索、模板按需加载、响应级批量和具备预校验与回滚能力的批量编辑，减少长上下文的重复输入与模型往返。
 
 
-看完我的AGENTS.md...</description>
+KV Cache还能这么玩？这波操作惊艳到我了！：小林coding...</description>
       <category>文章</category>
       <pubDate>Tue, 01 Sep 2026 15:32:56 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>9.17</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/1jTuuEZzOryliS1C87Jy1g" target="_blank" rel="noopener noreferrer">真正烧Token的不是代码，而是模型反复看同一份上下文</a>：胡锦康（腾讯云开发者）——以 DevFlow 多 Agent 研发实践为例，通过短生命周期代码探索、模板按需加载、响应级批量和具备预校验与回滚能力的批量编辑，减少长上下文的重复输入与模型往返。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/9s45VqO9Ila8C2IgMcGOLg" target="_blank" rel="noopener noreferrer">KV Cache还能这么玩？这波操作惊艳到我了！</a>：小林coding——从前缀复用与分层存储讲解 KV Cache，解析 Intel KV Shrink 如何结合卸载、无损压缩与硬件加速减少重复计算，并强调缓存回载成本、资源竞争与整体成本的权衡。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/53Zg7lGn9gHPpjLBif1uJA" target="_blank" rel="noopener noreferrer">把「达标判定」从大模型手里收回来：Graph Engineering实践</a>：刘必成（阿里技术）——以新品体检 Agent 为例，通过 badcase 与近期商品双侧评测、失败分型和独立发现／优化回路，将指标计算、达标判定与状态迁移交给代码，模型负责归因和候选生成，人保留上线决策。</p>
+</li>
+</ul>
 <h2>9.16</h2>
 <ul>
 <li>

@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-16T14:57:08.861Z</updated>
+  <updated>2026-09-17T14:01:50.753Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,23 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-16T14:53:45.000Z</updated>
+    <updated>2026-09-17T13:59:40.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.17</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/1jTuuEZzOryliS1C87Jy1g" target="_blank" rel="noopener noreferrer">真正烧Token的不是代码，而是模型反复看同一份上下文</a>：胡锦康（腾讯云开发者）——以 DevFlow 多 Agent 研发实践为例，通过短生命周期代码探索、模板按需加载、响应级批量和具备预校验与回滚能力的批量编辑，减少长上下文的重复输入与模型往返。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/9s45VqO9Ila8C2IgMcGOLg" target="_blank" rel="noopener noreferrer">KV Cache还能这么玩？这波操作惊艳到我了！</a>：小林coding——从前缀复用与分层存储讲解 KV Cache，解析 Intel KV Shrink 如何结合卸载、无损压缩与硬件加速减少重复计算，并强调缓存回载成本、资源竞争与整体成本的权衡。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/53Zg7lGn9gHPpjLBif1uJA" target="_blank" rel="noopener noreferrer">把「达标判定」从大模型手里收回来：Graph Engineering实践</a>：刘必成（阿里技术）——以新品体检 Agent 为例，通过 badcase 与近期商品双侧评测、失败分型和独立发现／优化回路，将指标计算、达标判定与状态迁移交给代码，模型负责归因和候选生成，人保留上线决策。</p>
+</li>
+</ul>
 <h2>9.16</h2>
 <ul>
 <li>
