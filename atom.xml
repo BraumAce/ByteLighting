@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-22T15:20:51.114Z</updated>
+  <updated>2026-09-23T15:51:00.122Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,29 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-22T15:18:25.000Z</updated>
+    <updated>2026-09-23T15:48:09.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.23</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/SVm_GONXEElhEsX6CXylKg" target="_blank" rel="noopener noreferrer">AI写得快 ≠ 真正提效：一文讲清Harness“记忆”和“验证闭环”</a>：焦成杰（腾讯云开发者）——以会话复盘建立两级知识索引、用 Hook 强制先读，再由可等待的 Skill 和 close-loop 命令串起验证、交付与线上验收，并在关键环节保留人工把关。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/SZRq6hC-7yEbel8xiAVfSw" target="_blank" rel="noopener noreferrer">拆解海博 AI-Native 落地保障：海博团队 AI 知识库能力建设</a>：京东云开发者——将知识编译前移到维护期，以 OKF Markdown 目录组织项目与领域知识、角色视图和 Skill，并用代码知识生成、测试用例回流及人工确认形成生命周期闭环；文中 AB 示例的需求分析从 967 秒降至 542 秒。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/0QSAGGgffJoaG3iO6wItng" target="_blank" rel="noopener noreferrer">错误码排查从 3～8 小时到分钟级，Agent怎么做到的？</a>：careylu（腾讯技术工程）——让单 Agent 联合编排知识库、代码关系图谱、可观测数据和代码变更证据，按置信度交由 SRE 审核，并以 50 条 case 调优将 action_type 人工一致率从 66% 提升至 88%、硬冲突率从 20% 降至 0%。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/oCM10WwIfSbwnMT4tOmcmg" target="_blank" rel="noopener noreferrer">别再只卷向量检索了，得物交易搜索如何用“生成式”实现召回范式跃迁？</a>：众里、翠西、承泽、亦非（得物技术）——从 LLM 商品文本增强与多模态向量表征，推进到 HLLM、HSTU 和语义 ID 驱动的生成式召回，再探索将召回与粗排统一建模以直接优化后链路目标。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/JCYcRb2Wp3_EBTYQplC65A" target="_blank" rel="noopener noreferrer">知识不是文件，也不是向量 | KDC 系列 02</a>：Xiao Bo（vivo 互联网存储团队）——提出仍处于开放研究阶段的 KDC 定义：知识是经验证、可复用并能降低不确定性的认知成果；知识对象需表达来源、证据、成熟度、版本和适用边界，并将 RAG 定位为材料召回与上下文装配机制。</p>
+</li>
+</ul>
 <h2>9.22</h2>
 <ul>
 <li>
