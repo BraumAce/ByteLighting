@@ -47635,15 +47635,21 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.9.md'
 ---
 # 2026.9 期
 
+## 9.29
+
+* [改变世界前先认识世界 : Ontology 决策结构化实践](https://mp.weixin.qq.com/s/Z3jgUawIT4ZY9lBb-trBuQ)：汀叶（大淘宝技术）——以业务、系统、交付与治理四层 Ontology 组织知识，将专家判断固化为 decision\_function，通过证据槽位、拒绝路由和证明范围约束动态工作流，并以可回归案例持续积累决策经验。
+
+* [AI Agent 分层架构：从模型到 Harness 的工程实践](https://mp.weixin.qq.com/s/WyZNutCOfmD1VElDYGJlCQ)：sharkchili（写代码的SharkChili）——以 Claude Code 为例梳理 Agent 的四层架构，说明 Skills、Subagents、Hooks、MCP 与 Agent SDK 如何协作，并强调 Harness 对上下文、工具权限和结果验证的工程约束。
+
 ## 9.27
 
-* [Harness工程经验第2节：操控循环把经验驱动的AI Coding升级为可控闭环](https://mp.weixin.qq.com/s/Ws0R7TYWzqJ33wBS_tuUIw)
+* [Harness工程经验第2节：操控循环把经验驱动的AI Coding升级为可控闭环](https://mp.weixin.qq.com/s/Ws0R7TYWzqJ33wBS_tuUIw)：爱海贼的无处不在（无处不在的技术）——用“前馈—行动—反馈—调整”操控循环复盘 Harness 实践，并给出识别任务、配置前馈与反馈、设定调整规则的四步设计法。
 
-* [工程技术：在智能体优先的世界中利用 Codex](https://openai.com/zh-Hans-CN/index/harness-engineering/)
+* [工程技术：在智能体优先的世界中利用 Codex](https://openai.com/zh-Hans-CN/index/harness-engineering/)：Ryan Lopopolo（OpenAI）——结合五个月、约百万行由 Codex 生成的产品实践，说明如何把仓库知识、架构约束、可观测性和持续维护反馈做成智能体可读、可执行的工程环境。
 
-* [Harness design for long-running application development (适用于长时间运行应用程序开发的框架设计)](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+* [Harness design for long-running application development (适用于长时间运行应用程序开发的框架设计)](https://www.anthropic.com/engineering/harness-design-long-running-apps)：Prithvi Rajasekaran（Anthropic Labs）——用 Planner、Generator、Evaluator 分工、可测试的 Sprint 合同与 Playwright 实测评估提升长时开发质量，并逐项删减组件以校准 Harness 成本与模型能力边界。
 
-* [Maintainability sensors for coding agents (编码代理的可维护性传感器)](https://www.martinfowler.com/articles/sensors-for-coding-agents.html)
+* [Maintainability sensors for coding agents (编码代理的可维护性传感器)](https://www.martinfowler.com/articles/sensors-for-coding-agents.html)：Birgitta Böckeler（Thoughtworks）——通过 lint、依赖规则、耦合分析、LLM 模块审查和 mutation testing 探索可维护性 Sensors，展示计算型与推理型反馈的互补及反馈噪声风险。
 
 ## 9.26
 
