@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-09-29T15:45:01.233Z</updated>
+  <updated>2026-10-01T15:13:10.185Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,20 @@
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.9.html"/>
-    <updated>2026-09-29T15:42:41.000Z</updated>
+    <updated>2026-10-01T15:11:10.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>9.30</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/4fp0WcVZqSPW8exB0VxpIg" target="_blank" rel="noopener noreferrer">构建稳定的 AI Agent：Harness 工程的核心机制与实践思考</a>：李彬（货拉拉技术）——以恶意流量分析为例，通过原子化工具、数据预计算与分层分析、事件驱动调度、重试熔断和 Git 记忆管理约束 Agent，将重复查询与稳定逻辑固化为快照和脚本，提升运行稳定性与成本效率。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/-e96R2uTzxL00GFgErdEDw" target="_blank" rel="noopener noreferrer">高德本地生活分析 Agent 的 AI Native 实践全景（万字长文回顾）</a>：钟雨洁（阿里技术）——以知识底座、分析能力和产品交互三层框架支撑经营诊断，通过知识按需加载、指标血缘、事实绑定、业务语义审阅与成稿校验兼顾推理空间和交付质量，并按错误影响范围控制返修成本。</p>
+</li>
+</ul>
 <h2>9.29</h2>
 <ul>
 <li>
