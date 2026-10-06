@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-10-01T15:13:10.185Z</updated>
+  <updated>2026-10-06T15:23:36.439Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -42,6 +42,28 @@
   <category term="模板"/>
   <category term="贪心"/>
   <category term="数学"/>
+  <entry>
+    <title type="text">2026.10 期</title>
+    <id>https://blog.bytelighting.cn/program/reading/2026/2026.10.html</id>
+    <link href="https://blog.bytelighting.cn/program/reading/2026/2026.10.html"/>
+    <updated>2026-10-06T15:16:37.000Z</updated>
+    <summary type="html"><![CDATA[
+]]></summary>
+    <content type="html"><![CDATA[
+<!-- more -->
+<h2>10.6</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/NWSVqVisBDesEhxr5UatLg" target="_blank" rel="noopener noreferrer">还没放假吗？</a>：腾讯云开发者——按 AI 技术、架构经典、WorkBuddy 实践与技术趣闻整理假期阅读清单，串联 RAG、Agent、上下文工程、Harness 与 AI 辅助研发等主题。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA" target="_blank" rel="noopener noreferrer">AI Native 时代 —— 研发组织何去何从</a>：许晓斌（阿里技术）——探讨研发组织从层级管理走向 Execution Graph 的变化，通过 Harness 沉淀隐性知识、打通系统与数据，并调整 Agent 治理、人才培养和激励机制，为人的判断与创新保留空间。</p>
+</li>
+</ul>
+]]></content>
+    <category term="文章"/>
+    <published>2026-10-06T15:16:37.000Z</published>
+  </entry>
   <entry>
     <title type="text">2026.9 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.9.html</id>
