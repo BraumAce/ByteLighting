@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-10-06T15:23:36.439Z</updated>
+  <updated>2026-10-08T15:55:55.234Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,15 @@
     <title type="text">2026.10 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.10.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.10.html"/>
-    <updated>2026-10-06T15:16:37.000Z</updated>
+    <updated>2026-10-08T15:54:27.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>10.8</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/4FANqjqQevlNEaVg7-HqSA" target="_blank" rel="noopener noreferrer">这是一篇把“Token”讲明白的科普级综述！</a>：Datawhale——结合分词机制与研究综述，解释 Tokenizer 如何影响大模型的字符和算术能力、多语言成本及安全，并梳理字节级、动态切分和视觉化等替代方向。</li>
+</ul>
 <h2>10.6</h2>
 <ul>
 <li>

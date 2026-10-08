@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 06 Oct 2026 15:23:36 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2026 15:23:36 GMT</lastBuildDate>
+    <pubDate>Thu, 08 Oct 2026 15:55:55 GMT</pubDate>
+    <lastBuildDate>Thu, 08 Oct 2026 15:55:55 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,17 +55,22 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.10 期</source>
       <description>2026.10 期
 
+10.8
+
+这是一篇把“Token”讲明白的科普级综述！：Datawhale——结合分词机制与研究综述，解释 Tokenizer 如何影响大模型的字符和算术能力、多语言成本及安全，并梳理字节级、动态切分和视觉化等替代方向。
+
 10.6
 
 
-还没放假吗？：腾讯云开发者——按 AI 技术、架构经典、WorkBuddy 实践与技术趣闻整理假期阅读清单，串联 RAG、Agent、上下文工程、Harness 与 AI 辅助研发等主题。
-
-
-AI Native 时代 —— 研发组织何去何从：许晓斌（阿里技术）——探讨研发组织从层级管理走向 Execution Gr...</description>
+还没放假吗？：腾讯云开发者——按 AI 技术、架构经典、WorkBuddy 实践与技术趣闻整...</description>
       <category>文章</category>
       <pubDate>Tue, 06 Oct 2026 15:16:37 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>10.8</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/4FANqjqQevlNEaVg7-HqSA" target="_blank" rel="noopener noreferrer">这是一篇把“Token”讲明白的科普级综述！</a>：Datawhale——结合分词机制与研究综述，解释 Tokenizer 如何影响大模型的字符和算术能力、多语言成本及安全，并梳理字节级、动态切分和视觉化等替代方向。</li>
+</ul>
 <h2>10.6</h2>
 <ul>
 <li>

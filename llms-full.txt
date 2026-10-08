@@ -46737,6 +46737,10 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.10.md'
 ---
 # 2026.10 期
 
+## 10.8
+
+* [这是一篇把“Token”讲明白的科普级综述！](https://mp.weixin.qq.com/s/4FANqjqQevlNEaVg7-HqSA)：Datawhale——结合分词机制与研究综述，解释 Tokenizer 如何影响大模型的字符和算术能力、多语言成本及安全，并梳理字节级、动态切分和视觉化等替代方向。
+
 ## 10.6
 
 * [还没放假吗？](https://mp.weixin.qq.com/s/NWSVqVisBDesEhxr5UatLg)：腾讯云开发者——按 AI 技术、架构经典、WorkBuddy 实践与技术趣闻整理假期阅读清单，串联 RAG、Agent、上下文工程、Harness 与 AI 辅助研发等主题。
