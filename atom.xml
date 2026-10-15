@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-10-13T14:07:20.019Z</updated>
+  <updated>2026-10-15T15:02:08.372Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -46,11 +46,23 @@
     <title type="text">2026.10 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.10.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.10.html"/>
-    <updated>2026-10-13T14:05:12.000Z</updated>
+    <updated>2026-10-15T14:59:48.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>10.15</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/XrTaFTrjmoXWyA_WsJftpg" target="_blank" rel="noopener noreferrer">Agent 不能只记录调用了什么，还要记录为什么调用 | KDC 系列 03</a>：Xiao Bo（vivo 互联网存储团队）——提出推理对象与推理运行时，将目标、证据、风险、授权和结果串成可追溯的行动治理链，区分 Tool、Skill、Capability 的职责，并强调 Agent 必须知道何时不该调用。</li>
+<li><a href="https://mp.weixin.qq.com/s/IGu2tfumq3rbnra9yfgAQw" target="_blank" rel="noopener noreferrer">把逆向工程交给 Agent：一文拆解爆火的 REA 技术原理</a>：stevenzuo（腾讯技术工程）——拆解 REA 如何用 MCP 桥接 Ghidra、IDA 等逆向工具，以可复用工作流编排调查过程，并要求分析结论附证据和局限说明；同时指出复杂加固与内核驱动等能力边界。</li>
+<li><a href="https://mp.weixin.qq.com/s/hsRucmrbY8h98di-rXVzww" target="_blank" rel="noopener noreferrer">Agent 缺的不是记忆，是“教训”：causal-memory 的设计与实战</a>：贺璟轩（滴滴技术）——介绍 causal-memory 如何用决策—结果因果边和 prevented 负扩散保存可检索的教训，结合干预/反事实查询与记忆审计降低重复犯错，并报告重复踩坑率从 67% 降至 33% 及跨任务迁移等局限。</li>
+</ul>
+<h2>10.14</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/E1fvA95qGkEnKinTAACWaA" target="_blank" rel="noopener noreferrer">一文拆解Jev架构：一个判断模型是怎么被拼出来的</a>：郝博阳（腾讯云开发者）——拆解 Jev 的概率式判断接口、后训练与并行架构，并结合复刻和评测指出其校准、准确率及泛化边界，建议用于规则清晰且可复核的分流环节。</li>
+<li><a href="https://mp.weixin.qq.com/s/eQj6QWiY3MlKnZaN-YHGJA" target="_blank" rel="noopener noreferrer">手把手带工程同学从零实现一个完整的 LLM（CS336）——Transformer 篇</a>：夏昊南（阿里技术）——跟随 Stanford CS336 Assignment 1 从 MLP、TinyGPT 入手，逐步手写 Transformer 的 Embedding、Attention、RoPE、RMSNorm 与 SwiGLU，并用参数量和 FLOPs 分析结构与计算开销。</li>
+<li><a href="https://mp.weixin.qq.com/s/o3H601HmC0vXTI0paDQsSg" target="_blank" rel="noopener noreferrer">动态规则的 Agent 实践：用确定性工程驾驭 LLM 的资产智能验收</a>：星珀（得物技术）——以资产验收为例，将 LLM 限定在材料提取与规则判定，外围用确定性 Workflow 处理异步编排、隔离、反馈、试跑/回测和发布门禁，形成可追溯的规则迭代闭环。</li>
+</ul>
 <h2>10.13</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/j5b3OokW552SM3iNLMoXkQ" target="_blank" rel="noopener noreferrer">三万字长文：大语言模型从零入门</a>：flyflywang（腾讯技术工程）——从 next-token prediction、信息熵与神经网络讲起，逐步解释 Transformer 和 ChatGPT 的训练与生成机制，并梳理工具使用、能力边界和幻觉等局限。</li>
