@@ -46737,6 +46737,27 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.10.md'
 ---
 # 2026.10 期
 
+## 10.23
+
+* [换模型效果归零？一文扒透Harness落地11个坑](https://mp.weixin.qq.com/s/dGYCOViTXOj5jy1QmZvR1Q)：茹炳晟（腾讯云开发者）——梳理 Harness 落地的 11 类误区，强调以真实失败模式驱动约束迭代，结合记忆治理、独立评估与过程可观测性建立可靠交付机制。
+* [小红书推荐系统评测 Agent：上下文驱动的 LLM-as-Judge 实践](https://mp.weixin.qq.com/s/333qmTTiNsFp9m8h49Slgg)：小红书技术REDtech——以用户状态、请求时间与有序内容列表构建推荐评测上下文，通过规则与 LLM 分工、人工校准及版本快照，让语义评测结果可比较、可回放并逐层下钻。
+
+## 10.22
+
+* [当我谈数据库高可用时我谈些什么](https://mp.weixin.qq.com/s/94Lq2YpxWelnKeFIFrp_Ow)：京东云开发者——沿单机崩溃恢复、主备复制、GTID、安全切换与 Orchestrator 自动容错串起 MySQL 高可用体系，强调通过 fencing 防脑裂，并由应用侧降级与补偿承接短暂不可用窗口。
+* [从 Jev 范式决策模型接入，到参与 Team 协作的完整实践](https://mp.weixin.qq.com/s/6Ryp0Atrj4xdG0KiriSZww)：濯光（阿里云 AgentCore）——以工单分诊助手串联 AgentScope Java、百炼决策模型和业务查询工具，演示 AgentCore 代码包部署、调用验证与日志排障，再通过协作 SDK 接入 Team 的任务分派和报告审核。
+* [“大家用AI胆子还不够大！”Claude工程负责人亲授顶级用法](https://mp.weixin.qq.com/s/GrXmCxESkjQm-bovv0bZ3w)：Felix Rieseberg（Datawhale 编译）——从目标高度、研究深度与跨领域广度扩展 AI 用法，主张围绕最终结果设计任务，提供原始数据和专业工具，并用独立验证检验成果，避免只模仿专家语气。
+
+## 10.21
+
+* [给AI写了800行规则，它反而更不听话了](https://mp.weixin.qq.com/s/LDdho64V5XZMAvxEGYlNNg)：刘俊毅（腾讯云开发者）——用阶段化流水线、分层知识库和确定性工具替代不断堆叠的规则，通过按需加载、需求覆盖矩阵与原文核对控制 AI 交付偏移。
+* [非算法工程师也能看懂，推理框架的来龙去脉](https://mp.weixin.qq.com/s/gA51FfYoAedGGWYnqRNFiw)：望宸（阿里云 AgentCore）——从请求处理链路解释 Prefill、Decode、KV Cache 与批处理，梳理推理框架如何通过前缀复用、PD 分离和集群调度平衡延迟、吞吐与成本。
+
+## 10.20
+
+* [从 BERT、GPT 到 Jev：一文看懂大模型架构的演进与分化](https://mp.weixin.qq.com/s/AciT5C6ypT35FaGOoEum5Q)：leonjia（腾讯技术工程）——沿注意力可见范围与输出方式梳理 Transformer 的架构分化，对照 BERT、GPT、Jev 与 Laya，解释文本生成和有限选项判断的差异，并区分 Jev 的公开能力与架构推断。
+* [AI工程化防翻车指南](https://mp.weixin.qq.com/s/5zhFeM48-ipqDyIAPvRj9A)：徐鑫（腾讯云开发者）——将安全边界外置到 Harness，通过沙箱隔离、声明式授权、循环封顶、分级人工介入与确定性门禁分层兜底，再用回滚、审计和评测持续修正规约与护栏。
+
 ## 10.18
 
 * [3个月用Harness重写90万行旧代码：踩过的坑都在这](https://mp.weixin.qq.com/s/CDRPDFVQh5jp3yCfsjCrqA)：胡皓（腾讯云开发者）——以90万行视频剪辑系统重构为例，拆解Harness如何通过需求与架构审查、独立AI审查、自动化及变异测试和人工验收守住质量，并报告3个月交付12万行代码、6000余个测试用例的实践结果。
