@@ -46737,6 +46737,11 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.10.md'
 ---
 # 2026.10 期
 
+## 10.26
+
+* [Personal Agent 落地思考：主动性从哪来，又卡在哪？](https://mp.weixin.qq.com/s/c5k2iwYh1O1OLA8ULf5X_A)：阿里技术——从目标与现状的差距解释 Agent 主动性，区分问题定义权与执行权限，主张通过明确目标、验收规则、逐项授权和持续校准，让主动发现逐步走向可靠执行。
+* [你的Personal Agent 如何真正跑起来？Agent实战指南](https://mp.weixin.qq.com/s/Nh-uiZ4N5C1qO9Uf9Im4bg)：spike（腾讯技术工程）——以个人分身实践说明如何分层管理背景、规则与历史材料，用 live 近期状态和同步约定接续跨设备工作，并通过真实任务反馈校准判断、保留推导过程与结论确认状态。
+
 ## 10.23
 
 * [换模型效果归零？一文扒透Harness落地11个坑](https://mp.weixin.qq.com/s/dGYCOViTXOj5jy1QmZvR1Q)：茹炳晟（腾讯云开发者）——梳理 Harness 落地的 11 类误区，强调以真实失败模式驱动约束迭代，结合记忆治理、独立评估与过程可观测性建立可靠交付机制。
