@@ -46737,6 +46737,15 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.10.md'
 ---
 # 2026.10 期
 
+## 10.28
+
+* [Pi 与 DSH 的输入归属：一条消息到达时，它属于哪一层——一个没想清楚的归属问题，毁掉过整套并发设计](https://mp.weixin.qq.com/s/cn1dcETWzNxoemjK2kyuXw)：王江华（华仔聊技术）——按 Agent 循环位置把新消息分流到 steering 队列、follow-up 或空闲注入，明确归属裁决时机以避免消息丢失、延迟和并发竞态。
+* [让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践](https://mp.weixin.qq.com/s/RigE8BekIOjSEuvPXxVv5Q)：叱干、王菲（千问AI平台）——围绕 Prompt、经验召回、任务执行、业务效果和自动化回归构建五层评测，并以 Rubric、可信数据集、上线门禁、灰度监控与数据回流形成持续迭代闭环。
+
+## 10.27
+
+* [深度解析 Codex Harness 架构及其全新上下文压缩记忆体系的设计思路](https://mp.weixin.qq.com/s/IM-zakQ9Bnog54NdYiJSqA)：飞樰（千问AI平台）——拆解 Codex 模块化 Harness、事件与协同机制，并聚焦以 Thread Hint、Notes、History 跨上下文窗口接续任务的 Token Budget 方案，区分短期任务状态与跨会话长期记忆。
+
 ## 10.26
 
 * [Personal Agent 落地思考：主动性从哪来，又卡在哪？](https://mp.weixin.qq.com/s/c5k2iwYh1O1OLA8ULf5X_A)：阿里技术——从目标与现状的差距解释 Agent 主动性，区分问题定义权与执行权限，主张通过明确目标、验收规则、逐项授权和持续校准，让主动发现逐步走向可靠执行。
