@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 28 Oct 2026 18:58:45 GMT</pubDate>
-    <lastBuildDate>Wed, 28 Oct 2026 18:58:45 GMT</lastBuildDate>
+    <pubDate>Fri, 30 Oct 2026 15:54:17 GMT</pubDate>
+    <lastBuildDate>Fri, 30 Oct 2026 15:54:17 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -55,14 +55,25 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.10 期</source>
       <description>2026.10 期
 
-10.28
+10.30
 
-Pi 与 DSH 的输入归属：一条消息到达时，它属于哪一层——一个没想清楚的归属问题，毁掉过整套并发设计：王江华（华仔聊技术）——按 Agent 循环位置把新消息分流到 steering 队列、follow-up 或空闲注入，明确归属裁决时机以避免消息丢失、延迟和并发竞态。
-让Agent可评、可控、可迭代：业务效果导...</description>
+Pi 与 DSH 的收口权限：工具是建议权还是结束权——本轮结束这句话，只有一个人能说：华仔聊技术——按 request、step、turn、activity 四层拆解 Agent 的结束信号与裁决权限，对照 Pi 的集成方插口与 DSH 的运行时判定，强调集中收口决策，避免将模型停答或工具完成等同于任务达成。
+从 ...</description>
       <category>文章</category>
       <pubDate>Tue, 06 Oct 2026 15:16:37 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>10.30</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/gFtva3b95sF6vV4W2KuGsQ" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的收口权限：工具是建议权还是结束权——本轮结束这句话，只有一个人能说</a>：华仔聊技术——按 request、step、turn、activity 四层拆解 Agent 的结束信号与裁决权限，对照 Pi 的集成方插口与 DSH 的运行时判定，强调集中收口决策，避免将模型停答或工具完成等同于任务达成。</li>
+<li><a href="https://mp.weixin.qq.com/s/qsvb9pscxPHf0J1oWwDa_w" target="_blank" rel="noopener noreferrer">从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践</a>：凉一（大淘宝技术）——通过统一物料、声明式编排和结构化执行证据降低历史系统的理解成本，再将人工迁移基线沉淀为 Skill 与确定性工具，以静态契约校验、录制回放和灰度观察验证新旧链路等价性。</li>
+</ul>
+<h2>10.29</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/SF9_lSx-GOPEegSCYlcdZw" target="_blank" rel="noopener noreferrer">基于 RSI 架构的淘宝闪购店铺装修选品 Agent 实践</a>：潘雯静（阿里技术）——以多岛进化、品槽评估和受限调度构建选品策略的反馈循环，区分参数变化、组合变化与真实业务收益；阶段性线上 AB 报告整店加购转化率 P2 相对提升 0.34%，跨轮经验积累的增益仍待验证。</li>
+<li><a href="https://mp.weixin.qq.com/s/O0_v8wz4iHxbkDLENy7EPg" target="_blank" rel="noopener noreferrer">AI Infra进阶：3万字深入理解线性注意力机制</a>：binnnliu（腾讯技术工程）——从 KV Cache 的容量与访存瓶颈出发，沿普通线性注意力、DeltaNet、GDN 到 KDA 推导残差写入、遗忘门和分块并行，解释固定状态容量、表达能力与硬件效率之间的取舍。</li>
+<li><a href="https://mp.weixin.qq.com/s/nsq0PrfvMvxLnGGIvrynZw" target="_blank" rel="noopener noreferrer">别学 subagent 了，已经要凉了。。。</a>：cxuanAI（程序员追风转载）——解读将领域 subagent 转为按需加载的 Skills 与工具、并入单一 Agent Loop 的思路，以端到端评测检验质量和延迟，同时保留上下文隔离、独立并行任务等需要 subagent 的场景。</li>
+</ul>
 <h2>10.28</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/cn1dcETWzNxoemjK2kyuXw" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的输入归属：一条消息到达时，它属于哪一层——一个没想清楚的归属问题，毁掉过整套并发设计</a>：王江华（华仔聊技术）——按 Agent 循环位置把新消息分流到 steering 队列、follow-up 或空闲注入，明确归属裁决时机以避免消息丢失、延迟和并发竞态。</li>
