@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 05 Nov 2026 14:32:41 GMT</pubDate>
-    <lastBuildDate>Thu, 05 Nov 2026 14:32:41 GMT</lastBuildDate>
+    <pubDate>Thu, 05 Nov 2026 14:41:45 GMT</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2026 14:41:45 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -57,17 +57,26 @@
 
 10.31
 
+
 Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（万字）：一包惆怅的辣条——汇总淘宝、货拉拉与阿里云的评测实践，沿样本口径、轨迹证据、Judge 校准、风险控制和自动回归说明如何把 Agent 评测做成可归因的工程闭环。
-腾讯 Agent 评测体系技术拆解：从 Harness 工程化到质量飞轮：银翼AI评测...</description>
+
+
+腾讯 Agent 评测体系技术拆解：从 Harness 工程化到质量飞轮：银翼A...</description>
       <category>文章</category>
       <pubDate>Tue, 06 Oct 2026 15:16:37 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
 <h2>10.31</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/ruyr5yRipS9b-hb31qXbXA" target="_blank" rel="noopener noreferrer">Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（万字）</a>：一包惆怅的辣条——汇总淘宝、货拉拉与阿里云的评测实践，沿样本口径、轨迹证据、Judge 校准、风险控制和自动回归说明如何把 Agent 评测做成可归因的工程闭环。</li>
-<li><a href="https://mp.weixin.qq.com/s/QF1CaJ5HhLoCq-jlzsTS7g" target="_blank" rel="noopener noreferrer">腾讯 Agent 评测体系技术拆解：从 Harness 工程化到质量飞轮</a>：银翼AI评测室——沿 Harness 工程化、评测平台分层、EvalMate 能力与质量飞轮展开，主张以共享执行轨迹提升失败归因能力，并把功能、性能、安全和成本指标接入量化发布门禁。</li>
-<li><a href="https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg" target="_blank" rel="noopener noreferrer">Super-agent 设计探索：迈向更自主的 Agent 系统</a>：DeepSeek Harness 团队——提出由 Router 统一对话与任务调度、由隔离的 Worker 并行执行的双层架构，结合事件驱动、异步多信道交互、存算环境分离与 Watchdog 构建持续在线的 Super-agent，并讨论安全、隐私和上下文边界等未决问题。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ruyr5yRipS9b-hb31qXbXA" target="_blank" rel="noopener noreferrer">Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（万字）</a>：一包惆怅的辣条——汇总淘宝、货拉拉与阿里云的评测实践，沿样本口径、轨迹证据、Judge 校准、风险控制和自动回归说明如何把 Agent 评测做成可归因的工程闭环。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/QF1CaJ5HhLoCq-jlzsTS7g" target="_blank" rel="noopener noreferrer">腾讯 Agent 评测体系技术拆解：从 Harness 工程化到质量飞轮</a>：银翼AI评测室——沿 Harness 工程化、评测平台分层、EvalMate 能力与质量飞轮展开，主张以共享执行轨迹提升失败归因能力，并把功能、性能、安全和成本指标接入量化发布门禁。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg" target="_blank" rel="noopener noreferrer">Super-agent 设计探索：迈向更自主的 Agent 系统</a>：DeepSeek Harness 团队——提出由 Router 统一对话与任务调度、由隔离的 Worker 并行执行的双层架构，结合事件驱动、异步多信道交互、存算环境分离与 Watchdog 构建持续在线的 Super-agent，并讨论安全、隐私和上下文边界等未决问题。</p>
+</li>
 </ul>
 <h2>10.30</h2>
 <ul>
