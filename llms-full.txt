@@ -46842,6 +46842,49 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.10.md'
 ---
 
 ---
+url: 'https://blog.bytelighting.cn/program/reading/2026/2026.11.md'
+---
+# 2026.11 期
+
+## 11.5
+
+* [一文拆解DeepSeek Harness新架构](https://mp.weixin.qq.com/s/Lksj3TFBRNt4jAkdbn4Jbg)：陈焕新（腾讯云开发者）——从上下文边界、链式召回、事件调度和 Watchdog 解释 Super-agent 如何减少人对 Session 的管理负担，并指出身份、状态感知与可交互界面仍是架构边界外的关键能力。
+
+* [面向技术产品经理的 Agent Harness 设计：从任务编排到可验证交付](https://mp.weixin.qq.com/s/xDcGpE-s_UefbJwPwbE6uQ)：Meng Disheng（vivo 互联网产品团队）——把 Agent 需求转化为 Task/Run/Artifact、工作流语义、工具契约、分级审批和结构化交付，并以幂等恢复、可观测性与反例验收建立可验证的工程闭环。
+
+## 11.4
+
+* [为什么AI会“选择性失忆”：搞懂Transformer架构](https://mp.weixin.qq.com/s/dr7Ng7goIb1eq-5UupcBew)：朱进（腾讯云开发者）——区分参数记忆与上下文工作记忆，解释自注意力权重稀释和窗口截断造成的“软遗忘”与“硬遗忘”，并梳理 KV Cache、RAG、长上下文和注意力变体各自缓解的问题。
+
+* [记忆即智能：重构对话式AI Agent认知基座的四层渐进式记忆与自进化系统](https://mp.weixin.qq.com/s/SvkRy9ipKEUbiLGbEPi08w)：AI 应用组（货拉拉技术）——以原始对话、感知、策略决策和长期画像构建四层渐进式记忆，再用效果闭环迭代沟通策略；两周实验报告转化率提升 1.7 个百分点、流失率下降 1.6 个百分点，响应延迟增加 0.2 秒。
+
+* [高德 Data Agent 实践：从业务问题到可信数据（上篇）](https://mp.weixin.qq.com/s/FAGAjEXd-dggWfBR-A0LLg)：郭人豪（阿里技术）——围绕需求澄清、指标口径和查询结果校验拆解 Data Agent 的前三步，强调用业务 Context、检索 Function、SQL 门禁和风险分级的数据体检支撑可信问数。
+
+* [AgentCore + Codex 构建生产级 Agent 的原理与实践](https://mp.weixin.qq.com/s/truZRvXkzIj6ZZoCLQ_vOQ)：寒斜（阿里云 AgentCore）——展示如何以 AgentCore 提供身份、模型、工具、Skill、凭证与观测能力，由 Runloop 接入 Codex Harness，并组合 AgenticFS 工作盘、OSS 产物层和文件驱动多模态完成部署。
+
+## 11.3
+
+* [一文搞懂MCP开发](https://mp.weixin.qq.com/s/8qB8xcp8d3yYXnGZNlutEA)：陈畅（腾讯云开发者）——从 M×N 集成问题讲解 MCP 的 Tools、Resources、Prompts、安全信任边界与能力协商，并对比本地 stdio 和远程 Streamable HTTP 的部署方式。
+
+* [Skill 路由优化实战：基于真实业务请求的 description 自进化](https://mp.weixin.qq.com/s/K9Eh1zezOx_idgh8bzFvMA)：鸣翰（千问AI平台）——将 Skill 误路由拆成可检验的归因假设与修改方向，再用首路由回放和保护例回归验证；候选在 34 条开发请求中命中 31 条，仍需独立留出集检验泛化。
+
+* [MCP架构设计：让AI标准化连接你的一切系统](https://mp.weixin.qq.com/s/7AWaCOFy6mFBxFX5lSxVHg)：码农SharkChili（写代码的SharkChili）——以 M+N 取代逐对编写适配器，结合 JSON-RPC、stdio/HTTP 配置和 Java SDK 示例说明 MCP Server 落地，并强调环境变量注入凭证与最小权限。
+
+* [从OpenClaw，怎么走到了Super Agent？](https://mp.weixin.qq.com/s/R8v1fxHpErVHq1o6euSroA)：spike（腾讯游戏数据团队）——沿 Bot、Working Agent 到 Super Agent 的演进，说明持续上下文、随时可达、能力共享和 Agent 协作如何逐步接入真实工作环境，并指出权限、确认与实际任务验证仍不可省略。
+
+* [便宜的模型越来越多，怎么判断它能不能胜任我的 Agent 工作](https://mp.weixin.qq.com/s/gjzWFqGJt29m_17B37wXVQ)：澄潭（阿里云 AgentCore）——主张按任务步骤而非场景整体路由模型，用胜任度、步骤难度和未解决问题三项判断交由程序按阈值决策，再以真实会话逐步积累低价模型的适用证据。
+
+## 11.2
+
+* [从长程 Agent 到 Super-agent，解锁更多场景](https://mp.weixin.qq.com/s/O6NdGGHP_rKAnH9PKrt6iQ)：阿里云 AgentCore——以连续、高效、主动、持久为目标，拆解 Super-agent 的 Router/Worker 双层架构、事件路由、计算与执行环境分离及 Watchdog 恢复机制。
+
+* [让 AI 看得见、判得准、改得对—— D2C 从设计稿到三端真机达标的自动化实践](https://mp.weixin.qq.com/s/Q-7Qek7YgAfccxzynSUfAA)：修易（大淘宝技术）——将 74 个决策点中的 66 个确定性步骤下沉到 CLI，并结合三端真机截图、像素与 DOM 对比、视觉复核和独立交付门禁，闭合 D2C 的自动验证与修复流程。
+
+* [DeepSeek Harness背后的“心脏”：Cordis 到底是什么](https://mp.weixin.qq.com/s/3vtCkp6EbA5MhRERD6f17A)：lss233（腾讯技术工程）——从插件生命周期、可逆副作用、响应式依赖注入和事件组合解释 Cordis 如何保障插件动态卸载、恢复与依赖重连，并支撑 DeepSeek Harness 的插件化运行时。
+
+---
+
+---
 url: 'https://blog.bytelighting.cn/program/reading/2026/2026.2.md'
 ---
 # 2026.2 期
