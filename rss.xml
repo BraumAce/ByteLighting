@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 06 Nov 2026 09:32:17 GMT</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2026 09:32:17 GMT</lastBuildDate>
+    <pubDate>Fri, 06 Nov 2026 13:54:30 GMT</pubDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:54:30 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -18,8 +18,8 @@
     <category>杂项</category>
     <category>文章</category>
     <category>MCP</category>
-    <category>架构设计</category>
     <category>RAG</category>
+    <category>架构设计</category>
     <category>Agentic</category>
     <category>Agent Harness</category>
     <category>Skills</category>
@@ -172,17 +172,35 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.11 期</source>
       <description>2026.11 期
 
-11.5
+11.6
 
 
-一文拆解DeepSeek Harness新架构：陈焕新（腾讯云开发者）——从上下文边界、链式召回、事件调度和 Watchdog 解释 Super-agent 如何减少人对 Session 的管理负担，并指出身份、状态感知与可交互界面仍是架构边界外的关键能力。
+让 Agent 学会判断：从 JEV 接入到完整 Harness 决策流程：阿里云云原生——说明 TypeSafe JEV 如何以 state/question 返回类型化概率，并在 AgentScope Java 中接入工具选择、模型路由、执行防护、上下文压缩、证据处理与回答修订等 Harness 决策点。
 
 
-面向技术产品经理的 Agent Harness 设计：...</description>
+为...</description>
       <category>文章</category>
       <pubDate>Thu, 05 Nov 2026 14:47:20 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>11.6</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/XEZN19EJD-zneoX3NSwDDw" target="_blank" rel="noopener noreferrer">让 Agent 学会判断：从 JEV 接入到完整 Harness 决策流程</a>：阿里云云原生——说明 TypeSafe JEV 如何以 state/question 返回类型化概率，并在 AgentScope Java 中接入工具选择、模型路由、执行防护、上下文压缩、证据处理与回答修订等 Harness 决策点。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/itPz49tinF6edd0y6WPjKg" target="_blank" rel="noopener noreferrer">为什么AI干得总是差点意思？教你怎么把需求一次说清楚</a>：腾讯云开发者——从 next-token 预测和提示词工程的质量、稳定性、正确性目标讲起，给出自然语言、Markdown、XML、JSON 等表达格式与“角色-背景-任务-约束”框架。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/OX9XTa_V13uZoc_CGvaBPg" target="_blank" rel="noopener noreferrer">从LLM到Ontology：本体驱动的AI数据研发原理与最佳实践</a>：千问AI平台——针对 AI 生成 SQL 的选表、字段和口径三类“能跑但不对”的错误，把业务规则抽成可校验的三元组本体，并通过按需召回和反馈飞轮持续迭代。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/L7WgswCBgMGUF7mD7pcYfw" target="_blank" rel="noopener noreferrer">多Agent协作的下一场竞争，不在模型，而在上下文</a>：腾讯技术工程——指出人-Agent 协作的瓶颈是上下文经多次转述后的乘法式折损，并以 Siboot 的群、Topic、@ 分别承载共享现场、注意力隔离和接力，再用 Agent 自有文件系统沉淀冷上下文。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/NLfsVHKy_m6mZF6aq0Ut5A" target="_blank" rel="noopener noreferrer">决策模型 Jev 可以直接上生产？用实验和公式理解 logit 调优与训练要领（长文干货）</a>：阿里技术——用 100 条真实 Agent 轨迹对比 6 个决策模型，说明默认 0.50 阈值会掩盖可分性，应在 Precision/Recall 业务底线内做交叉验证调阈值，并区分模型分数能否直接当置信度使用。</p>
+</li>
+</ul>
 <h2>11.5</h2>
 <ul>
 <li>
@@ -271,19 +289,33 @@ Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（�
 </ul>
 <h2>10.30</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/gFtva3b95sF6vV4W2KuGsQ" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的收口权限：工具是建议权还是结束权——本轮结束这句话，只有一个人能说</a>：华仔聊技术——按 request、step、turn、activity 四层拆解 Agent 的结束信号与裁决权限，对照 Pi 的集成方插口与 DSH 的运行时判定，强调集中收口决策，避免将模型停答或工具完成等同于任务达成。</li>
-<li><a href="https://mp.weixin.qq.com/s/qsvb9pscxPHf0J1oWwDa_w" target="_blank" rel="noopener noreferrer">从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践</a>：凉一（大淘宝技术）——通过统一物料、声明式编排和结构化执行证据降低历史系统的理解成本，再将人工迁移基线沉淀为 Skill 与确定性工具，以静态契约校验、录制回放和灰度观察验证新旧链路等价性。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/gFtva3b95sF6vV4W2KuGsQ" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的收口权限：工具是建议权还是结束权——本轮结束这句话，只有一个人能说</a>：华仔聊技术——按 request、step、turn、activity 四层拆解 Agent 的结束信号与裁决权限，对照 Pi 的集成方插口与 DSH 的运行时判定，强调集中收口决策，避免将模型停答或工具完成等同于任务达成。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/qsvb9pscxPHf0J1oWwDa_w" target="_blank" rel="noopener noreferrer">从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践</a>：凉一（大淘宝技术）——通过统一物料、声明式编排和结构化执行证据降低历史系统的理解成本，再将人工迁移基线沉淀为 Skill 与确定性工具，以静态契约校验、录制回放和灰度观察验证新旧链路等价性。</p>
+</li>
 </ul>
 <h2>10.29</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/SF9_lSx-GOPEegSCYlcdZw" target="_blank" rel="noopener noreferrer">基于 RSI 架构的淘宝闪购店铺装修选品 Agent 实践</a>：潘雯静（阿里技术）——以多岛进化、品槽评估和受限调度构建选品策略的反馈循环，区分参数变化、组合变化与真实业务收益；阶段性线上 AB 报告整店加购转化率 P2 相对提升 0.34%，跨轮经验积累的增益仍待验证。</li>
-<li><a href="https://mp.weixin.qq.com/s/O0_v8wz4iHxbkDLENy7EPg" target="_blank" rel="noopener noreferrer">AI Infra进阶：3万字深入理解线性注意力机制</a>：binnnliu（腾讯技术工程）——从 KV Cache 的容量与访存瓶颈出发，沿普通线性注意力、DeltaNet、GDN 到 KDA 推导残差写入、遗忘门和分块并行，解释固定状态容量、表达能力与硬件效率之间的取舍。</li>
-<li><a href="https://mp.weixin.qq.com/s/nsq0PrfvMvxLnGGIvrynZw" target="_blank" rel="noopener noreferrer">别学 subagent 了，已经要凉了。。。</a>：cxuanAI（程序员追风转载）——解读将领域 subagent 转为按需加载的 Skills 与工具、并入单一 Agent Loop 的思路，以端到端评测检验质量和延迟，同时保留上下文隔离、独立并行任务等需要 subagent 的场景。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/SF9_lSx-GOPEegSCYlcdZw" target="_blank" rel="noopener noreferrer">基于 RSI 架构的淘宝闪购店铺装修选品 Agent 实践</a>：潘雯静（阿里技术）——以多岛进化、品槽评估和受限调度构建选品策略的反馈循环，区分参数变化、组合变化与真实业务收益；阶段性线上 AB 报告整店加购转化率 P2 相对提升 0.34%，跨轮经验积累的增益仍待验证。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/O0_v8wz4iHxbkDLENy7EPg" target="_blank" rel="noopener noreferrer">AI Infra进阶：3万字深入理解线性注意力机制</a>：binnnliu（腾讯技术工程）——从 KV Cache 的容量与访存瓶颈出发，沿普通线性注意力、DeltaNet、GDN 到 KDA 推导残差写入、遗忘门和分块并行，解释固定状态容量、表达能力与硬件效率之间的取舍。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/nsq0PrfvMvxLnGGIvrynZw" target="_blank" rel="noopener noreferrer">别学 subagent 了，已经要凉了。。。</a>：cxuanAI（程序员追风转载）——解读将领域 subagent 转为按需加载的 Skills 与工具、并入单一 Agent Loop 的思路，以端到端评测检验质量和延迟，同时保留上下文隔离、独立并行任务等需要 subagent 的场景。</p>
+</li>
 </ul>
 <h2>10.28</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/cn1dcETWzNxoemjK2kyuXw" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的输入归属：一条消息到达时，它属于哪一层——一个没想清楚的归属问题，毁掉过整套并发设计</a>：王江华（华仔聊技术）——按 Agent 循环位置把新消息分流到 steering 队列、follow-up 或空闲注入，明确归属裁决时机以避免消息丢失、延迟和并发竞态。</li>
-<li><a href="https://mp.weixin.qq.com/s/RigE8BekIOjSEuvPXxVv5Q" target="_blank" rel="noopener noreferrer">让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践</a>：叱干、王菲（千问AI平台）——围绕 Prompt、经验召回、任务执行、业务效果和自动化回归构建五层评测，并以 Rubric、可信数据集、上线门禁、灰度监控与数据回流形成持续迭代闭环。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/cn1dcETWzNxoemjK2kyuXw" target="_blank" rel="noopener noreferrer">Pi 与 DSH 的输入归属：一条消息到达时，它属于哪一层——一个没想清楚的归属问题，毁掉过整套并发设计</a>：王江华（华仔聊技术）——按 Agent 循环位置把新消息分流到 steering 队列、follow-up 或空闲注入，明确归属裁决时机以避免消息丢失、延迟和并发竞态。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/RigE8BekIOjSEuvPXxVv5Q" target="_blank" rel="noopener noreferrer">让Agent可评、可控、可迭代：业务效果导向的评测体系与场景实践</a>：叱干、王菲（千问AI平台）——围绕 Prompt、经验召回、任务执行、业务效果和自动化回归构建五层评测，并以 Rubric、可信数据集、上线门禁、灰度监控与数据回流形成持续迭代闭环。</p>
+</li>
 </ul>
 <h2>10.27</h2>
 <ul>
@@ -291,67 +323,123 @@ Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（�
 </ul>
 <h2>10.26</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/c5k2iwYh1O1OLA8ULf5X_A" target="_blank" rel="noopener noreferrer">Personal Agent 落地思考：主动性从哪来，又卡在哪？</a>：阿里技术——从目标与现状的差距解释 Agent 主动性，区分问题定义权与执行权限，主张通过明确目标、验收规则、逐项授权和持续校准，让主动发现逐步走向可靠执行。</li>
-<li><a href="https://mp.weixin.qq.com/s/Nh-uiZ4N5C1qO9Uf9Im4bg" target="_blank" rel="noopener noreferrer">你的Personal Agent 如何真正跑起来？Agent实战指南</a>：spike（腾讯技术工程）——以个人分身实践说明如何分层管理背景、规则与历史材料，用 live 近期状态和同步约定接续跨设备工作，并通过真实任务反馈校准判断、保留推导过程与结论确认状态。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/c5k2iwYh1O1OLA8ULf5X_A" target="_blank" rel="noopener noreferrer">Personal Agent 落地思考：主动性从哪来，又卡在哪？</a>：阿里技术——从目标与现状的差距解释 Agent 主动性，区分问题定义权与执行权限，主张通过明确目标、验收规则、逐项授权和持续校准，让主动发现逐步走向可靠执行。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/Nh-uiZ4N5C1qO9Uf9Im4bg" target="_blank" rel="noopener noreferrer">你的Personal Agent 如何真正跑起来？Agent实战指南</a>：spike（腾讯技术工程）——以个人分身实践说明如何分层管理背景、规则与历史材料，用 live 近期状态和同步约定接续跨设备工作，并通过真实任务反馈校准判断、保留推导过程与结论确认状态。</p>
+</li>
 </ul>
 <h2>10.23</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/dGYCOViTXOj5jy1QmZvR1Q" target="_blank" rel="noopener noreferrer">换模型效果归零？一文扒透Harness落地11个坑</a>：茹炳晟（腾讯云开发者）——梳理 Harness 落地的 11 类误区，强调以真实失败模式驱动约束迭代，结合记忆治理、独立评估与过程可观测性建立可靠交付机制。</li>
-<li><a href="https://mp.weixin.qq.com/s/333qmTTiNsFp9m8h49Slgg" target="_blank" rel="noopener noreferrer">小红书推荐系统评测 Agent：上下文驱动的 LLM-as-Judge 实践</a>：小红书技术REDtech——以用户状态、请求时间与有序内容列表构建推荐评测上下文，通过规则与 LLM 分工、人工校准及版本快照，让语义评测结果可比较、可回放并逐层下钻。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/dGYCOViTXOj5jy1QmZvR1Q" target="_blank" rel="noopener noreferrer">换模型效果归零？一文扒透Harness落地11个坑</a>：茹炳晟（腾讯云开发者）——梳理 Harness 落地的 11 类误区，强调以真实失败模式驱动约束迭代，结合记忆治理、独立评估与过程可观测性建立可靠交付机制。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/333qmTTiNsFp9m8h49Slgg" target="_blank" rel="noopener noreferrer">小红书推荐系统评测 Agent：上下文驱动的 LLM-as-Judge 实践</a>：小红书技术REDtech——以用户状态、请求时间与有序内容列表构建推荐评测上下文，通过规则与 LLM 分工、人工校准及版本快照，让语义评测结果可比较、可回放并逐层下钻。</p>
+</li>
 </ul>
 <h2>10.22</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/94Lq2YpxWelnKeFIFrp_Ow" target="_blank" rel="noopener noreferrer">当我谈数据库高可用时我谈些什么</a>：京东云开发者——沿单机崩溃恢复、主备复制、GTID、安全切换与 Orchestrator 自动容错串起 MySQL 高可用体系，强调通过 fencing 防脑裂，并由应用侧降级与补偿承接短暂不可用窗口。</li>
-<li><a href="https://mp.weixin.qq.com/s/6Ryp0Atrj4xdG0KiriSZww" target="_blank" rel="noopener noreferrer">从 Jev 范式决策模型接入，到参与 Team 协作的完整实践</a>：濯光（阿里云 AgentCore）——以工单分诊助手串联 AgentScope Java、百炼决策模型和业务查询工具，演示 AgentCore 代码包部署、调用验证与日志排障，再通过协作 SDK 接入 Team 的任务分派和报告审核。</li>
-<li><a href="https://mp.weixin.qq.com/s/GrXmCxESkjQm-bovv0bZ3w" target="_blank" rel="noopener noreferrer">“大家用AI胆子还不够大！”Claude工程负责人亲授顶级用法</a>：Felix Rieseberg（Datawhale 编译）——从目标高度、研究深度与跨领域广度扩展 AI 用法，主张围绕最终结果设计任务，提供原始数据和专业工具，并用独立验证检验成果，避免只模仿专家语气。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/94Lq2YpxWelnKeFIFrp_Ow" target="_blank" rel="noopener noreferrer">当我谈数据库高可用时我谈些什么</a>：京东云开发者——沿单机崩溃恢复、主备复制、GTID、安全切换与 Orchestrator 自动容错串起 MySQL 高可用体系，强调通过 fencing 防脑裂，并由应用侧降级与补偿承接短暂不可用窗口。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/6Ryp0Atrj4xdG0KiriSZww" target="_blank" rel="noopener noreferrer">从 Jev 范式决策模型接入，到参与 Team 协作的完整实践</a>：濯光（阿里云 AgentCore）——以工单分诊助手串联 AgentScope Java、百炼决策模型和业务查询工具，演示 AgentCore 代码包部署、调用验证与日志排障，再通过协作 SDK 接入 Team 的任务分派和报告审核。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/GrXmCxESkjQm-bovv0bZ3w" target="_blank" rel="noopener noreferrer">“大家用AI胆子还不够大！”Claude工程负责人亲授顶级用法</a>：Felix Rieseberg（Datawhale 编译）——从目标高度、研究深度与跨领域广度扩展 AI 用法，主张围绕最终结果设计任务，提供原始数据和专业工具，并用独立验证检验成果，避免只模仿专家语气。</p>
+</li>
 </ul>
 <h2>10.21</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/LDdho64V5XZMAvxEGYlNNg" target="_blank" rel="noopener noreferrer">给AI写了800行规则，它反而更不听话了</a>：刘俊毅（腾讯云开发者）——用阶段化流水线、分层知识库和确定性工具替代不断堆叠的规则，通过按需加载、需求覆盖矩阵与原文核对控制 AI 交付偏移。</li>
-<li><a href="https://mp.weixin.qq.com/s/gA51FfYoAedGGWYnqRNFiw" target="_blank" rel="noopener noreferrer">非算法工程师也能看懂，推理框架的来龙去脉</a>：望宸（阿里云 AgentCore）——从请求处理链路解释 Prefill、Decode、KV Cache 与批处理，梳理推理框架如何通过前缀复用、PD 分离和集群调度平衡延迟、吞吐与成本。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/LDdho64V5XZMAvxEGYlNNg" target="_blank" rel="noopener noreferrer">给AI写了800行规则，它反而更不听话了</a>：刘俊毅（腾讯云开发者）——用阶段化流水线、分层知识库和确定性工具替代不断堆叠的规则，通过按需加载、需求覆盖矩阵与原文核对控制 AI 交付偏移。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/gA51FfYoAedGGWYnqRNFiw" target="_blank" rel="noopener noreferrer">非算法工程师也能看懂，推理框架的来龙去脉</a>：望宸（阿里云 AgentCore）——从请求处理链路解释 Prefill、Decode、KV Cache 与批处理，梳理推理框架如何通过前缀复用、PD 分离和集群调度平衡延迟、吞吐与成本。</p>
+</li>
 </ul>
 <h2>10.20</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/AciT5C6ypT35FaGOoEum5Q" target="_blank" rel="noopener noreferrer">从 BERT、GPT 到 Jev：一文看懂大模型架构的演进与分化</a>：leonjia（腾讯技术工程）——沿注意力可见范围与输出方式梳理 Transformer 的架构分化，对照 BERT、GPT、Jev 与 Laya，解释文本生成和有限选项判断的差异，并区分 Jev 的公开能力与架构推断。</li>
-<li><a href="https://mp.weixin.qq.com/s/5zhFeM48-ipqDyIAPvRj9A" target="_blank" rel="noopener noreferrer">AI工程化防翻车指南</a>：徐鑫（腾讯云开发者）——将安全边界外置到 Harness，通过沙箱隔离、声明式授权、循环封顶、分级人工介入与确定性门禁分层兜底，再用回滚、审计和评测持续修正规约与护栏。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/AciT5C6ypT35FaGOoEum5Q" target="_blank" rel="noopener noreferrer">从 BERT、GPT 到 Jev：一文看懂大模型架构的演进与分化</a>：leonjia（腾讯技术工程）——沿注意力可见范围与输出方式梳理 Transformer 的架构分化，对照 BERT、GPT、Jev 与 Laya，解释文本生成和有限选项判断的差异，并区分 Jev 的公开能力与架构推断。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/5zhFeM48-ipqDyIAPvRj9A" target="_blank" rel="noopener noreferrer">AI工程化防翻车指南</a>：徐鑫（腾讯云开发者）——将安全边界外置到 Harness，通过沙箱隔离、声明式授权、循环封顶、分级人工介入与确定性门禁分层兜底，再用回滚、审计和评测持续修正规约与护栏。</p>
+</li>
 </ul>
 <h2>10.18</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/CDRPDFVQh5jp3yCfsjCrqA" target="_blank" rel="noopener noreferrer">3个月用Harness重写90万行旧代码：踩过的坑都在这</a>：胡皓（腾讯云开发者）——以90万行视频剪辑系统重构为例，拆解Harness如何通过需求与架构审查、独立AI审查、自动化及变异测试和人工验收守住质量，并报告3个月交付12万行代码、6000余个测试用例的实践结果。</li>
-<li><a href="https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/" target="_blank" rel="noopener noreferrer">How to Build Wealth as a Career Person</a>：Asher Adeniyi（Asher's Blog）——提出职业发展应同时积累技能、信誉、人脉与收入，并将薪资增长转化为储蓄和多元资产，避免生活方式膨胀吞噬长期财富。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/CDRPDFVQh5jp3yCfsjCrqA" target="_blank" rel="noopener noreferrer">3个月用Harness重写90万行旧代码：踩过的坑都在这</a>：胡皓（腾讯云开发者）——以90万行视频剪辑系统重构为例，拆解Harness如何通过需求与架构审查、独立AI审查、自动化及变异测试和人工验收守住质量，并报告3个月交付12万行代码、6000余个测试用例的实践结果。</p>
+</li>
+<li>
+<p><a href="https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/" target="_blank" rel="noopener noreferrer">How to Build Wealth as a Career Person</a>：Asher Adeniyi（Asher's Blog）——提出职业发展应同时积累技能、信誉、人脉与收入，并将薪资增长转化为储蓄和多元资产，避免生活方式膨胀吞噬长期财富。</p>
+</li>
 </ul>
 <h2>10.15</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/XrTaFTrjmoXWyA_WsJftpg" target="_blank" rel="noopener noreferrer">Agent 不能只记录调用了什么，还要记录为什么调用 | KDC 系列 03</a>：Xiao Bo（vivo 互联网存储团队）——提出推理对象与推理运行时，将目标、证据、风险、授权和结果串成可追溯的行动治理链，区分 Tool、Skill、Capability 的职责，并强调 Agent 必须知道何时不该调用。</li>
-<li><a href="https://mp.weixin.qq.com/s/IGu2tfumq3rbnra9yfgAQw" target="_blank" rel="noopener noreferrer">把逆向工程交给 Agent：一文拆解爆火的 REA 技术原理</a>：stevenzuo（腾讯技术工程）——拆解 REA 如何用 MCP 桥接 Ghidra、IDA 等逆向工具，以可复用工作流编排调查过程，并要求分析结论附证据和局限说明；同时指出复杂加固与内核驱动等能力边界。</li>
-<li><a href="https://mp.weixin.qq.com/s/hsRucmrbY8h98di-rXVzww" target="_blank" rel="noopener noreferrer">Agent 缺的不是记忆，是“教训”：causal-memory 的设计与实战</a>：贺璟轩（滴滴技术）——介绍 causal-memory 如何用决策—结果因果边和 prevented 负扩散保存可检索的教训，结合干预/反事实查询与记忆审计降低重复犯错，并报告重复踩坑率从 67% 降至 33% 及跨任务迁移等局限。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/XrTaFTrjmoXWyA_WsJftpg" target="_blank" rel="noopener noreferrer">Agent 不能只记录调用了什么，还要记录为什么调用 | KDC 系列 03</a>：Xiao Bo（vivo 互联网存储团队）——提出推理对象与推理运行时，将目标、证据、风险、授权和结果串成可追溯的行动治理链，区分 Tool、Skill、Capability 的职责，并强调 Agent 必须知道何时不该调用。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/IGu2tfumq3rbnra9yfgAQw" target="_blank" rel="noopener noreferrer">把逆向工程交给 Agent：一文拆解爆火的 REA 技术原理</a>：stevenzuo（腾讯技术工程）——拆解 REA 如何用 MCP 桥接 Ghidra、IDA 等逆向工具，以可复用工作流编排调查过程，并要求分析结论附证据和局限说明；同时指出复杂加固与内核驱动等能力边界。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/hsRucmrbY8h98di-rXVzww" target="_blank" rel="noopener noreferrer">Agent 缺的不是记忆，是“教训”：causal-memory 的设计与实战</a>：贺璟轩（滴滴技术）——介绍 causal-memory 如何用决策—结果因果边和 prevented 负扩散保存可检索的教训，结合干预/反事实查询与记忆审计降低重复犯错，并报告重复踩坑率从 67% 降至 33% 及跨任务迁移等局限。</p>
+</li>
 </ul>
 <h2>10.14</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/E1fvA95qGkEnKinTAACWaA" target="_blank" rel="noopener noreferrer">一文拆解Jev架构：一个判断模型是怎么被拼出来的</a>：郝博阳（腾讯云开发者）——拆解 Jev 的概率式判断接口、后训练与并行架构，并结合复刻和评测指出其校准、准确率及泛化边界，建议用于规则清晰且可复核的分流环节。</li>
-<li><a href="https://mp.weixin.qq.com/s/eQj6QWiY3MlKnZaN-YHGJA" target="_blank" rel="noopener noreferrer">手把手带工程同学从零实现一个完整的 LLM（CS336）——Transformer 篇</a>：夏昊南（阿里技术）——跟随 Stanford CS336 Assignment 1 从 MLP、TinyGPT 入手，逐步手写 Transformer 的 Embedding、Attention、RoPE、RMSNorm 与 SwiGLU，并用参数量和 FLOPs 分析结构与计算开销。</li>
-<li><a href="https://mp.weixin.qq.com/s/o3H601HmC0vXTI0paDQsSg" target="_blank" rel="noopener noreferrer">动态规则的 Agent 实践：用确定性工程驾驭 LLM 的资产智能验收</a>：星珀（得物技术）——以资产验收为例，将 LLM 限定在材料提取与规则判定，外围用确定性 Workflow 处理异步编排、隔离、反馈、试跑/回测和发布门禁，形成可追溯的规则迭代闭环。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/E1fvA95qGkEnKinTAACWaA" target="_blank" rel="noopener noreferrer">一文拆解Jev架构：一个判断模型是怎么被拼出来的</a>：郝博阳（腾讯云开发者）——拆解 Jev 的概率式判断接口、后训练与并行架构，并结合复刻和评测指出其校准、准确率及泛化边界，建议用于规则清晰且可复核的分流环节。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/eQj6QWiY3MlKnZaN-YHGJA" target="_blank" rel="noopener noreferrer">手把手带工程同学从零实现一个完整的 LLM（CS336）——Transformer 篇</a>：夏昊南（阿里技术）——跟随 Stanford CS336 Assignment 1 从 MLP、TinyGPT 入手，逐步手写 Transformer 的 Embedding、Attention、RoPE、RMSNorm 与 SwiGLU，并用参数量和 FLOPs 分析结构与计算开销。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/o3H601HmC0vXTI0paDQsSg" target="_blank" rel="noopener noreferrer">动态规则的 Agent 实践：用确定性工程驾驭 LLM 的资产智能验收</a>：星珀（得物技术）——以资产验收为例，将 LLM 限定在材料提取与规则判定，外围用确定性 Workflow 处理异步编排、隔离、反馈、试跑/回测和发布门禁，形成可追溯的规则迭代闭环。</p>
+</li>
 </ul>
 <h2>10.13</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/j5b3OokW552SM3iNLMoXkQ" target="_blank" rel="noopener noreferrer">三万字长文：大语言模型从零入门</a>：flyflywang（腾讯技术工程）——从 next-token prediction、信息熵与神经网络讲起，逐步解释 Transformer 和 ChatGPT 的训练与生成机制，并梳理工具使用、能力边界和幻觉等局限。</li>
-<li><a href="https://mp.weixin.qq.com/s/5SeQEderLjF53_579jJbVQ" target="_blank" rel="noopener noreferrer">深度解析 RSI：当 AI 开始实现自我迭代提升</a>：飞樰（阿里技术）——辨析严格 RSI 与广义自进化，梳理 Harness、技能、记忆、模型权重及强化学习算法等自我改进路径，并分析实现条件与监督、对齐风险。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/j5b3OokW552SM3iNLMoXkQ" target="_blank" rel="noopener noreferrer">三万字长文：大语言模型从零入门</a>：flyflywang（腾讯技术工程）——从 next-token prediction、信息熵与神经网络讲起，逐步解释 Transformer 和 ChatGPT 的训练与生成机制，并梳理工具使用、能力边界和幻觉等局限。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/5SeQEderLjF53_579jJbVQ" target="_blank" rel="noopener noreferrer">深度解析 RSI：当 AI 开始实现自我迭代提升</a>：飞樰（阿里技术）——辨析严格 RSI 与广义自进化，梳理 Harness、技能、记忆、模型权重及强化学习算法等自我改进路径，并分析实现条件与监督、对齐风险。</p>
+</li>
 </ul>
 <h2>10.12</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/ZcUHXPYcG9nEjlWcBV7Jpw" target="_blank" rel="noopener noreferrer">后端架构面试（一）：指标、缓存与容量估算</a>：sharkchili（写代码的SharkChili）——从 RT、QPS、TPS 定义和成功请求吞吐量计算入手，结合 Redis 一致性与故障恢复、峰值 QPS 估算及机器选型，强调容量设计要基于流量假设、SLA、压测和故障验证。</li>
-<li><a href="https://mp.weixin.qq.com/s/mUA-UziZPe0L1IfiMBss8w" target="_blank" rel="noopener noreferrer">Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径</a>：robinji（腾讯技术工程）——用“数字化团队”厘清五个概念的关系，给出老系统通过 API、CLI、RPA 接入 AI 的三条路径及 MCP 传输选型，并结合请假系统和 PLM 案例说明企业落地方法。</li>
-<li><a href="https://mp.weixin.qq.com/s/blMjReLQZUuSK6bl6Bt3yA" target="_blank" rel="noopener noreferrer">淘宝AI购物助手在线评测落地实践</a>：营销&amp;交易技术（大淘宝技术）——围绕电商购后购物助手，拆解日级全量 LLM-as-a-Judge 的数据清洗、分布式评测、CNT 六层 Rubric 与 Prompt 稳定性设计，并通过多轮人机校验和四层归因把评测结果闭环到定点修复。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ZcUHXPYcG9nEjlWcBV7Jpw" target="_blank" rel="noopener noreferrer">后端架构面试（一）：指标、缓存与容量估算</a>：sharkchili（写代码的SharkChili）——从 RT、QPS、TPS 定义和成功请求吞吐量计算入手，结合 Redis 一致性与故障恢复、峰值 QPS 估算及机器选型，强调容量设计要基于流量假设、SLA、压测和故障验证。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/mUA-UziZPe0L1IfiMBss8w" target="_blank" rel="noopener noreferrer">Agent、MCP、Skill、Cli、Model 一次讲透：老系统接入 AI 的概念地图与三条路径</a>：robinji（腾讯技术工程）——用“数字化团队”厘清五个概念的关系，给出老系统通过 API、CLI、RPA 接入 AI 的三条路径及 MCP 传输选型，并结合请假系统和 PLM 案例说明企业落地方法。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/blMjReLQZUuSK6bl6Bt3yA" target="_blank" rel="noopener noreferrer">淘宝AI购物助手在线评测落地实践</a>：营销&amp;交易技术（大淘宝技术）——围绕电商购后购物助手，拆解日级全量 LLM-as-a-Judge 的数据清洗、分布式评测、CNT 六层 Rubric 与 Prompt 稳定性设计，并通过多轮人机校验和四层归因把评测结果闭环到定点修复。</p>
+</li>
 </ul>
 <h2>10.10</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/s_AmjWIB57b7fQY_3VNkoQ" target="_blank" rel="noopener noreferrer">别只盯着AI Coding，真正的变化发生在整个研发流程</a>：danteyang（腾讯技术工程）——基于 OK 平台运营数据，主张从零基思维重建需求到交付的研发流程，以结构化 Spec、前置质量门禁和知识沉淀减少信息衰减与跨角色等待；文中称 254 条需求中 172 条由 AI 端到端完成，51% 在 2 小时内完成。</li>
-<li><a href="https://mp.weixin.qq.com/s/ajL2P5PY1HcQnJt_RFalnw" target="_blank" rel="noopener noreferrer">淘宝直播数字人互动Harness-Aware Training实践：让Agent Model随Harness一起进化</a>：语瀚（大淘宝技术）——提出 Harness-Aware Training（HAT），通过多样化 Harness 下的监督微调、通用指令蒸馏和强化学习，让轻量模型适应运行环境变化；Qwen3.6-35B-A3B 在直播问答达到 94.8 分、Harness 变化场景达到 94.6 分，P50 端到端延迟为 3.407 秒。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/s_AmjWIB57b7fQY_3VNkoQ" target="_blank" rel="noopener noreferrer">别只盯着AI Coding，真正的变化发生在整个研发流程</a>：danteyang（腾讯技术工程）——基于 OK 平台运营数据，主张从零基思维重建需求到交付的研发流程，以结构化 Spec、前置质量门禁和知识沉淀减少信息衰减与跨角色等待；文中称 254 条需求中 172 条由 AI 端到端完成，51% 在 2 小时内完成。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ajL2P5PY1HcQnJt_RFalnw" target="_blank" rel="noopener noreferrer">淘宝直播数字人互动Harness-Aware Training实践：让Agent Model随Harness一起进化</a>：语瀚（大淘宝技术）——提出 Harness-Aware Training（HAT），通过多样化 Harness 下的监督微调、通用指令蒸馏和强化学习，让轻量模型适应运行环境变化；Qwen3.6-35B-A3B 在直播问答达到 94.8 分、Harness 变化场景达到 94.6 分，P50 端到端延迟为 3.407 秒。</p>
+</li>
 </ul>
 <h2>10.9</h2>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/vZQ9OgMPzusYMxJzb4oy-A" target="_blank" rel="noopener noreferrer">穿越分化带：SPIRAL 商业持续螺旋（6+2）——AI 时代企业战略六步推演框架</a>：李鸿胜（腾讯研究院特约研究员）——提出以商业持续为起点的 SPIRAL 战略推演框架，依次分析企业定位、关键变量、竞争策略、组织行动与评估，并以感知和组织使能机制持续校准 AI 时代的决策。</li>
-<li><a href="https://mp.weixin.qq.com/s/s_AmjWIB57b7fQY_3VNkoQ" target="_blank" rel="noopener noreferrer">别只盯着AI Coding，真正的变化发生在整个研发流程</a>：danteyang（腾讯技术工程）——基于 OK 平台运营数据，主张从零基思维重建需求到交付的研发流程，以结构化 Spec、前置质量门禁和知识沉淀减少信息衰减与跨角色等待；文中称 254 条需求中 172 条由 AI 端到端完成，51% 在 2 小时内完成。</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/vZQ9OgMPzusYMxJzb4oy-A" target="_blank" rel="noopener noreferrer">穿越分化带：SPIRAL 商业持续螺旋（6+2）——AI 时代企业战略六步推演框架</a>：李鸿胜（腾讯研究院特约研究员）——提出以商业持续为起点的 SPIRAL 战略推演框架，依次分析企业定位、关键变量、竞争策略、组织行动与评估，并以感知和组织使能机制持续校准 AI 时代的决策。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/s_AmjWIB57b7fQY_3VNkoQ" target="_blank" rel="noopener noreferrer">别只盯着AI Coding，真正的变化发生在整个研发流程</a>：danteyang（腾讯技术工程）——基于 OK 平台运营数据，主张从零基思维重建需求到交付的研发流程，以结构化 Spec、前置质量门禁和知识沉淀减少信息衰减与跨角色等待；文中称 254 条需求中 172 条由 AI 端到端完成，51% 在 2 小时内完成。</p>
+</li>
 </ul>
 <h2>10.8</h2>
 <ul>
@@ -1198,6 +1286,52 @@ Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（�
 ]]></content:encoded>
     </item>
     <item>
+      <title>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</title>
+      <link>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</link>
+      <guid>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</source>
+      <description>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer
+
+
+原文作者：板牙 | 来源：阿里云开发者社区
+
+RAG 的三个结构性缺陷
+做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LL...</description>
+      <category>RAG</category>
+      <pubDate>Fri, 26 Jun 2026 14:22:33 GMT</pubDate>
+      <content:encoded><![CDATA[
+<!-- more -->
+<blockquote>
+<p>原文作者：板牙 | 来源：<a href="https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A" target="_blank" rel="noopener noreferrer">阿里云开发者社区</a></p>
+</blockquote>
+<h2>RAG 的三个结构性缺陷</h2>
+<p>做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LLM 生成答案，搞定。</p>
+<p>但工程知识库做到深处，你会发现 RAG 有三个结构性缺陷，是任何 prompt 技巧都救不回来的：</p>
+<h3>缺陷一：每次从零推导</h3>
+<p>正如 Karpathy 在 LLM Wiki 设计文档中一针见血指出的——&quot;the LLM is rediscovering knowledge from scratch on every question. There's no accumulation.&quot; 问一个需要综合 5 篇文档的问题，LLM 每次都得重新找到并拼接那 5 个片段，没有任何中间成果被保留。这就像每次做菜都从买菜开始，永远没有&quot;备菜&quot;这个环节。</p>
+<h3>缺陷二：无法连点成线</h3>
+<p>Microsoft GraphRAG 的研究明确指出了 baseline RAG 的两个失败模式：当答案需要通过共享属性连接分散信息时，平坦的向量检索无能为力；当需要对大规模语料做全局性的语义理解时，RAG 同样力不从心。</p>
+<h3>缺陷三：粒度混乱</h3>
+<p>一个 chunk 可能是&quot;系统设计原则&quot;，也可能是&quot;某个函数的第 42-143 行实现&quot;。向量空间不区分抽象层次——&quot;设计原则&quot;和&quot;代码实现&quot;在语义上可能很近，但它们服务于完全不同的认知需求。</p>
+<blockquote>
+<p>&quot;用向量检索做知识库，就像用搜索引擎替代知识体系——你能找到所有碎片，但拼不出全貌。&quot;</p>
+</blockquote>
+<h2>四大知识库范式演进</h2>
+<h3>范式一：Naive RAG — 平铺向量检索</h3>
+<p>文档 → chunk → embedding → 向量数据库 → 相似度检索。最基础也最广泛使用的模式，但默认配置下无积累、无关联、无层次、无角色区分。</p>
+<h3>范式二：LLM Wiki — 持续编译的知识工件</h3>
+<p>Andrej Karpathy 提出的模式，核心洞察：wiki 是一个持续积累的工件（persistent, compounding artifact）。LLM 不只是检索者，更是知识的维护者。三层架构：Raw Sources（人类策展）→ Wiki（LLM 完全拥有）→ Schema（人类 + LLM 共同演进）。</p>
+<h3>范式三：Graphify — 代码即图谱</h3>
+<p>把代码库、文档、配置文件等异构资源统一映射为一张可查询的知识图谱。双管道提取：AST 管道（离线，tree-sitter 解析）+ 语义管道（LLM 语义提取）。</p>
+<h3>范式四：GraphRAG — 图谱增强的检索</h3>
+<p>Microsoft GraphRAG 是对 Naive RAG 的结构化升级：先构建知识图谱 → Leiden 算法社区聚类 → 分层社区摘要 → 查询时结合图结构和摘要回答。</p>
+<h2>金字塔知识库（Pyramid KB）</h2>
+<h3>五层分层设计</h3>
+<p>| 层 | 职责 | 稳定性 | 类比 |<br>
+|</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>设计模式已死？—— AI 时代设计模式的永恒价值</title>
       <link>https://blog.bytelighting.cn/architecture/system-design/pattern/design-patterns-ai-era.html</link>
       <guid>https://blog.bytelighting.cn/architecture/system-design/pattern/design-patterns-ai-era.html</guid>
@@ -1248,52 +1382,6 @@ Agent 评测具体怎么做？学习淘宝、货拉拉和阿里云的实践（�
 <li><strong>底层抽象是不变的</strong> — 不管编程范式如何变化，某些组织方式会不可避免地再次出现，治愈 AI FOMO 焦虑</li>
 <li><strong>经典始终是经典</strong> — 软件工程的底层规律不会因为 AI 的到来而改变，变的是表达形式</li>
 </ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</title>
-      <link>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</link>
-      <guid>https://blog.bytelighting.cn/ai/agentic/rag/knowledge-base-layered-orchestration.html</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer</source>
-      <description>知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer
-
-
-原文作者：板牙 | 来源：阿里云开发者社区
-
-RAG 的三个结构性缺陷
-做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LL...</description>
-      <category>RAG</category>
-      <pubDate>Fri, 26 Jun 2026 14:22:33 GMT</pubDate>
-      <content:encoded><![CDATA[
-<!-- more -->
-<blockquote>
-<p>原文作者：板牙 | 来源：<a href="https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A" target="_blank" rel="noopener noreferrer">阿里云开发者社区</a></p>
-</blockquote>
-<h2>RAG 的三个结构性缺陷</h2>
-<p>做 AI Agent 落地的同学，大概率都经历过这个心路历程：一开始觉得 RAG 就是万能药——文档切 chunk、做 embedding、向量检索 Top-K、喂给 LLM 生成答案，搞定。</p>
-<p>但工程知识库做到深处，你会发现 RAG 有三个结构性缺陷，是任何 prompt 技巧都救不回来的：</p>
-<h3>缺陷一：每次从零推导</h3>
-<p>正如 Karpathy 在 LLM Wiki 设计文档中一针见血指出的——&quot;the LLM is rediscovering knowledge from scratch on every question. There's no accumulation.&quot; 问一个需要综合 5 篇文档的问题，LLM 每次都得重新找到并拼接那 5 个片段，没有任何中间成果被保留。这就像每次做菜都从买菜开始，永远没有&quot;备菜&quot;这个环节。</p>
-<h3>缺陷二：无法连点成线</h3>
-<p>Microsoft GraphRAG 的研究明确指出了 baseline RAG 的两个失败模式：当答案需要通过共享属性连接分散信息时，平坦的向量检索无能为力；当需要对大规模语料做全局性的语义理解时，RAG 同样力不从心。</p>
-<h3>缺陷三：粒度混乱</h3>
-<p>一个 chunk 可能是&quot;系统设计原则&quot;，也可能是&quot;某个函数的第 42-143 行实现&quot;。向量空间不区分抽象层次——&quot;设计原则&quot;和&quot;代码实现&quot;在语义上可能很近，但它们服务于完全不同的认知需求。</p>
-<blockquote>
-<p>&quot;用向量检索做知识库，就像用搜索引擎替代知识体系——你能找到所有碎片，但拼不出全貌。&quot;</p>
-</blockquote>
-<h2>四大知识库范式演进</h2>
-<h3>范式一：Naive RAG — 平铺向量检索</h3>
-<p>文档 → chunk → embedding → 向量数据库 → 相似度检索。最基础也最广泛使用的模式，但默认配置下无积累、无关联、无层次、无角色区分。</p>
-<h3>范式二：LLM Wiki — 持续编译的知识工件</h3>
-<p>Andrej Karpathy 提出的模式，核心洞察：wiki 是一个持续积累的工件（persistent, compounding artifact）。LLM 不只是检索者，更是知识的维护者。三层架构：Raw Sources（人类策展）→ Wiki（LLM 完全拥有）→ Schema（人类 + LLM 共同演进）。</p>
-<h3>范式三：Graphify — 代码即图谱</h3>
-<p>把代码库、文档、配置文件等异构资源统一映射为一张可查询的知识图谱。双管道提取：AST 管道（离线，tree-sitter 解析）+ 语义管道（LLM 语义提取）。</p>
-<h3>范式四：GraphRAG — 图谱增强的检索</h3>
-<p>Microsoft GraphRAG 是对 Naive RAG 的结构化升级：先构建知识图谱 → Leiden 算法社区聚类 → 分层社区摘要 → 查询时结合图结构和摘要回答。</p>
-<h2>金字塔知识库（Pyramid KB）</h2>
-<h3>五层分层设计</h3>
-<p>| 层 | 职责 | 稳定性 | 类比 |<br>
-|</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2028,19 +2116,16 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>程序人生</title>
-      <link>https://blog.bytelighting.cn/program/</link>
-      <guid>https://blog.bytelighting.cn/program/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
-      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
+      <title>AI</title>
+      <link>https://blog.bytelighting.cn/ai/</link>
+      <guid>https://blog.bytelighting.cn/ai/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">AI</source>
+      <description>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。 知识体系 — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</description>
       <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
+      <content:encoded><![CDATA[<p>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。</p>
 <h2>知识体系</h2>
 <ul>
-<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
-<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
-<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
-<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
+<li><a href="/ai/llm/" target="_blank"><strong>大模型应用</strong></a> — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -2060,16 +2145,19 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>AI</title>
-      <link>https://blog.bytelighting.cn/ai/</link>
-      <guid>https://blog.bytelighting.cn/ai/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">AI</source>
-      <description>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。 知识体系 — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</description>
+      <title>程序人生</title>
+      <link>https://blog.bytelighting.cn/program/</link>
+      <guid>https://blog.bytelighting.cn/program/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">程序人生</source>
+      <description>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。 知识体系 — 每期阅读记录，摘录与点评 — 读过的书单与资料链接 — 开发效率工具、日常使用技巧、工作流分享 — 技术观察、职场感悟、日常思考</description>
       <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>聚焦大模型技术栈与 AI 应用工程实践，记录从提示词设计、RAG 系统构建到 Agent 落地的全链路知识。既有对 LLM 原理的理解，也有实际开发中踩坑与总结。</p>
+      <content:encoded><![CDATA[<p>技术之外的记录与思考。包括读书笔记与书单、高效工具推荐，以及日常随笔与感悟。工程师不只写代码，也读书、思考、生活。</p>
 <h2>知识体系</h2>
 <ul>
-<li><a href="/ai/llm/" target="_blank"><strong>大模型应用</strong></a> — 大模型 API 调用、Prompt 工程、RAG 检索增强、Agent 系统开发框架（LangChain / LlamaIndex 等）</li>
+<li><a href="/program/reading/" target="_blank"><strong>阅读</strong></a> — 每期阅读记录，摘录与点评</li>
+<li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
+<li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
+<li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
 </ul>
 ]]></content:encoded>
     </item>
