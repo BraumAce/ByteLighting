@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-11-12T15:07:14.115Z</updated>
+  <updated>2026-11-14T15:21:28.417Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -165,11 +165,29 @@
     <title type="text">2026.11 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.11.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.11.html"/>
-    <updated>2026-11-12T15:05:09.000Z</updated>
+    <updated>2026-11-14T15:19:25.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>11.13</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/FHOMmXxMT4pbebkGR2iVyA" target="_blank" rel="noopener noreferrer">Jev 实战：为AI工作流引入轻量决策层 x10倍提速</a>：得物技术——以用例打标、UI 自动化和知识库召回为例，展示 Jev 如何承担边界明确的结构化判断任务，并比较接入前后的耗时与费用。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/2IUREDltOXzXECO7tWIoPA" target="_blank" rel="noopener noreferrer">不只是Memory：Ontology如何让Coding Agent越用越懂项目？</a>：腾讯技术工程——从本体、Loop 与 Memory 拆解 Agent 跨任务积累项目知识的路径，并讨论如何用反馈改进知识内容与改进方法。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/adXkn8Xo8R6CbD-_xMf0Tg" target="_blank" rel="noopener noreferrer">智能体 Skill 调优“焚诀”——业务逻辑之外的胜负手</a>：千问AI平台——以 37 个投研 Skill 生产化改造为例，围绕范式式意图路由、分层套件与评测闭环处理路由混淆、上下文膨胀和输出可信度问题。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/NtBXdTOaWD7YXLzN8A7BTQ" target="_blank" rel="noopener noreferrer">基于本体的 AI 数据研发落地：淘宝行业经营分析实战</a>：阿里技术——从生产 SQL 抽取并校验可追溯的结构化业务规则，再结合按需召回和反馈迭代，为 AI 生成 SQL 补足业务知识。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/_QaPvXBKy56EScrY9j_50A" target="_blank" rel="noopener noreferrer">Skill 自进化：基于执行轨迹与评测反馈的多代优化实践</a>：大淘宝技术——用执行轨迹和黄金评测驱动 Skill 多代变异，通过逐 Case 评测与候选池筛选版本，并将最终版本交由人工确认。</p>
+</li>
+</ul>
 <h2>11.12</h2>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/pMQFjkllDxcqSJhh_aZjZQ" target="_blank" rel="noopener noreferrer">维护3.3万字符的长Prompt？让优化Agent迭代执行Agent</a>：徐泓镔（腾讯云开发者）——将 harness² 的工作流与领域知识双路提案、证据探测和合成机制适配连贯性打标，在 611 条数据的评测中使问题识别 F1 从 82.78% 提升至 89.89%。</li>
