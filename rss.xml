@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 14 Nov 2026 15:21:28 GMT</pubDate>
-    <lastBuildDate>Sat, 14 Nov 2026 15:21:28 GMT</lastBuildDate>
+    <pubDate>Wed, 18 Nov 2026 14:25:18 GMT</pubDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:25:18 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -172,17 +172,47 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.11 期</source>
       <description>2026.11 期
 
-11.13
+11.18
 
 
-Jev 实战：为AI工作流引入轻量决策层 x10倍提速：得物技术——以用例打标、UI 自动化和知识库召回为例，展示 Jev 如何承担边界明确的结构化判断任务，并比较接入前后的耗时与费用。
+AI时代，代码Review还有必要吗？：吕昊俣（腾讯云开发者）——建议从需求建模推导测试并尽量左移，为 AI 编码提供验证闭环，同时由人工关注设计、需求与实现的一致性及可维护性。
 
 
-不只是Memory：Ontology如何让Coding Agent越用越懂项目？：腾讯技术工程——从本体、Loop 与 Me...</description>
+淘宝闪购本体平台：让人与 AI Agent 共用一份实时可信的业务知识：王浩迪（阿里技术）——以实体、关系和策略构建本体，通过责任人...</description>
       <category>文章</category>
       <pubDate>Thu, 05 Nov 2026 14:47:20 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>11.18</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/1Oqo3nm-4YsHu6iCZwOqsg" target="_blank" rel="noopener noreferrer">AI时代，代码Review还有必要吗？</a>：吕昊俣（腾讯云开发者）——建议从需求建模推导测试并尽量左移，为 AI 编码提供验证闭环，同时由人工关注设计、需求与实现的一致性及可维护性。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/YRzW4duU_YQxl3WRTvedqA" target="_blank" rel="noopener noreferrer">淘宝闪购本体平台：让人与 AI Agent 共用一份实时可信的业务知识</a>：王浩迪（阿里技术）——以实体、关系和策略构建本体，通过责任人确认与版本发布治理知识，并结合图遍历、BM25、向量召回及 RRF 为 Agent 提供可追溯的场景知识。</p>
+</li>
+</ul>
+<h2>11.17</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/0nO92ufveC_cXjkMiontNg" target="_blank" rel="noopener noreferrer">Agent改了40个文件你才发现？用Harness Hook把止损写进架构</a>：李隆熹（腾讯云开发者）——介绍 stop-line 如何以 Harness Hook 监测重复失败、变更范围和高危操作，由 Skill 判断并生成交接，同时总结跨 Harness 协议差异与实测问题。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/jwPPuBWg6J9mu89rBXAXrQ" target="_blank" rel="noopener noreferrer">AI 写代码越来越快，谁来守住章法？</a>：胡嘉乐（阿里技术）——通过架构规范与 ARCH-CHECK 将分层依赖、方法参数、禁用 API 等规则固化为构建检查，并在违规信息中提供修复指引。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/6klzWZARglApscBGYXXIZQ" target="_blank" rel="noopener noreferrer">从生成到决策：AgenticOps 决策模型的能力实测</a>：朴象（阿里云 AgentCore）——基于 15,788 个评分案例及 10 个 RCA 案例，比较决策模型在运维判断、置信度回退和不同 Agent 接入位置的效果，权衡准确率、耗时与 Token。</p>
+</li>
+</ul>
+<h2>11.15</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/5r_EhRzdgRgzg8kWmZDyRQ" target="_blank" rel="noopener noreferrer">用 Super-agent 的理念，拆解 Octop 团队模式</a>：Jubaoliang（腾讯技术工程）——对照 Super-agent 与 Octop 的主持人和专家分工，分析非阻塞调度、异步结果回填、上下文隔离与人工授权，并讨论任务持久化和故障恢复的边界。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/1J3EEmjmisxUejV7fpZF5g" target="_blank" rel="noopener noreferrer">构建 AI 时代的知识底座：直播数据 LLM Wiki 实践</a>：楚翎、程知微（大淘宝技术）——将 DDL 和任务代码编译为结构化 Wiki 与关系图，再通过意图识别、召回、血缘扩展和重排序支撑指标检索、SQL 生成与变更影响分析。</p>
+</li>
+</ul>
 <h2>11.13</h2>
 <ul>
 <li>
