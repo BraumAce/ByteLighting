@@ -46866,6 +46866,18 @@ url: 'https://blog.bytelighting.cn/program/reading/2026/2026.11.md'
 ---
 # 2026.11 期
 
+## 11.20
+
+* [拆解小红书存储底座 07｜MySQL性能优化设计与实践](https://mp.weixin.qq.com/s/3h1itOzR7RlW-SNfALtUHA)：明绪、少平（小红书技术REDtech）——介绍合并秒杀、分级线程池、DDL 优化与基于 Undo 的闪回，分析热点更新、变更阻塞及历史查询的机制与适用边界。
+
+## 11.19
+
+* [Agent 研发工作系统：面向多需求并行端到端开发的设计与实践](https://mp.weixin.qq.com/s/IM-jIz7Cwq7_zWvkkzZpXA)：京东云开发者——以任务卡和需求卡承接跨会话进度，将动作授权、分层证据验收与方法版本反馈接入研发流程，强调运行目标和验证结果必须对应。
+
+* [为什么你的模型“答得对，却做不好”？——从模型机理到Agent落地](https://mp.weixin.qq.com/s/MqKNcbS1kWPtU80Tacfl6g)：孙亮（京东技术）——结合模型机理与营销案例，说明如何用未见条件组合测试、规则版本核验和工具执行记录评估 Agent，并计入人工复核与返工成本验证实际收益。
+
+* [Harness驾驭工程第5节：设计环境而非代码，基础协同组件分享（上）](https://mp.weixin.qq.com/s/u4-w_duGsdz1K2ySw00DCg)：爱海贼的无处不在（无处不在的技术）——围绕知识、工具、环境、反馈、验证和权限构建 Agent 工作条件，以 AGENTS.md、分层文档、CodeGraph 与仓库 Wiki 支撑上下文按需加载和结果复用。
+
 ## 11.18
 
 * [AI时代，代码Review还有必要吗？](https://mp.weixin.qq.com/s/1Oqo3nm-4YsHu6iCZwOqsg)：吕昊俣（腾讯云开发者）——建议从需求建模推导测试并尽量左移，为 AI 编码提供验证闭环，同时由人工关注设计、需求与实现的一致性及可维护性。

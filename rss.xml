@@ -6,8 +6,8 @@
     <link>https://blog.bytelighting.cn/</link>
     <description>ByteLighting - 个人技术博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 18 Nov 2026 14:25:18 GMT</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2026 14:25:18 GMT</lastBuildDate>
+    <pubDate>Sun, 22 Nov 2026 14:54:35 GMT</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2026 14:54:35 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -172,17 +172,34 @@
       <source url="https://blog.bytelighting.cn/rss.xml">2026.11 期</source>
       <description>2026.11 期
 
-11.18
+11.20
+
+拆解小红书存储底座 07｜MySQL性能优化设计与实践：明绪、少平（小红书技术REDtech）——介绍合并秒杀、分级线程池、DDL 优化与基于 Undo 的闪回，分析热点更新、变更阻塞及历史查询的机制与适用边界。
+
+11.19
 
 
-AI时代，代码Review还有必要吗？：吕昊俣（腾讯云开发者）——建议从需求建模推导测试并尽量左移，为 AI 编码提供验证闭环，同时由人工关注设计、需求与实现的一致性及可维护性。
-
-
-淘宝闪购本体平台：让人与 AI Agent 共用一份实时可信的业务知识：王浩迪（阿里技术）——以实体、关系和策略构建本体，通过责任人...</description>
+Agent 研发工作系统：面向多需求并行端到端开发的设计与实践：京东云开发者——以任务...</description>
       <category>文章</category>
       <pubDate>Thu, 05 Nov 2026 14:47:20 GMT</pubDate>
       <content:encoded><![CDATA[
 <!-- more -->
+<h2>11.20</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/3h1itOzR7RlW-SNfALtUHA" target="_blank" rel="noopener noreferrer">拆解小红书存储底座 07｜MySQL性能优化设计与实践</a>：明绪、少平（小红书技术REDtech）——介绍合并秒杀、分级线程池、DDL 优化与基于 Undo 的闪回，分析热点更新、变更阻塞及历史查询的机制与适用边界。</li>
+</ul>
+<h2>11.19</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/IM-jIz7Cwq7_zWvkkzZpXA" target="_blank" rel="noopener noreferrer">Agent 研发工作系统：面向多需求并行端到端开发的设计与实践</a>：京东云开发者——以任务卡和需求卡承接跨会话进度，将动作授权、分层证据验收与方法版本反馈接入研发流程，强调运行目标和验证结果必须对应。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/MqKNcbS1kWPtU80Tacfl6g" target="_blank" rel="noopener noreferrer">为什么你的模型“答得对，却做不好”？——从模型机理到Agent落地</a>：孙亮（京东技术）——结合模型机理与营销案例，说明如何用未见条件组合测试、规则版本核验和工具执行记录评估 Agent，并计入人工复核与返工成本验证实际收益。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/u4-w_duGsdz1K2ySw00DCg" target="_blank" rel="noopener noreferrer">Harness驾驭工程第5节：设计环境而非代码，基础协同组件分享（上）</a>：爱海贼的无处不在（无处不在的技术）——围绕知识、工具、环境、反馈、验证和权限构建 Agent 工作条件，以 <a href="http://AGENTS.md" target="_blank" rel="noopener noreferrer">AGENTS.md</a>、分层文档、CodeGraph 与仓库 Wiki 支撑上下文按需加载和结果复用。</p>
+</li>
+</ul>
 <h2>11.18</h2>
 <ul>
 <li>
@@ -2227,21 +2244,6 @@ Claude Agent S...</description>
 ]]></content:encoded>
     </item>
     <item>
-      <title>架构设计</title>
-      <link>https://blog.bytelighting.cn/architecture/</link>
-      <guid>https://blog.bytelighting.cn/architecture/</guid>
-      <source url="https://blog.bytelighting.cn/rss.xml">架构设计</source>
-      <description>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。 知识体系 — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计 — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</description>
-      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
-      <content:encoded><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
-<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>程序人生</title>
       <link>https://blog.bytelighting.cn/program/</link>
       <guid>https://blog.bytelighting.cn/program/</guid>
@@ -2255,6 +2257,21 @@ Claude Agent S...</description>
 <li><a href="/program/books/" target="_blank"><strong>书籍</strong></a> — 读过的书单与资料链接</li>
 <li><a href="/program/tools/" target="_blank"><strong>工具</strong></a> — 开发效率工具、日常使用技巧、工作流分享</li>
 <li><a href="/program/sundry/" target="_blank"><strong>杂谈</strong></a> — 技术观察、职场感悟、日常思考</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>架构设计</title>
+      <link>https://blog.bytelighting.cn/architecture/</link>
+      <guid>https://blog.bytelighting.cn/architecture/</guid>
+      <source url="https://blog.bytelighting.cn/rss.xml">架构设计</source>
+      <description>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。 知识体系 — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计 — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</description>
+      <pubDate>Sun, 12 Apr 2026 09:52:25 GMT</pubDate>
+      <content:encoded><![CDATA[<p>系统架构知识体系，包含常见分布式系统设计案例、软件架构风格与模式，以及软考系统架构师备考资料，覆盖从方案设计到落地实现的全过程。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/architecture/ruankao/" target="_blank"><strong>软考架构师</strong></a> — 系统架构设计师备考：软件工程、系统分析与设计、系统架构设计</li>
+<li><a href="/architecture/system-design/" target="_blank"><strong>系统设计</strong></a> — 评论系统、SOFA 架构模式、软件架构风格等案例与模式</li>
 </ul>
 ]]></content:encoded>
     </item>
