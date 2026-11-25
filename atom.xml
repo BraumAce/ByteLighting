@@ -5,7 +5,7 @@
   <subtitle>ByteLighting - 个人技术博客</subtitle>
   <icon>https://blog.bytelighting.cn/favicon.ico</icon>
   <logo>https://blog.bytelighting.cn/logo.png</logo>
-  <updated>2026-11-23T14:52:11.654Z</updated>
+  <updated>2026-11-25T15:46:37.468Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.bytelighting.cn/atom.xml"/>
   <link rel="alternate" href="https://blog.bytelighting.cn/"/>
@@ -165,11 +165,32 @@
     <title type="text">2026.11 期</title>
     <id>https://blog.bytelighting.cn/program/reading/2026/2026.11.html</id>
     <link href="https://blog.bytelighting.cn/program/reading/2026/2026.11.html"/>
-    <updated>2026-11-23T14:50:34.000Z</updated>
+    <updated>2026-11-25T15:44:12.000Z</updated>
     <summary type="html"><![CDATA[
 ]]></summary>
     <content type="html"><![CDATA[
 <!-- more -->
+<h2>11.25</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/OFvkSyjORzjOOEDpqB5Mhw" target="_blank" rel="noopener noreferrer">Agent上下文管理，90%的人第一步就做反了</a>：陈子杰（腾讯云开发者）——先限制工具每次返回的内容，等上下文接近上限再批量清理旧结果、折叠可回查的内容，以提高提示词缓存命中率，最后才用模型生成摘要。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/yPHBK48nEVRSAjkLKTJwwQ" target="_blank" rel="noopener noreferrer">深度解析 DeepSeek Super-agent：多端协同的自主 Agent 设计思路</a>：飞樰（千问AI平台）——Router 接收多端消息，把任务交给拥有独立上下文的 Worker 异步执行，让用户在长任务运行时仍能追问，并能在发起任务的渠道收到结果。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/kWKHYMCwmMFp54iJU3ZkXQ" target="_blank" rel="noopener noreferrer">Computer Use与Browser Use：揭秘Agent如何操作电脑和浏览器｜得物技术</a>：羊羽（得物技术）——以 Word 另存为 PDF 和网盘查文件为例，说明 Agent 如何借助截图、可访问性树或 DOM 定位控件，通过系统或浏览器接口执行操作，再核对结果。</p>
+</li>
+</ul>
+<h2>11.24</h2>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/64X4sJ5Z2uoLI70xoCfGRA" target="_blank" rel="noopener noreferrer">从提示词优化到决策模型：Jev 辅助业务 Agent 技能路由的探索与落地</a>：懿航（千问AI平台）——用 Jevify 从技能目录中筛出 5 个候选，再由主 Agent 结合对话和业务规则选择技能，回归测试的 343 条线上请求中有 331 条首次路由正确。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/oSeeRQikg_J6xA0hSiy8hA" target="_blank" rel="noopener noreferrer">半年用AI写需求，我终于不用给AI当测试了</a>：侯国春（腾讯云开发者）——用 full-cycle-developer 把需求单、设计稿和现有代码整理成验收清单，让 AI 在浏览器中对照设计稿逐项测试并修正问题，团队每百条测试用例新增的代码缺陷从 2.31 个降至 0.49 个。</p>
+</li>
+</ul>
 <h2>11.23</h2>
 <ul>
 <li>
@@ -2285,26 +2306,6 @@
     <published>2026-04-12T09:52:25.000Z</published>
   </entry>
   <entry>
-    <title type="text">计算机</title>
-    <id>https://blog.bytelighting.cn/computer/technology/</id>
-    <link href="https://blog.bytelighting.cn/computer/technology/"/>
-    <updated>2026-05-05T16:31:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
-<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
-<h2>知识体系</h2>
-<ul>
-<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
-<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
-</ul>
-]]></content>
-    <published>2026-04-12T09:52:25.000Z</published>
-  </entry>
-  <entry>
     <title type="text">后端</title>
     <id>https://blog.bytelighting.cn/computer/backend/</id>
     <link href="https://blog.bytelighting.cn/computer/backend/"/>
@@ -2324,6 +2325,26 @@
 <li><a href="/computer/backend/database/" target="_blank"><strong>数据库</strong></a> — MySQL 原理与调优、Redis 缓存、分布式事务</li>
 <li><a href="/computer/backend/framework/" target="_blank"><strong>框架</strong></a> — Spring 全家桶、MyBatis、消息队列与中间件</li>
 <li><a href="/computer/backend/project/" target="_blank"><strong>项目实战</strong></a> — 完整项目经验与架构复盘</li>
+</ul>
+]]></content>
+    <published>2026-04-12T09:52:25.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">计算机</title>
+    <id>https://blog.bytelighting.cn/computer/technology/</id>
+    <link href="https://blog.bytelighting.cn/computer/technology/"/>
+    <updated>2026-05-05T16:31:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
+<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>计算机基础知识体系，涵盖操作系统原理与大数据技术栈。打牢底层认知，有助于理解上层系统的设计动机，是进阶工程师的必备功底。</p>
+<h2>知识体系</h2>
+<ul>
+<li><a href="/computer/technology/operating-system/" target="_blank"><strong>操作系统</strong></a> — 进程与线程、内存管理、I/O 模型、Linux 常用命令</li>
+<li><a href="/computer/technology/big-data/" target="_blank"><strong>大数据</strong></a> — Hadoop、Spark、Flink 等大数据处理框架原理与使用</li>
 </ul>
 ]]></content>
     <published>2026-04-12T09:52:25.000Z</published>
